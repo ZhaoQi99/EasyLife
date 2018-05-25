@@ -1,0 +1,4 @@
+language: csharp
+solution: EasyLife.sln
+mono:
+  - latest
