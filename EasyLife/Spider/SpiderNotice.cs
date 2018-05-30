@@ -27,7 +27,9 @@ namespace EasyLife.Spider
         {
             all_notice.Clear();
             Regex r = new Regex(pattern, RegexOptions.ExplicitCapture);
-            MatchCollection mc = r.Matches(getHtml());
+            string s = getHtml();
+               // Todo: s is null
+            MatchCollection mc = r.Matches(s);
             foreach (Match m in mc)
             {
                 GroupCollection group = m.Groups;

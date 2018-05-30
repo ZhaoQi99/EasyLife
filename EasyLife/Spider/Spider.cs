@@ -11,7 +11,7 @@ namespace EasyLife.Spider
     class Spider
     {
         public string url { set; get; } = string.Empty;//要爬取的网页的url
-        public Encoding encode { set; get; } = Encoding.UTF8;//目标url的网页编码格式
+        public string encode { set; get; } = "UTF-8";//目标url的网页编码格式
 
         private WebRequest request;
         private WebResponse response;
@@ -29,7 +29,7 @@ namespace EasyLife.Spider
             try
             {
                 response = request.GetResponse();
-                reader = new StreamReader(response.GetResponseStream(), encode).ReadToEnd();
+                reader = new StreamReader(response.GetResponseStream(), Encoding.GetEncoding(encode)).ReadToEnd();
             }
             catch
             {
