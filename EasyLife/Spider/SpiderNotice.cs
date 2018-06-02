@@ -13,9 +13,9 @@ namespace EasyLife.Spider
     {
         private string url_main;//各个通知链接的公共部分
         private string subject;//发送邮件的标题
-        private string pattern;//
-        private ArrayList all_notice = new ArrayList();
-        public string parse { get; set; } = string.Empty;
+        private string pattern;//用于匹配的郑则表达式规则
+        private ArrayList all_notice = new ArrayList();//所有的通知
+        public string parse  = string.Empty;//日期的解析规则
         public SpiderNotice(string url, string pattern, string url_main,string subject) : base(url)
         {
             this.subject = subject;
@@ -28,7 +28,8 @@ namespace EasyLife.Spider
             all_notice.Clear();
             Regex r = new Regex(pattern, RegexOptions.ExplicitCapture);
             string s = getHtml();
-               // Todo: s is null
+            if (s == null)
+                throw new ArgumentNullException("html");
             MatchCollection mc = r.Matches(s);
             foreach (Match m in mc)
             {
@@ -42,7 +43,7 @@ namespace EasyLife.Spider
         public Notice index(int index)
         {
             if (index >= all_notice.Count)
-                return null;
+                throw new IndexOutOfRangeException();
             else
                 return all_notice[index] as Notice;
         }

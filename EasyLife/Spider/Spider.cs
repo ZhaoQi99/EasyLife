@@ -8,28 +8,61 @@ using System.Threading.Tasks;
 
 namespace EasyLife.Spider
 {
-    class Spider
+    public class Spider
     {
-        public string url { set; get; } = string.Empty;//要爬取的网页的url
-        public string encode { set; get; } = "UTF-8";//目标url的网页编码格式
+        private string url = string.Empty;//要爬取的网页的url
+        public string Url
+        {
+            get { return url; }
+            set
+            {
+                url = value;
+            }
+        }
+        public string encode = "UTF-8";//目标url的网页编码格式
+        public string Encode
+        {
+            get { return encode; }
+            set
+            {
+                if (value == "UTF-8" || value == "GBK")
+                {
+                    encode = value;
+                }
+                else
+                {
+                    //Todo:handle exception
+                }
+            }
+        }
 
-        private WebRequest request;
-        private WebResponse response;
+        public HttpWebRequest request;
+        public HttpWebResponse response;
         public Spider(string url)
         {
             this.url = url;
-            request = WebRequest.Create(url);
+            request = (HttpWebRequest)WebRequest.Create(url);
             request.Credentials = CredentialCache.DefaultCredentials;
+            request.Method = "GET";//默认以GET方式请求网页
+            request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36";
         }
 
         //获取目标url的Html代码
         public string getHtml()
         {
-            string reader=string.Empty;
+            string reader = string.Empty;
             try
             {
-                response = request.GetResponse();
-                reader = new StreamReader(response.GetResponseStream(), Encoding.GetEncoding(encode)).ReadToEnd();
+                response = (HttpWebResponse)request.GetResponse();
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    StreamReader sr = new StreamReader(response.GetResponseStream(), Encoding.GetEncoding(encode));
+                    reader = sr.ReadToEnd();
+                    sr.Close();
+                    response.Close();//关闭response响应流
+                }
+                else
+                    throw new Exception();
             }
             catch
             {
@@ -37,17 +70,6 @@ namespace EasyLife.Spider
             }
             return reader;
         }
-        //关闭response响应流
-        public void closeResponse()
-        {
-            try
-            {
-                response.Close();
-            }
-            catch (Exception e)
-            {
-                //Todo: handle Exception
-            }
-        }
+
     }
 }
