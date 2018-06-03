@@ -70,6 +70,7 @@
     <Compile Include="Spider\Ticket.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,6 +80,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -92,6 +94,81 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnJpPwd.DownBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnId.DownBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnId.MouseBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnId.NormlBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextId.MouseBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextId.NormlBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextPwd.MouseBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextPwd.NormlBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnJpPwd.MouseBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnJpPwd.NormlBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.CloseDownBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.CloseMouseBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.CloseNormlBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.MiniDownBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.MiniMouseBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.MiniNormlBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btnlogin.DownBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btnlogin.MouseBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Btnlogin.NormlBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseDownBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseMouseBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseNormlBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniDownBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniMouseBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniNormlBack.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
