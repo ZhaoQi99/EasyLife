@@ -36,6 +36,10 @@
     <Reference Include="CSkin">
       <HintPath>DLL\CSkin.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -62,6 +66,8 @@
     <Compile Include="Spider\Notice.cs" />
     <Compile Include="Spider\Spider.cs" />
     <Compile Include="Spider\SpiderNotice.cs" />
+    <Compile Include="Spider\SpiderTicket.cs" />
+    <Compile Include="Spider\Ticket.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

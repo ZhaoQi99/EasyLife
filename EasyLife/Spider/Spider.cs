@@ -41,18 +41,22 @@ namespace EasyLife.Spider
         public Spider(string url)
         {
             this.url = url;
+
+        }
+        public void  create()
+        {
             request = (HttpWebRequest)WebRequest.Create(url);
             request.Credentials = CredentialCache.DefaultCredentials;
             request.Method = "GET";//默认以GET方式请求网页
             request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36";
         }
-
         //获取目标url的Html代码
         public string getHtml()
         {
             string reader = string.Empty;
             try
             {
+                create();
                 response = (HttpWebResponse)request.GetResponse();
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
