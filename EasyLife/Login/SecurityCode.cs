@@ -106,10 +106,10 @@ namespace Login
             return map;
         }
         //返回经MD5加密过的验证码字符串
-        public string MD5Encrypt(string text)
+        public string MD5Encrypt()
         {
             MD5 md5 = new MD5CryptoServiceProvider();
-            byte[] result = md5.ComputeHash(Encoding.Default.GetBytes(text));
+            byte[] result = md5.ComputeHash(Encoding.UTF8.GetBytes(VerificationText.ToUpper()));//不区分大小写
             return BitConverter.ToString(result);
         }
     }

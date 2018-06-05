@@ -2,7 +2,7 @@
 
 namespace EasyLife
 {
-    partial class Login
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace EasyLife
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.SecCodePic = new CCWin.SkinControl.SkinPictureBox();
             this.TextId = new CCWin.SkinControl.SkinTextBox();
             this.BtnId = new CCWin.SkinControl.SkinButton();
@@ -42,6 +42,7 @@ namespace EasyLife
             this.BtnRegister = new CCWin.SkinControl.SkinButton();
             this.BtnForgetPwd = new CCWin.SkinControl.SkinButton();
             this.SecCodeText = new CCWin.SkinControl.SkinTextBox();
+            this.ForgetPassword = new EasyLife.Login.ForgetPassword();
             ((System.ComponentModel.ISupportInitialize)(this.SecCodePic)).BeginInit();
             this.TextId.SuspendLayout();
             this.TextPwd.SuspendLayout();
@@ -50,9 +51,9 @@ namespace EasyLife
             // SecCodePic
             // 
             this.SecCodePic.BackColor = System.Drawing.Color.Transparent;
-            this.SecCodePic.Location = new System.Drawing.Point(253, 203);
+            this.SecCodePic.Location = new System.Drawing.Point(237, 201);
             this.SecCodePic.Name = "SecCodePic";
-            this.SecCodePic.Size = new System.Drawing.Size(169, 30);
+            this.SecCodePic.Size = new System.Drawing.Size(178, 44);
             this.SecCodePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SecCodePic.TabIndex = 1;
             this.SecCodePic.TabStop = false;
@@ -143,6 +144,7 @@ namespace EasyLife
             // TextPwd
             // 
             this.TextPwd.BackColor = System.Drawing.Color.Transparent;
+            this.TextPwd.Controls.Add(this.ForgetPassword);
             this.TextPwd.Controls.Add(this.BtnJpPwd);
             this.TextPwd.DownBack = null;
             this.TextPwd.Icon = null;
@@ -205,6 +207,7 @@ namespace EasyLife
             this.Btnlogin.TabIndex = 1;
             this.Btnlogin.Text = "登  录";
             this.Btnlogin.UseVisualStyleBackColor = false;
+            this.Btnlogin.Click += new System.EventHandler(this.Btnlogin_Click);
             // 
             // BtnRegister
             // 
@@ -254,7 +257,7 @@ namespace EasyLife
             this.SecCodeText.IsPasswordChat = '\0';
             this.SecCodeText.IsSystemPasswordChar = false;
             this.SecCodeText.Lines = new string[0];
-            this.SecCodeText.Location = new System.Drawing.Point(161, 203);
+            this.SecCodeText.Location = new System.Drawing.Point(161, 208);
             this.SecCodeText.Margin = new System.Windows.Forms.Padding(0);
             this.SecCodeText.MaxLength = 32767;
             this.SecCodeText.MinimumSize = new System.Drawing.Size(28, 28);
@@ -266,7 +269,7 @@ namespace EasyLife
             this.SecCodeText.Padding = new System.Windows.Forms.Padding(5);
             this.SecCodeText.ReadOnly = false;
             this.SecCodeText.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.SecCodeText.Size = new System.Drawing.Size(89, 30);
+            this.SecCodeText.Size = new System.Drawing.Size(73, 30);
             // 
             // 
             // 
@@ -276,22 +279,32 @@ namespace EasyLife
             this.SecCodeText.SkinTxt.Location = new System.Drawing.Point(5, 5);
             this.SecCodeText.SkinTxt.Multiline = true;
             this.SecCodeText.SkinTxt.Name = "BaseText";
-            this.SecCodeText.SkinTxt.Size = new System.Drawing.Size(92, 25);
+            this.SecCodeText.SkinTxt.Size = new System.Drawing.Size(63, 20);
             this.SecCodeText.SkinTxt.TabIndex = 0;
             this.SecCodeText.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.SecCodeText.SkinTxt.WaterText = "验证码";
+            this.SecCodeText.SkinTxt.WaterText = " 验证码";
             this.SecCodeText.TabIndex = 4;
             this.SecCodeText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.SecCodeText.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.SecCodeText.WaterText = "   验证码";
+            this.SecCodeText.WaterText = " 验证码";
             this.SecCodeText.WordWrap = true;
             // 
-            // Login
+            // ForgetPassword
+            // 
+            this.ForgetPassword.Location = new System.Drawing.Point(-69, -107);
+            this.ForgetPassword.Name = "ForgetPassword";
+            this.ForgetPassword.Size = new System.Drawing.Size(347, 263);
+            this.ForgetPassword.TabIndex = 7;
+            this.ForgetPassword.Visible = false;
+            // 
+            // LoginForm
             // 
             this.AcceptButton = this.Btnlogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BackShade = false;
             this.BackToColor = false;
             this.CanResize = false;
@@ -315,7 +328,7 @@ namespace EasyLife
             this.MiniNormlBack = ((System.Drawing.Image)(resources.GetObject("$this.MiniNormlBack")));
             this.MiniSize = new System.Drawing.Size(30, 30);
             this.MobileApi = false;
-            this.Name = "Login";
+            this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EasyLife";
             this.Load += new System.EventHandler(this.Login_Load);
@@ -339,5 +352,6 @@ namespace EasyLife
         private CCWin.SkinControl.SkinButton BtnRegister;
         private CCWin.SkinControl.SkinButton BtnForgetPwd;
         private CCWin.SkinControl.SkinTextBox SecCodeText;
+        private Login.ForgetPassword ForgetPassword;
     }
 }
