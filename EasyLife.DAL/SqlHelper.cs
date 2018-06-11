@@ -105,6 +105,29 @@ namespace EasyLife.DAL
                 }
             }
         }
+
+        internal static DataSet Query(string SQLString, OleDbParameter[] parameters)
+        {
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                OleDbCommand cmd = new OleDbCommand();
+                PrepareCommand(cmd, connection, SQLString, parameters);
+                using (OleDbDataAdapter da = new OleDbDataAdapter(cmd))
+                {
+                    DataSet ds = new DataSet();
+                    try
+                    {
+                        da.Fill(ds, "ds");
+                        cmd.Parameters.Clear();
+                    }
+                    catch (System.Data.SqlClient.SqlException ex)
+                    {
+                        throw new Exception(ex.Message);
+                    }
+                    return ds;
+                }
+            }
+        }
         #endregion
 
     }

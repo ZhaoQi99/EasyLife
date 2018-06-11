@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.OleDb;
 using System.Linq;
 using System.Text;
@@ -16,14 +17,14 @@ namespace EasyLife.DAL
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("select count(*) from [User]");
-            strSql.Append(" where UserName="+"'"+username+"'");
+            strSql.Append(" where UserName=" + "'" + username + "'");
 
             return SqlHelper.Exists(strSql.ToString());
         }
         /// <summary>
         /// 校验用户名和密码
         /// </summary>
-        public bool Check(string username,string password)
+        public bool Check(string username, string password)
         {
             return true;
         }
@@ -97,14 +98,43 @@ namespace EasyLife.DAL
         /// </summary>
         public void Delete(string username)
         {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("delete from [User] ");
+            strSql.Append(" where UserName=@UserName ");
+            OleDbParameter[] parameters = {
+                    new OleDbParameter("@UserName", OleDbType.Integer,4)};
+            parameters[0].Value = username;
 
+            SqlHelper.ExecuteNonQuery(strSql.ToString(), parameters);
         }
         /// <summary>
         /// 得到一个用户对象实体
         /// </summary>
         public EasyLife.Model.User GetModel(string username)
         {
-            return null;
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select UserName,PassWord,Email,Tel,School,Sex,ForgetQue,ForgetAns from [User] ");
+            strSql.Append(" where UserName=@UserName ");
+            OleDbParameter[] parameters = {
+                    new OleDbParameter("@UserName", OleDbType.Integer,4)};
+            parameters[0].Value = username;
+
+            Model.User model = new Model.User();
+            DataSet ds = SqlHelper.Query(strSql.ToString(), parameters);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                model.UserName=ds.Tables[0].Rows[0]["UserName"].ToString();
+                model.PassWord = ds.Tables[0].Rows[0]["PassWord"].ToString();
+                model.Email = ds.Tables[0].Rows[0]["Email"].ToString();
+                model.School = ds.Tables[0].Rows[0]["School"].ToString();
+                model.Tel = ds.Tables[0].Rows[0]["Tel"].ToString();
+                model.Sex = ds.Tables[0].Rows[0]["Sex"].ToString();
+                model.ForgetQue = ds.Tables[0].Rows[0]["ForQue"].ToString();
+                model.ForgetAns = ds.Tables[0].Rows[0]["ForgetAns"].ToString();
+                return model;
+            }
+            else
+                return null; 
         }
     }
 }
