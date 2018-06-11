@@ -216,6 +216,10 @@
     <Content Include="Database.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="Skin\1.jpg" />
+    <EmbeddedResource Include="Skin\2.jpg" />
+    <EmbeddedResource Include="Skin\3.jpg" />
+    <EmbeddedResource Include="Skin\4.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -37,6 +37,7 @@ namespace EasyLife
             if (sm == null) return null;
             return new Bitmap(sm);
         }
+        //对字符串进行MD5加密
         public static string MD5Encrypt(string str)
         {
             MD5 md5 = new MD5CryptoServiceProvider();
