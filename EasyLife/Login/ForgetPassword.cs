@@ -21,6 +21,7 @@ namespace EasyLife.Login
         public ForgetPassword()
         {
             InitializeComponent();
+            SetStyles();
         }
 
         private void BtnForgetPwd_Click(object sender, EventArgs e)
@@ -28,7 +29,12 @@ namespace EasyLife.Login
             this.Diglog = DialogResult.OK;
             this.Visible = false;
         }
-
+        private void SetStyles()
+        {
+            this.SetStyle(ControlStyles.ResizeRedraw, true);//调整大小时重绘
+            this.SetStyle(ControlStyles.UserPaint, true);
+            UpdateStyles();
+        }
         private void BtnCacel_Click(object sender, EventArgs e)
         {
             this.Diglog = DialogResult.Cancel;

@@ -83,11 +83,11 @@
             this.skinLabel7.AutoSize = true;
             this.skinLabel7.BackColor = System.Drawing.Color.Transparent;
             this.skinLabel7.BorderColor = System.Drawing.Color.White;
-            this.skinLabel7.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel7.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.skinLabel7.Location = new System.Drawing.Point(105, 93);
             this.skinLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.skinLabel7.Name = "skinLabel7";
-            this.skinLabel7.Size = new System.Drawing.Size(369, 20);
+            this.skinLabel7.Size = new System.Drawing.Size(387, 20);
             this.skinLabel7.TabIndex = 28;
             this.skinLabel7.Text = "您输入的密码不正确，您要找回密码吗？";
             // 
@@ -107,12 +107,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.skinLabel7);
             this.Controls.Add(this.BtnCacel);
             this.Controls.Add(this.BtnForgetPwd);
             this.Name = "ForgetPassword";
-            this.Size = new System.Drawing.Size(481, 242);
+            this.Size = new System.Drawing.Size(477, 238);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

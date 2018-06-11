@@ -18,6 +18,7 @@ namespace EasyLife
     {
         #region 变量
         SecurityCode securitycode;
+        public EasyLife.BLL.User user = new EasyLife.BLL.User();
         #endregion
         public LoginForm()
         {
@@ -29,6 +30,8 @@ namespace EasyLife
         {
             securitycode.UpdateVerifyCode();
             SecCodePic.Image = securitycode.getImage();
+            ForgetPassword.Left = (this.Width - ForgetPassword.Width) / 2;//还原位置
+            ForgetPassword.Visible = false;
         }
         #endregion
 
@@ -51,49 +54,55 @@ namespace EasyLife
         #region 登录检查
         private void Btnlogin_Click(object sender, EventArgs e)
         {
-            if (TextId.SkinTxt.Text.Length == 0 || TextPwd.SkinTxt.Text.Length == 0)
+            if (securitycode.Check(SecCodeText.Text) == false)//验证码错误
             {
-                MessageBoxEx.Show("用户名或密码不能为空！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            MD5 md5 = new MD5CryptoServiceProvider();
-            byte[] result = md5.ComputeHash(Encoding.Default.GetBytes(SecCodeText.Text.ToString().ToUpper()));//不区分大小写
-            string input = BitConverter.ToString(result);
-            Console.WriteLine(input);
-            Console.WriteLine(securitycode.MD5Encrypt());
-            if (input.Equals(securitycode.MD5Encrypt())==true)//验证码校验通过
-            {
-                if(false)
-                {
-
-                }
-                else
-                {
-                    MessageBoxEx.Show("用户名或密码错误，请重新输入！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    TextId.SkinTxt.Text = "";
-                    TextPwd.SkinTxt.Text = "";
-                    SecCodeText.Text = "";
-                    securitycode.UpdateVerifyCode();
-                    SecCodePic.Image = securitycode.getImage();
-                }
-            }
-            else
-            {
-                MessageBoxEx.Show("验证码错误，请重新输入！", "错误",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxEx.Show("验证码错误，请重新输入！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 securitycode.UpdateVerifyCode();
                 SecCodeText.Text = "";
                 SecCodePic.Image = securitycode.getImage();
                 return;
             }
+            if (TextId.SkinTxt.Text.Length == 0 || TextPwd.SkinTxt.Text.Length == 0)//用户名或密码为空
+            {
+                MessageBoxEx.Show("用户名或密码不能为空！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (user.Exists(TextId.SkinTxt.Text.ToString()) == false)//用户不存在
+            {
+                MessageBoxEx.Show("用户不存在，请重新输入！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                securitycode.UpdateVerifyCode();
+                SecCodeText.Text = "";
+                TextId.Text = "";
+                TextPwd.Text = "";
+                SecCodePic.Image = securitycode.getImage();
+                return;
+            }
+            if (user.Check(TextId.Text, TextPwd.Text) == true)//密码正确
+            {
+                new MainForm().Show();
+                this.Hide();
+                return;
+            }
+            else//密码错误
+            {
+                ForgetPassword.Visible = true;
+                ForgetPassword.Show();
+                TextId.SkinTxt.Text = "";
+                TextPwd.SkinTxt.Text = "";
+                SecCodeText.Text = "";
+                securitycode.UpdateVerifyCode();
+                SecCodePic.Image = securitycode.getImage();
+            }
         }
         #endregion
-        #region 登录跳转
 
+        #region 注册
+        private void BtnRegister_Click(object sender, EventArgs e)
+        {
+            RegisterForm register = new RegisterForm(this);
+            this.Visible = false;
+            register.Show();
+        }
         #endregion
-
-        #region
-
-        #endregion
-
     }
 }

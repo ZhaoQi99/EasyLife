@@ -112,5 +112,10 @@ namespace Login
             byte[] result = md5.ComputeHash(Encoding.UTF8.GetBytes(VerificationText.ToUpper()));//不区分大小写
             return BitConverter.ToString(result);
         }
+        //返回校验结果
+        public bool Check(string text)
+        {
+            return text.ToUpper().Equals(VerificationText.ToUpper());//不区分大小写
+        }
     }
 }

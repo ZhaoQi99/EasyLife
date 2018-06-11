@@ -35,7 +35,6 @@ namespace EasyLife
             this.SecCodePic = new CCWin.SkinControl.SkinPictureBox();
             this.TextId = new CCWin.SkinControl.SkinTextBox();
             this.BtnId = new CCWin.SkinControl.SkinButton();
-            this.BtnJpPwd = new CCWin.SkinControl.SkinButton();
             this.TextPwd = new CCWin.SkinControl.SkinTextBox();
             this.Btnlogin = new CCWin.SkinControl.SkinButton();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
@@ -45,7 +44,6 @@ namespace EasyLife
             this.ForgetPassword = new EasyLife.Login.ForgetPassword();
             ((System.ComponentModel.ISupportInitialize)(this.SecCodePic)).BeginInit();
             this.TextId.SuspendLayout();
-            this.TextPwd.SuspendLayout();
             this.SuspendLayout();
             // 
             // SecCodePic
@@ -95,11 +93,11 @@ namespace EasyLife
             this.TextId.SkinTxt.Size = new System.Drawing.Size(161, 20);
             this.TextId.SkinTxt.TabIndex = 0;
             this.TextId.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.TextId.SkinTxt.WaterText = "用户名/邮箱";
+            this.TextId.SkinTxt.WaterText = "用户名";
             this.TextId.TabIndex = 2;
             this.TextId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextId.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.TextId.WaterText = "用户名/邮箱";
+            this.TextId.WaterText = "用户名";
             this.TextId.WordWrap = true;
             // 
             // BtnId
@@ -121,31 +119,9 @@ namespace EasyLife
             this.BtnId.TabIndex = 36;
             this.BtnId.UseVisualStyleBackColor = false;
             // 
-            // BtnJpPwd
-            // 
-            this.BtnJpPwd.BackColor = System.Drawing.Color.White;
-            this.BtnJpPwd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BtnJpPwd.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(21)))), ((int)(((byte)(26)))));
-            this.BtnJpPwd.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.BtnJpPwd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnJpPwd.DownBack = ((System.Drawing.Image)(resources.GetObject("BtnJpPwd.DownBack")));
-            this.BtnJpPwd.DrawType = CCWin.SkinControl.DrawStyle.Img;
-            this.BtnJpPwd.Location = new System.Drawing.Point(172, 6);
-            this.BtnJpPwd.Margin = new System.Windows.Forms.Padding(0);
-            this.BtnJpPwd.MouseBack = ((System.Drawing.Image)(resources.GetObject("BtnJpPwd.MouseBack")));
-            this.BtnJpPwd.Name = "BtnJpPwd";
-            this.BtnJpPwd.NormlBack = ((System.Drawing.Image)(resources.GetObject("BtnJpPwd.NormlBack")));
-            this.BtnJpPwd.Size = new System.Drawing.Size(15, 16);
-            this.BtnJpPwd.TabIndex = 41;
-            this.ToolTip.SetToolTip(this.BtnJpPwd, "打开软键盘");
-            this.BtnJpPwd.UseVisualStyleBackColor = false;
-            this.BtnJpPwd.Click += new System.EventHandler(this.BtnJpPwd_Click);
-            // 
             // TextPwd
             // 
             this.TextPwd.BackColor = System.Drawing.Color.Transparent;
-            this.TextPwd.Controls.Add(this.ForgetPassword);
-            this.TextPwd.Controls.Add(this.BtnJpPwd);
             this.TextPwd.DownBack = null;
             this.TextPwd.Icon = null;
             this.TextPwd.IconIsButton = true;
@@ -227,6 +203,7 @@ namespace EasyLife
             this.BtnRegister.Size = new System.Drawing.Size(48, 11);
             this.BtnRegister.TabIndex = 5;
             this.BtnRegister.UseVisualStyleBackColor = false;
+            this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
             // BtnForgetPwd
             // 
@@ -291,9 +268,14 @@ namespace EasyLife
             // 
             // ForgetPassword
             // 
-            this.ForgetPassword.Location = new System.Drawing.Point(-69, -107);
+            this.ForgetPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ForgetPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ForgetPassword.BackgroundImage")));
+            this.ForgetPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ForgetPassword.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ForgetPassword.Diglog = System.Windows.Forms.DialogResult.None;
+            this.ForgetPassword.Location = new System.Drawing.Point(578, 94);
             this.ForgetPassword.Name = "ForgetPassword";
-            this.ForgetPassword.Size = new System.Drawing.Size(347, 263);
+            this.ForgetPassword.Size = new System.Drawing.Size(477, 238);
             this.ForgetPassword.TabIndex = 7;
             this.ForgetPassword.Visible = false;
             // 
@@ -313,6 +295,7 @@ namespace EasyLife
             this.CloseDownBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseDownBack")));
             this.CloseMouseBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseMouseBack")));
             this.CloseNormlBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseNormlBack")));
+            this.Controls.Add(this.ForgetPassword);
             this.Controls.Add(this.SecCodeText);
             this.Controls.Add(this.BtnForgetPwd);
             this.Controls.Add(this.BtnRegister);
@@ -329,14 +312,13 @@ namespace EasyLife
             this.MiniSize = new System.Drawing.Size(30, 30);
             this.MobileApi = false;
             this.Name = "LoginForm";
+            this.ShowDrawIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EasyLife";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SecCodePic)).EndInit();
             this.TextId.ResumeLayout(false);
             this.TextId.PerformLayout();
-            this.TextPwd.ResumeLayout(false);
-            this.TextPwd.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -345,7 +327,6 @@ namespace EasyLife
         private CCWin.SkinControl.SkinPictureBox SecCodePic;
         private CCWin.SkinControl.SkinTextBox TextId;
         private CCWin.SkinControl.SkinButton BtnId;
-        private CCWin.SkinControl.SkinButton BtnJpPwd;
         private CCWin.SkinControl.SkinTextBox TextPwd;
         private CCWin.SkinControl.SkinButton Btnlogin;
         private new System.Windows.Forms.ToolTip ToolTip;
