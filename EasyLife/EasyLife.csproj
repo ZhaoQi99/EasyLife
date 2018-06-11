@@ -87,6 +87,7 @@
     <Compile Include="Spider\SpiderNotice.cs" />
     <Compile Include="Spider\SpiderTicket.cs" />
     <Compile Include="Spider\Ticket.cs" />
+    <Compile Include="Tool.cs" />
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
