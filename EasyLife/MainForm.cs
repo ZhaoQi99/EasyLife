@@ -17,6 +17,7 @@ namespace EasyLife
     {
         #region 变量
         ToolStripMenuItem SelectItem;//当前选择的皮肤
+        BLL.Ticket ticket = new BLL.Ticket();
         bool[] Exist = new bool[10];
         #endregion
 
@@ -142,19 +143,67 @@ namespace EasyLife
                     {
 
                     }
-                    CmoBoxFromSta.Items.Add("666");
                     Exist[1] = true;
                 }
             }
         }
         #endregion
 
+        #region 查票page
         private void BtnTicUpdate_Click(object sender, EventArgs e)
         {
-
+            if (CmoBoxFromSta.SelectedItem == null || CmoBoxFromSta.SelectedItem.ToString() == string.Empty)
+            {
+                MessageBoxEx.Show("出发站不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (CmoBoxToSta.SelectedItem == null || CmoBoxToSta.SelectedItem.ToString() == string.Empty)
+            {
+                MessageBoxEx.Show("到达站不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            DateTime SelectDate = DateTime.ParseExact(DateTimeTic.Text, "yyyy-M-d", System.Globalization.CultureInfo.InstalledUICulture);
+            if ((DateTime.Compare(SelectDate, DateTime.Now) < 0) && (SelectDate.ToString("d") != DateTime.Now.ToString("d")))
+            {
+                MessageBoxEx.Show("出发日期不能小于当前系统日期!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            string SelectRadText = RadBtnAdult.Checked == true ? RadBtnAdult.Text : RadBtnStuTic.Text;
+            ticket.Delete(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText);
+            ticket.Update(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText);
+            DataGridViewTicket.DataSource = ticket.GetList(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText).Tables["Ticket"].DefaultView;
+            LabelQueTime2.Text = ticket.QueryDate(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText);
         }
 
         private void BtnTicQuery_Click(object sender, EventArgs e)
+        {
+            if (CmoBoxFromSta.SelectedItem == null||CmoBoxFromSta.SelectedItem.ToString()==string.Empty)
+            {
+                MessageBoxEx.Show("出发站不能为空!", "错误",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (CmoBoxToSta.SelectedItem == null || CmoBoxToSta.SelectedItem.ToString() == string.Empty)
+            {
+                MessageBoxEx.Show("到达站不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            DateTime SelectDate = DateTime.ParseExact(DateTimeTic.Text, "yyyy-M-d", System.Globalization.CultureInfo.InstalledUICulture);
+            if( (DateTime.Compare(SelectDate,DateTime.Now)<0)&&(SelectDate.ToString("d")!=DateTime.Now.ToString("d")))
+            {
+                MessageBoxEx.Show("出发日期不能小于当前系统日期!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            string SelectRadText = RadBtnAdult.Checked == true ? RadBtnAdult.Text : RadBtnStuTic.Text;
+            if (ticket.Exists(CmoBoxFromSta.Text,CmoBoxToSta.Text,SelectDate, SelectRadText) ==false)//尚未查询过
+            {
+                ticket.Update(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText);
+            }
+            DataGridViewTicket.DataSource = ticket.GetList(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText).Tables["Ticket"].DefaultView;
+            LabelQueTime2.Text = ticket.QueryDate(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText);
+        }
+        #endregion
+
+        private void TabShow_Selecting(object sender, TabControlCancelEventArgs e)
         {
 
         }

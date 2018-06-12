@@ -43,7 +43,6 @@
             this.SkinTool2 = new System.Windows.Forms.ToolStripMenuItem();
             this.SkinTool3 = new System.Windows.Forms.ToolStripMenuItem();
             this.SkinTool4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolTip = new CCWin.SkinToolTip(this.components);
             this.SettingsMenu = new CCWin.SkinControl.SkinContextMenuStrip();
             this.InformationUpdate = new System.Windows.Forms.ToolStripMenuItem();
             this.Language = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,9 +55,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TabShow = new CCWin.SkinControl.SkinTabControl();
             this.IndexTabPage = new CCWin.SkinControl.SkinTabPage();
-            this.Loading = new CCWin.SkinControl.SkinProgressIndicator();
+            this.LoadingIndex = new CCWin.SkinControl.SkinProgressIndicator();
             this.TrainTabpage = new CCWin.SkinControl.SkinTabPage();
-            this.skinDataGridView1 = new CCWin.SkinControl.SkinDataGridView();
+            this.DataGridViewTicket = new CCWin.SkinControl.SkinDataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LabelQueTime2 = new System.Windows.Forms.Label();
             this.LabelQueTime = new System.Windows.Forms.Label();
@@ -78,12 +77,13 @@
             this.NoticeTabPage = new CCWin.SkinControl.SkinTabPage();
             this.ExitTabPage = new CCWin.SkinControl.SkinTabPage();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SkinMenu.SuspendLayout();
             this.SettingsMenu.SuspendLayout();
             this.TabShow.SuspendLayout();
             this.IndexTabPage.SuspendLayout();
             this.TrainTabpage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTicket)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -161,13 +161,6 @@
             this.SkinTool4.Tag = "4";
             this.SkinTool4.Text = "恭贺新春";
             this.SkinTool4.Click += new System.EventHandler(this.SkinTool_Click);
-            // 
-            // ToolTip
-            // 
-            this.ToolTip.AutoPopDelay = 5000;
-            this.ToolTip.InitialDelay = 500;
-            this.ToolTip.OwnerDraw = true;
-            this.ToolTip.ReshowDelay = 800;
             // 
             // SettingsMenu
             // 
@@ -302,11 +295,12 @@
             this.TabShow.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.TabShow.TabIndex = 4;
             this.TabShow.SelectedIndexChanged += new System.EventHandler(this.TabShow_SelectedIndexChanged);
+            this.TabShow.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.TabShow_Selecting);
             // 
             // IndexTabPage
             // 
             this.IndexTabPage.BackColor = System.Drawing.Color.White;
-            this.IndexTabPage.Controls.Add(this.Loading);
+            this.IndexTabPage.Controls.Add(this.LoadingIndex);
             this.IndexTabPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.IndexTabPage.ImageIndex = 0;
             this.IndexTabPage.Location = new System.Drawing.Point(0, 36);
@@ -316,23 +310,23 @@
             this.IndexTabPage.TabItemImage = null;
             this.IndexTabPage.Text = "主页";
             // 
-            // Loading
+            // LoadingIndex
             // 
-            this.Loading.AutoStart = true;
-            this.Loading.BackColor = System.Drawing.Color.White;
-            this.Loading.Location = new System.Drawing.Point(318, 162);
-            this.Loading.Name = "Loading";
-            this.Loading.Percentage = 30F;
-            this.Loading.ShowText = true;
-            this.Loading.Size = new System.Drawing.Size(151, 151);
-            this.Loading.TabIndex = 1;
-            this.Loading.Text = "加载中....";
-            this.Loading.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
+            this.LoadingIndex.AutoStart = true;
+            this.LoadingIndex.BackColor = System.Drawing.Color.White;
+            this.LoadingIndex.Location = new System.Drawing.Point(318, 162);
+            this.LoadingIndex.Name = "LoadingIndex";
+            this.LoadingIndex.Percentage = 30F;
+            this.LoadingIndex.ShowText = true;
+            this.LoadingIndex.Size = new System.Drawing.Size(151, 151);
+            this.LoadingIndex.TabIndex = 1;
+            this.LoadingIndex.Text = "加载中....";
+            this.LoadingIndex.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
             // 
             // TrainTabpage
             // 
             this.TrainTabpage.BackColor = System.Drawing.Color.White;
-            this.TrainTabpage.Controls.Add(this.skinDataGridView1);
+            this.TrainTabpage.Controls.Add(this.DataGridViewTicket);
             this.TrainTabpage.Controls.Add(this.groupBox1);
             this.TrainTabpage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TrainTabpage.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -344,17 +338,18 @@
             this.TrainTabpage.TabItemImage = null;
             this.TrainTabpage.Text = "查票";
             // 
-            // skinDataGridView1
+            // DataGridViewTicket
             // 
-            this.skinDataGridView1.AllowUserToAddRows = false;
-            this.skinDataGridView1.AllowUserToDeleteRows = false;
-            this.skinDataGridView1.AllowUserToOrderColumns = true;
+            this.DataGridViewTicket.AllowUserToAddRows = false;
+            this.DataGridViewTicket.AllowUserToDeleteRows = false;
+            this.DataGridViewTicket.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.skinDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.skinDataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.skinDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.skinDataGridView1.ColumnFont = null;
-            this.skinDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.DataGridViewTicket.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGridViewTicket.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.DataGridViewTicket.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.DataGridViewTicket.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DataGridViewTicket.ColumnFont = null;
+            this.DataGridViewTicket.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -362,9 +357,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.skinDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.skinDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.skinDataGridView1.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DataGridViewTicket.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridViewTicket.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewTicket.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -372,15 +367,15 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.skinDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.skinDataGridView1.EnableHeadersVisualStyles = false;
-            this.skinDataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.skinDataGridView1.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinDataGridView1.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView1.Location = new System.Drawing.Point(32, 130);
-            this.skinDataGridView1.Name = "skinDataGridView1";
-            this.skinDataGridView1.ReadOnly = true;
-            this.skinDataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridViewTicket.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataGridViewTicket.EnableHeadersVisualStyles = false;
+            this.DataGridViewTicket.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DataGridViewTicket.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DataGridViewTicket.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DataGridViewTicket.Location = new System.Drawing.Point(32, 130);
+            this.DataGridViewTicket.Name = "DataGridViewTicket";
+            this.DataGridViewTicket.ReadOnly = true;
+            this.DataGridViewTicket.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -388,19 +383,19 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.skinDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.skinDataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.DataGridViewTicket.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.DataGridViewTicket.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.skinDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.skinDataGridView1.RowTemplate.Height = 23;
-            this.skinDataGridView1.Size = new System.Drawing.Size(759, 322);
-            this.skinDataGridView1.TabIndex = 9;
-            this.skinDataGridView1.TitleBack = null;
-            this.skinDataGridView1.TitleBackColorBegin = System.Drawing.Color.White;
-            this.skinDataGridView1.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            this.DataGridViewTicket.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.DataGridViewTicket.RowTemplate.Height = 23;
+            this.DataGridViewTicket.Size = new System.Drawing.Size(759, 396);
+            this.DataGridViewTicket.TabIndex = 9;
+            this.DataGridViewTicket.TitleBack = null;
+            this.DataGridViewTicket.TitleBackColorBegin = System.Drawing.Color.White;
+            this.DataGridViewTicket.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
             // 
             // groupBox1
             // 
@@ -416,10 +411,11 @@
             this.groupBox1.Controls.Add(this.DateTimeTic);
             this.groupBox1.Controls.Add(this.CmoBoxToSta);
             this.groupBox1.Controls.Add(this.CmoBoxFromSta);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox1.Location = new System.Drawing.Point(25, 4);
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(766, 99);
+            this.groupBox1.Size = new System.Drawing.Size(815, 99);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
@@ -443,6 +439,7 @@
             this.LabelQueTime.Size = new System.Drawing.Size(105, 15);
             this.LabelQueTime.TabIndex = 15;
             this.LabelQueTime.Text = "上次查询时间:";
+            this.ToolTip.SetToolTip(this.LabelQueTime, "上次从服务器获取数据的时间");
             // 
             // BtnTicUpdate
             // 
@@ -457,6 +454,7 @@
             this.BtnTicUpdate.Size = new System.Drawing.Size(75, 23);
             this.BtnTicUpdate.TabIndex = 14;
             this.BtnTicUpdate.Text = "更新";
+            this.ToolTip.SetToolTip(this.BtnTicUpdate, "从服务器重新获取数据");
             this.BtnTicUpdate.UseVisualStyleBackColor = false;
             this.BtnTicUpdate.Click += new System.EventHandler(this.BtnTicUpdate_Click);
             // 
@@ -720,7 +718,7 @@
             this.TabShow.ResumeLayout(false);
             this.IndexTabPage.ResumeLayout(false);
             this.TrainTabpage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.skinDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTicket)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -735,7 +733,6 @@
         private System.Windows.Forms.ToolStripMenuItem SkinTool2;
         private System.Windows.Forms.ToolStripMenuItem SkinTool3;
         private System.Windows.Forms.ToolStripMenuItem SkinTool4;
-        private CCWin.SkinToolTip ToolTip;
         private CCWin.SkinControl.SkinContextMenuStrip SettingsMenu;
         private System.Windows.Forms.ToolStripMenuItem Language;
         private System.Windows.Forms.ToolStripMenuItem TopMost;
@@ -755,7 +752,7 @@
         private CCWin.SkinControl.SkinTabPage EmailTabpage;
         private CCWin.SkinControl.SkinTabPage NoticeTabPage;
         private CCWin.SkinControl.SkinTabPage ExitTabPage;
-        private CCWin.SkinControl.SkinProgressIndicator Loading;
+        private CCWin.SkinControl.SkinProgressIndicator LoadingIndex;
         private System.Windows.Forms.GroupBox groupBox1;
         private CCWin.SkinControl.SkinComboBox CmoBoxToSta;
         private CCWin.SkinControl.SkinComboBox CmoBoxFromSta;
@@ -766,9 +763,10 @@
         private System.Windows.Forms.Label LabelFromSta;
         private System.Windows.Forms.Label LabelData;
         private CCWin.SkinControl.SkinButton BtnTicQuery;
-        private CCWin.SkinControl.SkinDataGridView skinDataGridView1;
+        private CCWin.SkinControl.SkinDataGridView DataGridViewTicket;
         private System.Windows.Forms.Label LabelQueTime;
         private CCWin.SkinControl.SkinButton BtnTicUpdate;
         private System.Windows.Forms.Label LabelQueTime2;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }

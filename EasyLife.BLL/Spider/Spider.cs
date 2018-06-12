@@ -11,6 +11,9 @@ namespace EasyLife.Spider
     public class Spider
     {
         private string url = string.Empty;//要爬取的网页的url
+        public HttpWebRequest request;
+        public HttpWebResponse response;
+        public string encode = "UTF-8";//目标url的网页编码格式
         public string Url
         {
             get { return url; }
@@ -19,7 +22,6 @@ namespace EasyLife.Spider
                 url = value;
             }
         }
-        public string encode = "UTF-8";//目标url的网页编码格式
         public string Encode
         {
             get { return encode; }
@@ -36,18 +38,15 @@ namespace EasyLife.Spider
             }
         }
 
-        public HttpWebRequest request;
-        public HttpWebResponse response;
         public Spider(string url)
         {
             this.url = url;
-
         }
-        public void  create()
+        public void Create()
         {
             request = (HttpWebRequest)WebRequest.Create(url);
-            request.Credentials = CredentialCache.DefaultCredentials;
             request.Method = "GET";//默认以GET方式请求网页
+            request.Credentials = CredentialCache.DefaultCredentials;
             request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36";
         }
         //获取目标url的Html代码
@@ -56,7 +55,7 @@ namespace EasyLife.Spider
             string reader = string.Empty;
             try
             {
-                create();
+                Create();
                 response = (HttpWebResponse)request.GetResponse();
                 if (response.StatusCode == HttpStatusCode.OK)
                 {

@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasyLife.Spider
+namespace EasyLife.Model
 {
    public class Ticket
     {
         #region 数据模型
-        private string trainid;//车次
+        private string trainid=string.Empty;//车次
         private string fromstation = "--";//出发站
         private string totation = "--";//到达站
+        private string ticketdate = string.Empty;//车票日期
         private string starttime = "--";//发车时间
         private string arrivetime = "--";//到达时间
         private string lastedtime = "--";//历时
@@ -26,10 +27,11 @@ namespace EasyLife.Spider
         private string yzNum = "--";//硬座
         private string wzNum = "--";//无座
         private string qtNum = "--";//其他
-
+        private string identity = string.Empty;//车票类型(学生/成人)
         public string TrainId { get { return trainid; } set { trainid = value; } }
         public string FromStation { get { return fromstation; } set { fromstation = value; } }
         public string ToStation { get { return totation; } set { totation = value; } }
+        public string TicketDate { get { return ticketdate; } set { ticketdate = value; } }
         public string StartTime { get { return starttime; } set { starttime = value; } }
         public string ArriveTime { get { return arrivetime; }set { arrivetime = value; } }
         public string LastedTime { get { return lastedtime; } set { lastedtime = value; } }
@@ -44,6 +46,7 @@ namespace EasyLife.Spider
         public string YzNum {get{ return yzNum; }set{ yzNum = value; } }
         public string WzNum {get{ return wzNum; }set{ wzNum = value; } }
         public string QtNum {get{ return qtNum; }set{ qtNum = value; } }
+        public string Identity { get { return identity; }set { identity = value; } }
         #endregion
         public Ticket() { }
 

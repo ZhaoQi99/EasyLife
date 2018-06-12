@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
@@ -42,6 +43,16 @@ namespace EasyLife.DAL
                 cmdresult = int.Parse(obj.ToString());
             return cmdresult != 0;
         }
+        public static bool Exists(string sql, OleDbParameter[] parameters)
+        {
+            object obj = ExecuteScalar(sql,parameters);
+            int cmdresult;
+            if ((Object.Equals(obj, null)) || (Object.Equals(obj, System.DBNull.Value)))
+                cmdresult = 0;
+            else
+                cmdresult = int.Parse(obj.ToString());
+            return cmdresult != 0;
+        }
         public static object ExecuteScalar(string SQLString)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
@@ -51,6 +62,30 @@ namespace EasyLife.DAL
                     try
                     {
                         connection.Open();
+                        object obj = cmd.ExecuteScalar();
+                        if ((Object.Equals(obj, null)) || (Object.Equals(obj, System.DBNull.Value)))
+                            return null;
+                        else
+                            return obj;
+                    }
+                    catch (OleDbException e)
+                    {
+                        connection.Close();
+                        throw new Exception(e.Message);
+                    }
+                }
+            }
+        }
+        public static object ExecuteScalar(string SQLString, OleDbParameter[] parameters)
+        {
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                using (OleDbCommand cmd = new OleDbCommand(SQLString, connection))
+                {
+                    try
+                    {
+                        connection.Open();
+                        PrepareCommand(cmd, connection, SQLString, parameters);
                         object obj = cmd.ExecuteScalar();
                         if ((Object.Equals(obj, null)) || (Object.Equals(obj, System.DBNull.Value)))
                             return null;
@@ -105,8 +140,38 @@ namespace EasyLife.DAL
                 }
             }
         }
-
-        internal static DataSet Query(string SQLString, OleDbParameter[] parameters)
+        public static int ExecuteSqlTran(ArrayList SQLStringList)
+        {
+            using (OleDbConnection conn = new OleDbConnection(connectionString))
+            {
+                conn.Open();
+                OleDbCommand cmd = new OleDbCommand();
+                cmd.Connection = conn;
+                OleDbTransaction tx = conn.BeginTransaction();
+                cmd.Transaction = tx;
+                int count = 0;
+                try
+                {
+                    for (int n = 0; n < SQLStringList.Count; n++)
+                    {
+                        string strsql = SQLStringList[n].ToString();
+                        if (strsql.Trim().Length > 1)
+                        {
+                            cmd.CommandText = strsql;
+                            count += cmd.ExecuteNonQuery();
+                        }
+                    }
+                    tx.Commit();
+                }
+                catch (System.Data.OleDb.OleDbException E)
+                {
+                    tx.Rollback();
+                    throw new Exception(E.Message);
+                }
+                return count;
+            }
+        }
+        public static DataSet Query(string SQLString, OleDbParameter[] parameters,string TabName)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
@@ -117,15 +182,34 @@ namespace EasyLife.DAL
                     DataSet ds = new DataSet();
                     try
                     {
-                        da.Fill(ds, "ds");
+                        da.Fill(ds, TabName);
                         cmd.Parameters.Clear();
                     }
-                    catch (System.Data.SqlClient.SqlException ex)
+                    catch (Exception ex)
                     {
                         throw new Exception(ex.Message);
                     }
                     return ds;
                 }
+            }
+        }
+        public static DataSet Query(string SQLString,string TabName)
+        {
+            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            {
+                DataSet ds = new DataSet();
+                try
+                {
+                    connection.Open();
+                    OleDbDataAdapter command = new OleDbDataAdapter(SQLString, connection);
+                    command.Fill(ds, TabName);
+                    connection.Close();
+                }
+                catch (OleDbException ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+                return ds;
             }
         }
         #endregion

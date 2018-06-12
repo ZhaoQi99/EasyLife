@@ -81,12 +81,6 @@
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Send\SendMail.cs" />
-    <Compile Include="Spider\Notice.cs" />
-    <Compile Include="Spider\SchoolId.cs" />
-    <Compile Include="Spider\Spider.cs" />
-    <Compile Include="Spider\SpiderNotice.cs" />
-    <Compile Include="Spider\SpiderTicket.cs" />
-    <Compile Include="Spider\Ticket.cs" />
     <Compile Include="Tool.cs" />
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
