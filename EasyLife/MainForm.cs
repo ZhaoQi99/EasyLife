@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace EasyLife
 {
@@ -15,6 +17,7 @@ namespace EasyLife
     {
         #region 变量
         ToolStripMenuItem SelectItem;//当前选择的皮肤
+        bool[] Exist = new bool[10];
         #endregion
 
         public MainForm()
@@ -111,5 +114,49 @@ namespace EasyLife
 
         }
         #endregion
+
+        #region 选项卡切换事件
+        private void TabShow_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (TabShow.SelectedIndex == 6)
+                Application.Exit();
+            if(TabShow.SelectedIndex==1)
+            {
+                if(Exist[1]==false)//动态加载下拉选项
+                {
+                    try
+                    {
+                        XmlDocument doc = new XmlDocument();
+                        doc.Load(Environment.CurrentDirectory + "/Data/StationName.xml");
+                        XmlNodeList data = doc.DocumentElement.ChildNodes;
+                        foreach(XmlNode node in data)
+                        {
+                            XmlElement xe = (XmlElement)node;
+                            XmlNodeList xnl0 = xe.ChildNodes;
+                            string s = xnl0.Item(0).InnerText;
+                            CmoBoxFromSta.Items.Add(s);
+                            CmoBoxToSta.Items.Add(s);
+                        }
+                    }
+                    catch(Exception)
+                    {
+
+                    }
+                    CmoBoxFromSta.Items.Add("666");
+                    Exist[1] = true;
+                }
+            }
+        }
+        #endregion
+
+        private void BtnTicUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnTicQuery_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
