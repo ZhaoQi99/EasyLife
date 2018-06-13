@@ -68,9 +68,7 @@ namespace EasyLife.BLL
             AllTicket = spider.GetAll();
             for (int i = 0; i < AllTicket.Length; i++)
             {
-                Model.Ticket model = new Model.Ticket();
-                model = AllTicket[i];
-                model.Identity = Id;
+                AllTicket[i].Identity = Id;
             }
             return dal.Add(AllTicket);
         }

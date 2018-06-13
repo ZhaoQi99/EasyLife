@@ -14,6 +14,7 @@ namespace EasyLife.Spider
         public HttpWebRequest request;
         public HttpWebResponse response;
         public string encode = "UTF-8";//目标url的网页编码格式
+        public string Method = string.Empty;
         public string Url
         {
             get { return url; }
@@ -38,14 +39,18 @@ namespace EasyLife.Spider
             }
         }
 
-        public Spider(string url)
+        public Spider(string url,string method)
         {
             this.url = url;
+            this.Method = method;
+            Create();
         }
+        public Spider() { }
+
         public void Create()
         {
             request = (HttpWebRequest)WebRequest.Create(url);
-            request.Method = "GET";//默认以GET方式请求网页
+            request.Method = Method;
             request.Credentials = CredentialCache.DefaultCredentials;
             request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36";
         }

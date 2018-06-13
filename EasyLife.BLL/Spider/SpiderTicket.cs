@@ -15,11 +15,12 @@ namespace EasyLife.Spider
         Dictionary<string, string> map;
         private ArrayList AllTicket = new ArrayList();//所有的车票信息
 
-        public SpiderTicket(string date, string from, string to, string id) : base("")
+        public SpiderTicket(string date, string from, string to, string id) : base()
         {
             string u = "https://kyfw.12306.cn/otn/leftTicket/query?leftTicketDTO.train_date={0}&leftTicketDTO.from_station={1}&leftTicketDTO.to_station={2}&purpose_codes={3}";
             u = string.Format(u, date, from, to, id);
             Url = u;
+            Method = "GET";
         }
 
         public void Get()

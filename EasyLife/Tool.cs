@@ -50,7 +50,7 @@ namespace EasyLife
         //获取车站代码与车站名，并写入xml中
         public static void StationNameXml()
         {
-            Spider.Spider s = new Spider.Spider("https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9055");
+            Spider.Spider s = new Spider.Spider("https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9055","GET");
             string str = s.getHtml();
             string pattern = @"@\S{2,5}?[|](?<Name>\S{1,8}?)[|](?<Code>\S{3,5}?)[|]";
             Regex r = new Regex(pattern, RegexOptions.ExplicitCapture);
