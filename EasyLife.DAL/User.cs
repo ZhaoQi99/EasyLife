@@ -110,7 +110,7 @@ namespace EasyLife.DAL
         /// <summary>
         /// 得到一个用户对象实体
         /// </summary>
-        public EasyLife.Model.User GetModel(string username)
+        public Model.User GetModel(string username)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("select UserName,PassWord,Email,Tel,School,Sex,ForgetQue,ForgetAns from [User] ");
@@ -120,7 +120,7 @@ namespace EasyLife.DAL
             parameters[0].Value = username;
 
             Model.User model = new Model.User();
-            DataSet ds = SqlHelper.Query(strSql.ToString(), parameters);
+            DataSet ds = SqlHelper.Query(strSql.ToString(), parameters,"User");
             if (ds.Tables[0].Rows.Count > 0)
             {
                 model.UserName=ds.Tables[0].Rows[0]["UserName"].ToString();

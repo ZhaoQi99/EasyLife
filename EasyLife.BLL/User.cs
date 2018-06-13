@@ -8,7 +8,7 @@ namespace EasyLife.BLL
 {
     public class User
     {
-        private readonly EasyLife.DAL. User dal= new EasyLife.DAL.User();
+        private readonly DAL. User dal= new DAL.User();
         /// <summary>
         /// 是否存在该用户
         /// </summary>
