@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
@@ -18,6 +19,7 @@ namespace EasyLife
         #region 变量
         ToolStripMenuItem SelectItem;//当前选择的皮肤
         BLL.Ticket ticket = new BLL.Ticket();
+        BLL.Notice notice = new BLL.Notice();
         bool[] Exist = new bool[10];
         #endregion
 
@@ -149,7 +151,7 @@ namespace EasyLife
         }
         #endregion
 
-        #region 查票page
+        #region 查票Page
         private void BtnTicUpdate_Click(object sender, EventArgs e)
         {
             if (CmoBoxFromSta.SelectedItem == null || CmoBoxFromSta.SelectedItem.ToString() == string.Empty)
@@ -174,7 +176,6 @@ namespace EasyLife
             DataGridViewTicket.DataSource = ticket.GetList(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText).Tables["Ticket"].DefaultView;
             LabelQueTime2.Text = ticket.QueryDate(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText);
         }
-
         private void BtnTicQuery_Click(object sender, EventArgs e)
         {
             if (CmoBoxFromSta.SelectedItem == null||CmoBoxFromSta.SelectedItem.ToString()==string.Empty)
@@ -203,9 +204,66 @@ namespace EasyLife
         }
         #endregion
 
-        private void TabShow_Selecting(object sender, TabControlCancelEventArgs e)
+        #region 校园新闻Page
+        private void BtnQueNotice_Click(object sender, EventArgs e)
         {
-
+            if (CmoBoxDep.Text == string.Empty)
+            {
+                MessageBoxEx.Show("所属部门不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (CmoBoxType.Text == string.Empty)
+            {
+                MessageBoxEx.Show("类型不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (DateTImePicNotice.Text!=string.Empty&&Regex.IsMatch(DateTImePicNotice.Text, @"\d{4}-\d{1,2}-\d{1,2}") == false)
+            {
+                MessageBoxEx.Show("日期格式错误!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            string Department = CmoBoxDep.Text.ToString();
+            string Type = CmoBoxType.Text.ToString();
+            string Date = DateTImePicNotice.Text;
+            DataGridViewNotice.DataSource = notice.GetList(Department, Type, Date).Tables["Notice"].DefaultView;
         }
+        private void BtnUpdNotice_Click(object sender, EventArgs e)
+        {
+            if(CmoBoxDep.Text==string.Empty)
+            {
+                MessageBoxEx.Show("所属部门不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (CmoBoxType.Text==string.Empty)
+            {
+                MessageBoxEx.Show("类型不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            notice.Update(CmoBoxDep.Text.ToString(), CmoBoxType.Text.ToString());
+            string Department = CmoBoxDep.Text.ToString();
+            string Type = CmoBoxType.Text.ToString();
+            string Date = DateTImePicNotice.Text;
+            DataGridViewNotice.DataSource = notice.GetList(Department, Type, Date).Tables["Notice"].DefaultView;
+        }
+        private void DataGridViewNotice_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.ColumnIndex==3)
+            {
+                this.DataGridViewNotice.CurrentCell = this.DataGridViewNotice.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                string Link = this.DataGridViewNotice.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+                System.Diagnostics.Process.Start(Link);
+            }
+        }
+        private void CmoBoxType_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CmoBoxType.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void CmoBoxDep_SelectedValueChanged(object sender, EventArgs e)
+        {
+            CmoBoxDep.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+        #endregion
+
     }
 }

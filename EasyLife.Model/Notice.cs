@@ -9,9 +9,11 @@ namespace EasyLife.Model
     public class Notice
     {
         #region 数据模型
-        private string title;
-        private string link;
-        private DateTime date;
+        private string title=string.Empty;
+        private string link=string.Empty;
+        private DateTime date=DateTime.Now;
+        private string type=string.Empty;
+        private string department=string.Empty;
         public string Title
         {
             get
@@ -43,6 +45,28 @@ namespace EasyLife.Model
             get
             {
                 return link;
+            }
+        }
+        public string Type
+        {
+            get
+            {
+                return type;
+            }
+            set
+            {
+                type = value;
+            }
+        }
+        public string Department
+        {
+            get
+            {
+                return department;
+            }
+            set
+            {
+                department = value;
             }
         }
         #endregion

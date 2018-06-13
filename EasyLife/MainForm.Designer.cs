@@ -35,6 +35,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             CCWin.CmSysButton cmSysButton1 = new CCWin.CmSysButton();
             CCWin.CmSysButton cmSysButton2 = new CCWin.CmSysButton();
             this.SkinMenu = new CCWin.SkinControl.SkinContextMenuStrip();
@@ -71,13 +75,23 @@
             this.DateTimeTic = new CCWin.SkinControl.SkinDateTimePicker();
             this.CmoBoxToSta = new CCWin.SkinControl.SkinComboBox();
             this.CmoBoxFromSta = new CCWin.SkinControl.SkinComboBox();
-            this.TelTabpage = new CCWin.SkinControl.SkinTabPage();
             this.EmailTabpage = new CCWin.SkinControl.SkinTabPage();
+            this.TelTabpage = new CCWin.SkinControl.SkinTabPage();
             this.NewsTabpage = new CCWin.SkinControl.SkinTabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.CmoBoxDep = new CCWin.SkinControl.SkinComboBox();
+            this.LblDate = new System.Windows.Forms.Label();
+            this.CmoBoxType = new CCWin.SkinControl.SkinComboBox();
+            this.LblNoticeDep = new System.Windows.Forms.Label();
+            this.DateTImePicNotice = new CCWin.SkinControl.SkinDateTimePicker();
+            this.LblNoticeType = new System.Windows.Forms.Label();
             this.NoticeTabPage = new CCWin.SkinControl.SkinTabPage();
             this.ExitTabPage = new CCWin.SkinControl.SkinTabPage();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.BtnQueNotice = new CCWin.SkinControl.SkinButton();
+            this.BtnUpdNotice = new CCWin.SkinControl.SkinButton();
+            this.DataGridViewNotice = new CCWin.SkinControl.SkinDataGridView();
             this.SkinMenu.SuspendLayout();
             this.SettingsMenu.SuspendLayout();
             this.TabShow.SuspendLayout();
@@ -85,6 +99,9 @@
             this.TrainTabpage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTicket)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.NewsTabpage.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewNotice)).BeginInit();
             this.SuspendLayout();
             // 
             // SkinMenu
@@ -289,13 +306,12 @@
             this.TabShow.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
             this.TabShow.PageNorml = null;
             this.TabShow.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TabShow.SelectedIndex = 1;
+            this.TabShow.SelectedIndex = 4;
             this.TabShow.ShowToolTips = true;
             this.TabShow.Size = new System.Drawing.Size(815, 596);
             this.TabShow.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.TabShow.TabIndex = 4;
             this.TabShow.SelectedIndexChanged += new System.EventHandler(this.TabShow_SelectedIndexChanged);
-            this.TabShow.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.TabShow_Selecting);
             // 
             // IndexTabPage
             // 
@@ -588,6 +604,18 @@
             this.CmoBoxFromSta.TabIndex = 7;
             this.CmoBoxFromSta.WaterText = "出发站";
             // 
+            // EmailTabpage
+            // 
+            this.EmailTabpage.BackColor = System.Drawing.Color.White;
+            this.EmailTabpage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EmailTabpage.ImageIndex = 4;
+            this.EmailTabpage.Location = new System.Drawing.Point(0, 36);
+            this.EmailTabpage.Name = "EmailTabpage";
+            this.EmailTabpage.Size = new System.Drawing.Size(815, 560);
+            this.EmailTabpage.TabIndex = 6;
+            this.EmailTabpage.TabItemImage = null;
+            this.EmailTabpage.Text = "邮件发送";
+            // 
             // TelTabpage
             // 
             this.TelTabpage.BackColor = System.Drawing.Color.White;
@@ -602,22 +630,12 @@
             this.TelTabpage.Text = "电话查询";
             this.TelTabpage.UseVisualStyleBackColor = true;
             // 
-            // EmailTabpage
-            // 
-            this.EmailTabpage.BackColor = System.Drawing.Color.White;
-            this.EmailTabpage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EmailTabpage.ImageIndex = 4;
-            this.EmailTabpage.Location = new System.Drawing.Point(0, 36);
-            this.EmailTabpage.Name = "EmailTabpage";
-            this.EmailTabpage.Size = new System.Drawing.Size(815, 560);
-            this.EmailTabpage.TabIndex = 6;
-            this.EmailTabpage.TabItemImage = null;
-            this.EmailTabpage.Text = "邮件发送";
-            // 
             // NewsTabpage
             // 
             this.NewsTabpage.BackColor = System.Drawing.Color.White;
             this.NewsTabpage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.NewsTabpage.Controls.Add(this.DataGridViewNotice);
+            this.NewsTabpage.Controls.Add(this.groupBox2);
             this.NewsTabpage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NewsTabpage.ImageIndex = 3;
             this.NewsTabpage.Location = new System.Drawing.Point(0, 36);
@@ -626,6 +644,96 @@
             this.NewsTabpage.TabIndex = 0;
             this.NewsTabpage.TabItemImage = null;
             this.NewsTabpage.Text = "校园新闻";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.BtnUpdNotice);
+            this.groupBox2.Controls.Add(this.BtnQueNotice);
+            this.groupBox2.Controls.Add(this.CmoBoxDep);
+            this.groupBox2.Controls.Add(this.LblDate);
+            this.groupBox2.Controls.Add(this.CmoBoxType);
+            this.groupBox2.Controls.Add(this.LblNoticeDep);
+            this.groupBox2.Controls.Add(this.DateTImePicNotice);
+            this.groupBox2.Controls.Add(this.LblNoticeType);
+            this.groupBox2.Location = new System.Drawing.Point(11, 5);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(790, 122);
+            this.groupBox2.TabIndex = 19;
+            this.groupBox2.TabStop = false;
+            // 
+            // CmoBoxDep
+            // 
+            this.CmoBoxDep.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CmoBoxDep.FormattingEnabled = true;
+            this.CmoBoxDep.Items.AddRange(new object[] {
+            "学校主页",
+            "计算机科学学院"});
+            this.CmoBoxDep.Location = new System.Drawing.Point(288, 39);
+            this.CmoBoxDep.Name = "CmoBoxDep";
+            this.CmoBoxDep.Size = new System.Drawing.Size(121, 26);
+            this.CmoBoxDep.TabIndex = 14;
+            this.CmoBoxDep.WaterText = "学院/部门";
+            this.CmoBoxDep.SelectedValueChanged += new System.EventHandler(this.CmoBoxDep_SelectedValueChanged);
+            // 
+            // LblDate
+            // 
+            this.LblDate.AutoSize = true;
+            this.LblDate.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblDate.Location = new System.Drawing.Point(425, 45);
+            this.LblDate.Name = "LblDate";
+            this.LblDate.Size = new System.Drawing.Size(39, 15);
+            this.LblDate.TabIndex = 18;
+            this.LblDate.Text = "日期";
+            // 
+            // CmoBoxType
+            // 
+            this.CmoBoxType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CmoBoxType.FormattingEnabled = true;
+            this.CmoBoxType.Items.AddRange(new object[] {
+            "新闻",
+            "通知"});
+            this.CmoBoxType.Location = new System.Drawing.Point(64, 39);
+            this.CmoBoxType.Name = "CmoBoxType";
+            this.CmoBoxType.Size = new System.Drawing.Size(121, 26);
+            this.CmoBoxType.TabIndex = 13;
+            this.CmoBoxType.WaterText = "新闻/通知";
+            this.CmoBoxType.SelectedValueChanged += new System.EventHandler(this.CmoBoxType_SelectedValueChanged);
+            // 
+            // LblNoticeDep
+            // 
+            this.LblNoticeDep.AutoSize = true;
+            this.LblNoticeDep.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblNoticeDep.Location = new System.Drawing.Point(201, 45);
+            this.LblNoticeDep.Name = "LblNoticeDep";
+            this.LblNoticeDep.Size = new System.Drawing.Size(71, 15);
+            this.LblNoticeDep.TabIndex = 17;
+            this.LblNoticeDep.Text = "所属部门";
+            // 
+            // DateTImePicNotice
+            // 
+            this.DateTImePicNotice.BackColor = System.Drawing.Color.Transparent;
+            this.DateTImePicNotice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DateTImePicNotice.DropDownHeight = 180;
+            this.DateTImePicNotice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.DateTImePicNotice.DropDownWidth = 120;
+            this.DateTImePicNotice.font = new System.Drawing.Font("微软雅黑", 9F);
+            this.DateTImePicNotice.Items = null;
+            this.DateTImePicNotice.Location = new System.Drawing.Point(480, 38);
+            this.DateTImePicNotice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DateTImePicNotice.Name = "DateTImePicNotice";
+            this.DateTImePicNotice.Size = new System.Drawing.Size(152, 28);
+            this.DateTImePicNotice.TabIndex = 15;
+            this.DateTImePicNotice.text = "";
+            // 
+            // LblNoticeType
+            // 
+            this.LblNoticeType.AutoSize = true;
+            this.LblNoticeType.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblNoticeType.Location = new System.Drawing.Point(9, 45);
+            this.LblNoticeType.Name = "LblNoticeType";
+            this.LblNoticeType.Size = new System.Drawing.Size(39, 15);
+            this.LblNoticeType.TabIndex = 16;
+            this.LblNoticeType.Text = "类型";
             // 
             // NoticeTabPage
             // 
@@ -662,6 +770,88 @@
             this.imageList.Images.SetKeyName(4, "ToolSendMail.png");
             this.imageList.Images.SetKeyName(5, "ToolAuto.ico");
             this.imageList.Images.SetKeyName(6, "ToolExit.png");
+            // 
+            // BtnQueNotice
+            // 
+            this.BtnQueNotice.BackColor = System.Drawing.Color.Transparent;
+            this.BtnQueNotice.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.BtnQueNotice.DownBack = null;
+            this.BtnQueNotice.Location = new System.Drawing.Point(680, 24);
+            this.BtnQueNotice.MouseBack = null;
+            this.BtnQueNotice.Name = "BtnQueNotice";
+            this.BtnQueNotice.NormlBack = null;
+            this.BtnQueNotice.Size = new System.Drawing.Size(88, 36);
+            this.BtnQueNotice.TabIndex = 19;
+            this.BtnQueNotice.Text = "查询";
+            this.BtnQueNotice.UseVisualStyleBackColor = false;
+            this.BtnQueNotice.Click += new System.EventHandler(this.BtnQueNotice_Click);
+            // 
+            // BtnUpdNotice
+            // 
+            this.BtnUpdNotice.BackColor = System.Drawing.Color.Transparent;
+            this.BtnUpdNotice.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.BtnUpdNotice.DownBack = null;
+            this.BtnUpdNotice.Location = new System.Drawing.Point(680, 69);
+            this.BtnUpdNotice.MouseBack = null;
+            this.BtnUpdNotice.Name = "BtnUpdNotice";
+            this.BtnUpdNotice.NormlBack = null;
+            this.BtnUpdNotice.Size = new System.Drawing.Size(88, 36);
+            this.BtnUpdNotice.TabIndex = 20;
+            this.BtnUpdNotice.Text = "更新";
+            this.BtnUpdNotice.UseVisualStyleBackColor = false;
+            this.BtnUpdNotice.Click += new System.EventHandler(this.BtnUpdNotice_Click);
+            // 
+            // DataGridViewNotice
+            // 
+            this.DataGridViewNotice.AllowUserToAddRows = false;
+            this.DataGridViewNotice.AllowUserToDeleteRows = false;
+            this.DataGridViewNotice.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.DataGridViewNotice.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.DataGridViewNotice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DataGridViewNotice.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.DataGridViewNotice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DataGridViewNotice.ColumnFont = null;
+            this.DataGridViewNotice.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridViewNotice.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.DataGridViewNotice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewNotice.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewNotice.DefaultCellStyle = dataGridViewCellStyle8;
+            this.DataGridViewNotice.EnableHeadersVisualStyles = false;
+            this.DataGridViewNotice.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DataGridViewNotice.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DataGridViewNotice.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DataGridViewNotice.Location = new System.Drawing.Point(11, 150);
+            this.DataGridViewNotice.Name = "DataGridViewNotice";
+            this.DataGridViewNotice.ReadOnly = true;
+            this.DataGridViewNotice.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridViewNotice.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DataGridViewNotice.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.DataGridViewNotice.RowTemplate.Height = 23;
+            this.DataGridViewNotice.Size = new System.Drawing.Size(797, 323);
+            this.DataGridViewNotice.TabIndex = 20;
+            this.DataGridViewNotice.TitleBack = null;
+            this.DataGridViewNotice.TitleBackColorBegin = System.Drawing.Color.White;
+            this.DataGridViewNotice.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            this.DataGridViewNotice.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewNotice_CellContentClick);
             // 
             // MainForm
             // 
@@ -721,6 +911,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTicket)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.NewsTabpage.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewNotice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -768,5 +962,15 @@
         private CCWin.SkinControl.SkinButton BtnTicUpdate;
         private System.Windows.Forms.Label LabelQueTime2;
         private System.Windows.Forms.ToolTip ToolTip;
+        private System.Windows.Forms.Label LblDate;
+        private System.Windows.Forms.Label LblNoticeDep;
+        private System.Windows.Forms.Label LblNoticeType;
+        private CCWin.SkinControl.SkinDateTimePicker DateTImePicNotice;
+        private CCWin.SkinControl.SkinComboBox CmoBoxDep;
+        private CCWin.SkinControl.SkinComboBox CmoBoxType;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private CCWin.SkinControl.SkinButton BtnQueNotice;
+        private CCWin.SkinControl.SkinButton BtnUpdNotice;
+        private CCWin.SkinControl.SkinDataGridView DataGridViewNotice;
     }
 }

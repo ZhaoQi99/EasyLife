@@ -45,7 +45,7 @@ namespace EasyLife.DAL
         }
         public static bool Exists(string sql, OleDbParameter[] parameters)
         {
-            object obj = ExecuteScalar(sql,parameters);
+            object obj = ExecuteScalar(sql, parameters);
             int cmdresult;
             if ((Object.Equals(obj, null)) || (Object.Equals(obj, System.DBNull.Value)))
                 cmdresult = 0;
@@ -171,7 +171,7 @@ namespace EasyLife.DAL
                 return count;
             }
         }
-        public static DataSet Query(string SQLString, OleDbParameter[] parameters,string TabName)
+        public static DataSet Query(string SQLString, OleDbParameter[] parameters, string TabName)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
@@ -193,7 +193,7 @@ namespace EasyLife.DAL
                 }
             }
         }
-        public static DataSet Query(string SQLString,string TabName)
+        public static DataSet Query(string SQLString, string TabName)
         {
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
@@ -210,6 +210,38 @@ namespace EasyLife.DAL
                     throw new Exception(ex.Message);
                 }
                 return ds;
+            }
+        }
+        public static OleDbDataReader ExecuteReader(string SQLString, params OleDbParameter[] cmdParms)
+        {
+            OleDbConnection connection = new OleDbConnection(connectionString);
+            OleDbCommand cmd = new OleDbCommand(SQLString, connection);
+            try
+            {
+                PrepareCommand(cmd, connection, SQLString, cmdParms);
+                OleDbDataReader myReader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                cmd.Parameters.Clear();
+                return myReader;
+            }
+            catch (OleDbException e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        public static OleDbDataReader ExecuteReader(string SQLString)
+        {
+            OleDbConnection connection = new OleDbConnection(connectionString);
+            OleDbCommand cmd = new OleDbCommand(SQLString, connection);
+            try
+            {
+                connection.Open();
+                OleDbDataReader myReader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                return myReader;
+            }
+            catch (OleDbException e)
+            {
+                throw new Exception(e.Message);
             }
         }
         #endregion
