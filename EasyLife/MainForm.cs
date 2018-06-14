@@ -4,8 +4,10 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -38,6 +40,7 @@ namespace EasyLife
             LoadingIndex.Show();
             TimerLoad.Enabled = true;
             TimerLoad.Interval = 4000;
+            LblVersion.Text="当前版本:v"+Assembly.GetExecutingAssembly().GetName().Version.ToString();
         }
         #endregion
 
@@ -109,12 +112,13 @@ namespace EasyLife
         //访问EasyLife
         private void Link_Click(object sender, EventArgs e)
         {
-
+            Process.Start("http://zhaoqi99.github.io/EasyLife");
         }
         //关于
         private void About_Click(object sender, EventArgs e)
         {
-
+            AboutBox about= new AboutBox();
+            about.Show();
         }
         //选择语言
         private void Language_Click(object sender, EventArgs e)

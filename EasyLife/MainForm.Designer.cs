@@ -60,7 +60,7 @@
             this.About = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.Exit = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblVersion = new System.Windows.Forms.Label();
             this.TabShow = new CCWin.SkinControl.SkinTabControl();
             this.IndexTabPage = new CCWin.SkinControl.SkinTabPage();
             this.GouBoxWeather = new CCWin.SkinControl.SkinGroupBox();
@@ -134,6 +134,9 @@
             this.NumUpDownPort = new System.Windows.Forms.NumericUpDown();
             this.LblEmailPort = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.BtnSendMail = new CCWin.SkinControl.SkinButton();
+            this.TextBoxMailTo = new System.Windows.Forms.TextBox();
+            this.LblMailto = new System.Windows.Forms.Label();
             this.LblSubject = new System.Windows.Forms.Label();
             this.EmailSubject = new System.Windows.Forms.TextBox();
             this.RichTextBoxBodey = new System.Windows.Forms.RichTextBox();
@@ -142,10 +145,7 @@
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.TimerLoad = new System.Windows.Forms.Timer(this.components);
-            this.LblMailto = new System.Windows.Forms.Label();
-            this.TextBoxMailTo = new System.Windows.Forms.TextBox();
             this.helpProvider = new System.Windows.Forms.HelpProvider();
-            this.BtnSendMail = new CCWin.SkinControl.SkinButton();
             this.SkinMenu.SuspendLayout();
             this.SettingsMenu.SuspendLayout();
             this.TabShow.SuspendLayout();
@@ -334,17 +334,17 @@
             this.Exit.Text = "退出";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // label1
+            // LblVersion
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(8, 640);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "当前版本:V0.1.0";
+            this.LblVersion.AutoSize = true;
+            this.LblVersion.BackColor = System.Drawing.Color.Transparent;
+            this.LblVersion.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblVersion.ForeColor = System.Drawing.Color.White;
+            this.LblVersion.Location = new System.Drawing.Point(8, 640);
+            this.LblVersion.Name = "LblVersion";
+            this.LblVersion.Size = new System.Drawing.Size(155, 19);
+            this.LblVersion.TabIndex = 3;
+            this.LblVersion.Text = "当前版本:V0.1.0";
             // 
             // TabShow
             // 
@@ -1461,6 +1461,41 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "邮件内容";
             // 
+            // BtnSendMail
+            // 
+            this.BtnSendMail.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSendMail.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.BtnSendMail.DownBack = null;
+            this.BtnSendMail.Location = new System.Drawing.Point(580, 22);
+            this.BtnSendMail.MouseBack = null;
+            this.BtnSendMail.Name = "BtnSendMail";
+            this.BtnSendMail.NormlBack = null;
+            this.BtnSendMail.Size = new System.Drawing.Size(75, 35);
+            this.BtnSendMail.TabIndex = 5;
+            this.BtnSendMail.Text = "发送";
+            this.BtnSendMail.UseVisualStyleBackColor = false;
+            this.BtnSendMail.Click += new System.EventHandler(this.BtnSendMail_Click);
+            // 
+            // TextBoxMailTo
+            // 
+            this.helpProvider.SetHelpKeyword(this.TextBoxMailTo, "87686786");
+            this.helpProvider.SetHelpNavigator(this.TextBoxMailTo, System.Windows.Forms.HelpNavigator.KeywordIndex);
+            this.helpProvider.SetHelpString(this.TextBoxMailTo, "111");
+            this.TextBoxMailTo.Location = new System.Drawing.Point(115, 84);
+            this.TextBoxMailTo.Name = "TextBoxMailTo";
+            this.helpProvider.SetShowHelp(this.TextBoxMailTo, true);
+            this.TextBoxMailTo.Size = new System.Drawing.Size(540, 28);
+            this.TextBoxMailTo.TabIndex = 4;
+            // 
+            // LblMailto
+            // 
+            this.LblMailto.AutoSize = true;
+            this.LblMailto.Location = new System.Drawing.Point(21, 93);
+            this.LblMailto.Name = "LblMailto";
+            this.LblMailto.Size = new System.Drawing.Size(66, 19);
+            this.LblMailto.TabIndex = 3;
+            this.LblMailto.Text = "收件人";
+            // 
             // LblSubject
             // 
             this.LblSubject.AutoSize = true;
@@ -1527,41 +1562,6 @@
             // 
             this.TimerLoad.Tick += new System.EventHandler(this.TimerLoad_Tick);
             // 
-            // LblMailto
-            // 
-            this.LblMailto.AutoSize = true;
-            this.LblMailto.Location = new System.Drawing.Point(21, 93);
-            this.LblMailto.Name = "LblMailto";
-            this.LblMailto.Size = new System.Drawing.Size(66, 19);
-            this.LblMailto.TabIndex = 3;
-            this.LblMailto.Text = "收件人";
-            // 
-            // TextBoxMailTo
-            // 
-            this.helpProvider.SetHelpKeyword(this.TextBoxMailTo, "87686786");
-            this.helpProvider.SetHelpNavigator(this.TextBoxMailTo, System.Windows.Forms.HelpNavigator.KeywordIndex);
-            this.helpProvider.SetHelpString(this.TextBoxMailTo, "111");
-            this.TextBoxMailTo.Location = new System.Drawing.Point(115, 84);
-            this.TextBoxMailTo.Name = "TextBoxMailTo";
-            this.helpProvider.SetShowHelp(this.TextBoxMailTo, true);
-            this.TextBoxMailTo.Size = new System.Drawing.Size(540, 28);
-            this.TextBoxMailTo.TabIndex = 4;
-            // 
-            // BtnSendMail
-            // 
-            this.BtnSendMail.BackColor = System.Drawing.Color.Transparent;
-            this.BtnSendMail.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.BtnSendMail.DownBack = null;
-            this.BtnSendMail.Location = new System.Drawing.Point(580, 22);
-            this.BtnSendMail.MouseBack = null;
-            this.BtnSendMail.Name = "BtnSendMail";
-            this.BtnSendMail.NormlBack = null;
-            this.BtnSendMail.Size = new System.Drawing.Size(75, 35);
-            this.BtnSendMail.TabIndex = 5;
-            this.BtnSendMail.Text = "发送";
-            this.BtnSendMail.UseVisualStyleBackColor = false;
-            this.BtnSendMail.Click += new System.EventHandler(this.BtnSendMail_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -1576,7 +1576,7 @@
             this.CloseMouseBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseMouseBack")));
             this.CloseNormlBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseNormlBack")));
             this.Controls.Add(this.TabShow);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LblVersion);
             this.EffectCaption = CCWin.TitleType.Title;
             this.MaximizeBox = false;
             this.MiniDownBack = ((System.Drawing.Image)(resources.GetObject("$this.MiniDownBack")));
@@ -1662,7 +1662,7 @@
         private System.Windows.Forms.ToolStripMenuItem Exit;
         private System.Windows.Forms.ToolStripMenuItem Link;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblVersion;
         private CCWin.SkinControl.SkinTabControl TabShow;
         private CCWin.SkinControl.SkinTabPage NewsTabpage;
         private CCWin.SkinControl.SkinTabPage TelTabpage;
