@@ -64,21 +64,21 @@
             this.TabShow = new CCWin.SkinControl.SkinTabControl();
             this.IndexTabPage = new CCWin.SkinControl.SkinTabPage();
             this.GouBoxWeather = new CCWin.SkinControl.SkinGroupBox();
+            this.LoadingIndex = new CCWin.SkinControl.SkinProgressIndicator();
+            this.LblLife = new CCWin.SkinControl.SkinLabel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.LoadingIndex = new CCWin.SkinControl.SkinProgressIndicator();
             this.LblLoc = new System.Windows.Forms.Label();
             this.LblCity = new CCWin.SkinControl.SkinLabel();
             this.LblWeaComp = new CCWin.SkinControl.SkinLabel();
-            this.LblLife = new CCWin.SkinControl.SkinLabel();
             this.LblThreeDay = new System.Windows.Forms.Label();
             this.LblNextDay = new System.Windows.Forms.Label();
             this.LblWeaSim = new System.Windows.Forms.Label();
             this.LblWind = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.TrainTabpage = new CCWin.SkinControl.SkinTabPage();
             this.DataGridViewTicket = new CCWin.SkinControl.SkinDataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -120,11 +120,32 @@
             this.DateTImePicNotice = new CCWin.SkinControl.SkinDateTimePicker();
             this.LblNoticeType = new System.Windows.Forms.Label();
             this.EmailTabpage = new CCWin.SkinControl.SkinTabPage();
+            this.GupBoxEmailSetting = new System.Windows.Forms.GroupBox();
+            this.LblMailHost = new System.Windows.Forms.Label();
+            this.CmoBoxMailHost = new System.Windows.Forms.ComboBox();
+            this.TextBoxPwd = new System.Windows.Forms.TextBox();
+            this.LblMailFromPwd = new System.Windows.Forms.Label();
+            this.TextBoxMailFromName = new System.Windows.Forms.TextBox();
+            this.TextBoxMailFrom = new System.Windows.Forms.TextBox();
+            this.LblFromWho = new System.Windows.Forms.Label();
+            this.CmoBoxPrior = new System.Windows.Forms.ComboBox();
+            this.lblPrior = new System.Windows.Forms.Label();
+            this.LblMailFrom = new System.Windows.Forms.Label();
+            this.NumUpDownPort = new System.Windows.Forms.NumericUpDown();
+            this.LblEmailPort = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.LblSubject = new System.Windows.Forms.Label();
+            this.EmailSubject = new System.Windows.Forms.TextBox();
+            this.RichTextBoxBodey = new System.Windows.Forms.RichTextBox();
             this.NoticeTabPage = new CCWin.SkinControl.SkinTabPage();
             this.ExitTabPage = new CCWin.SkinControl.SkinTabPage();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.TimerLoad = new System.Windows.Forms.Timer(this.components);
+            this.LblMailto = new System.Windows.Forms.Label();
+            this.TextBoxMailTo = new System.Windows.Forms.TextBox();
+            this.helpProvider = new System.Windows.Forms.HelpProvider();
+            this.BtnSendMail = new CCWin.SkinControl.SkinButton();
             this.SkinMenu.SuspendLayout();
             this.SettingsMenu.SuspendLayout();
             this.TabShow.SuspendLayout();
@@ -132,10 +153,10 @@
             this.GouBoxWeather.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.TrainTabpage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTicket)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -145,6 +166,10 @@
             this.NewsTabpage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewNotice)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.EmailTabpage.SuspendLayout();
+            this.GupBoxEmailSetting.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumUpDownPort)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // SkinMenu
@@ -349,7 +374,7 @@
             this.TabShow.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
             this.TabShow.PageNorml = null;
             this.TabShow.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TabShow.SelectedIndex = 0;
+            this.TabShow.SelectedIndex = 4;
             this.TabShow.ShowToolTips = true;
             this.TabShow.Size = new System.Drawing.Size(815, 596);
             this.TabShow.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
@@ -403,6 +428,32 @@
             this.GouBoxWeather.TitleRectBackColor = System.Drawing.Color.Lime;
             this.GouBoxWeather.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
             // 
+            // LoadingIndex
+            // 
+            this.LoadingIndex.AutoStart = true;
+            this.LoadingIndex.BackColor = System.Drawing.Color.Transparent;
+            this.LoadingIndex.Location = new System.Drawing.Point(344, 185);
+            this.LoadingIndex.Name = "LoadingIndex";
+            this.LoadingIndex.Percentage = 30F;
+            this.LoadingIndex.ShowText = true;
+            this.LoadingIndex.Size = new System.Drawing.Size(151, 151);
+            this.LoadingIndex.TabIndex = 1;
+            this.LoadingIndex.Text = "加载中....";
+            this.LoadingIndex.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
+            // 
+            // LblLife
+            // 
+            this.LblLife.ArtTextStyle = CCWin.SkinControl.ArtTextStyle.None;
+            this.LblLife.AutoEllipsis = true;
+            this.LblLife.BackColor = System.Drawing.Color.Transparent;
+            this.LblLife.BorderColor = System.Drawing.Color.Transparent;
+            this.LblLife.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblLife.Location = new System.Drawing.Point(20, 185);
+            this.LblLife.Name = "LblLife";
+            this.LblLife.Size = new System.Drawing.Size(519, 100);
+            this.LblLife.TabIndex = 13;
+            this.LblLife.Text = "生活指数:";
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Location = new System.Drawing.Point(438, 338);
@@ -421,15 +472,6 @@
             this.pictureBox5.TabIndex = 20;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(438, 293);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(33, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 19;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(357, 59);
@@ -447,19 +489,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
-            // 
-            // LoadingIndex
-            // 
-            this.LoadingIndex.AutoStart = true;
-            this.LoadingIndex.BackColor = System.Drawing.Color.Transparent;
-            this.LoadingIndex.Location = new System.Drawing.Point(344, 185);
-            this.LoadingIndex.Name = "LoadingIndex";
-            this.LoadingIndex.Percentage = 30F;
-            this.LoadingIndex.ShowText = true;
-            this.LoadingIndex.Size = new System.Drawing.Size(151, 151);
-            this.LoadingIndex.TabIndex = 1;
-            this.LoadingIndex.Text = "加载中....";
-            this.LoadingIndex.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
             // 
             // LblLoc
             // 
@@ -496,19 +525,6 @@
             this.LblWeaComp.Size = new System.Drawing.Size(519, 23);
             this.LblWeaComp.TabIndex = 14;
             this.LblWeaComp.Text = "今日天气实况:";
-            // 
-            // LblLife
-            // 
-            this.LblLife.ArtTextStyle = CCWin.SkinControl.ArtTextStyle.None;
-            this.LblLife.AutoEllipsis = true;
-            this.LblLife.BackColor = System.Drawing.Color.Transparent;
-            this.LblLife.BorderColor = System.Drawing.Color.Transparent;
-            this.LblLife.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.LblLife.Location = new System.Drawing.Point(20, 185);
-            this.LblLife.Name = "LblLife";
-            this.LblLife.Size = new System.Drawing.Size(519, 100);
-            this.LblLife.TabIndex = 13;
-            this.LblLife.Text = "生活指数:";
             // 
             // LblThreeDay
             // 
@@ -561,6 +577,15 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 18;
             this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(438, 293);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 19;
+            this.pictureBox4.TabStop = false;
             // 
             // TrainTabpage
             // 
@@ -1262,6 +1287,8 @@
             // EmailTabpage
             // 
             this.EmailTabpage.BackColor = System.Drawing.Color.White;
+            this.EmailTabpage.Controls.Add(this.GupBoxEmailSetting);
+            this.EmailTabpage.Controls.Add(this.groupBox4);
             this.EmailTabpage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EmailTabpage.ImageIndex = 4;
             this.EmailTabpage.Location = new System.Drawing.Point(0, 36);
@@ -1270,6 +1297,195 @@
             this.EmailTabpage.TabIndex = 6;
             this.EmailTabpage.TabItemImage = null;
             this.EmailTabpage.Text = "邮件发送";
+            // 
+            // GupBoxEmailSetting
+            // 
+            this.GupBoxEmailSetting.Controls.Add(this.LblMailHost);
+            this.GupBoxEmailSetting.Controls.Add(this.CmoBoxMailHost);
+            this.GupBoxEmailSetting.Controls.Add(this.TextBoxPwd);
+            this.GupBoxEmailSetting.Controls.Add(this.LblMailFromPwd);
+            this.GupBoxEmailSetting.Controls.Add(this.TextBoxMailFromName);
+            this.GupBoxEmailSetting.Controls.Add(this.TextBoxMailFrom);
+            this.GupBoxEmailSetting.Controls.Add(this.LblFromWho);
+            this.GupBoxEmailSetting.Controls.Add(this.CmoBoxPrior);
+            this.GupBoxEmailSetting.Controls.Add(this.lblPrior);
+            this.GupBoxEmailSetting.Controls.Add(this.LblMailFrom);
+            this.GupBoxEmailSetting.Controls.Add(this.NumUpDownPort);
+            this.GupBoxEmailSetting.Controls.Add(this.LblEmailPort);
+            this.GupBoxEmailSetting.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.GupBoxEmailSetting.Location = new System.Drawing.Point(30, 39);
+            this.GupBoxEmailSetting.Name = "GupBoxEmailSetting";
+            this.GupBoxEmailSetting.Size = new System.Drawing.Size(764, 95);
+            this.GupBoxEmailSetting.TabIndex = 1;
+            this.GupBoxEmailSetting.TabStop = false;
+            this.GupBoxEmailSetting.Text = "发送设置";
+            // 
+            // LblMailHost
+            // 
+            this.LblMailHost.AutoSize = true;
+            this.LblMailHost.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblMailHost.Location = new System.Drawing.Point(479, 25);
+            this.LblMailHost.Name = "LblMailHost";
+            this.LblMailHost.Size = new System.Drawing.Size(85, 19);
+            this.LblMailHost.TabIndex = 11;
+            this.LblMailHost.Text = "主机地址";
+            // 
+            // CmoBoxMailHost
+            // 
+            this.CmoBoxMailHost.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmoBoxMailHost.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CmoBoxMailHost.FormattingEnabled = true;
+            this.CmoBoxMailHost.Items.AddRange(new object[] {
+            "smtp.qq.com",
+            "smtp.163.com"});
+            this.CmoBoxMailHost.Location = new System.Drawing.Point(575, 21);
+            this.CmoBoxMailHost.Name = "CmoBoxMailHost";
+            this.CmoBoxMailHost.Size = new System.Drawing.Size(121, 26);
+            this.CmoBoxMailHost.TabIndex = 10;
+            // 
+            // TextBoxPwd
+            // 
+            this.TextBoxPwd.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TextBoxPwd.Location = new System.Drawing.Point(329, 61);
+            this.TextBoxPwd.Name = "TextBoxPwd";
+            this.TextBoxPwd.PasswordChar = '*';
+            this.TextBoxPwd.Size = new System.Drawing.Size(121, 28);
+            this.TextBoxPwd.TabIndex = 9;
+            // 
+            // LblMailFromPwd
+            // 
+            this.LblMailFromPwd.AutoSize = true;
+            this.LblMailFromPwd.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblMailFromPwd.Location = new System.Drawing.Point(248, 66);
+            this.LblMailFromPwd.Name = "LblMailFromPwd";
+            this.LblMailFromPwd.Size = new System.Drawing.Size(47, 19);
+            this.LblMailFromPwd.TabIndex = 8;
+            this.LblMailFromPwd.Text = "密码";
+            // 
+            // TextBoxMailFromName
+            // 
+            this.TextBoxMailFromName.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TextBoxMailFromName.Location = new System.Drawing.Point(575, 61);
+            this.TextBoxMailFromName.Name = "TextBoxMailFromName";
+            this.TextBoxMailFromName.Size = new System.Drawing.Size(100, 28);
+            this.TextBoxMailFromName.TabIndex = 7;
+            // 
+            // TextBoxMailFrom
+            // 
+            this.TextBoxMailFrom.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TextBoxMailFrom.Location = new System.Drawing.Point(99, 61);
+            this.TextBoxMailFrom.Name = "TextBoxMailFrom";
+            this.TextBoxMailFrom.Size = new System.Drawing.Size(120, 28);
+            this.TextBoxMailFrom.TabIndex = 6;
+            // 
+            // LblFromWho
+            // 
+            this.LblFromWho.AutoSize = true;
+            this.LblFromWho.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblFromWho.Location = new System.Drawing.Point(479, 66);
+            this.LblFromWho.Name = "LblFromWho";
+            this.LblFromWho.Size = new System.Drawing.Size(47, 19);
+            this.LblFromWho.TabIndex = 5;
+            this.LblFromWho.Text = "签名";
+            // 
+            // CmoBoxPrior
+            // 
+            this.CmoBoxPrior.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmoBoxPrior.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CmoBoxPrior.FormattingEnabled = true;
+            this.CmoBoxPrior.Items.AddRange(new object[] {
+            "低",
+            "中",
+            "高"});
+            this.CmoBoxPrior.Location = new System.Drawing.Point(329, 21);
+            this.CmoBoxPrior.Name = "CmoBoxPrior";
+            this.CmoBoxPrior.Size = new System.Drawing.Size(121, 26);
+            this.CmoBoxPrior.TabIndex = 4;
+            // 
+            // lblPrior
+            // 
+            this.lblPrior.AutoSize = true;
+            this.lblPrior.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblPrior.Location = new System.Drawing.Point(248, 25);
+            this.lblPrior.Name = "lblPrior";
+            this.lblPrior.Size = new System.Drawing.Size(66, 19);
+            this.lblPrior.TabIndex = 3;
+            this.lblPrior.Text = "优先级";
+            // 
+            // LblMailFrom
+            // 
+            this.LblMailFrom.AutoSize = true;
+            this.LblMailFrom.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblMailFrom.Location = new System.Drawing.Point(18, 66);
+            this.LblMailFrom.Name = "LblMailFrom";
+            this.LblMailFrom.Size = new System.Drawing.Size(66, 19);
+            this.LblMailFrom.TabIndex = 2;
+            this.LblMailFrom.Text = "发件人";
+            // 
+            // NumUpDownPort
+            // 
+            this.NumUpDownPort.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.NumUpDownPort.Location = new System.Drawing.Point(99, 20);
+            this.NumUpDownPort.Name = "NumUpDownPort";
+            this.NumUpDownPort.Size = new System.Drawing.Size(120, 28);
+            this.NumUpDownPort.TabIndex = 1;
+            this.NumUpDownPort.Value = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+            // 
+            // LblEmailPort
+            // 
+            this.LblEmailPort.AutoSize = true;
+            this.LblEmailPort.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblEmailPort.Location = new System.Drawing.Point(18, 25);
+            this.LblEmailPort.Name = "LblEmailPort";
+            this.LblEmailPort.Size = new System.Drawing.Size(66, 19);
+            this.LblEmailPort.TabIndex = 0;
+            this.LblEmailPort.Text = "端口号";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.BtnSendMail);
+            this.groupBox4.Controls.Add(this.TextBoxMailTo);
+            this.groupBox4.Controls.Add(this.LblMailto);
+            this.groupBox4.Controls.Add(this.LblSubject);
+            this.groupBox4.Controls.Add(this.EmailSubject);
+            this.groupBox4.Controls.Add(this.RichTextBoxBodey);
+            this.groupBox4.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox4.Location = new System.Drawing.Point(30, 160);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(764, 397);
+            this.groupBox4.TabIndex = 0;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "邮件内容";
+            // 
+            // LblSubject
+            // 
+            this.LblSubject.AutoSize = true;
+            this.LblSubject.Location = new System.Drawing.Point(21, 34);
+            this.LblSubject.Name = "LblSubject";
+            this.LblSubject.Size = new System.Drawing.Size(85, 19);
+            this.LblSubject.TabIndex = 2;
+            this.LblSubject.Text = "邮件主题";
+            // 
+            // EmailSubject
+            // 
+            this.EmailSubject.Location = new System.Drawing.Point(115, 29);
+            this.EmailSubject.Name = "EmailSubject";
+            this.EmailSubject.Size = new System.Drawing.Size(203, 28);
+            this.EmailSubject.TabIndex = 1;
+            // 
+            // RichTextBoxBodey
+            // 
+            this.RichTextBoxBodey.Location = new System.Drawing.Point(21, 138);
+            this.RichTextBoxBodey.Name = "RichTextBoxBodey";
+            this.RichTextBoxBodey.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.RichTextBoxBodey.Size = new System.Drawing.Size(705, 249);
+            this.RichTextBoxBodey.TabIndex = 0;
+            this.RichTextBoxBodey.Text = "";
+            this.ToolTip.SetToolTip(this.RichTextBoxBodey, "邮件正文");
             // 
             // NoticeTabPage
             // 
@@ -1310,6 +1526,41 @@
             // TimerLoad
             // 
             this.TimerLoad.Tick += new System.EventHandler(this.TimerLoad_Tick);
+            // 
+            // LblMailto
+            // 
+            this.LblMailto.AutoSize = true;
+            this.LblMailto.Location = new System.Drawing.Point(21, 93);
+            this.LblMailto.Name = "LblMailto";
+            this.LblMailto.Size = new System.Drawing.Size(66, 19);
+            this.LblMailto.TabIndex = 3;
+            this.LblMailto.Text = "收件人";
+            // 
+            // TextBoxMailTo
+            // 
+            this.helpProvider.SetHelpKeyword(this.TextBoxMailTo, "87686786");
+            this.helpProvider.SetHelpNavigator(this.TextBoxMailTo, System.Windows.Forms.HelpNavigator.KeywordIndex);
+            this.helpProvider.SetHelpString(this.TextBoxMailTo, "111");
+            this.TextBoxMailTo.Location = new System.Drawing.Point(115, 84);
+            this.TextBoxMailTo.Name = "TextBoxMailTo";
+            this.helpProvider.SetShowHelp(this.TextBoxMailTo, true);
+            this.TextBoxMailTo.Size = new System.Drawing.Size(540, 28);
+            this.TextBoxMailTo.TabIndex = 4;
+            // 
+            // BtnSendMail
+            // 
+            this.BtnSendMail.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSendMail.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.BtnSendMail.DownBack = null;
+            this.BtnSendMail.Location = new System.Drawing.Point(580, 22);
+            this.BtnSendMail.MouseBack = null;
+            this.BtnSendMail.Name = "BtnSendMail";
+            this.BtnSendMail.NormlBack = null;
+            this.BtnSendMail.Size = new System.Drawing.Size(75, 35);
+            this.BtnSendMail.TabIndex = 5;
+            this.BtnSendMail.Text = "发送";
+            this.BtnSendMail.UseVisualStyleBackColor = false;
+            this.BtnSendMail.Click += new System.EventHandler(this.BtnSendMail_Click);
             // 
             // MainForm
             // 
@@ -1369,10 +1620,10 @@
             this.GouBoxWeather.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.TrainTabpage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTicket)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -1385,6 +1636,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewNotice)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.EmailTabpage.ResumeLayout(false);
+            this.GupBoxEmailSetting.ResumeLayout(false);
+            this.GupBoxEmailSetting.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NumUpDownPort)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1471,5 +1728,26 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.GroupBox GupBoxEmailSetting;
+        private System.Windows.Forms.Label LblEmailPort;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label LblSubject;
+        private System.Windows.Forms.TextBox EmailSubject;
+        private System.Windows.Forms.RichTextBox RichTextBoxBodey;
+        private System.Windows.Forms.Label lblPrior;
+        private System.Windows.Forms.Label LblMailFrom;
+        private System.Windows.Forms.NumericUpDown NumUpDownPort;
+        private System.Windows.Forms.ComboBox CmoBoxPrior;
+        private System.Windows.Forms.Label LblFromWho;
+        private System.Windows.Forms.TextBox TextBoxPwd;
+        private System.Windows.Forms.Label LblMailFromPwd;
+        private System.Windows.Forms.TextBox TextBoxMailFromName;
+        private System.Windows.Forms.TextBox TextBoxMailFrom;
+        private System.Windows.Forms.ComboBox CmoBoxMailHost;
+        private System.Windows.Forms.Label LblMailHost;
+        private System.Windows.Forms.Label LblMailto;
+        private System.Windows.Forms.TextBox TextBoxMailTo;
+        private System.Windows.Forms.HelpProvider helpProvider;
+        private CCWin.SkinControl.SkinButton BtnSendMail;
     }
 }

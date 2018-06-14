@@ -272,22 +272,22 @@ namespace EasyLife
 
         private void BtnTelAdd_Click(object sender, EventArgs e)
         {
-            if(CmoBoxTelDep.Text==string.Empty)
+            if (CmoBoxTelDep.Text == string.Empty)
             {
                 MessageBoxEx.Show("所属单位不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if(CmoBoxCam.Text==string.Empty)
+            if (CmoBoxCam.Text == string.Empty)
             {
                 MessageBoxEx.Show("所在校区不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if(TextBoxTelSecDep.Text==string.Empty)
+            if (TextBoxTelSecDep.Text == string.Empty)
             {
                 MessageBoxEx.Show("所属部门不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if(TextBoxTelNum.Text==string.Empty)
+            if (TextBoxTelNum.Text == string.Empty)
             {
                 MessageBoxEx.Show("电话号码不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -301,49 +301,55 @@ namespace EasyLife
         {
             this.DataGridViewTel.DataSource = phonebook.GetList(CmoBoxTelDep.Text, CmoBoxCam.Text, TextBoxTelSecDep.Text).Tables["Tel"].DefaultView;
             int n;
-            n=phonebook.Delete(CmoBoxTelDep.Text, CmoBoxCam.Text, TextBoxTelSecDep.Text);
-            MessageBoxEx.Show("成功删除"+n+"条数据!", "完成", MessageBoxButtons.OK, MessageBoxIcon.None);
+            n = phonebook.Delete(CmoBoxTelDep.Text, CmoBoxCam.Text, TextBoxTelSecDep.Text);
+            MessageBoxEx.Show("成功删除" + n + "条数据!", "完成", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
         #endregion
 
         #region 主页
         private void ShowWeather(string City)
         {
-            string[] r = Weather.Get(City);
-            LblLoc.Text = "地理位置" + r[0] + " " + r[1];
-            LblWeaSim.Text = "今日天气概况:" + r[5] + " " + r[6];
-            LblWind.Text = "风向:" + r[7];
-            LblNextDay.Text= "明天天气概况" + r[12] + " " + r[13];
-            LblWeaComp.Text = r[10];
-            LblLife.Text =r[11];
-            LblCity.Text = r[22];
-            LblThreeDay.Text = "后天天气概况"+ r[17] + " " + r[18];
+            try
+            {
+                string[] r = Weather.Get(City);
+                LblLoc.Text = "地理位置" + r[0] + " " + r[1];
+                LblWeaSim.Text = "今日天气概况:" + r[5] + " " + r[6];
+                LblWind.Text = "风向:" + r[7];
+                LblNextDay.Text = "明天天气概况" + r[12] + " " + r[13];
+                LblWeaComp.Text = r[10];
+                LblLife.Text = r[11];
+                LblCity.Text = r[22];
+                LblThreeDay.Text = "后天天气概况" + r[17] + " " + r[18];
 
-            pictureBox1.Image= Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[8][0]));
-            pictureBox2.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[9][0]));
-            pictureBox3.Image= Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[15][0]));
-            pictureBox4.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[16][0]));
-            pictureBox5.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[20][0]));
-            pictureBox6.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[21][0]));
+                pictureBox1.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[8][0]));
+                pictureBox2.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[9][0]));
+                pictureBox3.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[15][0]));
+                pictureBox4.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[16][0]));
+                pictureBox5.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[20][0]));
+                pictureBox6.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[21][0]));
 
-            pictureBox1.Left = LblWeaSim.Left + LblWeaSim.Width + 5;
-            pictureBox1.Top = pictureBox2.Top = LblWeaSim.Top - 8;
-            pictureBox2.Left = pictureBox1.Left + pictureBox1.Width + 5;
+                pictureBox1.Left = LblWeaSim.Left + LblWeaSim.Width + 5;
+                pictureBox1.Top = pictureBox2.Top = LblWeaSim.Top - 8;
+                pictureBox2.Left = pictureBox1.Left + pictureBox1.Width + 5;
 
-            pictureBox3.Left = LblNextDay.Left + LblNextDay.Width + 5;
-            pictureBox3.Top = pictureBox4.Top = LblNextDay.Top - 8;
-            pictureBox4.Left = pictureBox3.Left + pictureBox3.Width + 5;
+                pictureBox3.Left = LblNextDay.Left + LblNextDay.Width + 5;
+                pictureBox3.Top = pictureBox4.Top = LblNextDay.Top - 8;
+                pictureBox4.Left = pictureBox3.Left + pictureBox3.Width + 5;
 
-            pictureBox5.Left = LblThreeDay.Left + LblThreeDay.Width + 5;
-            pictureBox5.Top = pictureBox6.Top = LblThreeDay.Top - 8;
-            pictureBox6.Left = pictureBox5.Left + pictureBox5.Width + 5;
+                pictureBox5.Left = LblThreeDay.Left + LblThreeDay.Width + 5;
+                pictureBox5.Top = pictureBox6.Top = LblThreeDay.Top - 8;
+                pictureBox6.Left = pictureBox5.Left + pictureBox5.Width + 5;
+                LoadingIndex.Hide();
+            }
+            catch (Exception)
+            {
+
+            }
 
         }
-        #endregion
-
         private void TimerLoad_Tick(object sender, EventArgs e)
         {
-            if(Exist[0]==false)
+            if (Exist[0] == false)
             {
                 ShowWeather("西安");
                 TimerLoad.Enabled = false;
@@ -351,5 +357,17 @@ namespace EasyLife
                 Exist[0] = true;
             }
         }
+
+        #endregion
+
+        #region 邮件
+        private void BtnSendMail_Click(object sender, EventArgs e)
+        {
+            Send.SendMail send = new Send.SendMail(TextBoxMailFrom.Text, TextBoxPwd.Text, TextBoxMailFromName.Text, CmoBoxMailHost.Text,Convert.ToInt32(NumUpDownPort.Value));
+            int n=send.send(TextBoxMailTo.Text, EmailSubject.Text, RichTextBoxBodey.Text, CmoBoxPrior.Text);
+            if (n != 0)
+                MessageBoxEx.Show("成功发送"+n+"封邮件", "完成", MessageBoxButtons.OK, MessageBoxIcon.None);
+        }
+        #endregion
     }
 }
