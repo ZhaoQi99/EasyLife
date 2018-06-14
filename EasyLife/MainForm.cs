@@ -41,6 +41,7 @@ namespace EasyLife
             TimerLoad.Enabled = true;
             TimerLoad.Interval = 4000;
             LblVersion.Text="当前版本:v"+Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            CmoBoxPrior.SelectedIndex = 1;
         }
         #endregion
 
@@ -90,6 +91,11 @@ namespace EasyLife
         #endregion
 
         #region 设置菜单相关事件
+        //更新个人信息
+        private void InformationUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
         //退出
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -367,11 +373,37 @@ namespace EasyLife
         #region 邮件
         private void BtnSendMail_Click(object sender, EventArgs e)
         {
+            if(CmoBoxMailHost.Text==string.Empty)
+            {
+                MessageBoxEx.Show("主机地址不能为空!", "完成", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (CmoBoxPrior.Text == string.Empty)
+            {
+                MessageBoxEx.Show("优先级不能为空!", "完成", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (TextBoxMailFrom.Text == string.Empty)
+            {
+                MessageBoxEx.Show("发件人不能为空!", "完成", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if(TextBoxPwd.Text==string.Empty)
+            {
+                MessageBoxEx.Show("密码不能为空!", "完成", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if(TextBoxMailTo.Text==string.Empty)
+            {
+                MessageBoxEx.Show("收件人不能为空!", "完成", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             Send.SendMail send = new Send.SendMail(TextBoxMailFrom.Text, TextBoxPwd.Text, TextBoxMailFromName.Text, CmoBoxMailHost.Text,Convert.ToInt32(NumUpDownPort.Value));
             int n=send.send(TextBoxMailTo.Text, EmailSubject.Text, RichTextBoxBodey.Text, CmoBoxPrior.Text);
             if (n != 0)
                 MessageBoxEx.Show("成功发送"+n+"封邮件", "完成", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
         #endregion
+
     }
 }

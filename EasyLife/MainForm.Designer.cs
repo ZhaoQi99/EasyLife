@@ -276,7 +276,7 @@
             this.SettingsMenu.ItemSplitter = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
             this.SettingsMenu.Name = "Menu";
             this.SettingsMenu.RadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            this.SettingsMenu.Size = new System.Drawing.Size(169, 160);
+            this.SettingsMenu.Size = new System.Drawing.Size(176, 188);
             this.SettingsMenu.SkinAllColor = true;
             this.SettingsMenu.TitleAnamorphosis = true;
             this.SettingsMenu.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(228)))), ((int)(((byte)(236)))));
@@ -286,51 +286,52 @@
             // InformationUpdate
             // 
             this.InformationUpdate.Name = "InformationUpdate";
-            this.InformationUpdate.Size = new System.Drawing.Size(168, 24);
+            this.InformationUpdate.Size = new System.Drawing.Size(175, 24);
             this.InformationUpdate.Text = "修改个人信息";
+            this.InformationUpdate.Click += new System.EventHandler(this.InformationUpdate_Click);
             // 
             // Language
             // 
             this.Language.Name = "Language";
-            this.Language.Size = new System.Drawing.Size(168, 24);
+            this.Language.Size = new System.Drawing.Size(175, 24);
             this.Language.Text = "语言设置";
             this.Language.Click += new System.EventHandler(this.Language_Click);
             // 
             // TopMost
             // 
             this.TopMost.Name = "TopMost";
-            this.TopMost.Size = new System.Drawing.Size(168, 24);
+            this.TopMost.Size = new System.Drawing.Size(175, 24);
             this.TopMost.Text = "窗口置顶";
             this.TopMost.Click += new System.EventHandler(this.TopMost_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(165, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(172, 6);
             // 
             // Link
             // 
             this.Link.Name = "Link";
-            this.Link.Size = new System.Drawing.Size(168, 24);
+            this.Link.Size = new System.Drawing.Size(175, 24);
             this.Link.Text = "访问EasyLife";
             this.Link.Click += new System.EventHandler(this.Link_Click);
             // 
             // About
             // 
             this.About.Name = "About";
-            this.About.Size = new System.Drawing.Size(168, 24);
+            this.About.Size = new System.Drawing.Size(175, 24);
             this.About.Text = "关于";
             this.About.Click += new System.EventHandler(this.About_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(165, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(172, 6);
             // 
             // Exit
             // 
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(168, 24);
+            this.Exit.Size = new System.Drawing.Size(175, 24);
             this.Exit.Text = "退出";
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
@@ -374,7 +375,7 @@
             this.TabShow.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
             this.TabShow.PageNorml = null;
             this.TabShow.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TabShow.SelectedIndex = 4;
+            this.TabShow.SelectedIndex = 0;
             this.TabShow.ShowToolTips = true;
             this.TabShow.Size = new System.Drawing.Size(815, 596);
             this.TabShow.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
@@ -1571,6 +1572,7 @@
             this.BackLayout = false;
             this.BackShade = false;
             this.BackToColor = false;
+            this.CanResize = false;
             this.ClientSize = new System.Drawing.Size(850, 664);
             this.CloseDownBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseDownBack")));
             this.CloseMouseBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseMouseBack")));
