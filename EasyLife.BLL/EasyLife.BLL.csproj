@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Notice.cs" />
+    <Compile Include="PhoneBook.cs" />
     <Compile Include="Spider\Spider.cs" />
     <Compile Include="Spider\SpiderNotice.cs" />
     <Compile Include="Spider\SpiderTicket.cs" />

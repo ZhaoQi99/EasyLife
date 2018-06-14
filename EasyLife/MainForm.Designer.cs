@@ -34,11 +34,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             CCWin.CmSysButton cmSysButton1 = new CCWin.CmSysButton();
             CCWin.CmSysButton cmSysButton2 = new CCWin.CmSysButton();
             this.SkinMenu = new CCWin.SkinControl.SkinContextMenuStrip();
@@ -75,13 +79,27 @@
             this.DateTimeTic = new CCWin.SkinControl.SkinDateTimePicker();
             this.CmoBoxToSta = new CCWin.SkinControl.SkinComboBox();
             this.CmoBoxFromSta = new CCWin.SkinControl.SkinComboBox();
-            this.EmailTabpage = new CCWin.SkinControl.SkinTabPage();
             this.TelTabpage = new CCWin.SkinControl.SkinTabPage();
+            this.DataGridViewTel = new CCWin.SkinControl.SkinDataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.BtnTelDel = new CCWin.SkinControl.SkinButton();
+            this.LblTelSecDep = new System.Windows.Forms.Label();
+            this.TextBoxTelSecDep = new System.Windows.Forms.TextBox();
+            this.BtnTelAdd = new CCWin.SkinControl.SkinButton();
+            this.BtnTelQue = new CCWin.SkinControl.SkinButton();
+            this.CmoBoxTelDep = new CCWin.SkinControl.SkinComboBox();
+            this.CmoBoxCam = new CCWin.SkinControl.SkinComboBox();
+            this.LblTelDep = new System.Windows.Forms.Label();
+            this.LblTelCam = new System.Windows.Forms.Label();
+            this.EmailTabpage = new CCWin.SkinControl.SkinTabPage();
             this.NewsTabpage = new CCWin.SkinControl.SkinTabPage();
+            this.DataGridViewNotice = new CCWin.SkinControl.SkinDataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.CmoBoxDep = new CCWin.SkinControl.SkinComboBox();
+            this.BtnUpdNotice = new CCWin.SkinControl.SkinButton();
+            this.BtnQueNotice = new CCWin.SkinControl.SkinButton();
+            this.CmoBoxNotDep = new CCWin.SkinControl.SkinComboBox();
             this.LblDate = new System.Windows.Forms.Label();
-            this.CmoBoxType = new CCWin.SkinControl.SkinComboBox();
+            this.CmoBoxNotType = new CCWin.SkinControl.SkinComboBox();
             this.LblNoticeDep = new System.Windows.Forms.Label();
             this.DateTImePicNotice = new CCWin.SkinControl.SkinDateTimePicker();
             this.LblNoticeType = new System.Windows.Forms.Label();
@@ -89,9 +107,8 @@
             this.ExitTabPage = new CCWin.SkinControl.SkinTabPage();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.BtnQueNotice = new CCWin.SkinControl.SkinButton();
-            this.BtnUpdNotice = new CCWin.SkinControl.SkinButton();
-            this.DataGridViewNotice = new CCWin.SkinControl.SkinDataGridView();
+            this.LblTel = new System.Windows.Forms.Label();
+            this.TextBoxTelNum = new CCWin.SkinControl.SkinTextBox();
             this.SkinMenu.SuspendLayout();
             this.SettingsMenu.SuspendLayout();
             this.TabShow.SuspendLayout();
@@ -99,9 +116,12 @@
             this.TrainTabpage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTicket)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.TelTabpage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTel)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.NewsTabpage.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewNotice)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // SkinMenu
@@ -306,7 +326,7 @@
             this.TabShow.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
             this.TabShow.PageNorml = null;
             this.TabShow.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TabShow.SelectedIndex = 4;
+            this.TabShow.SelectedIndex = 2;
             this.TabShow.ShowToolTips = true;
             this.TabShow.Size = new System.Drawing.Size(815, 596);
             this.TabShow.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
@@ -604,6 +624,202 @@
             this.CmoBoxFromSta.TabIndex = 7;
             this.CmoBoxFromSta.WaterText = "出发站";
             // 
+            // TelTabpage
+            // 
+            this.TelTabpage.BackColor = System.Drawing.Color.White;
+            this.TelTabpage.Controls.Add(this.DataGridViewTel);
+            this.TelTabpage.Controls.Add(this.groupBox3);
+            this.TelTabpage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TelTabpage.ImageIndex = 1;
+            this.TelTabpage.Location = new System.Drawing.Point(0, 36);
+            this.TelTabpage.Name = "TelTabpage";
+            this.TelTabpage.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TelTabpage.Size = new System.Drawing.Size(815, 560);
+            this.TelTabpage.TabIndex = 2;
+            this.TelTabpage.TabItemImage = null;
+            this.TelTabpage.Text = "电话查询";
+            this.TelTabpage.UseVisualStyleBackColor = true;
+            // 
+            // DataGridViewTel
+            // 
+            this.DataGridViewTel.AllowUserToAddRows = false;
+            this.DataGridViewTel.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.DataGridViewTel.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.DataGridViewTel.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.DataGridViewTel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DataGridViewTel.ColumnFont = null;
+            this.DataGridViewTel.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridViewTel.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.DataGridViewTel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewTel.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DataGridViewTel.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewTel.DefaultCellStyle = dataGridViewCellStyle8;
+            this.DataGridViewTel.EnableHeadersVisualStyles = false;
+            this.DataGridViewTel.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DataGridViewTel.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DataGridViewTel.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DataGridViewTel.Location = new System.Drawing.Point(11, 143);
+            this.DataGridViewTel.Name = "DataGridViewTel";
+            this.DataGridViewTel.ReadOnly = true;
+            this.DataGridViewTel.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridViewTel.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DataGridViewTel.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.DataGridViewTel.RowTemplate.Height = 23;
+            this.DataGridViewTel.Size = new System.Drawing.Size(790, 169);
+            this.DataGridViewTel.TabIndex = 21;
+            this.DataGridViewTel.TitleBack = null;
+            this.DataGridViewTel.TitleBackColorBegin = System.Drawing.Color.White;
+            this.DataGridViewTel.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.TextBoxTelNum);
+            this.groupBox3.Controls.Add(this.LblTel);
+            this.groupBox3.Controls.Add(this.BtnTelDel);
+            this.groupBox3.Controls.Add(this.LblTelSecDep);
+            this.groupBox3.Controls.Add(this.TextBoxTelSecDep);
+            this.groupBox3.Controls.Add(this.BtnTelAdd);
+            this.groupBox3.Controls.Add(this.BtnTelQue);
+            this.groupBox3.Controls.Add(this.CmoBoxTelDep);
+            this.groupBox3.Controls.Add(this.CmoBoxCam);
+            this.groupBox3.Controls.Add(this.LblTelDep);
+            this.groupBox3.Controls.Add(this.LblTelCam);
+            this.groupBox3.Location = new System.Drawing.Point(11, 5);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(790, 122);
+            this.groupBox3.TabIndex = 20;
+            this.groupBox3.TabStop = false;
+            // 
+            // BtnTelDel
+            // 
+            this.BtnTelDel.BackColor = System.Drawing.Color.Transparent;
+            this.BtnTelDel.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.BtnTelDel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnTelDel.DownBack = null;
+            this.BtnTelDel.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnTelDel.Location = new System.Drawing.Point(683, 74);
+            this.BtnTelDel.MouseBack = null;
+            this.BtnTelDel.Name = "BtnTelDel";
+            this.BtnTelDel.NormlBack = null;
+            this.BtnTelDel.Size = new System.Drawing.Size(89, 36);
+            this.BtnTelDel.TabIndex = 23;
+            this.BtnTelDel.Text = "删除";
+            this.BtnTelDel.UseVisualStyleBackColor = false;
+            this.BtnTelDel.Click += new System.EventHandler(this.BtnTelDel_Click);
+            // 
+            // LblTelSecDep
+            // 
+            this.LblTelSecDep.AutoSize = true;
+            this.LblTelSecDep.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblTelSecDep.Location = new System.Drawing.Point(440, 32);
+            this.LblTelSecDep.Name = "LblTelSecDep";
+            this.LblTelSecDep.Size = new System.Drawing.Size(71, 15);
+            this.LblTelSecDep.TabIndex = 22;
+            this.LblTelSecDep.Text = "所属部门";
+            // 
+            // TextBoxTelSecDep
+            // 
+            this.TextBoxTelSecDep.Location = new System.Drawing.Point(527, 27);
+            this.TextBoxTelSecDep.Name = "TextBoxTelSecDep";
+            this.TextBoxTelSecDep.Size = new System.Drawing.Size(100, 25);
+            this.TextBoxTelSecDep.TabIndex = 21;
+            // 
+            // BtnTelAdd
+            // 
+            this.BtnTelAdd.BackColor = System.Drawing.Color.Transparent;
+            this.BtnTelAdd.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.BtnTelAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnTelAdd.DownBack = null;
+            this.BtnTelAdd.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnTelAdd.Location = new System.Drawing.Point(538, 70);
+            this.BtnTelAdd.MouseBack = null;
+            this.BtnTelAdd.Name = "BtnTelAdd";
+            this.BtnTelAdd.NormlBack = null;
+            this.BtnTelAdd.Size = new System.Drawing.Size(89, 36);
+            this.BtnTelAdd.TabIndex = 20;
+            this.BtnTelAdd.Text = "添加";
+            this.BtnTelAdd.UseVisualStyleBackColor = false;
+            this.BtnTelAdd.Click += new System.EventHandler(this.BtnTelAdd_Click);
+            // 
+            // BtnTelQue
+            // 
+            this.BtnTelQue.BackColor = System.Drawing.Color.Transparent;
+            this.BtnTelQue.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.BtnTelQue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnTelQue.DownBack = null;
+            this.BtnTelQue.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BtnTelQue.Location = new System.Drawing.Point(684, 21);
+            this.BtnTelQue.MouseBack = null;
+            this.BtnTelQue.Name = "BtnTelQue";
+            this.BtnTelQue.NormlBack = null;
+            this.BtnTelQue.Size = new System.Drawing.Size(89, 36);
+            this.BtnTelQue.TabIndex = 19;
+            this.BtnTelQue.Text = "查询";
+            this.BtnTelQue.UseVisualStyleBackColor = false;
+            this.BtnTelQue.Click += new System.EventHandler(this.BtnTelQue_Click);
+            // 
+            // CmoBoxTelDep
+            // 
+            this.CmoBoxTelDep.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CmoBoxTelDep.FormattingEnabled = true;
+            this.CmoBoxTelDep.Location = new System.Drawing.Point(303, 26);
+            this.CmoBoxTelDep.Name = "CmoBoxTelDep";
+            this.CmoBoxTelDep.Size = new System.Drawing.Size(121, 26);
+            this.CmoBoxTelDep.TabIndex = 14;
+            this.CmoBoxTelDep.WaterText = "二级单位";
+            // 
+            // CmoBoxCam
+            // 
+            this.CmoBoxCam.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CmoBoxCam.FormattingEnabled = true;
+            this.CmoBoxCam.Items.AddRange(new object[] {
+            "雁塔校区",
+            "长安校区"});
+            this.CmoBoxCam.Location = new System.Drawing.Point(79, 26);
+            this.CmoBoxCam.Name = "CmoBoxCam";
+            this.CmoBoxCam.Size = new System.Drawing.Size(121, 26);
+            this.CmoBoxCam.TabIndex = 13;
+            this.CmoBoxCam.WaterText = "长安/雁塔";
+            // 
+            // LblTelDep
+            // 
+            this.LblTelDep.AutoSize = true;
+            this.LblTelDep.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblTelDep.Location = new System.Drawing.Point(216, 32);
+            this.LblTelDep.Name = "LblTelDep";
+            this.LblTelDep.Size = new System.Drawing.Size(71, 15);
+            this.LblTelDep.TabIndex = 17;
+            this.LblTelDep.Text = "所属单位";
+            // 
+            // LblTelCam
+            // 
+            this.LblTelCam.AutoSize = true;
+            this.LblTelCam.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblTelCam.Location = new System.Drawing.Point(24, 32);
+            this.LblTelCam.Name = "LblTelCam";
+            this.LblTelCam.Size = new System.Drawing.Size(39, 15);
+            this.LblTelCam.TabIndex = 16;
+            this.LblTelCam.Text = "校区";
+            // 
             // EmailTabpage
             // 
             this.EmailTabpage.BackColor = System.Drawing.Color.White;
@@ -615,20 +831,6 @@
             this.EmailTabpage.TabIndex = 6;
             this.EmailTabpage.TabItemImage = null;
             this.EmailTabpage.Text = "邮件发送";
-            // 
-            // TelTabpage
-            // 
-            this.TelTabpage.BackColor = System.Drawing.Color.White;
-            this.TelTabpage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TelTabpage.ImageIndex = 1;
-            this.TelTabpage.Location = new System.Drawing.Point(0, 36);
-            this.TelTabpage.Name = "TelTabpage";
-            this.TelTabpage.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TelTabpage.Size = new System.Drawing.Size(815, 560);
-            this.TelTabpage.TabIndex = 2;
-            this.TelTabpage.TabItemImage = null;
-            this.TelTabpage.Text = "电话查询";
-            this.TelTabpage.UseVisualStyleBackColor = true;
             // 
             // NewsTabpage
             // 
@@ -645,13 +847,65 @@
             this.NewsTabpage.TabItemImage = null;
             this.NewsTabpage.Text = "校园新闻";
             // 
+            // DataGridViewNotice
+            // 
+            this.DataGridViewNotice.AllowUserToAddRows = false;
+            this.DataGridViewNotice.AllowUserToDeleteRows = false;
+            this.DataGridViewNotice.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.DataGridViewNotice.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.DataGridViewNotice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DataGridViewNotice.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.DataGridViewNotice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DataGridViewNotice.ColumnFont = null;
+            this.DataGridViewNotice.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridViewNotice.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.DataGridViewNotice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewNotice.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewNotice.DefaultCellStyle = dataGridViewCellStyle12;
+            this.DataGridViewNotice.EnableHeadersVisualStyles = false;
+            this.DataGridViewNotice.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.DataGridViewNotice.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DataGridViewNotice.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DataGridViewNotice.Location = new System.Drawing.Point(11, 150);
+            this.DataGridViewNotice.Name = "DataGridViewNotice";
+            this.DataGridViewNotice.ReadOnly = true;
+            this.DataGridViewNotice.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridViewNotice.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DataGridViewNotice.RowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.DataGridViewNotice.RowTemplate.Height = 23;
+            this.DataGridViewNotice.Size = new System.Drawing.Size(797, 323);
+            this.DataGridViewNotice.TabIndex = 20;
+            this.DataGridViewNotice.TitleBack = null;
+            this.DataGridViewNotice.TitleBackColorBegin = System.Drawing.Color.White;
+            this.DataGridViewNotice.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
+            this.DataGridViewNotice.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewNotice_CellContentClick);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.BtnUpdNotice);
             this.groupBox2.Controls.Add(this.BtnQueNotice);
-            this.groupBox2.Controls.Add(this.CmoBoxDep);
+            this.groupBox2.Controls.Add(this.CmoBoxNotDep);
             this.groupBox2.Controls.Add(this.LblDate);
-            this.groupBox2.Controls.Add(this.CmoBoxType);
+            this.groupBox2.Controls.Add(this.CmoBoxNotType);
             this.groupBox2.Controls.Add(this.LblNoticeDep);
             this.groupBox2.Controls.Add(this.DateTImePicNotice);
             this.groupBox2.Controls.Add(this.LblNoticeType);
@@ -661,19 +915,48 @@
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             // 
-            // CmoBoxDep
+            // BtnUpdNotice
             // 
-            this.CmoBoxDep.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CmoBoxDep.FormattingEnabled = true;
-            this.CmoBoxDep.Items.AddRange(new object[] {
+            this.BtnUpdNotice.BackColor = System.Drawing.Color.Transparent;
+            this.BtnUpdNotice.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.BtnUpdNotice.DownBack = null;
+            this.BtnUpdNotice.Location = new System.Drawing.Point(680, 69);
+            this.BtnUpdNotice.MouseBack = null;
+            this.BtnUpdNotice.Name = "BtnUpdNotice";
+            this.BtnUpdNotice.NormlBack = null;
+            this.BtnUpdNotice.Size = new System.Drawing.Size(88, 36);
+            this.BtnUpdNotice.TabIndex = 20;
+            this.BtnUpdNotice.Text = "更新";
+            this.BtnUpdNotice.UseVisualStyleBackColor = false;
+            this.BtnUpdNotice.Click += new System.EventHandler(this.BtnUpdNotice_Click);
+            // 
+            // BtnQueNotice
+            // 
+            this.BtnQueNotice.BackColor = System.Drawing.Color.Transparent;
+            this.BtnQueNotice.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.BtnQueNotice.DownBack = null;
+            this.BtnQueNotice.Location = new System.Drawing.Point(680, 24);
+            this.BtnQueNotice.MouseBack = null;
+            this.BtnQueNotice.Name = "BtnQueNotice";
+            this.BtnQueNotice.NormlBack = null;
+            this.BtnQueNotice.Size = new System.Drawing.Size(88, 36);
+            this.BtnQueNotice.TabIndex = 19;
+            this.BtnQueNotice.Text = "查询";
+            this.BtnQueNotice.UseVisualStyleBackColor = false;
+            this.BtnQueNotice.Click += new System.EventHandler(this.BtnQueNotice_Click);
+            // 
+            // CmoBoxNotDep
+            // 
+            this.CmoBoxNotDep.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CmoBoxNotDep.FormattingEnabled = true;
+            this.CmoBoxNotDep.Items.AddRange(new object[] {
             "学校主页",
             "计算机科学学院"});
-            this.CmoBoxDep.Location = new System.Drawing.Point(288, 39);
-            this.CmoBoxDep.Name = "CmoBoxDep";
-            this.CmoBoxDep.Size = new System.Drawing.Size(121, 26);
-            this.CmoBoxDep.TabIndex = 14;
-            this.CmoBoxDep.WaterText = "学院/部门";
-            this.CmoBoxDep.SelectedValueChanged += new System.EventHandler(this.CmoBoxDep_SelectedValueChanged);
+            this.CmoBoxNotDep.Location = new System.Drawing.Point(288, 39);
+            this.CmoBoxNotDep.Name = "CmoBoxNotDep";
+            this.CmoBoxNotDep.Size = new System.Drawing.Size(121, 26);
+            this.CmoBoxNotDep.TabIndex = 14;
+            this.CmoBoxNotDep.WaterText = "二级单位";
             // 
             // LblDate
             // 
@@ -685,19 +968,18 @@
             this.LblDate.TabIndex = 18;
             this.LblDate.Text = "日期";
             // 
-            // CmoBoxType
+            // CmoBoxNotType
             // 
-            this.CmoBoxType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CmoBoxType.FormattingEnabled = true;
-            this.CmoBoxType.Items.AddRange(new object[] {
+            this.CmoBoxNotType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CmoBoxNotType.FormattingEnabled = true;
+            this.CmoBoxNotType.Items.AddRange(new object[] {
             "新闻",
             "通知"});
-            this.CmoBoxType.Location = new System.Drawing.Point(64, 39);
-            this.CmoBoxType.Name = "CmoBoxType";
-            this.CmoBoxType.Size = new System.Drawing.Size(121, 26);
-            this.CmoBoxType.TabIndex = 13;
-            this.CmoBoxType.WaterText = "新闻/通知";
-            this.CmoBoxType.SelectedValueChanged += new System.EventHandler(this.CmoBoxType_SelectedValueChanged);
+            this.CmoBoxNotType.Location = new System.Drawing.Point(64, 39);
+            this.CmoBoxNotType.Name = "CmoBoxNotType";
+            this.CmoBoxNotType.Size = new System.Drawing.Size(121, 26);
+            this.CmoBoxNotType.TabIndex = 13;
+            this.CmoBoxNotType.WaterText = "新闻/通知";
             // 
             // LblNoticeDep
             // 
@@ -771,87 +1053,56 @@
             this.imageList.Images.SetKeyName(5, "ToolAuto.ico");
             this.imageList.Images.SetKeyName(6, "ToolExit.png");
             // 
-            // BtnQueNotice
+            // LblTel
             // 
-            this.BtnQueNotice.BackColor = System.Drawing.Color.Transparent;
-            this.BtnQueNotice.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.BtnQueNotice.DownBack = null;
-            this.BtnQueNotice.Location = new System.Drawing.Point(680, 24);
-            this.BtnQueNotice.MouseBack = null;
-            this.BtnQueNotice.Name = "BtnQueNotice";
-            this.BtnQueNotice.NormlBack = null;
-            this.BtnQueNotice.Size = new System.Drawing.Size(88, 36);
-            this.BtnQueNotice.TabIndex = 19;
-            this.BtnQueNotice.Text = "查询";
-            this.BtnQueNotice.UseVisualStyleBackColor = false;
-            this.BtnQueNotice.Click += new System.EventHandler(this.BtnQueNotice_Click);
+            this.LblTel.AutoSize = true;
+            this.LblTel.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblTel.Location = new System.Drawing.Point(216, 81);
+            this.LblTel.Name = "LblTel";
+            this.LblTel.Size = new System.Drawing.Size(71, 15);
+            this.LblTel.TabIndex = 25;
+            this.LblTel.Text = "电话号码";
             // 
-            // BtnUpdNotice
+            // TextBoxTelNum
             // 
-            this.BtnUpdNotice.BackColor = System.Drawing.Color.Transparent;
-            this.BtnUpdNotice.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.BtnUpdNotice.DownBack = null;
-            this.BtnUpdNotice.Location = new System.Drawing.Point(680, 69);
-            this.BtnUpdNotice.MouseBack = null;
-            this.BtnUpdNotice.Name = "BtnUpdNotice";
-            this.BtnUpdNotice.NormlBack = null;
-            this.BtnUpdNotice.Size = new System.Drawing.Size(88, 36);
-            this.BtnUpdNotice.TabIndex = 20;
-            this.BtnUpdNotice.Text = "更新";
-            this.BtnUpdNotice.UseVisualStyleBackColor = false;
-            this.BtnUpdNotice.Click += new System.EventHandler(this.BtnUpdNotice_Click);
+            this.TextBoxTelNum.BackColor = System.Drawing.Color.Transparent;
+            this.TextBoxTelNum.DownBack = null;
+            this.TextBoxTelNum.Icon = null;
+            this.TextBoxTelNum.IconIsButton = false;
+            this.TextBoxTelNum.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.TextBoxTelNum.IsPasswordChat = '\0';
+            this.TextBoxTelNum.IsSystemPasswordChar = false;
+            this.TextBoxTelNum.Lines = new string[0];
+            this.TextBoxTelNum.Location = new System.Drawing.Point(303, 74);
+            this.TextBoxTelNum.Margin = new System.Windows.Forms.Padding(0);
+            this.TextBoxTelNum.MaxLength = 32767;
+            this.TextBoxTelNum.MinimumSize = new System.Drawing.Size(28, 28);
+            this.TextBoxTelNum.MouseBack = null;
+            this.TextBoxTelNum.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.TextBoxTelNum.Multiline = false;
+            this.TextBoxTelNum.Name = "TextBoxTelNum";
+            this.TextBoxTelNum.NormlBack = null;
+            this.TextBoxTelNum.Padding = new System.Windows.Forms.Padding(5);
+            this.TextBoxTelNum.ReadOnly = false;
+            this.TextBoxTelNum.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBoxTelNum.Size = new System.Drawing.Size(185, 28);
             // 
-            // DataGridViewNotice
             // 
-            this.DataGridViewNotice.AllowUserToAddRows = false;
-            this.DataGridViewNotice.AllowUserToDeleteRows = false;
-            this.DataGridViewNotice.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.DataGridViewNotice.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.DataGridViewNotice.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.DataGridViewNotice.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.DataGridViewNotice.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.DataGridViewNotice.ColumnFont = null;
-            this.DataGridViewNotice.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridViewNotice.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.DataGridViewNotice.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridViewNotice.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewNotice.DefaultCellStyle = dataGridViewCellStyle8;
-            this.DataGridViewNotice.EnableHeadersVisualStyles = false;
-            this.DataGridViewNotice.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.DataGridViewNotice.HeadFont = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.DataGridViewNotice.HeadSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            this.DataGridViewNotice.Location = new System.Drawing.Point(11, 150);
-            this.DataGridViewNotice.Name = "DataGridViewNotice";
-            this.DataGridViewNotice.ReadOnly = true;
-            this.DataGridViewNotice.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DataGridViewNotice.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.DataGridViewNotice.RowsDefaultCellStyle = dataGridViewCellStyle9;
-            this.DataGridViewNotice.RowTemplate.Height = 23;
-            this.DataGridViewNotice.Size = new System.Drawing.Size(797, 323);
-            this.DataGridViewNotice.TabIndex = 20;
-            this.DataGridViewNotice.TitleBack = null;
-            this.DataGridViewNotice.TitleBackColorBegin = System.Drawing.Color.White;
-            this.DataGridViewNotice.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
-            this.DataGridViewNotice.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewNotice_CellContentClick);
+            // 
+            this.TextBoxTelNum.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBoxTelNum.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextBoxTelNum.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.TextBoxTelNum.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.TextBoxTelNum.SkinTxt.Name = "BaseText";
+            this.TextBoxTelNum.SkinTxt.Size = new System.Drawing.Size(175, 22);
+            this.TextBoxTelNum.SkinTxt.TabIndex = 0;
+            this.TextBoxTelNum.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.TextBoxTelNum.SkinTxt.WaterText = "手机/电话";
+            this.TextBoxTelNum.TabIndex = 26;
+            this.TextBoxTelNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextBoxTelNum.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.TextBoxTelNum.WaterText = "手机/电话";
+            this.TextBoxTelNum.WordWrap = true;
             // 
             // MainForm
             // 
@@ -911,10 +1162,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTicket)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.TelTabpage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTel)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.NewsTabpage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewNotice)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridViewNotice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -966,11 +1221,24 @@
         private System.Windows.Forms.Label LblNoticeDep;
         private System.Windows.Forms.Label LblNoticeType;
         private CCWin.SkinControl.SkinDateTimePicker DateTImePicNotice;
-        private CCWin.SkinControl.SkinComboBox CmoBoxDep;
-        private CCWin.SkinControl.SkinComboBox CmoBoxType;
+        private CCWin.SkinControl.SkinComboBox CmoBoxNotDep;
+        private CCWin.SkinControl.SkinComboBox CmoBoxNotType;
         private System.Windows.Forms.GroupBox groupBox2;
         private CCWin.SkinControl.SkinButton BtnQueNotice;
         private CCWin.SkinControl.SkinButton BtnUpdNotice;
         private CCWin.SkinControl.SkinDataGridView DataGridViewNotice;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private CCWin.SkinControl.SkinButton BtnTelAdd;
+        private CCWin.SkinControl.SkinButton BtnTelQue;
+        private CCWin.SkinControl.SkinComboBox CmoBoxTelDep;
+        private CCWin.SkinControl.SkinComboBox CmoBoxCam;
+        private System.Windows.Forms.Label LblTelDep;
+        private System.Windows.Forms.Label LblTelCam;
+        private CCWin.SkinControl.SkinDataGridView DataGridViewTel;
+        private System.Windows.Forms.Label LblTelSecDep;
+        private System.Windows.Forms.TextBox TextBoxTelSecDep;
+        private CCWin.SkinControl.SkinButton BtnTelDel;
+        private System.Windows.Forms.Label LblTel;
+        private CCWin.SkinControl.SkinTextBox TextBoxTelNum;
     }
 }

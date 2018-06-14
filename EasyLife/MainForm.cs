@@ -20,6 +20,7 @@ namespace EasyLife
         ToolStripMenuItem SelectItem;//当前选择的皮肤
         BLL.Ticket ticket = new BLL.Ticket();
         BLL.Notice notice = new BLL.Notice();
+        BLL.PhoneBook phonebook = new BLL.PhoneBook();
         bool[] Exist = new bool[10];
         #endregion
 
@@ -123,16 +124,16 @@ namespace EasyLife
         {
             if (TabShow.SelectedIndex == 6)
                 Application.Exit();
-            if(TabShow.SelectedIndex==1)
+            if (TabShow.SelectedIndex == 1)
             {
-                if(Exist[1]==false)//动态加载下拉选项
+                if (Exist[1] == false)//动态加载下拉选项
                 {
                     try
                     {
                         XmlDocument doc = new XmlDocument();
                         doc.Load(Environment.CurrentDirectory + "/Data/StationName.xml");
                         XmlNodeList data = doc.DocumentElement.ChildNodes;
-                        foreach(XmlNode node in data)
+                        foreach (XmlNode node in data)
                         {
                             XmlElement xe = (XmlElement)node;
                             XmlNodeList xnl0 = xe.ChildNodes;
@@ -141,11 +142,24 @@ namespace EasyLife
                             CmoBoxToSta.Items.Add(s);
                         }
                     }
-                    catch(Exception)
+                    catch (Exception)
                     {
 
                     }
                     Exist[1] = true;
+                }
+            }
+            if (TabShow.SelectedIndex == 2)
+            {
+                if (Exist[2] == false)
+                {
+                    string[] AllDep = phonebook.QueryDep();
+                    for (int i = 0; i < AllDep.Length; i++)
+                    {
+                        string s = AllDep[i];
+                        CmoBoxTelDep.Items.Add(s);
+                    }
+                    Exist[2] = true;
                 }
             }
         }
@@ -178,9 +192,9 @@ namespace EasyLife
         }
         private void BtnTicQuery_Click(object sender, EventArgs e)
         {
-            if (CmoBoxFromSta.SelectedItem == null||CmoBoxFromSta.SelectedItem.ToString()==string.Empty)
+            if (CmoBoxFromSta.SelectedItem == null || CmoBoxFromSta.SelectedItem.ToString() == string.Empty)
             {
-                MessageBoxEx.Show("出发站不能为空!", "错误",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxEx.Show("出发站不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (CmoBoxToSta.SelectedItem == null || CmoBoxToSta.SelectedItem.ToString() == string.Empty)
@@ -189,13 +203,13 @@ namespace EasyLife
                 return;
             }
             DateTime SelectDate = DateTime.ParseExact(DateTimeTic.Text, "yyyy-M-d", System.Globalization.CultureInfo.InstalledUICulture);
-            if( (DateTime.Compare(SelectDate,DateTime.Now)<0)&&(SelectDate.ToString("d")!=DateTime.Now.ToString("d")))
+            if ((DateTime.Compare(SelectDate, DateTime.Now) < 0) && (SelectDate.ToString("d") != DateTime.Now.ToString("d")))
             {
                 MessageBoxEx.Show("出发日期不能小于当前系统日期!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             string SelectRadText = RadBtnAdult.Checked == true ? RadBtnAdult.Text : RadBtnStuTic.Text;
-            if (ticket.Exists(CmoBoxFromSta.Text,CmoBoxToSta.Text,SelectDate, SelectRadText) ==false)//尚未查询过
+            if (ticket.Exists(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText) == false)//尚未查询过
             {
                 ticket.Update(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText);
             }
@@ -207,61 +221,84 @@ namespace EasyLife
         #region 校园新闻Page
         private void BtnQueNotice_Click(object sender, EventArgs e)
         {
-            if (CmoBoxDep.Text == string.Empty)
-            {
-                MessageBoxEx.Show("所属部门不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (CmoBoxType.Text == string.Empty)
-            {
-                MessageBoxEx.Show("类型不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            if (DateTImePicNotice.Text!=string.Empty&&Regex.IsMatch(DateTImePicNotice.Text, @"\d{4}-\d{1,2}-\d{1,2}") == false)
+            if (DateTImePicNotice.Text != string.Empty && Regex.IsMatch(DateTImePicNotice.Text, @"\d{4}-\d{1,2}-\d{1,2}") == false)
             {
                 MessageBoxEx.Show("日期格式错误!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            string Department = CmoBoxDep.Text.ToString();
-            string Type = CmoBoxType.Text.ToString();
+            string Department = CmoBoxNotDep.Text.ToString();
+            string Type = CmoBoxNotType.Text.ToString();
             string Date = DateTImePicNotice.Text;
             DataGridViewNotice.DataSource = notice.GetList(Department, Type, Date).Tables["Notice"].DefaultView;
         }
         private void BtnUpdNotice_Click(object sender, EventArgs e)
         {
-            if(CmoBoxDep.Text==string.Empty)
+            if (CmoBoxNotDep.Text == string.Empty)
             {
                 MessageBoxEx.Show("所属部门不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (CmoBoxType.Text==string.Empty)
+            if (CmoBoxNotType.Text == string.Empty)
             {
                 MessageBoxEx.Show("类型不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            notice.Update(CmoBoxDep.Text.ToString(), CmoBoxType.Text.ToString());
-            string Department = CmoBoxDep.Text.ToString();
-            string Type = CmoBoxType.Text.ToString();
+            notice.Update(CmoBoxNotDep.Text.ToString(), CmoBoxNotType.Text.ToString());
+            string Department = CmoBoxNotDep.Text.ToString();
+            string Type = CmoBoxNotType.Text.ToString();
             string Date = DateTImePicNotice.Text;
             DataGridViewNotice.DataSource = notice.GetList(Department, Type, Date).Tables["Notice"].DefaultView;
         }
         private void DataGridViewNotice_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.ColumnIndex==3)
+            if (e.ColumnIndex == 3)
             {
                 this.DataGridViewNotice.CurrentCell = this.DataGridViewNotice.Rows[e.RowIndex].Cells[e.ColumnIndex];
                 string Link = this.DataGridViewNotice.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
                 System.Diagnostics.Process.Start(Link);
             }
         }
-        private void CmoBoxType_SelectedValueChanged(object sender, EventArgs e)
+        #endregion
+
+        #region 电话查询Page
+        private void BtnTelQue_Click(object sender, EventArgs e)
         {
-            CmoBoxType.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.DataGridViewTel.DataSource = phonebook.GetList(CmoBoxTelDep.Text, CmoBoxCam.Text, TextBoxTelSecDep.Text).Tables["Tel"].DefaultView;
         }
 
-        private void CmoBoxDep_SelectedValueChanged(object sender, EventArgs e)
+        private void BtnTelAdd_Click(object sender, EventArgs e)
         {
-            CmoBoxDep.DropDownStyle = ComboBoxStyle.DropDownList;
+            if(CmoBoxTelDep.Text==string.Empty)
+            {
+                MessageBoxEx.Show("所属单位不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if(CmoBoxCam.Text==string.Empty)
+            {
+                MessageBoxEx.Show("所在校区不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if(TextBoxTelSecDep.Text==string.Empty)
+            {
+                MessageBoxEx.Show("所属部门不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if(TextBoxTelNum.Text==string.Empty)
+            {
+                MessageBoxEx.Show("电话号码不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            phonebook.Add(CmoBoxTelDep.Text, TextBoxTelNum.Text, TextBoxTelSecDep.Text, CmoBoxCam.Text);
+            this.DataGridViewTel.DataSource = phonebook.GetList(CmoBoxTelDep.Text, CmoBoxCam.Text, TextBoxTelSecDep.Text).Tables["Tel"].DefaultView;
+
+        }
+
+        private void BtnTelDel_Click(object sender, EventArgs e)
+        {
+            this.DataGridViewTel.DataSource = phonebook.GetList(CmoBoxTelDep.Text, CmoBoxCam.Text, TextBoxTelSecDep.Text).Tables["Tel"].DefaultView;
+            int n;
+            n=phonebook.Delete(CmoBoxTelDep.Text, CmoBoxCam.Text, TextBoxTelSecDep.Text);
+            MessageBoxEx.Show("成功删除"+n+"条数据!", "完成", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
         #endregion
 
