@@ -1,4 +1,5 @@
 ﻿using CCWin;
+using EasyLife.BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,6 +35,9 @@ namespace EasyLife
         private void MainForm_Load(object sender, EventArgs e)
         {
             this.BackColor = Color.FromArgb(63, 176, 215);
+            LoadingIndex.Show();
+            TimerLoad.Enabled = true;
+            TimerLoad.Interval = 4000;
         }
         #endregion
 
@@ -302,5 +306,50 @@ namespace EasyLife
         }
         #endregion
 
+        #region 主页
+        private void ShowWeather(string City)
+        {
+            string[] r = Weather.Get(City);
+            LblLoc.Text = "地理位置" + r[0] + " " + r[1];
+            LblWeaSim.Text = "今日天气概况:" + r[5] + " " + r[6];
+            LblWind.Text = "风向:" + r[7];
+            LblNextDay.Text= "明天天气概况" + r[12] + " " + r[13];
+            LblWeaComp.Text = r[10];
+            LblLife.Text =r[11];
+            LblCity.Text = r[22];
+            LblThreeDay.Text = "后天天气概况"+ r[17] + " " + r[18];
+
+            pictureBox1.Image= Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[8][0]));
+            pictureBox2.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[9][0]));
+            pictureBox3.Image= Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[15][0]));
+            pictureBox4.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[16][0]));
+            pictureBox5.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[20][0]));
+            pictureBox6.Image = Tool.GetResBitmap(string.Format("EasyLife.Weather.a_{0}.jpg", r[21][0]));
+
+            pictureBox1.Left = LblWeaSim.Left + LblWeaSim.Width + 5;
+            pictureBox1.Top = pictureBox2.Top = LblWeaSim.Top - 8;
+            pictureBox2.Left = pictureBox1.Left + pictureBox1.Width + 5;
+
+            pictureBox3.Left = LblNextDay.Left + LblNextDay.Width + 5;
+            pictureBox3.Top = pictureBox4.Top = LblNextDay.Top - 8;
+            pictureBox4.Left = pictureBox3.Left + pictureBox3.Width + 5;
+
+            pictureBox5.Left = LblThreeDay.Left + LblThreeDay.Width + 5;
+            pictureBox5.Top = pictureBox6.Top = LblThreeDay.Top - 8;
+            pictureBox6.Left = pictureBox5.Left + pictureBox5.Width + 5;
+
+        }
+        #endregion
+
+        private void TimerLoad_Tick(object sender, EventArgs e)
+        {
+            if(Exist[0]==false)
+            {
+                ShowWeather("西安");
+                TimerLoad.Enabled = false;
+                LoadingIndex.Hide();
+                Exist[0] = true;
+            }
+        }
     }
 }

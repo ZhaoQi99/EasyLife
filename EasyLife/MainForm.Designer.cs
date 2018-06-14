@@ -63,7 +63,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TabShow = new CCWin.SkinControl.SkinTabControl();
             this.IndexTabPage = new CCWin.SkinControl.SkinTabPage();
+            this.GouBoxWeather = new CCWin.SkinControl.SkinGroupBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.LoadingIndex = new CCWin.SkinControl.SkinProgressIndicator();
+            this.LblLoc = new System.Windows.Forms.Label();
+            this.LblCity = new CCWin.SkinControl.SkinLabel();
+            this.LblWeaComp = new CCWin.SkinControl.SkinLabel();
+            this.LblLife = new CCWin.SkinControl.SkinLabel();
+            this.LblThreeDay = new System.Windows.Forms.Label();
+            this.LblNextDay = new System.Windows.Forms.Label();
+            this.LblWeaSim = new System.Windows.Forms.Label();
+            this.LblWind = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.TrainTabpage = new CCWin.SkinControl.SkinTabPage();
             this.DataGridViewTicket = new CCWin.SkinControl.SkinDataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -82,6 +97,8 @@
             this.TelTabpage = new CCWin.SkinControl.SkinTabPage();
             this.DataGridViewTel = new CCWin.SkinControl.SkinDataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.TextBoxTelNum = new CCWin.SkinControl.SkinTextBox();
+            this.LblTel = new System.Windows.Forms.Label();
             this.BtnTelDel = new CCWin.SkinControl.SkinButton();
             this.LblTelSecDep = new System.Windows.Forms.Label();
             this.TextBoxTelSecDep = new System.Windows.Forms.TextBox();
@@ -91,7 +108,6 @@
             this.CmoBoxCam = new CCWin.SkinControl.SkinComboBox();
             this.LblTelDep = new System.Windows.Forms.Label();
             this.LblTelCam = new System.Windows.Forms.Label();
-            this.EmailTabpage = new CCWin.SkinControl.SkinTabPage();
             this.NewsTabpage = new CCWin.SkinControl.SkinTabPage();
             this.DataGridViewNotice = new CCWin.SkinControl.SkinDataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -103,16 +119,23 @@
             this.LblNoticeDep = new System.Windows.Forms.Label();
             this.DateTImePicNotice = new CCWin.SkinControl.SkinDateTimePicker();
             this.LblNoticeType = new System.Windows.Forms.Label();
+            this.EmailTabpage = new CCWin.SkinControl.SkinTabPage();
             this.NoticeTabPage = new CCWin.SkinControl.SkinTabPage();
             this.ExitTabPage = new CCWin.SkinControl.SkinTabPage();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.LblTel = new System.Windows.Forms.Label();
-            this.TextBoxTelNum = new CCWin.SkinControl.SkinTextBox();
+            this.TimerLoad = new System.Windows.Forms.Timer(this.components);
             this.SkinMenu.SuspendLayout();
             this.SettingsMenu.SuspendLayout();
             this.TabShow.SuspendLayout();
             this.IndexTabPage.SuspendLayout();
+            this.GouBoxWeather.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.TrainTabpage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTicket)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -307,8 +330,8 @@
             this.TabShow.Controls.Add(this.IndexTabPage);
             this.TabShow.Controls.Add(this.TrainTabpage);
             this.TabShow.Controls.Add(this.TelTabpage);
-            this.TabShow.Controls.Add(this.EmailTabpage);
             this.TabShow.Controls.Add(this.NewsTabpage);
+            this.TabShow.Controls.Add(this.EmailTabpage);
             this.TabShow.Controls.Add(this.NoticeTabPage);
             this.TabShow.Controls.Add(this.ExitTabPage);
             this.TabShow.HeadBack = null;
@@ -326,17 +349,17 @@
             this.TabShow.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
             this.TabShow.PageNorml = null;
             this.TabShow.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.TabShow.SelectedIndex = 2;
+            this.TabShow.SelectedIndex = 0;
             this.TabShow.ShowToolTips = true;
             this.TabShow.Size = new System.Drawing.Size(815, 596);
             this.TabShow.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
-            this.TabShow.TabIndex = 4;
+            this.TabShow.TabIndex = 0;
             this.TabShow.SelectedIndexChanged += new System.EventHandler(this.TabShow_SelectedIndexChanged);
             // 
             // IndexTabPage
             // 
             this.IndexTabPage.BackColor = System.Drawing.Color.White;
-            this.IndexTabPage.Controls.Add(this.LoadingIndex);
+            this.IndexTabPage.Controls.Add(this.GouBoxWeather);
             this.IndexTabPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.IndexTabPage.ImageIndex = 0;
             this.IndexTabPage.Location = new System.Drawing.Point(0, 36);
@@ -346,11 +369,90 @@
             this.IndexTabPage.TabItemImage = null;
             this.IndexTabPage.Text = "主页";
             // 
+            // GouBoxWeather
+            // 
+            this.GouBoxWeather.BackColor = System.Drawing.Color.Transparent;
+            this.GouBoxWeather.BorderColor = System.Drawing.Color.DimGray;
+            this.GouBoxWeather.Controls.Add(this.LoadingIndex);
+            this.GouBoxWeather.Controls.Add(this.LblLife);
+            this.GouBoxWeather.Controls.Add(this.pictureBox6);
+            this.GouBoxWeather.Controls.Add(this.pictureBox5);
+            this.GouBoxWeather.Controls.Add(this.pictureBox1);
+            this.GouBoxWeather.Controls.Add(this.pictureBox2);
+            this.GouBoxWeather.Controls.Add(this.LblLoc);
+            this.GouBoxWeather.Controls.Add(this.LblCity);
+            this.GouBoxWeather.Controls.Add(this.LblWeaComp);
+            this.GouBoxWeather.Controls.Add(this.LblThreeDay);
+            this.GouBoxWeather.Controls.Add(this.LblNextDay);
+            this.GouBoxWeather.Controls.Add(this.LblWeaSim);
+            this.GouBoxWeather.Controls.Add(this.LblWind);
+            this.GouBoxWeather.Controls.Add(this.pictureBox3);
+            this.GouBoxWeather.Controls.Add(this.pictureBox4);
+            this.GouBoxWeather.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.GouBoxWeather.ForeColor = System.Drawing.Color.Black;
+            this.GouBoxWeather.Location = new System.Drawing.Point(7, 3);
+            this.GouBoxWeather.Name = "GouBoxWeather";
+            this.GouBoxWeather.RectBackColor = System.Drawing.Color.LightPink;
+            this.GouBoxWeather.RoundStyle = CCWin.SkinClass.RoundStyle.All;
+            this.GouBoxWeather.Size = new System.Drawing.Size(580, 536);
+            this.GouBoxWeather.TabIndex = 3;
+            this.GouBoxWeather.TabStop = false;
+            this.GouBoxWeather.Text = "天气预报";
+            this.GouBoxWeather.TitleBorderColor = System.Drawing.Color.DarkGray;
+            this.GouBoxWeather.TitleRadius = 6;
+            this.GouBoxWeather.TitleRectBackColor = System.Drawing.Color.Lime;
+            this.GouBoxWeather.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(438, 338);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 21;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(357, 338);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 20;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(438, 293);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 19;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(357, 59);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(427, 60);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
             // LoadingIndex
             // 
             this.LoadingIndex.AutoStart = true;
-            this.LoadingIndex.BackColor = System.Drawing.Color.White;
-            this.LoadingIndex.Location = new System.Drawing.Point(318, 162);
+            this.LoadingIndex.BackColor = System.Drawing.Color.Transparent;
+            this.LoadingIndex.Location = new System.Drawing.Point(344, 185);
             this.LoadingIndex.Name = "LoadingIndex";
             this.LoadingIndex.Percentage = 30F;
             this.LoadingIndex.ShowText = true;
@@ -358,6 +460,107 @@
             this.LoadingIndex.TabIndex = 1;
             this.LoadingIndex.Text = "加载中....";
             this.LoadingIndex.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
+            // 
+            // LblLoc
+            // 
+            this.LblLoc.AutoEllipsis = true;
+            this.LblLoc.ForeColor = System.Drawing.Color.Black;
+            this.LblLoc.Location = new System.Drawing.Point(20, 37);
+            this.LblLoc.Name = "LblLoc";
+            this.LblLoc.Size = new System.Drawing.Size(519, 19);
+            this.LblLoc.TabIndex = 0;
+            this.LblLoc.Text = "地理位置:";
+            // 
+            // LblCity
+            // 
+            this.LblCity.ArtTextStyle = CCWin.SkinControl.ArtTextStyle.None;
+            this.LblCity.AutoEllipsis = true;
+            this.LblCity.BackColor = System.Drawing.Color.Transparent;
+            this.LblCity.BorderColor = System.Drawing.Color.Transparent;
+            this.LblCity.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblCity.Location = new System.Drawing.Point(20, 362);
+            this.LblCity.Name = "LblCity";
+            this.LblCity.Size = new System.Drawing.Size(519, 109);
+            this.LblCity.TabIndex = 15;
+            this.LblCity.Text = "城市介绍:";
+            // 
+            // LblWeaComp
+            // 
+            this.LblWeaComp.ArtTextStyle = CCWin.SkinControl.ArtTextStyle.None;
+            this.LblWeaComp.AutoEllipsis = true;
+            this.LblWeaComp.BackColor = System.Drawing.Color.Transparent;
+            this.LblWeaComp.BorderColor = System.Drawing.Color.White;
+            this.LblWeaComp.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblWeaComp.Location = new System.Drawing.Point(20, 145);
+            this.LblWeaComp.Name = "LblWeaComp";
+            this.LblWeaComp.Size = new System.Drawing.Size(519, 23);
+            this.LblWeaComp.TabIndex = 14;
+            this.LblWeaComp.Text = "今日天气实况:";
+            // 
+            // LblLife
+            // 
+            this.LblLife.ArtTextStyle = CCWin.SkinControl.ArtTextStyle.None;
+            this.LblLife.AutoEllipsis = true;
+            this.LblLife.BackColor = System.Drawing.Color.Transparent;
+            this.LblLife.BorderColor = System.Drawing.Color.Transparent;
+            this.LblLife.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblLife.Location = new System.Drawing.Point(20, 185);
+            this.LblLife.Name = "LblLife";
+            this.LblLife.Size = new System.Drawing.Size(519, 100);
+            this.LblLife.TabIndex = 13;
+            this.LblLife.Text = "生活指数:";
+            // 
+            // LblThreeDay
+            // 
+            this.LblThreeDay.AutoEllipsis = true;
+            this.LblThreeDay.AutoSize = true;
+            this.LblThreeDay.ForeColor = System.Drawing.Color.Black;
+            this.LblThreeDay.Location = new System.Drawing.Point(20, 326);
+            this.LblThreeDay.Name = "LblThreeDay";
+            this.LblThreeDay.Size = new System.Drawing.Size(123, 19);
+            this.LblThreeDay.TabIndex = 10;
+            this.LblThreeDay.Text = "后天天气概况";
+            // 
+            // LblNextDay
+            // 
+            this.LblNextDay.AutoEllipsis = true;
+            this.LblNextDay.AutoSize = true;
+            this.LblNextDay.ForeColor = System.Drawing.Color.Black;
+            this.LblNextDay.Location = new System.Drawing.Point(20, 290);
+            this.LblNextDay.Name = "LblNextDay";
+            this.LblNextDay.Size = new System.Drawing.Size(123, 19);
+            this.LblNextDay.TabIndex = 9;
+            this.LblNextDay.Text = "明日天气概况";
+            // 
+            // LblWeaSim
+            // 
+            this.LblWeaSim.AutoEllipsis = true;
+            this.LblWeaSim.AutoSize = true;
+            this.LblWeaSim.ForeColor = System.Drawing.Color.Black;
+            this.LblWeaSim.Location = new System.Drawing.Point(20, 73);
+            this.LblWeaSim.Name = "LblWeaSim";
+            this.LblWeaSim.Size = new System.Drawing.Size(133, 19);
+            this.LblWeaSim.TabIndex = 3;
+            this.LblWeaSim.Text = "今日天气概况:";
+            // 
+            // LblWind
+            // 
+            this.LblWind.AutoEllipsis = true;
+            this.LblWind.ForeColor = System.Drawing.Color.Black;
+            this.LblWind.Location = new System.Drawing.Point(20, 109);
+            this.LblWind.Name = "LblWind";
+            this.LblWind.Size = new System.Drawing.Size(519, 19);
+            this.LblWind.TabIndex = 2;
+            this.LblWind.Text = "风向";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(357, 287);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
             // 
             // TrainTabpage
             // 
@@ -709,6 +912,57 @@
             this.groupBox3.TabIndex = 20;
             this.groupBox3.TabStop = false;
             // 
+            // TextBoxTelNum
+            // 
+            this.TextBoxTelNum.BackColor = System.Drawing.Color.Transparent;
+            this.TextBoxTelNum.DownBack = null;
+            this.TextBoxTelNum.Icon = null;
+            this.TextBoxTelNum.IconIsButton = false;
+            this.TextBoxTelNum.IconMouseState = CCWin.SkinClass.ControlState.Normal;
+            this.TextBoxTelNum.IsPasswordChat = '\0';
+            this.TextBoxTelNum.IsSystemPasswordChar = false;
+            this.TextBoxTelNum.Lines = new string[0];
+            this.TextBoxTelNum.Location = new System.Drawing.Point(303, 74);
+            this.TextBoxTelNum.Margin = new System.Windows.Forms.Padding(0);
+            this.TextBoxTelNum.MaxLength = 32767;
+            this.TextBoxTelNum.MinimumSize = new System.Drawing.Size(28, 28);
+            this.TextBoxTelNum.MouseBack = null;
+            this.TextBoxTelNum.MouseState = CCWin.SkinClass.ControlState.Normal;
+            this.TextBoxTelNum.Multiline = false;
+            this.TextBoxTelNum.Name = "TextBoxTelNum";
+            this.TextBoxTelNum.NormlBack = null;
+            this.TextBoxTelNum.Padding = new System.Windows.Forms.Padding(5);
+            this.TextBoxTelNum.ReadOnly = false;
+            this.TextBoxTelNum.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.TextBoxTelNum.Size = new System.Drawing.Size(185, 28);
+            // 
+            // 
+            // 
+            this.TextBoxTelNum.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBoxTelNum.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextBoxTelNum.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.TextBoxTelNum.SkinTxt.Location = new System.Drawing.Point(5, 5);
+            this.TextBoxTelNum.SkinTxt.Name = "BaseText";
+            this.TextBoxTelNum.SkinTxt.Size = new System.Drawing.Size(175, 22);
+            this.TextBoxTelNum.SkinTxt.TabIndex = 0;
+            this.TextBoxTelNum.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.TextBoxTelNum.SkinTxt.WaterText = "手机/电话";
+            this.TextBoxTelNum.TabIndex = 26;
+            this.TextBoxTelNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextBoxTelNum.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.TextBoxTelNum.WaterText = "手机/电话";
+            this.TextBoxTelNum.WordWrap = true;
+            // 
+            // LblTel
+            // 
+            this.LblTel.AutoSize = true;
+            this.LblTel.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LblTel.Location = new System.Drawing.Point(216, 81);
+            this.LblTel.Name = "LblTel";
+            this.LblTel.Size = new System.Drawing.Size(71, 15);
+            this.LblTel.TabIndex = 25;
+            this.LblTel.Text = "电话号码";
+            // 
             // BtnTelDel
             // 
             this.BtnTelDel.BackColor = System.Drawing.Color.Transparent;
@@ -819,18 +1073,6 @@
             this.LblTelCam.Size = new System.Drawing.Size(39, 15);
             this.LblTelCam.TabIndex = 16;
             this.LblTelCam.Text = "校区";
-            // 
-            // EmailTabpage
-            // 
-            this.EmailTabpage.BackColor = System.Drawing.Color.White;
-            this.EmailTabpage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EmailTabpage.ImageIndex = 4;
-            this.EmailTabpage.Location = new System.Drawing.Point(0, 36);
-            this.EmailTabpage.Name = "EmailTabpage";
-            this.EmailTabpage.Size = new System.Drawing.Size(815, 560);
-            this.EmailTabpage.TabIndex = 6;
-            this.EmailTabpage.TabItemImage = null;
-            this.EmailTabpage.Text = "邮件发送";
             // 
             // NewsTabpage
             // 
@@ -1017,6 +1259,18 @@
             this.LblNoticeType.TabIndex = 16;
             this.LblNoticeType.Text = "类型";
             // 
+            // EmailTabpage
+            // 
+            this.EmailTabpage.BackColor = System.Drawing.Color.White;
+            this.EmailTabpage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EmailTabpage.ImageIndex = 4;
+            this.EmailTabpage.Location = new System.Drawing.Point(0, 36);
+            this.EmailTabpage.Name = "EmailTabpage";
+            this.EmailTabpage.Size = new System.Drawing.Size(815, 560);
+            this.EmailTabpage.TabIndex = 6;
+            this.EmailTabpage.TabItemImage = null;
+            this.EmailTabpage.Text = "邮件发送";
+            // 
             // NoticeTabPage
             // 
             this.NoticeTabPage.BackColor = System.Drawing.Color.White;
@@ -1053,56 +1307,9 @@
             this.imageList.Images.SetKeyName(5, "ToolAuto.ico");
             this.imageList.Images.SetKeyName(6, "ToolExit.png");
             // 
-            // LblTel
+            // TimerLoad
             // 
-            this.LblTel.AutoSize = true;
-            this.LblTel.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.LblTel.Location = new System.Drawing.Point(216, 81);
-            this.LblTel.Name = "LblTel";
-            this.LblTel.Size = new System.Drawing.Size(71, 15);
-            this.LblTel.TabIndex = 25;
-            this.LblTel.Text = "电话号码";
-            // 
-            // TextBoxTelNum
-            // 
-            this.TextBoxTelNum.BackColor = System.Drawing.Color.Transparent;
-            this.TextBoxTelNum.DownBack = null;
-            this.TextBoxTelNum.Icon = null;
-            this.TextBoxTelNum.IconIsButton = false;
-            this.TextBoxTelNum.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.TextBoxTelNum.IsPasswordChat = '\0';
-            this.TextBoxTelNum.IsSystemPasswordChar = false;
-            this.TextBoxTelNum.Lines = new string[0];
-            this.TextBoxTelNum.Location = new System.Drawing.Point(303, 74);
-            this.TextBoxTelNum.Margin = new System.Windows.Forms.Padding(0);
-            this.TextBoxTelNum.MaxLength = 32767;
-            this.TextBoxTelNum.MinimumSize = new System.Drawing.Size(28, 28);
-            this.TextBoxTelNum.MouseBack = null;
-            this.TextBoxTelNum.MouseState = CCWin.SkinClass.ControlState.Normal;
-            this.TextBoxTelNum.Multiline = false;
-            this.TextBoxTelNum.Name = "TextBoxTelNum";
-            this.TextBoxTelNum.NormlBack = null;
-            this.TextBoxTelNum.Padding = new System.Windows.Forms.Padding(5);
-            this.TextBoxTelNum.ReadOnly = false;
-            this.TextBoxTelNum.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextBoxTelNum.Size = new System.Drawing.Size(185, 28);
-            // 
-            // 
-            // 
-            this.TextBoxTelNum.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBoxTelNum.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBoxTelNum.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.TextBoxTelNum.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.TextBoxTelNum.SkinTxt.Name = "BaseText";
-            this.TextBoxTelNum.SkinTxt.Size = new System.Drawing.Size(175, 22);
-            this.TextBoxTelNum.SkinTxt.TabIndex = 0;
-            this.TextBoxTelNum.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.TextBoxTelNum.SkinTxt.WaterText = "手机/电话";
-            this.TextBoxTelNum.TabIndex = 26;
-            this.TextBoxTelNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TextBoxTelNum.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.TextBoxTelNum.WaterText = "手机/电话";
-            this.TextBoxTelNum.WordWrap = true;
+            this.TimerLoad.Tick += new System.EventHandler(this.TimerLoad_Tick);
             // 
             // MainForm
             // 
@@ -1158,6 +1365,14 @@
             this.SettingsMenu.ResumeLayout(false);
             this.TabShow.ResumeLayout(false);
             this.IndexTabPage.ResumeLayout(false);
+            this.GouBoxWeather.ResumeLayout(false);
+            this.GouBoxWeather.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.TrainTabpage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewTicket)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -1240,5 +1455,21 @@
         private CCWin.SkinControl.SkinButton BtnTelDel;
         private System.Windows.Forms.Label LblTel;
         private CCWin.SkinControl.SkinTextBox TextBoxTelNum;
+        private CCWin.SkinControl.SkinGroupBox GouBoxWeather;
+        private System.Windows.Forms.Label LblWeaSim;
+        private System.Windows.Forms.Label LblWind;
+        private System.Windows.Forms.Label LblLoc;
+        private System.Windows.Forms.Label LblThreeDay;
+        private System.Windows.Forms.Label LblNextDay;
+        private CCWin.SkinControl.SkinLabel LblLife;
+        private CCWin.SkinControl.SkinLabel LblWeaComp;
+        private CCWin.SkinControl.SkinLabel LblCity;
+        private System.Windows.Forms.Timer TimerLoad;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

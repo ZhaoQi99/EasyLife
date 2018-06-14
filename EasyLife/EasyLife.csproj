@@ -42,6 +42,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -82,6 +84,11 @@
     </Compile>
     <Compile Include="Send\SendMail.cs" />
     <Compile Include="Tool.cs" />
+    <Compile Include="Web References\cn.com.webxml.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -114,6 +121,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Web References\cn.com.webxml.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\cn.com.webxml.www\WeatherWebService.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -210,11 +222,160 @@
     <Content Include="Database.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\BtnForgetPwd.DownBack.png" />
+    <None Include="Resources\BtnForgetPwd.MouseBack.png" />
+    <None Include="Resources\BtnForgetPwd.NormlBack.png" />
+    <None Include="Resources\BtnRegister.DownBack.png" />
+    <None Include="Resources\BtnRegister.MouseBack.png" />
+    <None Include="Resources\BtnRegister.NormlBack.png" />
+    <None Include="Resources\Index.png" />
+    <None Include="Resources\PasswordWrong.png" />
+    <None Include="Resources\Settings.png" />
+    <None Include="Resources\Skin.png" />
+    <None Include="Resources\ToolExit.png" />
+    <None Include="Resources\ToolSearch.png" />
+    <None Include="Resources\ToolSendMail.png" />
+    <None Include="Resources\ToolTel.png" />
+    <None Include="Resources\ToolTrain.png" />
+    <None Include="Resources\this.CloseDownBack.png" />
+    <None Include="Resources\this.CloseMouseBack.png" />
+    <None Include="Resources\this.CloseNormlBack.png" />
+    <None Include="Resources\this.MiniDownBack.png" />
+    <None Include="Resources\this.MiniMouseBack.png" />
+    <None Include="Resources\this.MiniNormlBack.png" />
+    <EmbeddedResource Include="Weather\0.jpg" />
+    <EmbeddedResource Include="Weather\1.jpg" />
+    <EmbeddedResource Include="Weather\10.jpg" />
+    <EmbeddedResource Include="Weather\11.jpg" />
+    <EmbeddedResource Include="Weather\12.jpg" />
+    <EmbeddedResource Include="Weather\13.jpg" />
+    <EmbeddedResource Include="Weather\14.jpg" />
+    <EmbeddedResource Include="Weather\15.jpg" />
+    <EmbeddedResource Include="Weather\16.jpg" />
+    <EmbeddedResource Include="Weather\17.jpg" />
+    <EmbeddedResource Include="Weather\18.jpg" />
+    <EmbeddedResource Include="Weather\19.jpg" />
+    <EmbeddedResource Include="Weather\2.jpg" />
+    <EmbeddedResource Include="Weather\20.jpg" />
+    <EmbeddedResource Include="Weather\21.jpg" />
+    <EmbeddedResource Include="Weather\22.jpg" />
+    <EmbeddedResource Include="Weather\23.jpg" />
+    <EmbeddedResource Include="Weather\24.jpg" />
+    <EmbeddedResource Include="Weather\25.jpg" />
+    <EmbeddedResource Include="Weather\26.jpg" />
+    <EmbeddedResource Include="Weather\27.jpg" />
+    <EmbeddedResource Include="Weather\28.jpg" />
+    <EmbeddedResource Include="Weather\29.jpg" />
+    <EmbeddedResource Include="Weather\3.jpg" />
+    <EmbeddedResource Include="Weather\30.jpg" />
+    <EmbeddedResource Include="Weather\31.jpg" />
+    <EmbeddedResource Include="Weather\4.jpg" />
+    <EmbeddedResource Include="Weather\5.jpg" />
+    <EmbeddedResource Include="Weather\6.jpg" />
+    <EmbeddedResource Include="Weather\7.jpg" />
+    <EmbeddedResource Include="Weather\8.jpg" />
+    <EmbeddedResource Include="Weather\9.jpg" />
+    <EmbeddedResource Include="Weather\a_0.jpg" />
+    <EmbeddedResource Include="Weather\a_1.jpg" />
+    <EmbeddedResource Include="Weather\a_10.jpg" />
+    <EmbeddedResource Include="Weather\a_11.jpg" />
+    <EmbeddedResource Include="Weather\a_12.jpg" />
+    <EmbeddedResource Include="Weather\a_13.jpg" />
+    <EmbeddedResource Include="Weather\a_14.jpg" />
+    <EmbeddedResource Include="Weather\a_15.jpg" />
+    <EmbeddedResource Include="Weather\a_16.jpg" />
+    <EmbeddedResource Include="Weather\a_17.jpg" />
+    <EmbeddedResource Include="Weather\a_18.jpg" />
+    <EmbeddedResource Include="Weather\a_19.jpg" />
+    <EmbeddedResource Include="Weather\a_2.jpg" />
+    <EmbeddedResource Include="Weather\a_20.jpg" />
+    <EmbeddedResource Include="Weather\a_21.jpg" />
+    <EmbeddedResource Include="Weather\a_22.jpg" />
+    <EmbeddedResource Include="Weather\a_23.jpg" />
+    <EmbeddedResource Include="Weather\a_24.jpg" />
+    <EmbeddedResource Include="Weather\a_25.jpg" />
+    <EmbeddedResource Include="Weather\a_26.jpg" />
+    <EmbeddedResource Include="Weather\a_27.jpg" />
+    <EmbeddedResource Include="Weather\a_28.jpg" />
+    <EmbeddedResource Include="Weather\a_29.jpg" />
+    <EmbeddedResource Include="Weather\a_3.jpg" />
+    <EmbeddedResource Include="Weather\a_30.jpg" />
+    <EmbeddedResource Include="Weather\a_31.jpg" />
+    <EmbeddedResource Include="Weather\a_4.jpg" />
+    <EmbeddedResource Include="Weather\a_5.jpg" />
+    <EmbeddedResource Include="Weather\a_6.jpg" />
+    <EmbeddedResource Include="Weather\a_7.jpg" />
+    <EmbeddedResource Include="Weather\a_8.jpg" />
+    <EmbeddedResource Include="Weather\a_9.jpg" />
+    <EmbeddedResource Include="Weather\a_nothing.jpg" />
+    <EmbeddedResource Include="Weather\b_0.jpg" />
+    <EmbeddedResource Include="Weather\b_1.jpg" />
+    <EmbeddedResource Include="Weather\b_10.jpg" />
+    <EmbeddedResource Include="Weather\b_11.jpg" />
+    <EmbeddedResource Include="Weather\b_12.jpg" />
+    <EmbeddedResource Include="Weather\b_13.jpg" />
+    <EmbeddedResource Include="Weather\b_14.jpg" />
+    <EmbeddedResource Include="Weather\b_15.jpg" />
+    <EmbeddedResource Include="Weather\b_16.jpg" />
+    <EmbeddedResource Include="Weather\b_17.jpg" />
+    <EmbeddedResource Include="Weather\b_18.jpg" />
+    <EmbeddedResource Include="Weather\b_19.jpg" />
+    <EmbeddedResource Include="Weather\b_2.jpg" />
+    <EmbeddedResource Include="Weather\b_20.jpg" />
+    <EmbeddedResource Include="Weather\b_21.jpg" />
+    <EmbeddedResource Include="Weather\b_22.jpg" />
+    <EmbeddedResource Include="Weather\b_23.jpg" />
+    <EmbeddedResource Include="Weather\b_24.jpg" />
+    <EmbeddedResource Include="Weather\b_25.jpg" />
+    <EmbeddedResource Include="Weather\b_26.jpg" />
+    <EmbeddedResource Include="Weather\b_27.jpg" />
+    <EmbeddedResource Include="Weather\b_28.jpg" />
+    <EmbeddedResource Include="Weather\b_29.jpg" />
+    <EmbeddedResource Include="Weather\b_3.jpg" />
+    <EmbeddedResource Include="Weather\b_30.jpg" />
+    <EmbeddedResource Include="Weather\b_31.jpg" />
+    <EmbeddedResource Include="Weather\b_4.jpg" />
+    <EmbeddedResource Include="Weather\b_5.jpg" />
+    <EmbeddedResource Include="Weather\b_6.jpg" />
+    <EmbeddedResource Include="Weather\b_7.jpg" />
+    <EmbeddedResource Include="Weather\b_8.jpg" />
+    <EmbeddedResource Include="Weather\b_9.jpg" />
+    <EmbeddedResource Include="Weather\b_nothing.jpg" />
+    <EmbeddedResource Include="Weather\nothing.jpg" />
+    <EmbeddedResource Include="Weather\Read me.txt" />
+    <EmbeddedResource Include="Weather\r_b.jpg" />
+    <EmbeddedResource Include="Weather\r_t1.jpg" />
+    <EmbeddedResource Include="Weather\tem1.jpg" />
+    <EmbeddedResource Include="Weather\tem2.jpg" />
+    <EmbeddedResource Include="Weather\tem3.jpg" />
+    <EmbeddedResource Include="Weather\tem4.jpg" />
+    <EmbeddedResource Include="Weather\tem5.jpg" />
+    <None Include="Web References\cn.com.webxml.www\WeatherWebService.disco" />
     <EmbeddedResource Include="Skin\1.jpg" />
     <EmbeddedResource Include="Skin\2.jpg" />
     <EmbeddedResource Include="Skin\3.jpg" />
     <EmbeddedResource Include="Skin\4.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.webxml.com.cn/WebServices/WeatherWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\cn.com.webxml.www\</RelPath>
+      <UpdateFromURL>http://www.webxml.com.cn/WebServices/WeatherWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>EasyLife_cn_com_webxml_www_WeatherWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

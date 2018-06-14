@@ -63,9 +63,39 @@ namespace EasyLife.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap BtnForgetPwd_DownBack {
+            get {
+                object obj = ResourceManager.GetObject("BtnForgetPwd_DownBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BtnForgetPwd_MouseBack {
+            get {
+                object obj = ResourceManager.GetObject("BtnForgetPwd_MouseBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BtnForgetPwd_NormlBack {
+            get {
+                object obj = ResourceManager.GetObject("BtnForgetPwd_NormlBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap BtnId_DownBack {
             get {
-                object obj = ResourceManager.GetObject("BtnId.DownBack", resourceCulture);
+                object obj = ResourceManager.GetObject("BtnId_DownBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -75,7 +105,7 @@ namespace EasyLife.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap BtnId_MouseBack {
             get {
-                object obj = ResourceManager.GetObject("BtnId.MouseBack", resourceCulture);
+                object obj = ResourceManager.GetObject("BtnId_MouseBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +115,7 @@ namespace EasyLife.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap BtnId_NormlBack {
             get {
-                object obj = ResourceManager.GetObject("BtnId.NormlBack", resourceCulture);
+                object obj = ResourceManager.GetObject("BtnId_NormlBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,7 +125,7 @@ namespace EasyLife.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap BtnJpPwd_DownBack {
             get {
-                object obj = ResourceManager.GetObject("BtnJpPwd.DownBack", resourceCulture);
+                object obj = ResourceManager.GetObject("BtnJpPwd_DownBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -105,7 +135,7 @@ namespace EasyLife.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap BtnJpPwd_MouseBack {
             get {
-                object obj = ResourceManager.GetObject("BtnJpPwd.MouseBack", resourceCulture);
+                object obj = ResourceManager.GetObject("BtnJpPwd_MouseBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,7 +145,7 @@ namespace EasyLife.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap BtnJpPwd_NormlBack {
             get {
-                object obj = ResourceManager.GetObject("BtnJpPwd.NormlBack", resourceCulture);
+                object obj = ResourceManager.GetObject("BtnJpPwd_NormlBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -125,7 +155,7 @@ namespace EasyLife.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Btnlogin_DownBack {
             get {
-                object obj = ResourceManager.GetObject("Btnlogin.DownBack", resourceCulture);
+                object obj = ResourceManager.GetObject("Btnlogin_DownBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -135,7 +165,7 @@ namespace EasyLife.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Btnlogin_MouseBack {
             get {
-                object obj = ResourceManager.GetObject("Btnlogin.MouseBack", resourceCulture);
+                object obj = ResourceManager.GetObject("Btnlogin_MouseBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -145,7 +175,37 @@ namespace EasyLife.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Btnlogin_NormlBack {
             get {
-                object obj = ResourceManager.GetObject("Btnlogin.NormlBack", resourceCulture);
+                object obj = ResourceManager.GetObject("Btnlogin_NormlBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BtnRegister_DownBack {
+            get {
+                object obj = ResourceManager.GetObject("BtnRegister_DownBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BtnRegister_MouseBack {
+            get {
+                object obj = ResourceManager.GetObject("BtnRegister_MouseBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap BtnRegister_NormlBack {
+            get {
+                object obj = ResourceManager.GetObject("BtnRegister_NormlBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +243,26 @@ namespace EasyLife.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap Index {
+            get {
+                object obj = ResourceManager.GetObject("Index", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap LoginBack {
+            get {
+                object obj = ResourceManager.GetObject("LoginBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap MiniDownBack {
             get {
                 object obj = ResourceManager.GetObject("MiniDownBack", resourceCulture);
@@ -213,9 +293,39 @@ namespace EasyLife.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap PasswordWrong {
+            get {
+                object obj = ResourceManager.GetObject("PasswordWrong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Settings {
+            get {
+                object obj = ResourceManager.GetObject("Settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Skin {
+            get {
+                object obj = ResourceManager.GetObject("Skin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap TextId_MouseBack {
             get {
-                object obj = ResourceManager.GetObject("TextId.MouseBack", resourceCulture);
+                object obj = ResourceManager.GetObject("TextId_MouseBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -225,7 +335,7 @@ namespace EasyLife.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap TextId_NormlBack {
             get {
-                object obj = ResourceManager.GetObject("TextId.NormlBack", resourceCulture);
+                object obj = ResourceManager.GetObject("TextId_NormlBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -235,7 +345,7 @@ namespace EasyLife.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap TextPwd_MouseBack {
             get {
-                object obj = ResourceManager.GetObject("TextPwd.MouseBack", resourceCulture);
+                object obj = ResourceManager.GetObject("TextPwd_MouseBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -245,7 +355,117 @@ namespace EasyLife.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap TextPwd_NormlBack {
             get {
-                object obj = ResourceManager.GetObject("TextPwd.NormlBack", resourceCulture);
+                object obj = ResourceManager.GetObject("TextPwd_NormlBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap this_CloseDownBack {
+            get {
+                object obj = ResourceManager.GetObject("this_CloseDownBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap this_CloseMouseBack {
+            get {
+                object obj = ResourceManager.GetObject("this_CloseMouseBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap this_CloseNormlBack {
+            get {
+                object obj = ResourceManager.GetObject("this_CloseNormlBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap this_MiniDownBack {
+            get {
+                object obj = ResourceManager.GetObject("this_MiniDownBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap this_MiniMouseBack {
+            get {
+                object obj = ResourceManager.GetObject("this_MiniMouseBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap this_MiniNormlBack {
+            get {
+                object obj = ResourceManager.GetObject("this_MiniNormlBack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolExit {
+            get {
+                object obj = ResourceManager.GetObject("ToolExit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolSearch {
+            get {
+                object obj = ResourceManager.GetObject("ToolSearch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolSendMail {
+            get {
+                object obj = ResourceManager.GetObject("ToolSendMail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolTel {
+            get {
+                object obj = ResourceManager.GetObject("ToolTel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ToolTrain {
+            get {
+                object obj = ResourceManager.GetObject("ToolTrain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -20,10 +20,10 @@
     <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
     <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
     <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
+        <value>[base mime encoded serialized .NET Framework object]</value>
     </data>
     <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <value>[base mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
                 
@@ -40,24 +40,24 @@
     ResXResourceReader how to depersist the object. This is currently not 
     extensible. For a given mimetype the value must be set accordingly:
     
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    Note - application/x-microsoft.net.object.binary.base is the format 
     that the ResXResourceWriter will generate, however the reader can 
     read any of the formats listed below.
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
+            : and then encoded with base encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
     value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
+            : and then encoded with base encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
     value   : The object must be serialized into a byte array 
             : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
+            : and then encoded with base encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
@@ -118,32 +118,50 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BtnId.DownBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="BtnForgetPwd_DownBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnForgetPwd.DownBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnForgetPwd_MouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnForgetPwd.MouseBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnForgetPwd_NormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnForgetPwd.NormlBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnId_DownBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BtnId.DownBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BtnId.MouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="BtnId_MouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BtnId.MouseBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BtnId.NormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="BtnId_NormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BtnId.NormlBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BtnJpPwd.DownBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="BtnJpPwd_DownBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BtnJpPwd.DownBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BtnJpPwd.MouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="BtnJpPwd_MouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BtnJpPwd.MouseBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BtnJpPwd.NormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="BtnJpPwd_NormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BtnJpPwd.NormlBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Btnlogin.DownBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Btnlogin_DownBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Btnlogin.DownBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Btnlogin.MouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Btnlogin_MouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Btnlogin.MouseBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Btnlogin.NormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Btnlogin_NormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Btnlogin.NormlBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnRegister_DownBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnRegister.DownBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnRegister_MouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnRegister.MouseBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnRegister_NormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BtnRegister.NormlBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CloseDownBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CloseDownBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,6 +172,12 @@
   <data name="CloseNormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CloseNormlBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Index" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Index.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoginBack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MiniDownBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MiniDownBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,16 +187,58 @@
   <data name="MiniNormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MiniNormlBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TextId.MouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="PasswordWrong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PasswordWrong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Skin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TextId_MouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TextId.MouseBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TextId.NormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="TextId_NormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TextId.NormlBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TextPwd.MouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="TextPwd_MouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TextPwd.MouseBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TextPwd.NormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="TextPwd_NormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TextPwd.NormlBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="this_CloseDownBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\this.CloseDownBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="this_CloseMouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\this.CloseMouseBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="this_CloseNormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\this.CloseNormlBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="this_MiniDownBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\this.MiniDownBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="this_MiniMouseBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\this.MiniMouseBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="this_MiniNormlBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\this.MiniNormlBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolSearch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolSendMail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolSendMail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolTel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolTel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ToolTrain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToolTrain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
