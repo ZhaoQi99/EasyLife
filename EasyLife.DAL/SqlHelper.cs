@@ -40,7 +40,7 @@ namespace EasyLife.DAL
             if ((Object.Equals(obj, null)) || (Object.Equals(obj, System.DBNull.Value)))
                 cmdresult = 0;
             else
-                cmdresult = int.Parse(obj.ToString());
+                cmdresult = 1;
             return cmdresult != 0;
         }
         public static bool Exists(string sql, OleDbParameter[] parameters)
@@ -50,7 +50,7 @@ namespace EasyLife.DAL
             if ((Object.Equals(obj, null)) || (Object.Equals(obj, System.DBNull.Value)))
                 cmdresult = 0;
             else
-                cmdresult = int.Parse(obj.ToString());
+                cmdresult = 1;
             return cmdresult != 0;
         }
         public static object ExecuteScalar(string SQLString)

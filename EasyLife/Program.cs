@@ -24,7 +24,7 @@ namespace EasyLife
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new LoginForm());
             
             /*
             Spider.SpiderTicket s = new Spider.SpiderTicket("2018-06-03","GGQ","OTQ","ADULT");

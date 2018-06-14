@@ -56,6 +56,13 @@ namespace EasyLife.BLL
 
             return dal.GetModel(username);
         }
+        /// <summary>
+        /// 检验用户名和密码
+        /// </summary>
+        public bool CheckForget(string username, string ForPwdQue, string ForPwdAns)
+        {
+            return dal.CheckForget(username, ForPwdQue, ForPwdAns);
+        }
 
     }
 }

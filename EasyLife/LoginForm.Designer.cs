@@ -42,6 +42,7 @@ namespace EasyLife
             this.BtnForgetPwd = new CCWin.SkinControl.SkinButton();
             this.SecCodeText = new CCWin.SkinControl.SkinTextBox();
             this.ForgetPassword = new EasyLife.Login.ForgetPassword();
+            this.FindPwd = new EasyLife.Login.FindPassword();
             ((System.ComponentModel.ISupportInitialize)(this.SecCodePic)).BeginInit();
             this.TextId.SuspendLayout();
             this.SuspendLayout();
@@ -49,11 +50,8 @@ namespace EasyLife
             // SecCodePic
             // 
             this.SecCodePic.BackColor = System.Drawing.Color.Transparent;
-            this.SecCodePic.Location = new System.Drawing.Point(237, 201);
+            resources.ApplyResources(this.SecCodePic, "SecCodePic");
             this.SecCodePic.Name = "SecCodePic";
-            this.SecCodePic.Size = new System.Drawing.Size(178, 44);
-            this.SecCodePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.SecCodePic.TabIndex = 1;
             this.SecCodePic.TabStop = false;
             this.SecCodePic.Click += new System.EventHandler(this.SecCodePic_Click);
             // 
@@ -65,36 +63,32 @@ namespace EasyLife
             this.TextId.Icon = null;
             this.TextId.IconIsButton = false;
             this.TextId.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.TextId.IsPasswordChat = '\0';
+            this.TextId.IsPasswordChat = '●';
             this.TextId.IsSystemPasswordChar = false;
             this.TextId.Lines = new string[0];
-            this.TextId.Location = new System.Drawing.Point(161, 124);
-            this.TextId.Margin = new System.Windows.Forms.Padding(0);
+            resources.ApplyResources(this.TextId, "TextId");
             this.TextId.MaxLength = 32767;
-            this.TextId.MinimumSize = new System.Drawing.Size(28, 28);
             this.TextId.MouseBack = ((System.Drawing.Bitmap)(resources.GetObject("TextId.MouseBack")));
             this.TextId.MouseState = CCWin.SkinClass.ControlState.Normal;
             this.TextId.Multiline = true;
             this.TextId.Name = "TextId";
             this.TextId.NormlBack = ((System.Drawing.Bitmap)(resources.GetObject("TextId.NormlBack")));
-            this.TextId.Padding = new System.Windows.Forms.Padding(5, 5, 28, 5);
             this.TextId.ReadOnly = false;
             this.TextId.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextId.Size = new System.Drawing.Size(194, 30);
             // 
             // 
             // 
             this.TextId.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextId.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextId.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.TextId.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.TextId.SkinTxt.Multiline = true;
+            this.TextId.SkinTxt.Dock = ((System.Windows.Forms.DockStyle)(resources.GetObject("resource.Dock")));
+            this.TextId.SkinTxt.Font = ((System.Drawing.Font)(resources.GetObject("resource.Font")));
+            this.TextId.SkinTxt.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
+            this.TextId.SkinTxt.Multiline = ((bool)(resources.GetObject("resource.Multiline")));
             this.TextId.SkinTxt.Name = "BaseText";
-            this.TextId.SkinTxt.Size = new System.Drawing.Size(161, 20);
-            this.TextId.SkinTxt.TabIndex = 0;
+            this.TextId.SkinTxt.PasswordChar = ((char)(resources.GetObject("resource.PasswordChar")));
+            this.TextId.SkinTxt.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
+            this.TextId.SkinTxt.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
             this.TextId.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.TextId.SkinTxt.WaterText = "用户名";
-            this.TextId.TabIndex = 2;
             this.TextId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextId.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.TextId.WaterText = "用户名";
@@ -103,20 +97,16 @@ namespace EasyLife
             // BtnId
             // 
             this.BtnId.BackColor = System.Drawing.Color.White;
-            this.BtnId.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            resources.ApplyResources(this.BtnId, "BtnId");
             this.BtnId.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(21)))), ((int)(((byte)(26)))));
             this.BtnId.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.BtnId.Cursor = System.Windows.Forms.Cursors.Default;
             this.BtnId.DownBack = ((System.Drawing.Image)(resources.GetObject("BtnId.DownBack")));
             this.BtnId.DrawType = CCWin.SkinControl.DrawStyle.Img;
             this.BtnId.IsEnabledDraw = false;
-            this.BtnId.Location = new System.Drawing.Point(170, 3);
-            this.BtnId.Margin = new System.Windows.Forms.Padding(0);
             this.BtnId.MouseBack = ((System.Drawing.Image)(resources.GetObject("BtnId.MouseBack")));
             this.BtnId.Name = "BtnId";
             this.BtnId.NormlBack = ((System.Drawing.Image)(resources.GetObject("BtnId.NormlBack")));
-            this.BtnId.Size = new System.Drawing.Size(22, 24);
-            this.BtnId.TabIndex = 36;
             this.BtnId.UseVisualStyleBackColor = false;
             // 
             // TextPwd
@@ -129,34 +119,29 @@ namespace EasyLife
             this.TextPwd.IsPasswordChat = '●';
             this.TextPwd.IsSystemPasswordChar = false;
             this.TextPwd.Lines = new string[0];
-            this.TextPwd.Location = new System.Drawing.Point(161, 155);
-            this.TextPwd.Margin = new System.Windows.Forms.Padding(0);
+            resources.ApplyResources(this.TextPwd, "TextPwd");
             this.TextPwd.MaxLength = 32767;
-            this.TextPwd.MinimumSize = new System.Drawing.Size(0, 28);
             this.TextPwd.MouseBack = ((System.Drawing.Bitmap)(resources.GetObject("TextPwd.MouseBack")));
             this.TextPwd.MouseState = CCWin.SkinClass.ControlState.Normal;
             this.TextPwd.Multiline = true;
             this.TextPwd.Name = "TextPwd";
             this.TextPwd.NormlBack = ((System.Drawing.Bitmap)(resources.GetObject("TextPwd.NormlBack")));
-            this.TextPwd.Padding = new System.Windows.Forms.Padding(5, 5, 28, 5);
             this.TextPwd.ReadOnly = false;
             this.TextPwd.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TextPwd.Size = new System.Drawing.Size(194, 30);
             // 
             // 
             // 
             this.TextPwd.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextPwd.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextPwd.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.TextPwd.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.TextPwd.SkinTxt.Multiline = true;
+            this.TextPwd.SkinTxt.Dock = ((System.Windows.Forms.DockStyle)(resources.GetObject("resource.Dock1")));
+            this.TextPwd.SkinTxt.Font = ((System.Drawing.Font)(resources.GetObject("resource.Font1")));
+            this.TextPwd.SkinTxt.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location1")));
+            this.TextPwd.SkinTxt.Multiline = ((bool)(resources.GetObject("resource.Multiline1")));
             this.TextPwd.SkinTxt.Name = "BaseText";
-            this.TextPwd.SkinTxt.PasswordChar = '●';
-            this.TextPwd.SkinTxt.Size = new System.Drawing.Size(161, 20);
-            this.TextPwd.SkinTxt.TabIndex = 0;
+            this.TextPwd.SkinTxt.PasswordChar = ((char)(resources.GetObject("resource.PasswordChar1")));
+            this.TextPwd.SkinTxt.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size1")));
+            this.TextPwd.SkinTxt.TabIndex = ((int)(resources.GetObject("resource.TabIndex1")));
             this.TextPwd.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.TextPwd.SkinTxt.WaterText = "密码";
-            this.TextPwd.TabIndex = 3;
             this.TextPwd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextPwd.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.TextPwd.WaterText = "密码";
@@ -164,24 +149,17 @@ namespace EasyLife
             // 
             // Btnlogin
             // 
-            this.Btnlogin.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            resources.ApplyResources(this.Btnlogin, "Btnlogin");
             this.Btnlogin.BackColor = System.Drawing.Color.Transparent;
-            this.Btnlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Btnlogin.BackRectangle = new System.Drawing.Rectangle(50, 23, 50, 23);
             this.Btnlogin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(21)))), ((int)(((byte)(26)))));
             this.Btnlogin.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.Btnlogin.DownBack = ((System.Drawing.Image)(resources.GetObject("Btnlogin.DownBack")));
             this.Btnlogin.DrawType = CCWin.SkinControl.DrawStyle.Img;
-            this.Btnlogin.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.Btnlogin.ForeColor = System.Drawing.Color.White;
-            this.Btnlogin.Location = new System.Drawing.Point(161, 270);
-            this.Btnlogin.Margin = new System.Windows.Forms.Padding(0);
             this.Btnlogin.MouseBack = ((System.Drawing.Image)(resources.GetObject("Btnlogin.MouseBack")));
             this.Btnlogin.Name = "Btnlogin";
             this.Btnlogin.NormlBack = ((System.Drawing.Image)(resources.GetObject("Btnlogin.NormlBack")));
-            this.Btnlogin.Size = new System.Drawing.Size(194, 30);
-            this.Btnlogin.TabIndex = 1;
-            this.Btnlogin.Text = "登  录";
             this.Btnlogin.UseVisualStyleBackColor = false;
             this.Btnlogin.Click += new System.EventHandler(this.Btnlogin_Click);
             // 
@@ -194,14 +172,10 @@ namespace EasyLife
             this.BtnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnRegister.DownBack = ((System.Drawing.Image)(resources.GetObject("BtnRegister.DownBack")));
             this.BtnRegister.DrawType = CCWin.SkinControl.DrawStyle.Img;
-            this.BtnRegister.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnRegister.Location = new System.Drawing.Point(367, 135);
-            this.BtnRegister.Margin = new System.Windows.Forms.Padding(0);
+            resources.ApplyResources(this.BtnRegister, "BtnRegister");
             this.BtnRegister.MouseBack = ((System.Drawing.Image)(resources.GetObject("BtnRegister.MouseBack")));
             this.BtnRegister.Name = "BtnRegister";
             this.BtnRegister.NormlBack = ((System.Drawing.Image)(resources.GetObject("BtnRegister.NormlBack")));
-            this.BtnRegister.Size = new System.Drawing.Size(48, 11);
-            this.BtnRegister.TabIndex = 5;
             this.BtnRegister.UseVisualStyleBackColor = false;
             this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
@@ -214,15 +188,12 @@ namespace EasyLife
             this.BtnForgetPwd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnForgetPwd.DownBack = ((System.Drawing.Image)(resources.GetObject("BtnForgetPwd.DownBack")));
             this.BtnForgetPwd.DrawType = CCWin.SkinControl.DrawStyle.Img;
-            this.BtnForgetPwd.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.BtnForgetPwd.Location = new System.Drawing.Point(367, 164);
-            this.BtnForgetPwd.Margin = new System.Windows.Forms.Padding(0);
+            resources.ApplyResources(this.BtnForgetPwd, "BtnForgetPwd");
             this.BtnForgetPwd.MouseBack = ((System.Drawing.Image)(resources.GetObject("BtnForgetPwd.MouseBack")));
             this.BtnForgetPwd.Name = "BtnForgetPwd";
             this.BtnForgetPwd.NormlBack = ((System.Drawing.Image)(resources.GetObject("BtnForgetPwd.NormlBack")));
-            this.BtnForgetPwd.Size = new System.Drawing.Size(48, 11);
-            this.BtnForgetPwd.TabIndex = 6;
             this.BtnForgetPwd.UseVisualStyleBackColor = false;
+            this.BtnForgetPwd.Click += new System.EventHandler(this.BtnForgetPwd_Click);
             // 
             // SecCodeText
             // 
@@ -234,33 +205,28 @@ namespace EasyLife
             this.SecCodeText.IsPasswordChat = '\0';
             this.SecCodeText.IsSystemPasswordChar = false;
             this.SecCodeText.Lines = new string[0];
-            this.SecCodeText.Location = new System.Drawing.Point(161, 208);
-            this.SecCodeText.Margin = new System.Windows.Forms.Padding(0);
+            resources.ApplyResources(this.SecCodeText, "SecCodeText");
             this.SecCodeText.MaxLength = 32767;
-            this.SecCodeText.MinimumSize = new System.Drawing.Size(28, 28);
             this.SecCodeText.MouseBack = null;
             this.SecCodeText.MouseState = CCWin.SkinClass.ControlState.Normal;
             this.SecCodeText.Multiline = true;
             this.SecCodeText.Name = "SecCodeText";
             this.SecCodeText.NormlBack = null;
-            this.SecCodeText.Padding = new System.Windows.Forms.Padding(5);
             this.SecCodeText.ReadOnly = false;
             this.SecCodeText.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.SecCodeText.Size = new System.Drawing.Size(73, 30);
             // 
             // 
             // 
             this.SecCodeText.SkinTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SecCodeText.SkinTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SecCodeText.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.SecCodeText.SkinTxt.Location = new System.Drawing.Point(5, 5);
-            this.SecCodeText.SkinTxt.Multiline = true;
+            this.SecCodeText.SkinTxt.Dock = ((System.Windows.Forms.DockStyle)(resources.GetObject("resource.Dock2")));
+            this.SecCodeText.SkinTxt.Font = ((System.Drawing.Font)(resources.GetObject("resource.Font2")));
+            this.SecCodeText.SkinTxt.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location2")));
+            this.SecCodeText.SkinTxt.Multiline = ((bool)(resources.GetObject("resource.Multiline2")));
             this.SecCodeText.SkinTxt.Name = "BaseText";
-            this.SecCodeText.SkinTxt.Size = new System.Drawing.Size(63, 20);
-            this.SecCodeText.SkinTxt.TabIndex = 0;
+            this.SecCodeText.SkinTxt.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size2")));
+            this.SecCodeText.SkinTxt.TabIndex = ((int)(resources.GetObject("resource.TabIndex2")));
             this.SecCodeText.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.SecCodeText.SkinTxt.WaterText = " 验证码";
-            this.SecCodeText.TabIndex = 4;
             this.SecCodeText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.SecCodeText.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.SecCodeText.WaterText = " 验证码";
@@ -269,32 +235,31 @@ namespace EasyLife
             // ForgetPassword
             // 
             this.ForgetPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ForgetPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ForgetPassword.BackgroundImage")));
-            this.ForgetPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            resources.ApplyResources(this.ForgetPassword, "ForgetPassword");
             this.ForgetPassword.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ForgetPassword.Diglog = System.Windows.Forms.DialogResult.None;
-            this.ForgetPassword.Location = new System.Drawing.Point(578, 94);
             this.ForgetPassword.Name = "ForgetPassword";
-            this.ForgetPassword.Size = new System.Drawing.Size(477, 238);
-            this.ForgetPassword.TabIndex = 7;
-            this.ForgetPassword.Visible = false;
+            // 
+            // FindPwd
+            // 
+            this.FindPwd.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            resources.ApplyResources(this.FindPwd, "FindPwd");
+            this.FindPwd.Name = "FindPwd";
             // 
             // LoginForm
             // 
             this.AcceptButton = this.Btnlogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BackShade = false;
             this.BackToColor = false;
             this.CanResize = false;
-            this.ClientSize = new System.Drawing.Size(580, 385);
             this.CloseBoxSize = new System.Drawing.Size(30, 30);
             this.CloseDownBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseDownBack")));
             this.CloseMouseBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseMouseBack")));
             this.CloseNormlBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseNormlBack")));
+            this.Controls.Add(this.FindPwd);
             this.Controls.Add(this.ForgetPassword);
             this.Controls.Add(this.SecCodeText);
             this.Controls.Add(this.BtnForgetPwd);
@@ -307,14 +272,11 @@ namespace EasyLife
             this.MaximizeBox = false;
             this.MiniDownBack = ((System.Drawing.Image)(resources.GetObject("$this.MiniDownBack")));
             this.MiniMouseBack = ((System.Drawing.Image)(resources.GetObject("$this.MiniMouseBack")));
-            this.MinimumSize = new System.Drawing.Size(430, 330);
             this.MiniNormlBack = ((System.Drawing.Image)(resources.GetObject("$this.MiniNormlBack")));
             this.MiniSize = new System.Drawing.Size(30, 30);
             this.MobileApi = false;
             this.Name = "LoginForm";
             this.ShowDrawIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EasyLife";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SecCodePic)).EndInit();
             this.TextId.ResumeLayout(false);
@@ -334,5 +296,6 @@ namespace EasyLife
         private CCWin.SkinControl.SkinButton BtnForgetPwd;
         private CCWin.SkinControl.SkinTextBox SecCodeText;
         private Login.ForgetPassword ForgetPassword;
+        private Login.FindPassword FindPwd;
     }
 }

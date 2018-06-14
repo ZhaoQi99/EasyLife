@@ -26,7 +26,11 @@ namespace EasyLife.DAL
         /// </summary>
         public bool Check(string username, string password)
         {
-            return true;
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select * from [User]");
+            strSql.Append(" where UserName=" + "'" + username + "' ");
+            strSql.Append("AND Password='" + password + "' ");
+            return SqlHelper.Exists(strSql.ToString());
         }
         /// <summary>
         /// 添加一个用户
@@ -63,16 +67,16 @@ namespace EasyLife.DAL
         public void Update(Model.User model)
         {
             StringBuilder strSql = new StringBuilder();
+            
             strSql.Append("update [User] set ");
             strSql.Append("UserName=@UserName,");
-            strSql.Append("PassWord=@PassWord,");
+            strSql.Append("[PassWord]=@PassWord,");
             strSql.Append("Email=@Email,");
             strSql.Append("Tel=@Tel,");
             strSql.Append("School=@School,");
             strSql.Append("Sex=@Sex,");
             strSql.Append("ForgetQue=@ForgetQue,");
             strSql.Append("ForgetAns=@ForgetAns");
-            strSql.Append("Memo=@Memo");
             strSql.Append(" where UserName=@UserName ");
             OleDbParameter[] parameters = {
                     new OleDbParameter("@UserName", OleDbType.VarChar,255),
@@ -92,6 +96,12 @@ namespace EasyLife.DAL
             parameters[6].Value = model.ForgetQue;
             parameters[7].Value = model.ForgetAns;
             SqlHelper.ExecuteNonQuery(strSql.ToString(), parameters);
+            /*
+            strSql.Append("update [User] set [PassWord]");
+            strSql.Append("='" + model.PassWord + "' ");
+            strSql.Append("where UserName='" + model.UserName + "' ");
+            SqlHelper.ExecuteNonQuery(strSql.ToString());
+            */
         }
         /// <summary>
         /// 删除一个用户
@@ -114,27 +124,51 @@ namespace EasyLife.DAL
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("select UserName,PassWord,Email,Tel,School,Sex,ForgetQue,ForgetAns from [User] ");
-            strSql.Append(" where UserName=@UserName ");
-            OleDbParameter[] parameters = {
-                    new OleDbParameter("@UserName", OleDbType.Integer,4)};
-            parameters[0].Value = username;
+            strSql.Append(" where UserName='"+username+"' ");
+
 
             Model.User model = new Model.User();
-            DataSet ds = SqlHelper.Query(strSql.ToString(), parameters,"User");
-            if (ds.Tables[0].Rows.Count > 0)
+           // DataSet ds = SqlHelper.Query(strSql.ToString(), parameters,"User");
+            OleDbDataReader reader = SqlHelper.ExecuteReader(strSql.ToString());
+            /* if (ds.Tables[0].Rows.Count > 0)
+             {
+                 model.UserName=ds.Tables[0].Rows[0]["UserName"].ToString();
+                 model.PassWord = ds.Tables[0].Rows[0]["PassWord"].ToString();
+                 model.Email = ds.Tables[0].Rows[0]["Email"].ToString();
+                 model.School = ds.Tables[0].Rows[0]["School"].ToString();
+                 model.Tel = ds.Tables[0].Rows[0]["Tel"].ToString();
+                 model.Sex = ds.Tables[0].Rows[0]["Sex"].ToString();
+                 model.ForgetQue = ds.Tables[0].Rows[0]["ForQue"].ToString();
+                 model.ForgetAns = ds.Tables[0].Rows[0]["ForgetAns"].ToString();
+                 return model;
+             }
+             else
+                 return null; 
+                 */
+            if (reader.Read())
             {
-                model.UserName=ds.Tables[0].Rows[0]["UserName"].ToString();
-                model.PassWord = ds.Tables[0].Rows[0]["PassWord"].ToString();
-                model.Email = ds.Tables[0].Rows[0]["Email"].ToString();
-                model.School = ds.Tables[0].Rows[0]["School"].ToString();
-                model.Tel = ds.Tables[0].Rows[0]["Tel"].ToString();
-                model.Sex = ds.Tables[0].Rows[0]["Sex"].ToString();
-                model.ForgetQue = ds.Tables[0].Rows[0]["ForQue"].ToString();
-                model.ForgetAns = ds.Tables[0].Rows[0]["ForgetAns"].ToString();
+                model.UserName = reader.GetValue(0).ToString();
+                model.PassWord = reader.GetValue(1).ToString();
+                model.Email = reader.GetValue(2).ToString();
+                model.School = reader.GetValue(3).ToString();
+                model.Tel = reader.GetValue(4).ToString();
+                model.Sex = reader.GetValue(5).ToString();
+                model.ForgetQue = reader.GetValue(6).ToString();
+                model.ForgetAns = reader.GetValue(7).ToString();
                 return model;
             }
             else
-                return null; 
+               return null;
+        }
+
+        public bool CheckForget(string username,string ForPwdQue,string ForPwdAns)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select count(*) from [User]");
+            strSql.Append(" where UserName=" + "'" + username + "' ");
+            strSql.Append("AND ForgetQue='" + ForPwdQue + "' ");
+            strSql.Append("AND ForgetAns='" + ForPwdAns + "' ");
+            return SqlHelper.Exists(strSql.ToString());
         }
     }
 }

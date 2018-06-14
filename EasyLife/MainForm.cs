@@ -42,6 +42,8 @@ namespace EasyLife
             TimerLoad.Interval = 4000;
             LblVersion.Text="当前版本:v"+Assembly.GetExecutingAssembly().GetName().Version.ToString();
             CmoBoxPrior.SelectedIndex = 1;
+            FindPwd.Left = (this.Width - FindPwd.Width) / 2;//还原位置
+            FindPwd.Visible = false;
         }
         #endregion
 
@@ -94,7 +96,7 @@ namespace EasyLife
         //更新个人信息
         private void InformationUpdate_Click(object sender, EventArgs e)
         {
-
+            FindPwd.Show();
         }
         //退出
         private void Exit_Click(object sender, EventArgs e)

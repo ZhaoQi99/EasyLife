@@ -59,6 +59,11 @@ namespace EasyLife
                 MessageBoxEx.Show("用户名或密码不能为空！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            if (CmoBoxForQue.Text.Length == 0 || CmoBoxForAns.Text.Length == 0)//用户名或密码为空
+            {
+                MessageBoxEx.Show("密保问题或密保答案不能为空！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (Agree.Checked==false)
             {
                 MessageBoxEx.Show("请阅读用户协议!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -91,6 +96,7 @@ namespace EasyLife
             this.Close();
         }
         #endregion
+
         #region 更新验证码
         private void SecCodePic_Click(object sender, EventArgs e)
         {
@@ -98,6 +104,7 @@ namespace EasyLife
             SecCodePic.Image = securitycode.getImage();
         }
         #endregion
+
         #region 解决bug
         //解决默认DropDownStyle属性为DropDownList时,窗体加载时不会显示WaitText的Bug
         private void CmoBoxSex_SelectedIndexChanged(object sender, EventArgs e)

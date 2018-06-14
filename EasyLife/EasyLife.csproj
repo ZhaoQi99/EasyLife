@@ -67,6 +67,12 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login\FindPassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login\FindPassword.Designer.cs">
+      <DependentUpon>FindPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login\ForgetPassword.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,9 +104,18 @@
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.byn-ER.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FindPassword.mgh.resx">
+      <DependentUpon>FindPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\FindPassword.resx">
+      <DependentUpon>FindPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\ForgetPassword.resx">
       <DependentUpon>ForgetPassword.cs</DependentUpon>

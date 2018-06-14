@@ -32,6 +32,8 @@ namespace EasyLife
             SecCodePic.Image = securitycode.getImage();
             ForgetPassword.Left = (this.Width - ForgetPassword.Width) / 2;//还原位置
             ForgetPassword.Visible = false;
+            FindPwd.Left= (this.Width - ForgetPassword.Width) / 2;//还原位置
+            FindPwd.Visible = false;
         }
         #endregion
 
@@ -102,6 +104,13 @@ namespace EasyLife
             RegisterForm register = new RegisterForm(this);
             this.Visible = false;
             register.Show();
+        }
+        #endregion
+
+        #region 忘记密码
+        private void BtnForgetPwd_Click(object sender, EventArgs e)
+        {
+            FindPwd.Show();
         }
         #endregion
     }
