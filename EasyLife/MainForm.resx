@@ -127,10 +127,10 @@
   <data name="&gt;&gt;RadBtnAdult.Name" xml:space="preserve">
     <value>RadBtnAdult</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="SkinTool1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 26</value>
+  <data name="&gt;&gt;LoadingIndex.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="RadBtnStuTic.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 23</value>
   </data>
@@ -139,24 +139,6 @@
   </data>
   <data name="CmoBoxMailHost.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
-  </data>
-  <data name="cmSysButton3.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
-        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
-        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
-        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
-        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
-        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
-        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
-        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
-        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
-        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
-        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
-        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
-        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
-        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
-</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 6</value>
@@ -219,14 +201,11 @@
   <data name="CmoBoxNotType.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="EmailSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 28</value>
-  </data>
   <data name="$this.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="&gt;&gt;CmoBoxTelDep.Name" xml:space="preserve">
-    <value>CmoBoxTelDep</value>
+  <data name="LblTelCam.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt, style=Bold</value>
   </data>
   <data name="IndexTabPage.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -237,8 +216,16 @@
   <data name="RadBtnStuTic.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;LblLoc.Name" xml:space="preserve">
-    <value>LblLoc</value>
+  <data name="TabShow.PageCloseHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAAH9JREFUKFNj
+        +P//P0kYmcMKxXjFYIwzaBiXGFgDyIQzHB2n/4MwiA3DaGJgm1A0cHad+88//T6Q+/8MiAbxsWmAWw9S
+        JLH653+p9f/BNEwzFMOdhKIJpBiGYWJADFeHophYG0j2A1wDkiQYo4lhehoJ4xJD8TTIBLApuMX+MwAA
+        JO7ByqoT8QIAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="NewsTabpage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>815, 560</value>
   </data>
   <data name="BtnTicUpdate.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -276,6 +263,9 @@
   <data name="&gt;&gt;DataGridViewNotice.Name" xml:space="preserve">
     <value>DataGridViewNotice</value>
   </data>
+  <data name="LblTel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="LblSubject.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -300,8 +290,8 @@
         Q61WoHcdAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 160</value>
+  <data name="LblWind.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="pictureBox6.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -342,12 +332,6 @@
   <data name="CmoBoxPrior.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="groupBox3.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
-  </data>
-  <data name="NoticeTabPage.Text" xml:space="preserve">
-    <value>自动通知</value>
-  </data>
   <data name="TextBoxPwd.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
@@ -360,6 +344,9 @@
   <data name="GouBoxWeather.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="&gt;&gt;BtnQueNotice.Name" xml:space="preserve">
+    <value>BtnQueNotice</value>
+  </data>
   <data name="&gt;&gt;BtnSendMail.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -369,8 +356,8 @@
   <data name="&gt;&gt;RichTextBoxBodey.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;BtnUpdNotice.Type" xml:space="preserve">
-    <value>CCWin.SkinControl.SkinButton, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  <data name="groupBox3.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="lblPrior.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -411,8 +398,8 @@
   <data name="pictureBox1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="CmoBoxCam.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="&gt;&gt;LabelFromSta.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="TextBoxTelNum.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 28</value>
@@ -429,6 +416,9 @@
   <data name="resource.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="groupBox4.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
   <data name="lblPrior.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
   </data>
@@ -441,17 +431,17 @@
   <data name="ExitTabPage.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;imageList.Name" xml:space="preserve">
+    <value>imageList</value>
+  </data>
   <data name="TabShow.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="LblWeaSim.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>邮件内容</value>
   </data>
   <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
     <value>14</value>
-  </data>
-  <data name="LabelQueTime.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
   </data>
   <data name="&gt;&gt;HelpWord.Name" xml:space="preserve">
     <value>HelpWord</value>
@@ -465,17 +455,14 @@
   <data name="BtnTelAdd.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="LblSubject.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="NewsTabpage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="&gt;&gt;CmoBoxNotDep.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="&gt;&gt;LblCity.Name" xml:space="preserve">
     <value>LblCity</value>
-  </data>
-  <data name="DataGridViewTicket.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
   </data>
   <data name="&gt;&gt;TextBoxMailFrom.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -485,6 +472,9 @@
   </data>
   <data name="LblMailFromPwd.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
+  </data>
+  <data name="&gt;&gt;EmailSubject.Parent" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;BtnTicUpdate.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -500,9 +490,6 @@
   </data>
   <data name="BtnUpdNotice.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="LblMailHost.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
   </data>
   <data name="SettingsMenu.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -531,20 +518,14 @@
   <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
     <value>pictureBox2</value>
   </data>
-  <data name="&gt;&gt;DateTimeTic.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
   <data name="&gt;&gt;LblSubject.Name" xml:space="preserve">
     <value>LblSubject</value>
   </data>
-  <data name="TrainTabpage.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="BtnTelDel.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="GouBoxWeather.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 3</value>
-  </data>
-  <data name="LblWind.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
   </data>
   <data name="cmSysButton1.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -579,32 +560,26 @@
   <data name="&gt;&gt;DataGridViewTel.Parent" xml:space="preserve">
     <value>TelTabpage</value>
   </data>
-  <data name="&gt;&gt;TextBoxPwd.Parent" xml:space="preserve">
-    <value>GupBoxEmailSetting</value>
-  </data>
   <data name="&gt;&gt;GouBoxWeather.Name" xml:space="preserve">
     <value>GouBoxWeather</value>
   </data>
   <data name="&gt;&gt;LblSubject.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="RadBtnStuTic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>691, 54</value>
+  <data name="BtnSendMail.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BtnSendMail.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="TabShow.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 27</value>
   </data>
-  <data name="CmoBoxFromSta.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;LblFromWho.Parent" xml:space="preserve">
-    <value>GupBoxEmailSetting</value>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="BtnQueNotice.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
-  </data>
-  <data name="&gt;&gt;LblWind.Parent" xml:space="preserve">
-    <value>GouBoxWeather</value>
   </data>
   <data name="BtnTicUpdate.Text" xml:space="preserve">
     <value>更新</value>
@@ -663,14 +638,17 @@
   <data name="RadBtnStuTic.Text" xml:space="preserve">
     <value>学生</value>
   </data>
-  <data name="DataGridViewTel.ToolTip" xml:space="preserve">
-    <value />
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="&gt;&gt;CmoBoxMailHost.Name" xml:space="preserve">
     <value>CmoBoxMailHost</value>
   </data>
   <data name="&gt;&gt;DataGridViewTicket.Name" xml:space="preserve">
     <value>DataGridViewTicket</value>
+  </data>
+  <data name="&gt;&gt;LabelFromSta.Name" xml:space="preserve">
+    <value>LabelFromSta</value>
   </data>
   <data name="BtnTelDel.Text" xml:space="preserve">
     <value>删除</value>
@@ -683,6 +661,9 @@
   </data>
   <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
     <value>175, 22</value>
+  </data>
+  <data name="BtnTelQue.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
   <data name="cmSysButton8.SysButtonMouse" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -699,17 +680,11 @@
         Q61WoHcdAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="groupBox1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="LblMailFromPwd.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
-  </data>
-  <data name="&gt;&gt;TextBoxTelNum.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;LblWeaComp.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinLabel, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="LblMailHost.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;LblVersion.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -741,8 +716,11 @@
   <data name="BtnTelDel.Location" type="System.Drawing.Point, System.Drawing">
     <value>683, 74</value>
   </data>
-  <data name="LblVersion.Text" xml:space="preserve">
-    <value>当前版本:V0.1.0</value>
+  <data name="&gt;&gt;LblSubject.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;TextBoxTelNum.Parent" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
   <data name="TextBoxMailFromName.Location" type="System.Drawing.Point, System.Drawing">
     <value>575, 61</value>
@@ -750,11 +728,11 @@
   <data name="RichTextBoxBodey.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="LabelData.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 9pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;英文ToolStripMenuItem.Name" xml:space="preserve">
+    <value>英文ToolStripMenuItem</value>
   </data>
   <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 32</value>
@@ -786,14 +764,11 @@
   <data name="DataGridViewNotice.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="&gt;&gt;DataGridViewTicket.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="LblNoticeType.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
-    <value>pictureBox5</value>
+  <data name="&gt;&gt;Link.Name" xml:space="preserve">
+    <value>Link</value>
   </data>
   <data name="LabelToSta.Text" xml:space="preserve">
     <value>到达站</value>
@@ -804,8 +779,8 @@
   <data name="CmoBoxCam.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;LblMailto.Name" xml:space="preserve">
-    <value>LblMailto</value>
+  <data name="&gt;&gt;ExitTabPage.Name" xml:space="preserve">
+    <value>ExitTabPage</value>
   </data>
   <data name="&gt;&gt;CmoBoxTelDep.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -837,9 +812,6 @@
   <data name="BtnTelDel.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 32</value>
-  </data>
   <data name="LblTelDep.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
@@ -852,8 +824,8 @@
   <data name="DateTimeTic.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="Link.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 24</value>
+  <data name="&gt;&gt;DateTimeTic.Name" xml:space="preserve">
+    <value>DateTimeTic</value>
   </data>
   <data name="TextBoxTelSecDep.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -888,6 +860,9 @@
   <data name="LblMailFrom.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="LblDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="DataGridViewTel.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -903,14 +878,11 @@
   <data name="&gt;&gt;LblTel.Name" xml:space="preserve">
     <value>LblTel</value>
   </data>
-  <data name="LblMailHost.ToolTip" xml:space="preserve">
-    <value />
+  <data name="LblSubject.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;NewsTabpage.Name" xml:space="preserve">
     <value>NewsTabpage</value>
-  </data>
-  <data name="LblLoc.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="EmailSubject.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -921,17 +893,14 @@
   <data name="NumUpDownPort.Location" type="System.Drawing.Point, System.Drawing">
     <value>99, 20</value>
   </data>
-  <data name="&gt;&gt;NumUpDownPort.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="LblTel.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="LabelQueTime.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="pictureBox3.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="LblVersion.Text" xml:space="preserve">
+    <value>当前版本:V0.1.0</value>
   </data>
   <data name="pictureBox6.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -945,11 +914,29 @@
   <data name="CmoBoxMailHost.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="TextBoxMailTo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="cmSysButton10.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHnSURBVFhH7ZY/
+        S8NAGMYj6uifybm0yV3QpRJzAV266aCIaDcXv4UKurj4DUQU8RO4SEXQQSlOXd0dhDoU3P0D8b3m3ppe
+        36tNqWmHDj+4PO/zvPdekpZYYRj2FVJME1JME1JME1KUZDL5ac5FkXP/gjPxyh1xS/l0CoXCGPjLwAtj
+        /iljYsO2g0nKK/ldWNaIbS/Mu0zsqwbfQIi4LLiLB01wHqzHc4pPOMwDDLTrOH5e7oX+RhAmvdRCXzDM
+        I2y8p4dMSA/k7ut5Lk4YCw5h/QQ0HUbu1cjgImY4c51gM5v1prDWKZA9Vj1qnC9NoB49zmAL9HNVBzmq
+        xcNNBRMw/TXwDA2PZm1/LpdbnHFdsSzvlurx4TpilcpK9H2MBRPgiW4xzbtr+2tUDkEvXhsLJiyrOAq/
+        jG3OghvwvwE1oAzaQbu3HdH3MRb+i8EfQP5xyBcM1iWgCi/XFXp6Ae6D1y0FCvQkRQ4P+SpQkoeqH07r
+        mcicFMxToKclFEc3JwXz7R5rSygONtD1TukkT4rIcIDhAAM1gPwkw+s/UZ9veC3XJkgRiTfo+wDd0IsB
+        KvUm3F+h6u2QGTVAhaojpIhwJ9hRTboHelC9EVJEPM8bV0NEdyIZFZmVPajeCCmmCSmmCSmmR2j9AHRf
+        Q61WoHcdAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="&gt;&gt;SkinTool1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LabelFromSta.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;NumUpDownPort.Name" xml:space="preserve">
+    <value>NumUpDownPort</value>
   </data>
   <data name="NoticeTabPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 36</value>
@@ -957,26 +944,32 @@
   <data name="&gt;&gt;CmoBoxCam.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
+    <value>pictureBox4</value>
+  </data>
   <data name="TelTabpage.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
   <data name="BtnSendMail.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LblTelSecDep.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="LblTelDep.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;LblFromWho.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="LblTelSecDep.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="DateTImePicNotice.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="SkinTool0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 26</value>
+  </data>
   <data name="BtnTicUpdate.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="TextBoxTelSecDep.ToolTip" xml:space="preserve">
-    <value />
+  <data name="LblMailFrom.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="TextBoxMailFromName.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 28</value>
@@ -990,8 +983,11 @@
   <data name="LblMailFrom.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 66</value>
   </data>
-  <data name="&gt;&gt;LblTelSecDep.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="&gt;&gt;BtnTelAdd.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinButton, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="LblCity.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;About.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1014,8 +1010,8 @@
   <data name="LoadingIndex.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="LblLife.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 185</value>
+  <data name="CmoBoxTelDep.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="&gt;&gt;Link.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1041,35 +1037,20 @@
   <data name="&gt;&gt;LabelData.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="SettingsMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 160</value>
+  <data name="TextBoxMailFromName.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="cmSysButton7.SysButtonMouse" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
-        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
-        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
-        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
-        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
-        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
-        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
-        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
-        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
-        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
-        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
-        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
-        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
-        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
-</value>
+  <data name="groupBox1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="&gt;&gt;TextBoxTelNum.Type" xml:space="preserve">
-    <value>CCWin.SkinControl.SkinTextBox, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  <data name="TabShow.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>70, 36</value>
   </data>
   <data name="groupBox2.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 5</value>
+  <data name="TextBoxMailTo.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;TextBoxMailFromName.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -1086,11 +1067,14 @@
   <data name="&gt;&gt;DataGridViewUser.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="FindPwd.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="EmailSubject.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="LblNoticeDep.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 9pt, style=Bold</value>
+  </data>
+  <data name="CmoBoxPrior.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="TextBoxPwd.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1130,14 +1114,14 @@
   <data name="SkinMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 134</value>
   </data>
-  <data name="GouBoxWeather.Size" type="System.Drawing.Size, System.Drawing">
-    <value>580, 536</value>
-  </data>
   <data name="LoadingIndex.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 151</value>
   </data>
   <data name="&gt;&gt;LabelData.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LblEmailPort.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="BtnQueNotice.Location" type="System.Drawing.Point, System.Drawing">
     <value>680, 24</value>
@@ -1181,8 +1165,8 @@
   <data name="&gt;&gt;LabelQueTime.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="TextBoxTelNum.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+  <data name="&gt;&gt;TextBoxMailFrom.Name" xml:space="preserve">
+    <value>TextBoxMailFrom</value>
   </data>
   <data name="NumUpDownPort.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1205,14 +1189,14 @@
   <data name="&gt;&gt;TextBoxMailFrom.Parent" xml:space="preserve">
     <value>GupBoxEmailSetting</value>
   </data>
-  <data name="pictureBox4.ToolTip" xml:space="preserve">
+  <data name="BtnTicQuery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="CmoBoxFromSta.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="LblMailFromPwd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 66</value>
-  </data>
-  <data name="LabelQueTime.ToolTip" xml:space="preserve">
-    <value>上次从服务器获取数据的时间</value>
+  <data name="EmailTabpage.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="DataGridViewNotice.ToolTip" xml:space="preserve">
     <value />
@@ -1225,9 +1209,6 @@
   </data>
   <data name="LabelData.Location" type="System.Drawing.Point, System.Drawing">
     <value>396, 29</value>
-  </data>
-  <data name="&gt;&gt;TextBoxMailTo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="cmSysButton3.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1274,8 +1255,8 @@
   <data name="RichTextBoxBodey.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="&gt;&gt;SettingsMenu.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinContextMenuStrip, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
     <value>EmailTabpage</value>
@@ -1295,14 +1276,11 @@
         Q61WoHcdAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="LblMailto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 19</value>
-  </data>
-  <data name="&gt;&gt;TelTabpage.Name" xml:space="preserve">
-    <value>TelTabpage</value>
-  </data>
   <data name="&gt;&gt;CmoBoxFromSta.Parent" xml:space="preserve">
     <value>groupBox1</value>
+  </data>
+  <data name="LblEmailPort.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="LblTelDep.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1316,14 +1294,14 @@
   <data name="RadBtnAdult.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;BtnTelQue.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="LblDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt, style=Bold</value>
   </data>
   <data name="UserTabPage.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="NumUpDownPort.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 160</value>
   </data>
   <data name="LblNoticeType.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 15</value>
@@ -1334,10 +1312,7 @@
   <data name="LabelQueTime.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;DataGridViewTicket.Type" xml:space="preserve">
-    <value>CCWin.SkinControl.SkinDataGridView, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="RadBtnStuTic.AutoSize" type="System.Boolean, mscorlib">
+  <data name="BtnTicQuery.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="cmSysButton6.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -1354,6 +1329,9 @@
         KvUm3F+h6u2QGTVAhaojpIhwJ9hRTboHelC9EVJEPM8bV0NEdyIZFZmVPajeCCmmCSmmCSmmR2j9AHRf
         Q61WoHcdAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="LblSubject.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1391,7 +1369,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAK
-        DAAAAk1TRnQBSQFMAgEBBwEAAQgBAQGIAQEBEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        DAAAAk1TRnQBSQFMAgEBBwEAAQgBAQGMAQEBEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -1448,11 +1426,14 @@
   <data name="&gt;&gt;TelTabpage.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinTabPage, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="LblDate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9pt, style=Bold</value>
+  <data name="RadBtnAdult.Text" xml:space="preserve">
+    <value>成人</value>
   </data>
   <data name="LblThreeDay.Text" xml:space="preserve">
     <value>后天天气概况</value>
+  </data>
+  <data name="&gt;&gt;BtnTelQue.Parent" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
   <data name="LabelFromSta.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 15</value>
@@ -1481,14 +1462,11 @@
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TrainTabpage.Name" xml:space="preserve">
-    <value>TrainTabpage</value>
+  <data name="&gt;&gt;TextBoxTelNum.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="LblWind.Size" type="System.Drawing.Size, System.Drawing">
     <value>519, 19</value>
-  </data>
-  <data name="&gt;&gt;DateTImePicNotice.Name" xml:space="preserve">
-    <value>DateTImePicNotice</value>
   </data>
   <data name="LblWeaComp.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -1526,14 +1504,17 @@
   <data name="&gt;&gt;UserTabPage.Name" xml:space="preserve">
     <value>UserTabPage</value>
   </data>
+  <data name="pictureBox4.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CmoBoxNotType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 39</value>
+  </data>
   <data name="&gt;&gt;BtnTelAdd.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="NewsTabpage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>815, 560</value>
-  </data>
-  <data name="&gt;&gt;LblTelDep.Parent" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="&gt;&gt;TrainTabpage.Name" xml:space="preserve">
+    <value>TrainTabpage</value>
   </data>
   <data name="&gt;&gt;LblMailFromPwd.Parent" xml:space="preserve">
     <value>GupBoxEmailSetting</value>
@@ -1550,23 +1531,35 @@
   <data name="&gt;&gt;NumUpDownPort.Parent" xml:space="preserve">
     <value>GupBoxEmailSetting</value>
   </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="BtnTelQue.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="CmoBoxMailHost.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="cmSysButton6.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHnSURBVFhH7ZY/
+        S8NAGMYj6uifybm0yV3QpRJzAV266aCIaDcXv4UKurj4DUQU8RO4SEXQQSlOXd0dhDoU3P0D8b3m3ppe
+        36tNqWmHDj+4PO/zvPdekpZYYRj2FVJME1JME1JME1KUZDL5ac5FkXP/gjPxyh1xS/l0CoXCGPjLwAtj
+        /iljYsO2g0nKK/ldWNaIbS/Mu0zsqwbfQIi4LLiLB01wHqzHc4pPOMwDDLTrOH5e7oX+RhAmvdRCXzDM
+        I2y8p4dMSA/k7ut5Lk4YCw5h/QQ0HUbu1cjgImY4c51gM5v1prDWKZA9Vj1qnC9NoB49zmAL9HNVBzmq
+        xcNNBRMw/TXwDA2PZm1/LpdbnHFdsSzvlurx4TpilcpK9H2MBRPgiW4xzbtr+2tUDkEvXhsLJiyrOAq/
+        jG3OghvwvwE1oAzaQbu3HdH3MRb+i8EfQP5xyBcM1iWgCi/XFXp6Ae6D1y0FCvQkRQ4P+SpQkoeqH07r
+        mcicFMxToKclFEc3JwXz7R5rSygONtD1TukkT4rIcIDhAAM1gPwkw+s/UZ9veC3XJkgRiTfo+wDd0IsB
+        KvUm3F+h6u2QGTVAhaojpIhwJ9hRTboHelC9EVJEPM8bV0NEdyIZFZmVPajeCCmmCSmmCSmmR2j9AHRf
+        Q61WoHcdAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="&gt;&gt;NewsTabpage.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;BtnUpdNotice.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinButton, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="BtnQueNotice.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;helpProvider.Name" xml:space="preserve">
     <value>helpProvider</value>
   </data>
   <data name="LblEmailPort.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="CmoBoxNotDep.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 26</value>
   </data>
   <data name="LabelFromSta.Text" xml:space="preserve">
     <value>出发站</value>
@@ -1580,11 +1573,11 @@
   <data name="pictureBox6.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
+  <data name="&gt;&gt;LblMailto.Name" xml:space="preserve">
+    <value>LblMailto</value>
+  </data>
   <data name="LoadingIndex.Location" type="System.Drawing.Point, System.Drawing">
     <value>344, 185</value>
-  </data>
-  <data name="SettingsMenu.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
   </data>
   <data name="CmoBoxPrior.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
@@ -1598,8 +1591,8 @@
   <data name="&gt;&gt;LblMailto.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="DateTimeTic.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="CmoBoxCam.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;TopMost.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1607,11 +1600,8 @@
   <data name="&gt;&gt;BtnUpdNotice.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;LblMailFromPwd.Name" xml:space="preserve">
-    <value>LblMailFromPwd</value>
-  </data>
-  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 338</value>
   </data>
   <data name="TextBoxMailTo.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>KeywordIndex</value>
@@ -1624,6 +1614,9 @@
   </data>
   <data name="LblDate.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 293</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>EasyLife</value>
@@ -1640,11 +1633,11 @@
   <data name="BtnTicUpdate.ToolTip" xml:space="preserve">
     <value>从服务器重新获取数据</value>
   </data>
-  <data name="TextBoxTelSecDep.Location" type="System.Drawing.Point, System.Drawing">
-    <value>527, 27</value>
-  </data>
   <data name="CmoBoxCam.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
+  </data>
+  <data name="&gt;&gt;TabShow.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinTabControl, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;RichTextBoxBodey.Name" xml:space="preserve">
     <value>RichTextBoxBodey</value>
@@ -1655,8 +1648,8 @@
   <data name="LblEmailPort.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="&gt;&gt;LblEmailPort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CmoBoxNotType.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="CmoBoxNotDep.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 39</value>
@@ -1675,9 +1668,6 @@
   </data>
   <data name="LblSubject.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;CmoBoxToSta.Type" xml:space="preserve">
-    <value>CCWin.SkinControl.SkinComboBox, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="LblNextDay.ToolTip" xml:space="preserve">
     <value />
@@ -1709,14 +1699,29 @@
   <data name="RadBtnStuTic.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="TextBoxMailFromName.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="cmSysButton7.SysButtonMouse" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
+        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
+        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
+        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
+        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
+        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
+        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
+        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
+        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
+        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
+        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
+        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
+        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
+        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
+</value>
   </data>
   <data name="&gt;&gt;SkinTool3.Name" xml:space="preserve">
     <value>SkinTool3</value>
   </data>
-  <data name="LblFromWho.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 10.8pt</value>
+  <data name="Link.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 24</value>
   </data>
   <data name="LblThreeDay.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 326</value>
@@ -1736,14 +1741,11 @@
   <data name="&gt;&gt;BtnSendMail.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinButton, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="LblVersion.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="DateTimeTic.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="NewsTabpage.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="RichTextBoxBodey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>705, 249</value>
   </data>
   <data name="EmailTabpage.Size" type="System.Drawing.Size, System.Drawing">
     <value>815, 560</value>
@@ -1766,17 +1768,14 @@
   <data name="BtnTicQuery.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
-    <value>GouBoxWeather</value>
-  </data>
   <data name="BtnTicUpdate.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="LblNoticeType.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt, style=Bold</value>
+  </data>
   <data name="LblMailHost.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
-  </data>
-  <data name="CmoBoxToSta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>265, 23</value>
   </data>
   <data name="LblVersion.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -1787,14 +1786,17 @@
   <data name="resource.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="BtnUpdNotice.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
   <data name="FindPwd.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 15</value>
+  </data>
   <data name="LblNextDay.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="FindPwd.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="LblNoticeDep.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1802,14 +1804,8 @@
   <data name="TextBoxMailFrom.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="LblTel.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
-  </data>
-  <data name="DataGridViewNotice.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;DateTImePicNotice.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="NoticeTabPage.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="LabelToSta.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1819,6 +1815,9 @@
   </data>
   <data name="BtnQueNotice.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="groupBox4.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="pictureBox5.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -1835,20 +1834,20 @@
   <data name="NumUpDownPort.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;GupBoxEmailSetting.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;LblFromWho.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BtnTelAdd.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="DataGridViewTel.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="LblMailHost.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="RadBtnAdult.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="LabelQueTime.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="CmoBoxNotType.ToolTip" xml:space="preserve">
     <value />
@@ -1867,9 +1866,6 @@
   </data>
   <data name="LblTelDep.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 9pt, style=Bold</value>
-  </data>
-  <data name="LblVersion.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;CmoBoxTelDep.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -1895,6 +1891,9 @@
   <data name="GouBoxWeather.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
   </data>
+  <data name="CmoBoxToSta.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="cmSysButton5.SysButtonMouse" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
@@ -1919,17 +1918,14 @@
   <data name="LblNoticeDep.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 15</value>
   </data>
-  <data name="LblThreeDay.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ExitTabPage.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="&gt;&gt;LblMailHost.Parent" xml:space="preserve">
     <value>GupBoxEmailSetting</value>
   </data>
   <data name="LblTel.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="TextBoxTelNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 74</value>
   </data>
   <data name="LblTelSecDep.Location" type="System.Drawing.Point, System.Drawing">
     <value>440, 32</value>
@@ -1940,8 +1936,8 @@
   <data name="pictureBox1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="LblTel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9pt, style=Bold</value>
+  <data name="TextBoxMailFrom.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;TextBoxMailFrom.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -1970,9 +1966,6 @@
   <data name="DataGridViewUser.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="RadBtnAdult.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 10.8pt, style=Bold</value>
-  </data>
   <data name="DataGridViewNotice.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 150</value>
   </data>
@@ -1997,8 +1990,11 @@
   <data name="groupBox3.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="BtnTicQuery.Location" type="System.Drawing.Point, System.Drawing">
-    <value>443, 68</value>
+  <data name="&gt;&gt;英文ToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewNotice.Parent" xml:space="preserve">
+    <value>NewsTabpage</value>
   </data>
   <data name="LblMailto.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -2036,26 +2032,72 @@
   <data name="LabelQueTime2.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="cmSysButton9.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
+        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
+        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
+        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
+        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
+        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
+        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
+        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
+        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
+        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
+        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
+        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
+        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
+        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="DataGridViewTicket.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 130</value>
   </data>
   <data name="DataGridViewUser.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;LblTel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="LblTelCam.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;LblLife.Name" xml:space="preserve">
-    <value>LblLife</value>
+  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="groupBox2.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="CmoBoxNotDep.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="resource.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;TextBoxMailTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TabShow.PageDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADsAAAAiCAYAAADh/KHgAAAABGdBTUEAALGPC/xhBQAAAOZJREFUaEPl
+        2KsKQlEURdHrG996BYNgMBgMFoPBYrAYDBaDwWAwGARBEAT//bpXWHC+YXpghhVHPDuLVyqKokFPTmOb
+        9FJsm16K7dJLsQN6KXZEL8WO6RlbjjGhJ6exU3opdkYvxc7pGVuJsaAnp7FLesZWY6zoyWnsmp6xtRgb
+        enIKW4+xpSensPrc7ujJaeyenrH6yR/oySlsK8aRnpzC6mxxoiensJ0YZ3pyCqsbzYWenML2YlzpySls
+        P8aNnpzG3ukZq1Pjg56cwg5jPOnJaeyLnrF5jDc9OY390EuxX3p/hs3yH+t9kV6QtrMcAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="cmSysButton5.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
+        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
+        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
+        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
+        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
+        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
+        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
+        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
+        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
+        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
+        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
+        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
+        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
+        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
+</value>
   </data>
   <data name="cmSysButton10.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2079,20 +2121,35 @@
         68k3aLx3OOVCRDVb6f+5vqYwjcI0fwvHfACyCvlT1BcAPwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="LblMailFrom.ToolTip" xml:space="preserve">
-    <value />
+  <data name="cmSysButton9.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
+        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
+        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
+        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
+        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
+        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
+        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
+        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
+        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
+        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
+        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
+        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
+        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
+        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
+</value>
   </data>
   <data name="BtnTelQue.Location" type="System.Drawing.Point, System.Drawing">
     <value>684, 21</value>
-  </data>
-  <data name="CmoBoxPrior.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="CmoBoxPrior.Items" xml:space="preserve">
     <value>低</value>
   </data>
   <data name="lblPrior.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="LblMailFrom.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="LblMailHost.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 19</value>
@@ -2106,8 +2163,8 @@
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>357, 287</value>
   </data>
-  <data name="BtnTelQue.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
   <data name="cmSysButton11.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2130,50 +2187,20 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>850, 664</value>
   </data>
-  <data name="cmSysButton15.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
-        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
-        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
-        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
-        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
-        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
-        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
-        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
-        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
-        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
-        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
-        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
-        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
-        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="&gt;&gt;LblMailFromPwd.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="InformationUpdate.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 24</value>
   </data>
-  <data name="cmSysButton20.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHnSURBVFhH7ZY/
-        S8NAGMYj6uifybm0yV3QpRJzAV266aCIaDcXv4UKurj4DUQU8RO4SEXQQSlOXd0dhDoU3P0D8b3m3ppe
-        36tNqWmHDj+4PO/zvPdekpZYYRj2FVJME1JME1JME1KUZDL5ac5FkXP/gjPxyh1xS/l0CoXCGPjLwAtj
-        /iljYsO2g0nKK/ldWNaIbS/Mu0zsqwbfQIi4LLiLB01wHqzHc4pPOMwDDLTrOH5e7oX+RhAmvdRCXzDM
-        I2y8p4dMSA/k7ut5Lk4YCw5h/QQ0HUbu1cjgImY4c51gM5v1prDWKZA9Vj1qnC9NoB49zmAL9HNVBzmq
-        xcNNBRMw/TXwDA2PZm1/LpdbnHFdsSzvlurx4TpilcpK9H2MBRPgiW4xzbtr+2tUDkEvXhsLJiyrOAq/
-        jG3OghvwvwE1oAzaQbu3HdH3MRb+i8EfQP5xyBcM1iWgCi/XFXp6Ae6D1y0FCvQkRQ4P+SpQkoeqH07r
-        mcicFMxToKclFEc3JwXz7R5rSygONtD1TukkT4rIcIDhAAM1gPwkw+s/UZ9veC3XJkgRiTfo+wDd0IsB
-        KvUm3F+h6u2QGTVAhaojpIhwJ9hRTboHelC9EVJEPM8bV0NEdyIZFZmVPajeCCmmCSmmCSmmR2j9AHRf
-        Q61WoHcdAAAAAElFTkSuQmCC
-</value>
+  <data name="CmoBoxCam.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="LoadingIndex.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="LblSubject.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
-  </data>
-  <data name="NoticeTabPage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
   </data>
   <data name="&gt;&gt;TelTabpage.Parent" xml:space="preserve">
     <value>TabShow</value>
@@ -2196,8 +2223,11 @@
   <data name="TelTabpage.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="BtnQueNotice.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="IndexTabPage.ImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LblMailHost.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="GupBoxEmailSetting.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2205,17 +2235,17 @@
   <data name="EmailTabpage.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="GouBoxWeather.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
   <data name="&gt;&gt;CmoBoxTelDep.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinComboBox, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="SkinMenu.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="LblLife.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="LblEmailPort.Text" xml:space="preserve">
-    <value>端口号</value>
+  <data name="&gt;&gt;CmoBoxMailHost.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CmoBoxMailHost.ToolTip" xml:space="preserve">
     <value />
@@ -2235,8 +2265,8 @@
   <data name="LblCity.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
   </data>
-  <data name="TextBoxTelNum.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="&gt;&gt;NumUpDownPort.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="LabelQueTime2.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -2259,11 +2289,23 @@
         Q61WoHcdAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="TelTabpage.Text" xml:space="preserve">
+    <value>电话查询</value>
+  </data>
   <data name="&gt;&gt;EmailSubject.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;ExitTabPage.Name" xml:space="preserve">
-    <value>ExitTabPage</value>
+  <data name="lblPrior.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 19</value>
+  </data>
+  <data name="&gt;&gt;LblVersion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TopMost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 24</value>
+  </data>
+  <data name="LblTelCam.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;LblNoticeDep.Name" xml:space="preserve">
     <value>LblNoticeDep</value>
@@ -2271,14 +2313,41 @@
   <data name="LblDate.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="cmSysButton14.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHnSURBVFhH7ZY/
+        S8NAGMYj6uifybm0yV3QpRJzAV266aCIaDcXv4UKurj4DUQU8RO4SEXQQSlOXd0dhDoU3P0D8b3m3ppe
+        36tNqWmHDj+4PO/zvPdekpZYYRj2FVJME1JME1JME1KUZDL5ac5FkXP/gjPxyh1xS/l0CoXCGPjLwAtj
+        /iljYsO2g0nKK/ldWNaIbS/Mu0zsqwbfQIi4LLiLB01wHqzHc4pPOMwDDLTrOH5e7oX+RhAmvdRCXzDM
+        I2y8p4dMSA/k7ut5Lk4YCw5h/QQ0HUbu1cjgImY4c51gM5v1prDWKZA9Vj1qnC9NoB49zmAL9HNVBzmq
+        xcNNBRMw/TXwDA2PZm1/LpdbnHFdsSzvlurx4TpilcpK9H2MBRPgiW4xzbtr+2tUDkEvXhsLJiyrOAq/
+        jG3OghvwvwE1oAzaQbu3HdH3MRb+i8EfQP5xyBcM1iWgCi/XFXp6Ae6D1y0FCvQkRQ4P+SpQkoeqH07r
+        mcicFMxToKclFEc3JwXz7R5rSygONtD1TukkT4rIcIDhAAM1gPwkw+s/UZ9veC3XJkgRiTfo+wDd0IsB
+        KvUm3F+h6u2QGTVAhaojpIhwJ9hRTboHelC9EVJEPM8bV0NEdyIZFZmVPajeCCmmCSmmCSmmR2j9AHRf
+        Q61WoHcdAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="LblThreeDay.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
   <data name="LblTelSecDep.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
+  </data>
+  <data name="BtnTelDel.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="LblSubject.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 34</value>
   </data>
-  <data name="&gt;&gt;SkinTool1.Name" xml:space="preserve">
-    <value>SkinTool1</value>
+  <data name="LabelToSta.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="pictureBox2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LblMailHost.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="Link.Text" xml:space="preserve">
     <value>访问EasyLife</value>
@@ -2292,25 +2361,25 @@
   <data name="BtnUpdNotice.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 36</value>
   </data>
-  <data name="lblPrior.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
   <data name="&gt;&gt;LanguageSettings.Name" xml:space="preserve">
     <value>LanguageSettings</value>
   </data>
-  <data name="BtnTelQue.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9pt</value>
+  <data name="&gt;&gt;EmailTabpage.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinTabPage, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;DateTimeTic.Name" xml:space="preserve">
-    <value>DateTimeTic</value>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="FindPwd.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="LblWeaComp.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;IndexTabPage.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="LblNoticeType.ShowHelp" type="System.Boolean, mscorlib">
+  <data name="DateTImePicNotice.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="IndexTabPage.ToolTip" xml:space="preserve">
@@ -2322,11 +2391,26 @@
   <data name="LblMailto.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="&gt;&gt;SkinMenu.Type" xml:space="preserve">
-    <value>CCWin.SkinControl.SkinContextMenuStrip, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  <data name="cmSysButton17.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
+        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
+        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
+        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
+        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
+        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
+        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
+        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
+        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
+        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
+        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
+        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
+        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
+        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="groupBox2.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="BtnTicUpdate.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="pictureBox2.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -2334,19 +2418,13 @@
   <data name="TrainTabpage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="CmoBoxMailHost.Location" type="System.Drawing.Point, System.Drawing">
-    <value>575, 21</value>
-  </data>
   <data name="&gt;&gt;DataGridViewNotice.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinDataGridView, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="TextBoxTelSecDep.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;TextBoxTelNum.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="LblLoc.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="IndexTabPage.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="LabelQueTime.Location" type="System.Drawing.Point, System.Drawing">
@@ -2373,8 +2451,8 @@
   <data name="$this.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>邮件内容</value>
+  <data name="BtnTelQue.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="TextBoxMailFrom.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -2394,8 +2472,11 @@
   <data name="&gt;&gt;LblTelDep.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBoxPwd.Name" xml:space="preserve">
-    <value>TextBoxPwd</value>
+  <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;CmoBoxNotDep.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="pictureBox6.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -2430,23 +2511,50 @@
   <data name="LblMailFrom.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="CmoBoxNotType.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
   <data name="RichTextBoxBodey.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="LblTelSecDep.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="&gt;&gt;SkinTool1.Name" xml:space="preserve">
+    <value>SkinTool1</value>
+  </data>
+  <data name="IndexTabPage.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="LblMailHost.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
   <data name="&gt;&gt;LblTelDep.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="resource.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>None</value>
+  <data name="cmSysButton1.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
+        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
+        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
+        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
+        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
+        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
+        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
+        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
+        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
+        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
+        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
+        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
+        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
+        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
+</value>
   </data>
   <data name="LblNoticeType.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 45</value>
-  </data>
-  <data name="&gt;&gt;CmoBoxNotType.Name" xml:space="preserve">
-    <value>CmoBoxNotType</value>
   </data>
   <data name="&gt;&gt;TextBoxTelSecDep.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -2469,6 +2577,9 @@
   <data name="LblNoticeDep.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
+  <data name="LblLoc.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;TextBoxTelSecDep.Name" xml:space="preserve">
     <value>TextBoxTelSecDep</value>
   </data>
@@ -2477,9 +2588,6 @@
   </data>
   <data name="LblLife.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
-  </data>
-  <data name="LblCity.Text" xml:space="preserve">
-    <value>城市介绍:</value>
   </data>
   <data name="BtnTelAdd.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -2507,11 +2615,8 @@
   <data name="RadBtnAdult.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;BtnTelQue.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="groupBox3.ToolTip" xml:space="preserve">
-    <value />
+  <data name="FindPwd.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="&gt;&gt;LabelToSta.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2561,17 +2666,17 @@
   <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
     <value>TrainTabpage</value>
   </data>
-  <data name="LabelData.Text" xml:space="preserve">
-    <value>出发日期</value>
+  <data name="LabelFromSta.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt, style=Bold</value>
   </data>
-  <data name="LblEmailPort.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
   </data>
   <data name="pictureBox3.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="CmoBoxNotDep.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="RadBtnStuTic.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="LblMailHost.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -2594,14 +2699,17 @@
   <data name="&gt;&gt;BtnUpdNotice.Name" xml:space="preserve">
     <value>BtnUpdNotice</value>
   </data>
-  <data name="&gt;&gt;LblFromWho.Name" xml:space="preserve">
-    <value>LblFromWho</value>
+  <data name="&gt;&gt;CmoBoxToSta.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinComboBox, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="LblFromWho.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="BtnTicQuery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>443, 68</value>
   </data>
   <data name="LblMailto.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="SkinMenu.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="SettingsMenu.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -2624,11 +2732,11 @@
   <data name="EmailTabpage.Text" xml:space="preserve">
     <value>邮件发送</value>
   </data>
-  <data name="&gt;&gt;TimerLoad.Name" xml:space="preserve">
-    <value>TimerLoad</value>
+  <data name="LblThreeDay.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="&gt;&gt;LblLife.Type" xml:space="preserve">
-    <value>CCWin.SkinControl.SkinLabel, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  <data name="TelTabpage.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;LabelQueTime.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2642,8 +2750,8 @@
   <data name="CmoBoxToSta.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="GouBoxWeather.Text" xml:space="preserve">
-    <value>天气预报</value>
+  <data name="LblCity.Text" xml:space="preserve">
+    <value>城市介绍:</value>
   </data>
   <data name="NumUpDownPort.ToolTip" xml:space="preserve">
     <value />
@@ -2657,9 +2765,6 @@
   <data name="LblMailFromPwd.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="DateTimeTic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>477, 22</value>
-  </data>
   <data name="LblLife.Size" type="System.Drawing.Size, System.Drawing">
     <value>519, 100</value>
   </data>
@@ -2669,23 +2774,17 @@
   <data name="LblTelDep.Text" xml:space="preserve">
     <value>所属单位</value>
   </data>
-  <data name="RichTextBoxBodey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>705, 249</value>
+  <data name="CmoBoxPrior.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="BtnTelQue.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="DateTimeTic.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
-  </data>
-  <data name="EmailTabpage.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
-  </data>
-  <data name="&gt;&gt;ToolTip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="&gt;&gt;BtnTelAdd.Name" xml:space="preserve">
-    <value>BtnTelAdd</value>
+  <data name="UserTabPage.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="BtnTelAdd.Location" type="System.Drawing.Point, System.Drawing">
     <value>538, 70</value>
@@ -2695,9 +2794,6 @@
   </data>
   <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
-  </data>
-  <data name="EmailTabpage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 36</value>
   </data>
   <data name="CmoBoxFromSta.Location" type="System.Drawing.Point, System.Drawing">
     <value>69, 23</value>
@@ -2711,8 +2807,8 @@
   <data name="&gt;&gt;TextBoxMailFromName.Parent" xml:space="preserve">
     <value>GupBoxEmailSetting</value>
   </data>
-  <data name="lblPrior.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 25</value>
+  <data name="LblVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="LblNextDay.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -2728,6 +2824,9 @@
   </data>
   <data name="LblFromWho.Text" xml:space="preserve">
     <value>签名</value>
+  </data>
+  <data name="LblNoticeType.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="$this.MiniNormlBack" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2748,35 +2847,23 @@
   <data name="LblWeaComp.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 145</value>
   </data>
-  <data name="cmSysButton20.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHnSURBVFhH7ZY/
-        S8NAGMYj6uifybm0yV3QpRJzAV266aCIaDcXv4UKurj4DUQU8RO4SEXQQSlOXd0dhDoU3P0D8b3m3ppe
-        36tNqWmHDj+4PO/zvPdekpZYYRj2FVJME1JME1JME1KUZDL5ac5FkXP/gjPxyh1xS/l0CoXCGPjLwAtj
-        /iljYsO2g0nKK/ldWNaIbS/Mu0zsqwbfQIi4LLiLB01wHqzHc4pPOMwDDLTrOH5e7oX+RhAmvdRCXzDM
-        I2y8p4dMSA/k7ut5Lk4YCw5h/QQ0HUbu1cjgImY4c51gM5v1prDWKZA9Vj1qnC9NoB49zmAL9HNVBzmq
-        xcNNBRMw/TXwDA2PZm1/LpdbnHFdsSzvlurx4TpilcpK9H2MBRPgiW4xzbtr+2tUDkEvXhsLJiyrOAq/
-        jG3OghvwvwE1oAzaQbu3HdH3MRb+i8EfQP5xyBcM1iWgCi/XFXp6Ae6D1y0FCvQkRQ4P+SpQkoeqH07r
-        mcicFMxToKclFEc3JwXz7R5rSygONtD1TukkT4rIcIDhAAM1gPwkw+s/UZ9veC3XJkgRiTfo+wDd0IsB
-        KvUm3F+h6u2QGTVAhaojpIhwJ9hRTboHelC9EVJEPM8bV0NEdyIZFZmVPajeCCmmCSmmCSmmR2j9AHRf
-        Q61WoHcdAAAAAElFTkSuQmCC
-</value>
+  <data name="LblMailto.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="BtnTelQue.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 36</value>
+  <data name="&gt;&gt;SkinTool3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;IndexTabPage.Name" xml:space="preserve">
-    <value>IndexTabPage</value>
+  <data name="TrainTabpage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 36</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;ToolTip.Name" xml:space="preserve">
     <value>ToolTip</value>
   </data>
   <data name="DataGridViewUser.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
-  </data>
-  <data name="LblWeaSim.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="LblWeaSim.ToolTip" xml:space="preserve">
     <value />
@@ -2787,8 +2874,8 @@
   <data name="RadBtnAdult.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
   </data>
-  <data name="LblNextDay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 290</value>
+  <data name="TextBoxPwd.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="LabelToSta.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2799,8 +2886,8 @@
   <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="DateTimeTic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 28</value>
+  <data name="&gt;&gt;InformationUpdate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox2.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2817,8 +2904,8 @@
   <data name="TextBoxTelNum.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;LblWind.Name" xml:space="preserve">
-    <value>LblWind</value>
+  <data name="LabelQueTime.ToolTip" xml:space="preserve">
+    <value>上次从服务器获取数据的时间</value>
   </data>
   <data name="LblMailFromPwd.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -2826,7 +2913,7 @@
   <data name="&gt;&gt;DataGridViewUser.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinDataGridView, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="LblFromWho.ToolTip" xml:space="preserve">
+  <data name="CmoBoxFromSta.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="LblEmailPort.Size" type="System.Drawing.Size, System.Drawing">
@@ -2850,17 +2937,8 @@
         qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CmoBoxCam.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="GupBoxEmailSetting.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
-  </data>
-  <data name="BtnTelAdd.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SkinTool2.Text" xml:space="preserve">
-    <value>悠然百合</value>
   </data>
   <data name="LblNoticeType.Text" xml:space="preserve">
     <value>类型</value>
@@ -2880,6 +2958,9 @@
         Q61WoHcdAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="resource.Multiline" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="TextBoxMailTo.Location" type="System.Drawing.Point, System.Drawing">
     <value>115, 84</value>
   </data>
@@ -2898,9 +2979,6 @@
   <data name="&gt;&gt;LblTelSecDep.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;EmailSubject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="LabelData.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
@@ -2913,8 +2991,8 @@
   <data name="&gt;&gt;CmoBoxNotType.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="ExitTabPage.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="TextBoxTelNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 74</value>
   </data>
   <data name="LblTel.Text" xml:space="preserve">
     <value>电话号码</value>
@@ -2928,20 +3006,8 @@
   <data name="BtnTelAdd.Text" xml:space="preserve">
     <value>添加</value>
   </data>
-  <data name="cmSysButton6.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHnSURBVFhH7ZY/
-        S8NAGMYj6uifybm0yV3QpRJzAV266aCIaDcXv4UKurj4DUQU8RO4SEXQQSlOXd0dhDoU3P0D8b3m3ppe
-        36tNqWmHDj+4PO/zvPdekpZYYRj2FVJME1JME1JME1KUZDL5ac5FkXP/gjPxyh1xS/l0CoXCGPjLwAtj
-        /iljYsO2g0nKK/ldWNaIbS/Mu0zsqwbfQIi4LLiLB01wHqzHc4pPOMwDDLTrOH5e7oX+RhAmvdRCXzDM
-        I2y8p4dMSA/k7ut5Lk4YCw5h/QQ0HUbu1cjgImY4c51gM5v1prDWKZA9Vj1qnC9NoB49zmAL9HNVBzmq
-        xcNNBRMw/TXwDA2PZm1/LpdbnHFdsSzvlurx4TpilcpK9H2MBRPgiW4xzbtr+2tUDkEvXhsLJiyrOAq/
-        jG3OghvwvwE1oAzaQbu3HdH3MRb+i8EfQP5xyBcM1iWgCi/XFXp6Ae6D1y0FCvQkRQ4P+SpQkoeqH07r
-        mcicFMxToKclFEc3JwXz7R5rSygONtD1TukkT4rIcIDhAAM1gPwkw+s/UZ9veC3XJkgRiTfo+wDd0IsB
-        KvUm3F+h6u2QGTVAhaojpIhwJ9hRTboHelC9EVJEPM8bV0NEdyIZFZmVPajeCCmmCSmmCSmmR2j9AHRf
-        Q61WoHcdAAAAAElFTkSuQmCC
-</value>
+  <data name="&gt;&gt;LblFromWho.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="DataGridViewTel.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -2952,14 +3018,17 @@
   <data name="LblMailFrom.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
   </data>
-  <data name="NoticeTabPage.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="LblMailto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 19</value>
   </data>
   <data name="LblMailto.Text" xml:space="preserve">
     <value>收件人</value>
   </data>
   <data name="LblTel.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="DataGridViewTel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>790, 169</value>
   </data>
   <data name="BtnUpdNotice.Location" type="System.Drawing.Point, System.Drawing">
     <value>680, 69</value>
@@ -2985,11 +3054,11 @@
   <data name="NoticeTabPage.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NoticeTabPage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="pictureBox4.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;BtnTelAdd.Name" xml:space="preserve">
+    <value>BtnTelAdd</value>
   </data>
   <data name="LblMailHost.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3005,6 +3074,9 @@
   </data>
   <data name="CmoBoxMailHost.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
+  </data>
+  <data name="TextBoxMailTo.HelpKeyword" xml:space="preserve">
+    <value>87686786</value>
   </data>
   <data name="&gt;&gt;LblTelDep.Name" xml:space="preserve">
     <value>LblTelDep</value>
@@ -3027,8 +3099,8 @@
   <data name="CmoBoxToSta.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="DataGridViewTicket.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;LblMailto.Parent" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
   <data name="resource.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Inherit</value>
@@ -3039,8 +3111,8 @@
   <data name="BtnSendMail.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 35</value>
   </data>
-  <data name="&gt;&gt;pictureBox6.Parent" xml:space="preserve">
-    <value>GouBoxWeather</value>
+  <data name="EmailTabpage.ImageIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;CmoBoxNotType.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinComboBox, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
@@ -3084,8 +3156,23 @@
         Q61WoHcdAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="BtnTelQue.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="cmSysButton3.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
+        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
+        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
+        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
+        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
+        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
+        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
+        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
+        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
+        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
+        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
+        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
+        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
+        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
+</value>
   </data>
   <data name="LblNoticeType.ToolTip" xml:space="preserve">
     <value />
@@ -3141,20 +3228,20 @@
   <data name="LblWeaComp.Size" type="System.Drawing.Size, System.Drawing">
     <value>519, 23</value>
   </data>
-  <data name="LblDate.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="&gt;&gt;IndexTabPage.Parent" xml:space="preserve">
+    <value>TabShow</value>
   </data>
-  <data name="&gt;&gt;LblSubject.Parent" xml:space="preserve">
-    <value>groupBox4</value>
+  <data name="&gt;&gt;pictureBox6.Parent" xml:space="preserve">
+    <value>GouBoxWeather</value>
   </data>
-  <data name="LblNoticeType.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;LblLife.Name" xml:space="preserve">
+    <value>LblLife</value>
   </data>
   <data name="LblDate.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
-    <value>pictureBox4</value>
+  <data name="&gt;&gt;TimerLoad.Name" xml:space="preserve">
+    <value>TimerLoad</value>
   </data>
   <data name="resource.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value />
@@ -3164,9 +3251,6 @@
   </data>
   <data name="CmoBoxTelDep.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="ExitTabPage.ImageIndex" type="System.Int32, mscorlib">
-    <value>6</value>
   </data>
   <data name="LabelToSta.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -3185,11 +3269,14 @@
         bEK3hFXoHQIvLekGBLunGoMvIJEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="LblWeaComp.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;DateTImePicNotice.Name" xml:space="preserve">
+    <value>DateTImePicNotice</value>
   </data>
   <data name="&gt;&gt;BtnTelDel.Parent" xml:space="preserve">
     <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
+    <value>toolStripSeparator2</value>
   </data>
   <data name="pictureBox3.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -3209,26 +3296,17 @@
   <data name="&gt;&gt;LblTelCam.Name" xml:space="preserve">
     <value>LblTelCam</value>
   </data>
+  <data name="LblTel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;BtnTicQuery.Name" xml:space="preserve">
     <value>BtnTicQuery</value>
   </data>
   <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
     <value>GouBoxWeather</value>
   </data>
-  <data name="cmSysButton10.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHnSURBVFhH7ZY/
-        S8NAGMYj6uifybm0yV3QpRJzAV266aCIaDcXv4UKurj4DUQU8RO4SEXQQSlOXd0dhDoU3P0D8b3m3ppe
-        36tNqWmHDj+4PO/zvPdekpZYYRj2FVJME1JME1JME1KUZDL5ac5FkXP/gjPxyh1xS/l0CoXCGPjLwAtj
-        /iljYsO2g0nKK/ldWNaIbS/Mu0zsqwbfQIi4LLiLB01wHqzHc4pPOMwDDLTrOH5e7oX+RhAmvdRCXzDM
-        I2y8p4dMSA/k7ut5Lk4YCw5h/QQ0HUbu1cjgImY4c51gM5v1prDWKZA9Vj1qnC9NoB49zmAL9HNVBzmq
-        xcNNBRMw/TXwDA2PZm1/LpdbnHFdsSzvlurx4TpilcpK9H2MBRPgiW4xzbtr+2tUDkEvXhsLJiyrOAq/
-        jG3OghvwvwE1oAzaQbu3HdH3MRb+i8EfQP5xyBcM1iWgCi/XFXp6Ae6D1y0FCvQkRQ4P+SpQkoeqH07r
-        mcicFMxToKclFEc3JwXz7R5rSygONtD1TukkT4rIcIDhAAM1gPwkw+s/UZ9veC3XJkgRiTfo+wDd0IsB
-        KvUm3F+h6u2QGTVAhaojpIhwJ9hRTboHelC9EVJEPM8bV0NEdyIZFZmVPajeCCmmCSmmCSmmR2j9AHRf
-        Q61WoHcdAAAAAElFTkSuQmCC
-</value>
+  <data name="SkinMenu.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;SkinTool2.Name" xml:space="preserve">
     <value>SkinTool2</value>
@@ -3239,11 +3317,14 @@
   <data name="IndexTabPage.Text" xml:space="preserve">
     <value>主页</value>
   </data>
+  <data name="&gt;&gt;TextBoxMailTo.Name" xml:space="preserve">
+    <value>TextBoxMailTo</value>
+  </data>
   <data name="&gt;&gt;CmoBoxCam.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="BtnTelDel.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="&gt;&gt;NewsTabpage.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="LblWeaSim.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 73</value>
@@ -3260,6 +3341,9 @@
   <data name="LabelToSta.Location" type="System.Drawing.Point, System.Drawing">
     <value>200, 29</value>
   </data>
+  <data name="LblNoticeDep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 45</value>
+  </data>
   <data name="&gt;&gt;BtnTelAdd.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
@@ -3269,8 +3353,8 @@
   <data name="LblFromWho.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 19</value>
   </data>
-  <data name="CmoBoxToSta.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="LblEmailPort.Text" xml:space="preserve">
+    <value>端口号</value>
   </data>
   <data name="LblLoc.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3284,11 +3368,8 @@
   <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
     <value>GouBoxWeather</value>
   </data>
-  <data name="&gt;&gt;LabelFromSta.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="IndexTabPage.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="RadBtnStuTic.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="LabelToSta.ToolTip" xml:space="preserve">
     <value />
@@ -3296,23 +3377,14 @@
   <data name="TextBoxMailTo.Size" type="System.Drawing.Size, System.Drawing">
     <value>540, 28</value>
   </data>
-  <data name="LoadingIndex.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;GouBoxWeather.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinGroupBox, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;LblTelCam.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DataGridViewUser.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="NewsTabpage.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 10.8pt</value>
+  <data name="DataGridViewNotice.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="&gt;&gt;EmailTabpage.Name" xml:space="preserve">
     <value>EmailTabpage</value>
@@ -3329,8 +3401,11 @@
         RsCmYOMcWxvDfbhq08RhNHEYTRxElx/3dxWvb3M9SAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="BtnSendMail.ToolTip" xml:space="preserve">
-    <value />
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 5</value>
+  </data>
+  <data name="&gt;&gt;BtnTelDel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;DataGridViewUser.Name" xml:space="preserve">
     <value>DataGridViewUser</value>
@@ -3353,14 +3428,11 @@
   <data name="&gt;&gt;lblPrior.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="LblTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 15</value>
-  </data>
   <data name="resource.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="LoadingIndex.Text" xml:space="preserve">
-    <value>加载中....</value>
+  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
+    <value>pictureBox5</value>
   </data>
   <data name="LabelQueTime2.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -3380,17 +3452,14 @@
   <data name="&gt;&gt;CmoBoxCam.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinComboBox, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="TextBoxPwd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 28</value>
-  </data>
   <data name="&gt;&gt;LblWeaSim.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="DateTimeTic.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;LoadingIndex.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>GouBoxWeather</value>
   </data>
   <data name="CmoBoxMailHost.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3401,8 +3470,8 @@
   <data name="pictureBox4.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;SettingsMenu.Type" xml:space="preserve">
-    <value>CCWin.SkinControl.SkinContextMenuStrip, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;LblFromWho.Name" xml:space="preserve">
+    <value>LblFromWho</value>
   </data>
   <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
     <value>TelTabpage</value>
@@ -3410,8 +3479,8 @@
   <data name="CmoBoxPrior.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
   </data>
-  <data name="&gt;&gt;EmailSubject.Parent" xml:space="preserve">
-    <value>groupBox4</value>
+  <data name="DataGridViewTicket.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="UserTabPage.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3419,8 +3488,8 @@
   <data name="BtnSendMail.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="groupBox4.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="LblMailFromPwd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="cmSysButton16.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3440,14 +3509,11 @@
   <data name="LblNoticeDep.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="EmailTabpage.ImageIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 32</value>
   </data>
   <data name="TextBoxPwd.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
-  </data>
-  <data name="LblVersion.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="CmoBoxTelDep.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3476,8 +3542,8 @@
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>GouBoxWeather</value>
   </data>
-  <data name="BtnTicUpdate.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="LabelQueTime.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="RadBtnAdult.Location" type="System.Drawing.Point, System.Drawing">
     <value>691, 21</value>
@@ -3485,11 +3551,14 @@
   <data name="&gt;&gt;CmoBoxMailHost.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;imageList.Name" xml:space="preserve">
-    <value>imageList</value>
+  <data name="LoadingIndex.Text" xml:space="preserve">
+    <value>加载中....</value>
   </data>
   <data name="&gt;&gt;LblEmailPort.Name" xml:space="preserve">
     <value>LblEmailPort</value>
+  </data>
+  <data name="SkinTool2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 26</value>
   </data>
   <data name="LblMailto.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3512,35 +3581,17 @@
   <data name="TextBoxMailFrom.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 6</value>
+  <data name="LblNextDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 290</value>
   </data>
-  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="LblMailHost.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="LblNextDay.Text" xml:space="preserve">
     <value>明日天气概况</value>
   </data>
-  <data name="cmSysButton17.SysButtonMouse" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
-        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
-        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
-        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
-        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
-        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
-        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
-        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
-        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
-        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
-        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
-        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
-        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
-        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;NumUpDownPort.Name" xml:space="preserve">
-    <value>NumUpDownPort</value>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="ExitTabPage.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3551,11 +3602,11 @@
   <data name="LblEmailPort.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;IndexTabPage.Parent" xml:space="preserve">
-    <value>TabShow</value>
+  <data name="ExitTabPage.ImageIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;LblMailHost.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;LblFromWho.Parent" xml:space="preserve">
+    <value>GupBoxEmailSetting</value>
   </data>
   <data name="&gt;&gt;LabelToSta.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -3569,11 +3620,8 @@
   <data name="GupBoxEmailSetting.Size" type="System.Drawing.Size, System.Drawing">
     <value>764, 95</value>
   </data>
-  <data name="LabelData.ShowHelp" type="System.Boolean, mscorlib">
+  <data name="LblFromWho.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewNotice.Parent" xml:space="preserve">
-    <value>NewsTabpage</value>
   </data>
   <data name="cmSysButton1.SysButtonMouse" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3599,14 +3647,17 @@
   <data name="BtnTicUpdate.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
+  <data name="&gt;&gt;DateTimeTic.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinDateTimePicker, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  </data>
   <data name="pictureBox1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="RichTextBoxBodey.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="FindPwd.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="&gt;&gt;TelTabpage.Name" xml:space="preserve">
+    <value>TelTabpage</value>
   </data>
   <data name="LblLife.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
@@ -3614,8 +3665,20 @@
   <data name="LblLife.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LblTelCam.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9pt, style=Bold</value>
+  <data name="cmSysButton20.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHnSURBVFhH7ZY/
+        S8NAGMYj6uifybm0yV3QpRJzAV266aCIaDcXv4UKurj4DUQU8RO4SEXQQSlOXd0dhDoU3P0D8b3m3ppe
+        36tNqWmHDj+4PO/zvPdekpZYYRj2FVJME1JME1JME1KUZDL5ac5FkXP/gjPxyh1xS/l0CoXCGPjLwAtj
+        /iljYsO2g0nKK/ldWNaIbS/Mu0zsqwbfQIi4LLiLB01wHqzHc4pPOMwDDLTrOH5e7oX+RhAmvdRCXzDM
+        I2y8p4dMSA/k7ut5Lk4YCw5h/QQ0HUbu1cjgImY4c51gM5v1prDWKZA9Vj1qnC9NoB49zmAL9HNVBzmq
+        xcNNBRMw/TXwDA2PZm1/LpdbnHFdsSzvlurx4TpilcpK9H2MBRPgiW4xzbtr+2tUDkEvXhsLJiyrOAq/
+        jG3OghvwvwE1oAzaQbu3HdH3MRb+i8EfQP5xyBcM1iWgCi/XFXp6Ae6D1y0FCvQkRQ4P+SpQkoeqH07r
+        mcicFMxToKclFEc3JwXz7R5rSygONtD1TukkT4rIcIDhAAM1gPwkw+s/UZ9veC3XJkgRiTfo+wDd0IsB
+        KvUm3F+h6u2QGTVAhaojpIhwJ9hRTboHelC9EVJEPM8bV0NEdyIZFZmVPajeCCmmCSmmCSmmR2j9AHRf
+        Q61WoHcdAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="&gt;&gt;LblTelCam.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -3629,26 +3692,11 @@
   <data name="NoticeTabPage.ImageIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="DataGridViewTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>790, 169</value>
+  <data name="DataGridViewTel.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="cmSysButton17.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
-        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
-        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
-        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
-        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
-        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
-        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
-        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
-        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
-        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
-        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
-        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
-        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
-        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
-</value>
+  <data name="DataGridViewTel.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="LblWeaSim.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3656,14 +3704,14 @@
   <data name="&gt;&gt;LblDate.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="LanguageSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 24</value>
+  </data>
   <data name="TrainTabpage.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="LblCity.ToolTip" xml:space="preserve">
+  <data name="groupBox2.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
-  </data>
-  <data name="&gt;&gt;BtnTelDel.Name" xml:space="preserve">
-    <value>BtnTelDel</value>
   </data>
   <data name="TextBoxTelNum.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -3671,8 +3719,8 @@
   <data name="CmoBoxCam.Location" type="System.Drawing.Point, System.Drawing">
     <value>79, 26</value>
   </data>
-  <data name="CmoBoxPrior.Items1" xml:space="preserve">
-    <value>中</value>
+  <data name="&gt;&gt;ToolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblCity.Parent" xml:space="preserve">
     <value>GouBoxWeather</value>
@@ -3686,14 +3734,11 @@
   <data name="RichTextBoxBodey.ToolTip" xml:space="preserve">
     <value>邮件正文</value>
   </data>
-  <data name="&gt;&gt;BtnTelDel.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="BtnTelQue.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt</value>
   </data>
   <data name="&gt;&gt;NoticeTabPage.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="&gt;&gt;SkinTool4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="TelTabpage.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 36</value>
@@ -3701,8 +3746,8 @@
   <data name="EmailSubject.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LblSubject.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="NoticeTabPage.Text" xml:space="preserve">
+    <value>自动通知</value>
   </data>
   <data name="BtnTelAdd.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 9pt</value>
@@ -3716,8 +3761,8 @@
   <data name="CmoBoxNotDep.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 6</value>
   </data>
   <data name="LblWind.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3734,23 +3779,20 @@
   <data name="CmoBoxTelDep.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="LblDate.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;BtnTelDel.Name" xml:space="preserve">
+    <value>BtnTelDel</value>
   </data>
   <data name="CmoBoxNotDep.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="&gt;&gt;TabShow.Type" xml:space="preserve">
-    <value>CCWin.SkinControl.SkinTabControl, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="EmailSubject.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="TextBoxTelNum.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="BtnSendMail.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="FindPwd.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="FindPwd.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="cmSysButton19.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3782,8 +3824,8 @@
   <data name="RadBtnStuTic.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="CmoBoxTelDep.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="BtnTelAdd.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="&gt;&gt;简体中文ToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3796,9 +3838,6 @@
   </data>
   <data name="pictureBox5.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="TextBoxMailTo.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;BtnSendMail.Parent" xml:space="preserve">
     <value>groupBox4</value>
@@ -3815,6 +3854,9 @@
   <data name="&gt;&gt;CmoBoxToSta.Name" xml:space="preserve">
     <value>CmoBoxToSta</value>
   </data>
+  <data name="&gt;&gt;Exit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="BtnUpdNotice.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
@@ -3824,8 +3866,8 @@
   <data name="SkinTool0.Text" xml:space="preserve">
     <value>默认皮肤</value>
   </data>
-  <data name="LblNoticeDep.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 45</value>
+  <data name="TrainTabpage.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;LblThreeDay.Name" xml:space="preserve">
     <value>LblThreeDay</value>
@@ -3854,8 +3896,20 @@
   <data name="TextBoxMailFromName.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 293</value>
+  <data name="cmSysButton20.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHnSURBVFhH7ZY/
+        S8NAGMYj6uifybm0yV3QpRJzAV266aCIaDcXv4UKurj4DUQU8RO4SEXQQSlOXd0dhDoU3P0D8b3m3ppe
+        36tNqWmHDj+4PO/zvPdekpZYYRj2FVJME1JME1JME1KUZDL5ac5FkXP/gjPxyh1xS/l0CoXCGPjLwAtj
+        /iljYsO2g0nKK/ldWNaIbS/Mu0zsqwbfQIi4LLiLB01wHqzHc4pPOMwDDLTrOH5e7oX+RhAmvdRCXzDM
+        I2y8p4dMSA/k7ut5Lk4YCw5h/QQ0HUbu1cjgImY4c51gM5v1prDWKZA9Vj1qnC9NoB49zmAL9HNVBzmq
+        xcNNBRMw/TXwDA2PZm1/LpdbnHFdsSzvlurx4TpilcpK9H2MBRPgiW4xzbtr+2tUDkEvXhsLJiyrOAq/
+        jG3OghvwvwE1oAzaQbu3HdH3MRb+i8EfQP5xyBcM1iWgCi/XFXp6Ae6D1y0FCvQkRQ4P+SpQkoeqH07r
+        mcicFMxToKclFEc3JwXz7R5rSygONtD1TukkT4rIcIDhAAM1gPwkw+s/UZ9veC3XJkgRiTfo+wDd0IsB
+        KvUm3F+h6u2QGTVAhaojpIhwJ9hRTboHelC9EVJEPM8bV0NEdyIZFZmVPajeCCmmCSmmCSmmR2j9AHRf
+        Q61WoHcdAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="GupBoxEmailSetting.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3863,14 +3917,17 @@
   <data name="LblWind.Text" xml:space="preserve">
     <value>风向</value>
   </data>
-  <data name="&gt;&gt;TextBoxMailFrom.Name" xml:space="preserve">
-    <value>TextBoxMailFrom</value>
+  <data name="&gt;&gt;LblTel.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;InformationUpdate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NewsTabpage.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CmoBoxMailHost.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="TabShow.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3878,11 +3935,8 @@
   <data name="BtnTelQue.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="CmoBoxToSta.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="TrainTabpage.ToolTip" xml:space="preserve">
-    <value />
+  <data name="resource.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="&gt;&gt;RadBtnAdult.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -3896,8 +3950,8 @@
   <data name="NewsTabpage.ImageIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="LblWeaComp.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="SkinTool1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 26</value>
   </data>
   <data name="LblNoticeDep.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3905,11 +3959,8 @@
   <data name="&gt;&gt;LabelData.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="LblNoticeDep.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CmoBoxNotType.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="LblTel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 15</value>
   </data>
   <data name="BtnTelDel.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3929,11 +3980,11 @@
   <data name="LabelData.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="SkinMenu.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="groupBox4.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 32</value>
+  <data name="&gt;&gt;EmailTabpage.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -3944,14 +3995,14 @@
   <data name="&gt;&gt;LabelQueTime.Name" xml:space="preserve">
     <value>LabelQueTime</value>
   </data>
-  <data name="TabShow.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;CmoBoxPrior.Parent" xml:space="preserve">
     <value>GupBoxEmailSetting</value>
   </data>
-  <data name="LblSubject.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="CmoBoxMailHost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>575, 21</value>
   </data>
   <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
     <value>GouBoxWeather</value>
@@ -3962,8 +4013,11 @@
   <data name="LblTelCam.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 32</value>
   </data>
-  <data name="LblTel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="BtnTelAdd.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBox3.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="TrainTabpage.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -3971,8 +4025,14 @@
   <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="RadBtnAdult.Text" xml:space="preserve">
-    <value>成人</value>
+  <data name="&gt;&gt;DateTImePicNotice.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TopMost.Name" xml:space="preserve">
+    <value>TopMost</value>
+  </data>
+  <data name="CmoBoxPrior.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="TabShow.Size" type="System.Drawing.Size, System.Drawing">
     <value>815, 596</value>
@@ -3995,8 +4055,8 @@
         Q61WoHcdAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;TextBoxMailTo.Name" xml:space="preserve">
-    <value>TextBoxMailTo</value>
+  <data name="lblPrior.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 25</value>
   </data>
   <data name="resource.WordWrap" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4025,20 +4085,17 @@
   <data name="LabelFromSta.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="RadBtnAdult.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="pictureBox4.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="CmoBoxNotType.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="&gt;&gt;DateTimeTic.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="LabelData.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 15</value>
   </data>
   <data name="&gt;&gt;LblSubject.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="$this.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;SkinTool0.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4067,6 +4124,9 @@
   <data name="LblNextDay.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>NewsTabpage</value>
+  </data>
   <data name="pictureBox3.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -4079,21 +4139,14 @@
   <data name="DateTimeTic.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="TabShow.PageDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADsAAAAiCAYAAADh/KHgAAAABGdBTUEAALGPC/xhBQAAAOZJREFUaEPl
-        2KsKQlEURdHrG996BYNgMBgMFoPBYrAYDBaDwWAwGARBEAT//bpXWHC+YXpghhVHPDuLVyqKokFPTmOb
-        9FJsm16K7dJLsQN6KXZEL8WO6RlbjjGhJ6exU3opdkYvxc7pGVuJsaAnp7FLesZWY6zoyWnsmp6xtRgb
-        enIKW4+xpSensPrc7ujJaeyenrH6yR/oySlsK8aRnpzC6mxxoiensJ0YZ3pyCqsbzYWenML2YlzpySls
-        P8aNnpzG3ukZq1Pjg56cwg5jPOnJaeyLnrF5jDc9OY390EuxX3p/hs3yH+t9kV6QtrMcAAAAAElFTkSu
-        QmCC
-</value>
+  <data name="LblMailFrom.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>815, 99</value>
   </data>
-  <data name="RadBtnStuTic.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="&gt;&gt;LabelFromSta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblPrior.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -4106,9 +4159,6 @@
   </data>
   <data name="DateTImePicNotice.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
-  </data>
-  <data name="TextBoxTelSecDep.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cmSysButton11.SysButtonMouse" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4149,8 +4199,8 @@
   <data name="groupBox3.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="CmoBoxPrior.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="RadBtnAdult.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10.8pt, style=Bold</value>
   </data>
   <data name="cmSysButton6.SysButtonMouse" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4167,11 +4217,11 @@
         Q61WoHcdAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
-    <value>toolStripSeparator2</value>
+  <data name="EmailSubject.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="BtnTelDel.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="LblLoc.Text" xml:space="preserve">
     <value>地理位置:</value>
@@ -4182,11 +4232,8 @@
   <data name="LblEmailPort.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="LblDate.Text" xml:space="preserve">
-    <value>日期</value>
-  </data>
-  <data name="TrainTabpage.Text" xml:space="preserve">
-    <value>查票</value>
+  <data name="BtnTelDel.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
   <data name="CmoBoxMailHost.Items" xml:space="preserve">
     <value>smtp.qq.com</value>
@@ -4194,32 +4241,14 @@
   <data name="BtnTelDel.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 9pt</value>
   </data>
-  <data name="LblThreeDay.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="&gt;&gt;LblLoc.Name" xml:space="preserve">
+    <value>LblLoc</value>
   </data>
   <data name="BtnTelAdd.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="LblWind.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="cmSysButton5.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
-        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
-        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
-        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
-        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
-        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
-        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
-        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
-        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
-        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
-        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
-        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
-        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
-        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
-</value>
+  <data name="LblNoticeType.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="LblMailFrom.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -4233,11 +4262,11 @@
   <data name="Language.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 24</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="LblDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 45</value>
   </data>
-  <data name="LblWeaComp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 10.8pt</value>
+  <data name="LblWeaComp.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="cmSysButton16.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4308,8 +4337,8 @@
   <data name="LblWind.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="TopMost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 24</value>
+  <data name="CmoBoxCam.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="&gt;&gt;LblTelCam.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -4317,8 +4346,8 @@
   <data name="&gt;&gt;TextBoxMailTo.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="IndexTabPage.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="LabelData.Text" xml:space="preserve">
+    <value>出发日期</value>
   </data>
   <data name="&gt;&gt;NoticeTabPage.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinTabPage, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
@@ -4332,8 +4361,8 @@
   <data name="DataGridViewTicket.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="LabelFromSta.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9pt, style=Bold</value>
+  <data name="&gt;&gt;GupBoxEmailSetting.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>427, 60</value>
@@ -4344,14 +4373,11 @@
   <data name="&gt;&gt;NoticeTabPage.Parent" xml:space="preserve">
     <value>TabShow</value>
   </data>
-  <data name="&gt;&gt;EmailTabpage.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="TextBoxTelSecDep.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="&gt;&gt;Link.Name" xml:space="preserve">
-    <value>Link</value>
+  <data name="DataGridViewTicket.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="NumUpDownPort.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
@@ -4365,11 +4391,11 @@
   <data name="LblNoticeDep.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="TelTabpage.ToolTip" xml:space="preserve">
-    <value />
+  <data name="EmailTabpage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 36</value>
   </data>
-  <data name="GouBoxWeather.ToolTip" xml:space="preserve">
-    <value />
+  <data name="CmoBoxNotDep.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="CmoBoxTelDep.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
@@ -4377,8 +4403,8 @@
   <data name="TrainTabpage.Size" type="System.Drawing.Size, System.Drawing">
     <value>815, 560</value>
   </data>
-  <data name="groupBox2.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="SkinTool2.Text" xml:space="preserve">
+    <value>悠然百合</value>
   </data>
   <data name="BtnTelAdd.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 36</value>
@@ -4401,13 +4427,8 @@
   <data name="LblDate.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="TabShow.PageCloseHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAAH9JREFUKFNj
-        +P//P0kYmcMKxXjFYIwzaBiXGFgDyIQzHB2n/4MwiA3DaGJgm1A0cHad+88//T6Q+/8MiAbxsWmAWw9S
-        JLH653+p9f/BNEwzFMOdhKIJpBiGYWJADFeHophYG0j2A1wDkiQYo4lhehoJ4xJD8TTIBLApuMX+MwAA
-        JO7ByqoT8QIAAAAASUVORK5CYII=
-</value>
+  <data name="pictureBox3.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="&gt;&gt;GupBoxEmailSetting.Name" xml:space="preserve">
     <value>GupBoxEmailSetting</value>
@@ -4421,7 +4442,7 @@
   <data name="BtnUpdNotice.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="LblEmailPort.AutoSize" type="System.Boolean, mscorlib">
+  <data name="LblWeaSim.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="LblCity.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
@@ -4430,8 +4451,8 @@
   <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>764, 397</value>
   </data>
-  <data name="&gt;&gt;Exit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="TrainTabpage.Text" xml:space="preserve">
+    <value>查票</value>
   </data>
   <data name="&gt;&gt;Language.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -4439,23 +4460,8 @@
   <data name="&gt;&gt;LblWeaSim.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="cmSysButton9.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
-        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
-        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
-        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
-        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
-        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
-        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
-        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
-        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
-        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
-        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
-        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
-        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
-        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
-</value>
+  <data name="&gt;&gt;LblTelDep.Parent" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
   <data name="TextBoxPwd.ToolTip" xml:space="preserve">
     <value />
@@ -4478,35 +4484,41 @@
         qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="LblNoticeType.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 9pt, style=Bold</value>
+  <data name="GouBoxWeather.Size" type="System.Drawing.Size, System.Drawing">
+    <value>580, 536</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 15</value>
+  <data name="&gt;&gt;LblMailFromPwd.Name" xml:space="preserve">
+    <value>LblMailFromPwd</value>
   </data>
   <data name="&gt;&gt;LblNextDay.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BtnQueNotice.Name" xml:space="preserve">
-    <value>BtnQueNotice</value>
+  <data name="EmailTabpage.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="简体中文ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>181, 26</value>
   </data>
-  <data name="BtnSendMail.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="resource.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 338</value>
   </data>
   <data name="SkinTool3.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 26</value>
   </data>
-  <data name="LblTelDep.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="TabShow.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;FindPwd.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="LabelQueTime.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="CmoBoxPrior.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 21</value>
+  </data>
+  <data name="LblEmailPort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10.8pt</value>
   </data>
   <data name="&gt;&gt;ExitTabPage.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -4537,9 +4549,6 @@
   </data>
   <data name="&gt;&gt;BtnTicQuery.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="LblTelDep.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="CmoBoxNotDep.Items1" xml:space="preserve">
     <value>计算机科学学院</value>
@@ -33909,11 +33918,22 @@
   <data name="LblWeaComp.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="UserTabPage.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="TabShow.PageHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADsAAAAiCAYAAADh/KHgAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEISURBVGhD3dirTkNRFEXRy7NAICGkaaAhvIpC4ZB1
+        lTgsEolF1lZWIrFIHBKHw2FQqIoKfuGyptjJ/YZ5kimWHHKfJm+lbdtdezgLu2+vi+3bK+xqxpE9nIU9
+        sdfFXtrrYq/sFXYt49oezsLe2CvsesbYHs7CTuwVdiPj1h5OsJsZd/Zwgu1l3NvDCXYr48EeTrDbGY/2
+        cILdyXiyhxMsx+3UHk6wexkzezjBcsnP7eEEe5DxbA8nWL4tXuzhBDvIeLWHE+xhxps9nGCHGe/2cII9
+        zviwh7Own/YKy1fjlz2cYE8zvu3hBHuW8WMPJ9jzjF97OMFeZCzs4Szs0l5hRxl/9pqmGf0Dp89NtaTt
+        b1AAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="CmoBoxToSta.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="&gt;&gt;DataGridViewUser.Parent" xml:space="preserve">
-    <value>UserTabPage</value>
+  <data name="TrainTabpage.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="LblWeaSim.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 19</value>
@@ -33921,14 +33941,14 @@
   <data name="pictureBox5.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LblTel.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;LblWind.Parent" xml:space="preserve">
+    <value>GouBoxWeather</value>
   </data>
-  <data name="SkinTool2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 26</value>
+  <data name="LabelData.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;英文ToolStripMenuItem.Name" xml:space="preserve">
-    <value>英文ToolStripMenuItem</value>
+  <data name="&gt;&gt;CmoBoxTelDep.Name" xml:space="preserve">
+    <value>CmoBoxTelDep</value>
   </data>
   <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
     <value>groupBox4</value>
@@ -33939,11 +33959,11 @@
   <data name="LblMailto.Location" type="System.Drawing.Point, System.Drawing">
     <value>21, 93</value>
   </data>
+  <data name="SettingsMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="TabShow.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
-  </data>
-  <data name="&gt;&gt;LabelQueTime2.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;LblDate.Name" xml:space="preserve">
     <value>LblDate</value>
@@ -33957,13 +33977,13 @@
   <data name="SkinTool4.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 26</value>
   </data>
-  <data name="DateTImePicNotice.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="SettingsMenu.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="BtnTicQuery.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="LblMailFromPwd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 66</value>
   </data>
-  <data name="LblMailFromPwd.AutoSize" type="System.Boolean, mscorlib">
+  <data name="NewsTabpage.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="cmSysButton3.SysButtonMouse" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -33984,29 +34004,29 @@
         qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;BtnTelAdd.Type" xml:space="preserve">
-    <value>CCWin.SkinControl.SkinButton, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  <data name="LblFromWho.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10.8pt</value>
   </data>
   <data name="&gt;&gt;BtnTelDel.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinButton, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="LblDate.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="TextBoxPwd.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="CmoBoxNotType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 39</value>
-  </data>
-  <data name="TextBoxMailFrom.ShowHelp" type="System.Boolean, mscorlib">
+  <data name="LblTelDep.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="BtnQueNotice.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTicket.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinDataGridView, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="pictureBox4.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="&gt;&gt;TrainTabpage.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinTabPage, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="LblWeaSim.Text" xml:space="preserve">
+    <value>今日天气概况:</value>
   </data>
   <data name="&gt;&gt;UserTabPage.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinTabPage, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
@@ -34017,8 +34037,8 @@
   <data name="LabelToSta.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="TelTabpage.Text" xml:space="preserve">
-    <value>电话查询</value>
+  <data name="LblDate.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="pictureBox3.ToolTip" xml:space="preserve">
     <value />
@@ -34026,8 +34046,8 @@
   <data name="LblFromWho.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LblMailFrom.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;LblWind.Name" xml:space="preserve">
+    <value>LblWind</value>
   </data>
   <data name="LoadingIndex.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -34035,17 +34055,32 @@
   <data name="&gt;&gt;LblMailFrom.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="SkinTool1.Text" xml:space="preserve">
-    <value>炫彩紫色</value>
+  <data name="NumUpDownPort.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="&gt;&gt;LblMailto.Parent" xml:space="preserve">
-    <value>groupBox4</value>
+  <data name="cmSysButton17.SysButtonMouse" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
+        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
+        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
+        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
+        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
+        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
+        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
+        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
+        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
+        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
+        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
+        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
+        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
+        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
+</value>
   </data>
   <data name="pictureBox5.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="TextBoxTelNum.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+  <data name="&gt;&gt;BtnTelQue.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="BtnTelDel.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 36</value>
@@ -34053,8 +34088,8 @@
   <data name="groupBox1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;EmailTabpage.Type" xml:space="preserve">
-    <value>CCWin.SkinControl.SkinTabPage, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  <data name="CmoBoxToSta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 23</value>
   </data>
   <data name="TextBoxTelNum.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -34068,11 +34103,11 @@
   <data name="groupBox1.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="groupBox4.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+  <data name="TextBoxMailFromName.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="&gt;&gt;LabelFromSta.Name" xml:space="preserve">
-    <value>LabelFromSta</value>
+  <data name="GouBoxWeather.Text" xml:space="preserve">
+    <value>天气预报</value>
   </data>
   <data name="BtnQueNotice.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -34083,7 +34118,7 @@
   <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
     <value>toolStripSeparator1</value>
   </data>
-  <data name="LblMailFromPwd.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="LblLoc.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="cmSysButton15.SysButtonNorml" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -34110,11 +34145,14 @@
   <data name="NoticeTabPage.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="groupBox4.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="&gt;&gt;IndexTabPage.Name" xml:space="preserve">
+    <value>IndexTabPage</value>
+  </data>
+  <data name="LblTelCam.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="LblMailto.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;TextBoxTelNum.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinTextBox, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="LblTelCam.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -34122,56 +34160,26 @@
   <data name="FindPwd.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LanguageSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 24</value>
+  <data name="&gt;&gt;LblTelCam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;英文ToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="LblWind.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
-  <data name="cmSysButton1.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
-        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
-        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
-        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
-        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
-        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
-        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
-        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
-        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
-        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
-        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
-        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
-        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
-        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
-</value>
+  <data name="BtnTelQue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 36</value>
   </data>
   <data name="CmoBoxTelDep.Location" type="System.Drawing.Point, System.Drawing">
     <value>303, 26</value>
   </data>
-  <data name="cmSysButton9.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
-        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
-        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
-        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
-        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
-        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
-        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
-        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
-        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
-        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
-        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
-        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
-        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
-        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
-</value>
+  <data name="&gt;&gt;LabelQueTime2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="ExitTabPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 36</value>
   </data>
-  <data name="resource.Multiline" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="LblVersion.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="LblNextDay.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 19</value>
@@ -34179,11 +34187,11 @@
   <data name="DataGridViewUser.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="CmoBoxFromSta.ToolTip" xml:space="preserve">
-    <value />
+  <data name="TextBoxTelNum.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
-  <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="TextBoxPwd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 28</value>
   </data>
   <data name="&gt;&gt;LblThreeDay.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -34200,20 +34208,20 @@
   <data name="&gt;&gt;LblWind.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="LblLoc.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="DataGridViewUser.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
   </data>
-  <data name="&gt;&gt;CmoBoxMailHost.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="SettingsMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 160</value>
   </data>
   <data name="LblLife.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="EmailSubject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 28</value>
   </data>
-  <data name="&gt;&gt;SkinTool3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="TextBoxTelSecDep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>527, 27</value>
   </data>
   <data name="&gt;&gt;LabelQueTime.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -34224,26 +34232,26 @@
   <data name="LabelFromSta.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="pictureBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 338</value>
+  <data name="GouBoxWeather.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;About.Name" xml:space="preserve">
     <value>About</value>
   </data>
-  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
+  <data name="LblMailHost.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="LblDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 45</value>
+  <data name="LblWeaComp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10.8pt</value>
   </data>
-  <data name="LblMailFrom.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="&gt;&gt;LblEmailPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="LblTelCam.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="TextBoxMailTo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="SettingsMenu.ToolTip" xml:space="preserve">
-    <value />
+  <data name="LblLife.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 185</value>
   </data>
   <data name="SettingsMenu.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -34251,17 +34259,17 @@
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>790, 122</value>
   </data>
-  <data name="GouBoxWeather.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="&gt;&gt;DataGridViewTicket.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="TextBoxMailTo.ToolTip" xml:space="preserve">
-    <value />
+  <data name="LblNoticeDep.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;BtnTicQuery.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinButton, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;TopMost.Name" xml:space="preserve">
-    <value>TopMost</value>
+  <data name="CmoBoxPrior.Items1" xml:space="preserve">
+    <value>中</value>
   </data>
   <data name="NewsTabpage.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -34272,40 +34280,20 @@
   <data name="&gt;&gt;FindPwd.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="TrainTabpage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 36</value>
+  <data name="lblPrior.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="TabShow.PageHover" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADsAAAAiCAYAAADh/KHgAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEISURBVGhD3dirTkNRFEXRy7NAICGkaaAhvIpC4ZB1
-        lTgsEolF1lZWIrFIHBKHw2FQqIoKfuGyptjJ/YZ5kimWHHKfJm+lbdtdezgLu2+vi+3bK+xqxpE9nIU9
-        sdfFXtrrYq/sFXYt49oezsLe2CvsesbYHs7CTuwVdiPj1h5OsJsZd/Zwgu1l3NvDCXYr48EeTrDbGY/2
-        cILdyXiyhxMsx+3UHk6wexkzezjBcsnP7eEEe5DxbA8nWL4tXuzhBDvIeLWHE+xhxps9nGCHGe/2cII9
-        zviwh7Own/YKy1fjlz2cYE8zvu3hBHuW8WMPJ9jzjF97OMFeZCzs4Szs0l5hRxl/9pqmGf0Dp89NtaTt
-        b1AAAAAASUVORK5CYII=
-</value>
+  <data name="LblSubject.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;LblNextDay.Parent" xml:space="preserve">
     <value>GouBoxWeather</value>
   </data>
-  <data name="LblEmailPort.ToolTip" xml:space="preserve">
-    <value />
+  <data name="$this.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="cmSysButton14.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHnSURBVFhH7ZY/
-        S8NAGMYj6uifybm0yV3QpRJzAV266aCIaDcXv4UKurj4DUQU8RO4SEXQQSlOXd0dhDoU3P0D8b3m3ppe
-        36tNqWmHDj+4PO/zvPdekpZYYRj2FVJME1JME1JME1KUZDL5ac5FkXP/gjPxyh1xS/l0CoXCGPjLwAtj
-        /iljYsO2g0nKK/ldWNaIbS/Mu0zsqwbfQIi4LLiLB01wHqzHc4pPOMwDDLTrOH5e7oX+RhAmvdRCXzDM
-        I2y8p4dMSA/k7ut5Lk4YCw5h/QQ0HUbu1cjgImY4c51gM5v1prDWKZA9Vj1qnC9NoB49zmAL9HNVBzmq
-        xcNNBRMw/TXwDA2PZm1/LpdbnHFdsSzvlurx4TpilcpK9H2MBRPgiW4xzbtr+2tUDkEvXhsLJiyrOAq/
-        jG3OghvwvwE1oAzaQbu3HdH3MRb+i8EfQP5xyBcM1iWgCi/XFXp6Ae6D1y0FCvQkRQ4P+SpQkoeqH07r
-        mcicFMxToKclFEc3JwXz7R5rSygONtD1TukkT4rIcIDhAAM1gPwkw+s/UZ9veC3XJkgRiTfo+wDd0IsB
-        KvUm3F+h6u2QGTVAhaojpIhwJ9hRTboHelC9EVJEPM8bV0NEdyIZFZmVPajeCCmmCSmmCSmmR2j9AHRf
-        Q61WoHcdAAAAAElFTkSuQmCC
-</value>
+  <data name="&gt;&gt;SkinMenu.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinContextMenuStrip, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnSendMail.Name" xml:space="preserve">
     <value>BtnSendMail</value>
@@ -34316,28 +34304,28 @@
   <data name="LblFromWho.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="TextBoxMailTo.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="DateTimeTic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 28</value>
   </data>
-  <data name="CmoBoxPrior.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="CmoBoxNotDep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 26</value>
   </data>
-  <data name="NewsTabpage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 32</value>
   </data>
   <data name="&gt;&gt;TextBoxPwd.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="CmoBoxCam.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="BtnUpdNotice.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="pictureBox2.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;SkinTool4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="DataGridViewTel.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="TextBoxMailFromName.ToolTip" xml:space="preserve">
+  <data name="TextBoxTelSecDep.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="BtnUpdNotice.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
@@ -34346,8 +34334,23 @@
   <data name="BtnUpdNotice.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;DateTimeTic.Type" xml:space="preserve">
-    <value>CCWin.SkinControl.SkinDateTimePicker, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  <data name="cmSysButton15.SysButtonDown" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAu5JREFUaEPt
+        mU1qHDEQhWdl8D18HYN9i1wjkE0CCQEvEghZhEAgEAh4k2OEHMVbbzr1hleDuvuVWmqJiQjz4MONpCrV
+        088w0z5cdNFF59H3x19TKQwZU6rgCIaMKVVwBEPGlCo4giFjShUcwZAxpQqOYMiYUgVnuGbY+WSTXhk/
+        jTs2zWTtN8YnQxUc8WQg5oZpZrL2WwNzXrGpTUjEhJj82TiZsedr4zXbl4WWgljkOO2QPcOE52w3gwRM
+        tJz4zsAu/GZbD5ALOVMTzn4zCGSCNKGDiXA0Vn1ffzxOH798m959+Dy9evswvXzz/vgXoA19GKNiDeRc
+        mnDqzSCAgSqhBMWhUBReAsZmDEWUm8FABqhEEqyyr34NiEGsyplh2wwGcKBKIEEhqsgaupvhABUo6WHC
+        2WOGZa9lnfdGdNlm4HxHx8mPTHoH8Iy2XEzFnUGNtyxbywYUmYkuNtrV+JSWWGPbhMsGZs1g5RoKORKZ
+        2diVchMuCwjNqLuBo6HG5lDHLHNX6k24LFCaUau547LKBQl2db8JlyXA15FZYrWSFRf1hDqiwc62mXBZ
+        otmuLCcHaX8NBbmeWUa7kCxNXjB5MQW5uhqZfUE889F6YhltskSrO/IPLnuXi7761FIFBJc0i9rZYEH2
+        f2pZoDQB1JEAwWpK1K6CzBGtN2MBoQknKqTETENsuRkbuGkCYOXU0QBoxxFJVxfPaMvFZHYjZduMDSgy
+        4ai7spfgbkTkzVhn1e8R0MNMpQkn+3uk+hciyB2ZHH4EVc4N8r8QIQzgQJUgBOc7usQKjC28E0u2Tbgw
+        kAEqURa/1Cg03SU8ow19Ow2AchMuBDBQJcRle2H8SdpaQS7kjD5s6k24EMgEaUJMdM/+7q9M7W/fN40u
+        JGAin/RoIpW17XmJjVzyJba19X3360IiJlyZSGX9y2JzZP+tYP1938bXiAUWwZAxpQqOYMiYUgVHMGRM
+        qYIjGDKmVMERDBlTquAIhlz0H+tw+AtuZJrN5HEphQAAAABJRU5ErkJggg==
+</value>
   </data>
   <data name="IndexTabPage.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -34367,11 +34370,8 @@
   <data name="LblLoc.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 37</value>
   </data>
-  <data name="BtnTelDel.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="EmailTabpage.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="LblDate.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
   <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 32</value>
@@ -34379,11 +34379,11 @@
   <data name="&gt;&gt;GupBoxEmailSetting.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>357, 338</value>
+  <data name="&gt;&gt;LblTelSecDep.Parent" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
-  <data name="CmoBoxPrior.Location" type="System.Drawing.Point, System.Drawing">
-    <value>329, 21</value>
+  <data name="LblFromWho.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="SkinMenu.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -34394,17 +34394,17 @@
   <data name="TextBoxTelSecDep.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
   </data>
-  <data name="IndexTabPage.ImageIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="TextBoxTelSecDep.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
-  <data name="&gt;&gt;LblVersion.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;DataGridViewUser.Parent" xml:space="preserve">
+    <value>UserTabPage</value>
   </data>
-  <data name="BtnQueNotice.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;TextBoxPwd.Parent" xml:space="preserve">
+    <value>GupBoxEmailSetting</value>
   </data>
   <data name="CmoBoxToSta.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
@@ -34418,14 +34418,14 @@
   <data name="&gt;&gt;LblCity.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="TextBoxMailTo.HelpKeyword" xml:space="preserve">
-    <value>87686786</value>
+  <data name="LblVersion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="SkinTool0.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 26</value>
+  <data name="TextBoxTelNum.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
   </data>
   <data name="LabelQueTime2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -34436,8 +34436,8 @@
   <data name="NewsTabpage.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="EmailSubject.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="LblWeaSim.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="IndexTabPage.Size" type="System.Drawing.Size, System.Drawing">
     <value>815, 560</value>
@@ -34453,29 +34453,29 @@
   <data name="DateTImePicNotice.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;CmoBoxNotDep.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="LblDate.Text" xml:space="preserve">
+    <value>日期</value>
   </data>
-  <data name="LblTelCam.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="LblTel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 9pt, style=Bold</value>
   </data>
-  <data name="BtnTicQuery.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="&gt;&gt;LblLife.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinLabel, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="LblTelCam.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LblMailHost.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
-    <value>AssociateIndex</value>
+  <data name="RadBtnStuTic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>691, 54</value>
   </data>
-  <data name="BtnTelAdd.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;CmoBoxNotType.Name" xml:space="preserve">
+    <value>CmoBoxNotType</value>
   </data>
   <data name="LblTelSecDep.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 9pt, style=Bold</value>
   </data>
-  <data name="LblWeaSim.Text" xml:space="preserve">
-    <value>今日天气概况:</value>
+  <data name="&gt;&gt;EmailSubject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BtnSendMail.Text" xml:space="preserve">
     <value>发送</value>
@@ -34483,17 +34483,17 @@
   <data name="&gt;&gt;DataGridViewTel.Type" xml:space="preserve">
     <value>CCWin.SkinControl.SkinDataGridView, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="TabShow.ItemSize" type="System.Drawing.Size, System.Drawing">
-    <value>70, 36</value>
+  <data name="SkinTool1.Text" xml:space="preserve">
+    <value>炫彩紫色</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>NewsTabpage</value>
+  <data name="LblLoc.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="GupBoxEmailSetting.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="LabelToSta.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="&gt;&gt;TextBoxPwd.Name" xml:space="preserve">
+    <value>TextBoxPwd</value>
   </data>
   <data name="RichTextBoxBodey.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
     <value>ForcedVertical</value>
@@ -34501,8 +34501,8 @@
   <data name="NumUpDownPort.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="lblPrior.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 19</value>
+  <data name="DateTimeTic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>477, 22</value>
   </data>
   <data name="LblVersion.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -34519,14 +34519,11 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="SkinMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>12, 17</value>
-  </metadata>
   <metadata name="ToolTip.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="helpProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>679, 13</value>
+  <metadata name="imageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>417, 13</value>
   </metadata>
   <metadata name="SettingsMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>258, 13</value>
@@ -34534,7 +34531,10 @@
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>zh</value>
   </metadata>
-  <metadata name="imageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>417, 13</value>
+  <metadata name="helpProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>679, 13</value>
+  </metadata>
+  <metadata name="SkinMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>12, 17</value>
   </metadata>
 </root>

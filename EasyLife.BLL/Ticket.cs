@@ -31,8 +31,8 @@ namespace EasyLife.BLL
         public DataSet GetList(string FromStation, string ToStation, DateTime Date,string Identity)
         {
             StringBuilder strWhere = new StringBuilder();
-            strWhere.Append("FromStation='" + FromStation+"'");
-            strWhere.Append(" AND ToStation='" + ToStation + "'");
+            strWhere.Append("SearchFrom='" + FromStation+"'");
+            strWhere.Append(" AND SearchTo='" + ToStation + "'");
             strWhere.Append(" AND TicketDate='" + Date.ToString("yyyyMMdd") + "'");
             strWhere.Append(" AND Identity='" + Identity + "'");
             return dal.GetList(strWhere.ToString());
@@ -41,9 +41,9 @@ namespace EasyLife.BLL
         {
             return dal.Delete(FromStation,ToStation,Date,Identity);
         }
-        public int Add(Model.Ticket model)
+        public int Add(string SearchFrom,string SearchTo,Model.Ticket model)
         {
-            return dal.Add(model);
+            return dal.Add(SearchFrom,SearchTo,model);
         }
         public bool Exists(string FromStation,string ToStation,DateTime Date,string Identity)
         {
@@ -70,7 +70,7 @@ namespace EasyLife.BLL
             {
                 AllTicket[i].Identity = Id;
             }
-            return dal.Add(AllTicket);
+            return dal.Add(FromStation, ToStation,AllTicket);
         }
     }
 }

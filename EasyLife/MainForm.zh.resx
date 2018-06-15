@@ -272,6 +272,9 @@
   <data name="LblSubject.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DataGridViewUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 280</value>
+  </data>
   <data name="DataGridViewUser.Size" type="System.Drawing.Size, System.Drawing">
     <value>790, 169</value>
   </data>

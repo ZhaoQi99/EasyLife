@@ -21,16 +21,16 @@ namespace EasyLife.DAL
             {
                 strSql.Append(" where " + strWhere);
             }
-            return SqlHelper.Query(strSql.ToString(),"Ticket");
+            return SqlHelper.Query(strSql.ToString(), "Ticket");
         }
         public int Delete(string FromStation, string ToStation, DateTime Date, string Identity)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("delete from [Ticket] ");
-            strSql.Append(" where FromStation=@FromStation AND ToStation=@ToStation AND TicketDate=@TicketDate AND Identity=@Identity");
+            strSql.Append(" where SearchFrom=@SearchFrom AND SearchTo=@SearchTo AND TicketDate=@TicketDate AND Identity=@Identity");
             OleDbParameter[] parameters = {
-                    new OleDbParameter("@FromStation", OleDbType.VarChar,255),
-                    new OleDbParameter("@ToStation", OleDbType.VarChar,255),
+                    new OleDbParameter("@SearchFrom", OleDbType.VarChar,255),
+                    new OleDbParameter("@SearchTo", OleDbType.VarChar,255),
                     new OleDbParameter("@TicketDate", OleDbType.VarChar,255),
                     new OleDbParameter("@Identity", OleDbType.VarChar,255)};
             parameters[0].Value = FromStation;
@@ -39,19 +39,21 @@ namespace EasyLife.DAL
             parameters[3].Value = Identity;
             return SqlHelper.ExecuteNonQuery(strSql.ToString(), parameters);
         }
-        public int Add(Model.Ticket model)
+        public int Add(string SearchForm,string SearchTo,Model.Ticket model)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("insert into [Ticket](");
-            strSql.Append("[TrainId],[FromStation],[ToStation],[TicketDate],[StartTime],[ArriveTime],[LastedTime],[TzNum]," +
+            strSql.Append("[TrainId],[FromStation],[ToStation],[SearchFrom],[SearchTo],[TicketDate],[StartTime],[ArriveTime],[LastedTime],[TzNum]," +
                 "[YdNum],[EdNum],[GrwNum],[RwNum],[DwNum],[YwNum],[RzNum],[YzNum],[WzNum],[QtNum],[Identity],[QueryTime] )");
             strSql.Append(" values (");
-            strSql.Append("@TrainId,@FromStation,@ToStation,@TicketDate,@StartTime,@ArriveTime,@LastedTime,@TzNum," +
+            strSql.Append("@TrainId,@FromStation,@ToStation,@SearchFrom,@SearchTo,@TicketDate,@StartTime,@ArriveTime,@LastedTime,@TzNum," +
                 "@YdNum,@EdNum,@GrwNum,@RwNum,@DwNum,@YwNum,@RzNum,@YzNum,@WzNum,@QtNum,@Identity,@QueryTime)");
             OleDbParameter[] parameters = {
                     new OleDbParameter("@TrainId", OleDbType.VarChar,255),
                     new OleDbParameter("@FromStation", OleDbType.VarChar,255),
                     new OleDbParameter("@ToStation", OleDbType.VarChar,255),
+                    new OleDbParameter("@SearchFrom", OleDbType.VarChar,255),
+                    new OleDbParameter("@SearchTo", OleDbType.VarChar,255),
                     new OleDbParameter("@TicketDate", OleDbType.VarChar,255),
                     new OleDbParameter("@StartTime", OleDbType.VarChar,255),
                     new OleDbParameter("@ArriveTime", OleDbType.VarChar,255),
@@ -72,69 +74,71 @@ namespace EasyLife.DAL
             parameters[0].Value = model.TrainId;
             parameters[1].Value = model.FromStation;
             parameters[2].Value = model.ToStation;
-            parameters[3].Value = model.TicketDate;
-            parameters[4].Value = model.StartTime;
-            parameters[5].Value = model.ArriveTime;
-            parameters[6].Value = model.LastedTime;
-            parameters[7].Value = model.TzNum;
-            parameters[8].Value = model.YdNum;
-            parameters[9].Value = model.EdNum;
-            parameters[10].Value = model.GrwNum;
-            parameters[11].Value = model.RwNum;
-            parameters[12].Value = model.DwNum;
-            parameters[13].Value = model.YwNum;
-            parameters[14].Value = model.RzNum;
-            parameters[15].Value = model.YzNum;
-            parameters[16].Value = model.WzNum;
-            parameters[17].Value = model.QtNum;
-            parameters[18].Value = model.Identity;
-            parameters[19].Value = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
+            parameters[3].Value = SearchForm;
+            parameters[4].Value = SearchTo;
+            parameters[5].Value = model.TicketDate;
+            parameters[6].Value = model.StartTime;
+            parameters[7].Value = model.ArriveTime;
+            parameters[8].Value = model.LastedTime;
+            parameters[9].Value = model.TzNum;
+            parameters[10].Value = model.YdNum;
+            parameters[11].Value = model.EdNum;
+            parameters[12].Value = model.GrwNum;
+            parameters[13].Value = model.RwNum;
+            parameters[14].Value = model.DwNum;
+            parameters[15].Value = model.YwNum;
+            parameters[16].Value = model.RzNum;
+            parameters[17].Value = model.YzNum;
+            parameters[18].Value = model.WzNum;
+            parameters[19].Value = model.QtNum;
+            parameters[20].Value = model.Identity;
+            parameters[21].Value = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
 
             return SqlHelper.ExecuteNonQuery(strSql.ToString(), parameters);
         }
-        public int Add(Model.Ticket []Allmodel)
+        public int Add(string SearchForm, string SearchTo, Model.Ticket[] Allmodel)
         {
             int n = 0;
-            for(int i=0;i<Allmodel.Length;i++)
+            for (int i = 0; i < Allmodel.Length; i++)
             {
                 Model.Ticket model = new Model.Ticket();
                 model = Allmodel[i];
-                n += Add(model);
+                n += Add(SearchForm, SearchTo, model);
             }
             return n;
         }
-        public bool Exists(string FromStation,string ToStation,DateTime Date,string Identity)
+        public bool Exists(string FromStation, string ToStation, DateTime Date, string Identity)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("select count(*) from [Ticket]");
-            strSql.Append(" where FromStation=@FromStation AND ToStation=@ToStation AND TicketDate=@TicketDate AND Identity=@Identity");
+            strSql.Append(" where SearchFrom=@SearchFrom AND SearchTo=@SearchTo AND TicketDate=@TicketDate AND Identity=@Identity");
             OleDbParameter[] parameters = {
-                    new OleDbParameter("@FromStation", OleDbType.VarChar,255),
-                    new OleDbParameter("@ToStation", OleDbType.VarChar,255),
+                    new OleDbParameter("@SearchFrom", OleDbType.VarChar,255),
+                    new OleDbParameter("@SearchTo", OleDbType.VarChar,255),
                     new OleDbParameter("@TicketDate", OleDbType.VarChar,255),
                     new OleDbParameter("@Identity", OleDbType.VarChar,255)};
             parameters[0].Value = FromStation;
             parameters[1].Value = ToStation;
             parameters[2].Value = Date.ToString("yyyyMMdd"); ;
             parameters[3].Value = Identity;
-            return SqlHelper.Exists(strSql.ToString(),parameters);
+            return SqlHelper.Exists(strSql.ToString(), parameters);
         }
 
-        public string QueryDate(string FromStation, string ToStation, DateTime Date,string Identity)
+        public string QueryDate(string FromStation, string ToStation, DateTime Date, string Identity)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("select QueryTime from [Ticket]");
-            strSql.Append(" where FromStation=@FromStation AND ToStation=@ToStation AND TicketDate=@TicketDate AND Identity=@Identity");
+            strSql.Append(" where SearchFrom=@SearchFrom AND SearchTo=@SearchTo AND TicketDate=@TicketDate AND Identity=@Identity");
             OleDbParameter[] parameters = {
-                    new OleDbParameter("@FromStation", OleDbType.VarChar,255),
-                    new OleDbParameter("@ToStation", OleDbType.VarChar,255),
+                    new OleDbParameter("@SearchFrom", OleDbType.VarChar,255),
+                    new OleDbParameter("@SearchTo", OleDbType.VarChar,255),
                     new OleDbParameter("@TicketDate", OleDbType.VarChar,255),
                     new OleDbParameter("@Identity", OleDbType.VarChar,255)};
             parameters[0].Value = FromStation;
             parameters[1].Value = ToStation;
-            parameters[2].Value = Date.ToString("yyyyMMdd"); ;
+            parameters[2].Value = Date.ToString("yyyyMMdd");
             parameters[3].Value = Identity;
-            object o=SqlHelper.ExecuteScalar(strSql.ToString(), parameters);
+            object o = SqlHelper.ExecuteScalar(strSql.ToString(), parameters);
             return o as string;
         }
     }

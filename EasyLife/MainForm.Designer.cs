@@ -447,7 +447,7 @@
             this.TabShow.PageHover = ((System.Drawing.Image)(resources.GetObject("TabShow.PageHover")));
             this.TabShow.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
             this.TabShow.PageNorml = null;
-            this.TabShow.SelectedIndex = 0;
+            this.TabShow.SelectedIndex = 1;
             this.helpProvider.SetShowHelp(this.TabShow, ((bool)(resources.GetObject("TabShow.ShowHelp"))));
             this.TabShow.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             ToolTip.SetToolTip(this.TabShow, resources.GetString("TabShow.ToolTip"));
