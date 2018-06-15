@@ -13,5 +13,8 @@
     <Setting Name="EasyLife_cn_com_webxml_www_WeatherWebService" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://www.webxml.com.cn/WebServices/WeatherWebService.asmx</Value>
     </Setting>
+    <Setting Name="Language" Type="System.String" Scope="User">
+      <Value Profile="(Default)">zh-Hans</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

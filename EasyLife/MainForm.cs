@@ -1,4 +1,5 @@
 ﻿using CCWin;
+using CCWin.SkinControl;
 using EasyLife.BLL;
 using System;
 using System.Collections.Generic;
@@ -40,7 +41,7 @@ namespace EasyLife
             LoadingIndex.Show();
             TimerLoad.Enabled = true;
             TimerLoad.Interval = 4000;
-            LblVersion.Text="当前版本:v"+Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            LblVersion.Text= LblVersion .Text+ Assembly.GetExecutingAssembly().GetName().Version.ToString();
             CmoBoxPrior.SelectedIndex = 1;
             FindPwd.Left = (this.Width - FindPwd.Width) / 2;//还原位置
             FindPwd.Visible = false;
@@ -129,9 +130,24 @@ namespace EasyLife
             about.Show();
         }
         //选择语言
-        private void Language_Click(object sender, EventArgs e)
+        private void 简体中文ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (简体中文ToolStripMenuItem.Checked == true)
+                return;
+                简体中文ToolStripMenuItem.Checked = true;
+            英文ToolStripMenuItem.Checked = false;
+            Language.SetDefaultLanguage("zh-Hans");
+            Language.LoadLanguage(this, typeof(MainForm));
+           // Language.LoadLanguage(this.SkinTool3,typeof(ToolStrip))
+        }
+        private void 英文ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (英文ToolStripMenuItem.Checked == true)
+                return;
+            英文ToolStripMenuItem.Checked = true;
+            简体中文ToolStripMenuItem.Checked = false;
+            Language.SetDefaultLanguage("en");
+            Language.LoadLanguage(this, typeof(MainForm));
         }
         #endregion
 
@@ -406,7 +422,9 @@ namespace EasyLife
             if (n != 0)
                 MessageBoxEx.Show("成功发送"+n+"封邮件", "完成", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
+
         #endregion
+
 
     }
 }
