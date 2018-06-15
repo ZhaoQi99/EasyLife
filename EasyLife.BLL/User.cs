@@ -68,8 +68,11 @@ namespace EasyLife.BLL
         public DataSet GetList(string username)
         {
             StringBuilder strwhere = new StringBuilder();
-
-            return dal.GetList("");
+            strwhere.Append("UserName='" + username + "' ");
+            if (username == string.Empty)
+                return dal.GetList("");
+            else
+                return dal.GetList(strwhere.ToString());
         }
 
     }

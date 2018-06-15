@@ -133,9 +133,9 @@ namespace EasyLife.DAL
                     try
                     {
                         PrepareCommand(cmd, connection, SQLString, cmdParms);
-                        int n = cmd.ExecuteNonQuery();
+                        object n = cmd.ExecuteNonQuery();
                         cmd.Parameters.Clear();
-                        return n;
+                        return Convert.ToInt32(n);//
                     }
                     catch (OleDbException e)
                     {

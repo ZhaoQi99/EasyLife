@@ -355,13 +355,13 @@
     <value>True</value>
   </data>
   <data name="LblVersion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 19</value>
+    <value>105, 19</value>
   </data>
   <data name="LblVersion.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="LblVersion.Text" xml:space="preserve">
-    <value>当前版本:V0.1.0</value>
+    <value>当前版本:v</value>
   </data>
   <data name="&gt;&gt;LblVersion.Name" xml:space="preserve">
     <value>LblVersion</value>
@@ -2745,11 +2745,41 @@
   <data name="&gt;&gt;EmailTabpage.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="LblUsername.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblUsername.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 10.8pt</value>
+  </data>
+  <data name="LblUsername.Location" type="System.Drawing.Point, System.Drawing">
+    <value>101, 46</value>
+  </data>
+  <data name="LblUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 19</value>
+  </data>
+  <data name="LblUsername.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="LblUsername.Text" xml:space="preserve">
+    <value>用户名:</value>
+  </data>
+  <data name="&gt;&gt;LblUsername.Name" xml:space="preserve">
+    <value>LblUsername</value>
+  </data>
+  <data name="&gt;&gt;LblUsername.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblUsername.Parent" xml:space="preserve">
+    <value>GupBoxUserMag</value>
+  </data>
+  <data name="&gt;&gt;LblUsername.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="BtnUserQue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BtnUserQue.Location" type="System.Drawing.Point, System.Drawing">
-    <value>493, 24</value>
+    <value>493, 38</value>
   </data>
   <data name="BtnUserQue.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2773,13 +2803,13 @@
     <value>GupBoxUserMag</value>
   </data>
   <data name="&gt;&gt;BtnUserQue.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="BtnUserDel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="BtnUserDel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>637, 24</value>
+    <value>637, 38</value>
   </data>
   <data name="BtnUserDel.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2803,31 +2833,31 @@
     <value>GupBoxUserMag</value>
   </data>
   <data name="&gt;&gt;BtnUserDel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 32</value>
+  <data name="TextBoxUsername.Location" type="System.Drawing.Point, System.Drawing">
+    <value>190, 44</value>
   </data>
-  <data name="textBox1.ShowHelp" type="System.Boolean, mscorlib">
+  <data name="TextBoxUsername.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 25</value>
+  <data name="TextBoxUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 25</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="TextBoxUsername.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;TextBoxUsername.Name" xml:space="preserve">
+    <value>TextBoxUsername</value>
   </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;TextBoxUsername.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TextBoxUsername.Parent" xml:space="preserve">
     <value>GupBoxUserMag</value>
   </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;TextBoxUsername.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="GupBoxUserMag.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 19</value>
@@ -2857,13 +2887,13 @@
     <value>0</value>
   </data>
   <data name="DataGridViewUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 213</value>
+    <value>31, 144</value>
   </data>
   <data name="DataGridViewUser.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="DataGridViewUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 150</value>
+    <value>754, 401</value>
   </data>
   <data name="DataGridViewUser.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -2954,7 +2984,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAI
-        DAAAAk1TRnQBSQFMAgEBBwEAAfABAQHwAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        DAAAAk1TRnQBSQFMAgEBBwEAAfgBAQH4AQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -32478,7 +32508,7 @@
     <value>FindPwd</value>
   </data>
   <data name="&gt;&gt;FindPwd.Type" xml:space="preserve">
-    <value>EasyLife.Login.FindPassword, EasyLife, Version=1.0.6740.35276, Culture=neutral, PublicKeyToken=null</value>
+    <value>EasyLife.Login.FindPassword, EasyLife, Version=1.0.6740.36298, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;FindPwd.Parent" xml:space="preserve">
     <value>$this</value>

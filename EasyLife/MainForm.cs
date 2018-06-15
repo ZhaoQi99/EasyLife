@@ -434,12 +434,14 @@ namespace EasyLife
         #region 用户管理
         private void BtnUserDel_Click(object sender, EventArgs e)
         {
-
+            user.Delete(TextBoxUsername.Text);
+            MessageBoxEx.Show("删除成功!", "完成", MessageBoxButtons.OK, MessageBoxIcon.None);
+            DataGridViewUser.DataSource = user.GetList("").Tables["User"].DefaultView;
         }
 
         private void BtnUserQue_Click(object sender, EventArgs e)
         {
-            DataGridViewUser.DataSource = user.GetList("");
+            DataGridViewUser.DataSource = user.GetList(TextBoxUsername.Text).Tables["User"].DefaultView;
         }
         #endregion
     }

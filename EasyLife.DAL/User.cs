@@ -112,7 +112,7 @@ namespace EasyLife.DAL
             strSql.Append("delete from [User] ");
             strSql.Append(" where UserName=@UserName ");
             OleDbParameter[] parameters = {
-                    new OleDbParameter("@UserName", OleDbType.Integer,4)};
+                    new OleDbParameter("@UserName", OleDbType.VarChar,255)};
             parameters[0].Value = username;
 
             SqlHelper.ExecuteNonQuery(strSql.ToString(), parameters);

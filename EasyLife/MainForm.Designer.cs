@@ -152,13 +152,14 @@
             this.GupBoxUserMag = new System.Windows.Forms.GroupBox();
             this.BtnUserQue = new CCWin.SkinControl.SkinButton();
             this.BtnUserDel = new CCWin.SkinControl.SkinButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TextBoxUsername = new System.Windows.Forms.TextBox();
             this.DataGridViewUser = new CCWin.SkinControl.SkinDataGridView();
             this.ExitTabPage = new CCWin.SkinControl.SkinTabPage();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.TimerLoad = new System.Windows.Forms.Timer(this.components);
             this.helpProvider = new System.Windows.Forms.HelpProvider();
             this.FindPwd = new EasyLife.Login.FindPassword();
+            this.LblUsername = new System.Windows.Forms.Label();
             ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SkinMenu.SuspendLayout();
             this.SettingsMenu.SuspendLayout();
@@ -428,7 +429,7 @@
             this.TabShow.PageHover = ((System.Drawing.Image)(resources.GetObject("TabShow.PageHover")));
             this.TabShow.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
             this.TabShow.PageNorml = null;
-            this.TabShow.SelectedIndex = 5;
+            this.TabShow.SelectedIndex = 0;
             this.helpProvider.SetShowHelp(this.TabShow, ((bool)(resources.GetObject("TabShow.ShowHelp"))));
             this.TabShow.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.TabShow.SelectedIndexChanged += new System.EventHandler(this.TabShow_SelectedIndexChanged);
@@ -1344,9 +1345,10 @@
             // 
             // GupBoxUserMag
             // 
+            this.GupBoxUserMag.Controls.Add(this.LblUsername);
             this.GupBoxUserMag.Controls.Add(this.BtnUserQue);
             this.GupBoxUserMag.Controls.Add(this.BtnUserDel);
-            this.GupBoxUserMag.Controls.Add(this.textBox1);
+            this.GupBoxUserMag.Controls.Add(this.TextBoxUsername);
             resources.ApplyResources(this.GupBoxUserMag, "GupBoxUserMag");
             this.GupBoxUserMag.Name = "GupBoxUserMag";
             this.helpProvider.SetShowHelp(this.GupBoxUserMag, ((bool)(resources.GetObject("GupBoxUserMag.ShowHelp"))));
@@ -1378,16 +1380,17 @@
             this.BtnUserDel.UseVisualStyleBackColor = false;
             this.BtnUserDel.Click += new System.EventHandler(this.BtnUserDel_Click);
             // 
-            // textBox1
+            // TextBoxUsername
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            this.helpProvider.SetShowHelp(this.textBox1, ((bool)(resources.GetObject("textBox1.ShowHelp"))));
+            resources.ApplyResources(this.TextBoxUsername, "TextBoxUsername");
+            this.TextBoxUsername.Name = "TextBoxUsername";
+            this.helpProvider.SetShowHelp(this.TextBoxUsername, ((bool)(resources.GetObject("TextBoxUsername.ShowHelp"))));
             // 
             // DataGridViewUser
             // 
             this.DataGridViewUser.AllowUserToAddRows = false;
             this.DataGridViewUser.AllowUserToDeleteRows = false;
+            this.DataGridViewUser.AllowUserToOrderColumns = true;
             dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
             this.DataGridViewUser.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle14;
             this.DataGridViewUser.BackgroundColor = System.Drawing.SystemColors.Window;
@@ -1463,6 +1466,11 @@
             resources.ApplyResources(this.FindPwd, "FindPwd");
             this.FindPwd.Name = "FindPwd";
             this.helpProvider.SetShowHelp(this.FindPwd, ((bool)(resources.GetObject("FindPwd.ShowHelp"))));
+            // 
+            // LblUsername
+            // 
+            resources.ApplyResources(this.LblUsername, "LblUsername");
+            this.LblUsername.Name = "LblUsername";
             // 
             // MainForm
             // 
@@ -1661,6 +1669,7 @@
         private System.Windows.Forms.GroupBox GupBoxUserMag;
         private CCWin.SkinControl.SkinButton BtnUserQue;
         private CCWin.SkinControl.SkinButton BtnUserDel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TextBoxUsername;
+        private System.Windows.Forms.Label LblUsername;
     }
 }
