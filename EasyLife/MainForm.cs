@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -131,6 +132,15 @@ namespace EasyLife
                 TopMost.Checked = true;
             }
         }
+        //帮助
+        private void HelpWord_Click(object sender, EventArgs e)
+        {
+            string now= Environment.CurrentDirectory;
+            if (File.Exists(now + "/help.chm") == false)
+                MessageBoxEx.Show("帮助文档不存在!", "错误", MessageBoxButtons.OK,MessageBoxIcon.Error);
+            else
+                Process.Start(now+"/Help.chm");
+        }
         //访问EasyLife
         private void Link_Click(object sender, EventArgs e)
         {
@@ -152,7 +162,25 @@ namespace EasyLife
             Language.SetDefaultLanguage("zh-Hans");
             Language.LoadLanguage(this, typeof(MainForm));
             LblVersion.Text = "当前版本:v" + Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            // Language.LoadLanguage(this.SkinTool3,typeof(ToolStrip))
+
+            LblShowEmail.Text = "邮箱:" + u.Email;
+            LblShowTel.Text = "电话:" + u.Tel;
+            LblUserNameShow.Text = "用户名:" + u.UserName;
+            LblShowDep.Text = "所在单位:" + u.School;
+
+            SkinTool0.Text = "默认";
+            SkinTool1.Text = "炫彩紫色";
+            SkinTool1.Text = "悠然百合";
+            SkinTool1.Text = "绿色环保";
+            SkinTool1.Text = "恭迎新春";
+
+            InformationUpdate.Text = "修改个人信息";
+            TopMost.Text = "窗口置顶";
+            About.Text = "关于";
+            Link.Text = "访问EasyLife";
+            Exit.Text = "退出";
+            LanguageSettings.Text = "语言";
+            HelpWord.Text = "帮助";
         }
         private void 英文ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -164,6 +192,24 @@ namespace EasyLife
             Language.LoadLanguage(this, typeof(MainForm));
             LblVersion.Text = "Version:v" + Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
+            LblShowEmail.Text = "Email:" + u.Email;
+            LblShowTel.Text = "Tel:" + u.Tel;
+            LblUserNameShow.Text = "UserName:" + u.UserName;
+            LblShowDep.Text = "Department:" + u.School;
+
+            SkinTool0.Text = "Defaul";
+            SkinTool1.Text = "Purple";
+            SkinTool1.Text = "Lily";
+            SkinTool1.Text = "Green";
+            SkinTool1.Text = "Red";
+
+            InformationUpdate.Text = "Update information";
+            TopMost.Text = "TopMost";
+            About.Text = "About";
+            Link.Text = "Link EasyLife";
+            Exit.Text = "Exit";
+            LanguageSettings.Text = "Language";
+            HelpWord.Text = "Help";
         }
         #endregion
 
@@ -466,15 +512,14 @@ namespace EasyLife
         }
         #endregion
 
+        #region 时钟
         private void TimerClock_Tick(object sender, EventArgs e)
         {
             PicBoxClock.Image = clock.get();
             TImeNow2.Text = DateTime.Now.ToString("hh:mm:ss");
         }
+        #endregion
 
-        private void GupBoxInfo_Enter(object sender, EventArgs e)
-        {
 
-        }
     }
 }

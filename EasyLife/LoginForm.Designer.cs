@@ -63,7 +63,7 @@ namespace EasyLife
             this.TextId.Icon = null;
             this.TextId.IconIsButton = false;
             this.TextId.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.TextId.IsPasswordChat = '●';
+            this.TextId.IsPasswordChat = '\0';
             this.TextId.IsSystemPasswordChar = false;
             this.TextId.Lines = new string[0];
             resources.ApplyResources(this.TextId, "TextId");
@@ -84,7 +84,6 @@ namespace EasyLife
             this.TextId.SkinTxt.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
             this.TextId.SkinTxt.Multiline = ((bool)(resources.GetObject("resource.Multiline")));
             this.TextId.SkinTxt.Name = "BaseText";
-            this.TextId.SkinTxt.PasswordChar = ((char)(resources.GetObject("resource.PasswordChar")));
             this.TextId.SkinTxt.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
             this.TextId.SkinTxt.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
             this.TextId.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
@@ -137,7 +136,7 @@ namespace EasyLife
             this.TextPwd.SkinTxt.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location1")));
             this.TextPwd.SkinTxt.Multiline = ((bool)(resources.GetObject("resource.Multiline1")));
             this.TextPwd.SkinTxt.Name = "BaseText";
-            this.TextPwd.SkinTxt.PasswordChar = ((char)(resources.GetObject("resource.PasswordChar1")));
+            this.TextPwd.SkinTxt.PasswordChar = ((char)(resources.GetObject("resource.PasswordChar")));
             this.TextPwd.SkinTxt.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size1")));
             this.TextPwd.SkinTxt.TabIndex = ((int)(resources.GetObject("resource.TabIndex1")));
             this.TextPwd.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));

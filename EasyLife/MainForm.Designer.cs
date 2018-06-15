@@ -74,6 +74,14 @@
             this.LblVersion = new System.Windows.Forms.Label();
             this.TabShow = new CCWin.SkinControl.SkinTabControl();
             this.IndexTabPage = new CCWin.SkinControl.SkinTabPage();
+            this.GupBoxInfo = new System.Windows.Forms.GroupBox();
+            this.LblShowTel = new System.Windows.Forms.Label();
+            this.LblShowEmail = new System.Windows.Forms.Label();
+            this.LblUserNameShow = new System.Windows.Forms.Label();
+            this.LblShowDep = new System.Windows.Forms.Label();
+            this.TImeNow2 = new System.Windows.Forms.Label();
+            this.TimeNow = new System.Windows.Forms.Label();
+            this.PicBoxClock = new System.Windows.Forms.PictureBox();
             this.GouBoxWeather = new CCWin.SkinControl.SkinGroupBox();
             this.LoadingIndex = new CCWin.SkinControl.SkinProgressIndicator();
             this.LblLife = new CCWin.SkinControl.SkinLabel();
@@ -150,6 +158,7 @@
             this.EmailSubject = new System.Windows.Forms.TextBox();
             this.UserTabPage = new CCWin.SkinControl.SkinTabPage();
             this.GupBoxUserMag = new System.Windows.Forms.GroupBox();
+            this.LblUsername = new System.Windows.Forms.Label();
             this.BtnUserQue = new CCWin.SkinControl.SkinButton();
             this.BtnUserDel = new CCWin.SkinControl.SkinButton();
             this.TextBoxUsername = new System.Windows.Forms.TextBox();
@@ -159,21 +168,14 @@
             this.TimerLoad = new System.Windows.Forms.Timer(this.components);
             this.helpProvider = new System.Windows.Forms.HelpProvider();
             this.FindPwd = new EasyLife.Login.FindPassword();
-            this.LblUsername = new System.Windows.Forms.Label();
-            this.PicBoxClock = new System.Windows.Forms.PictureBox();
             this.TimerClock = new System.Windows.Forms.Timer(this.components);
-            this.TimeNow = new System.Windows.Forms.Label();
-            this.TImeNow2 = new System.Windows.Forms.Label();
-            this.LblUserNameShow = new System.Windows.Forms.Label();
-            this.LblShowDep = new System.Windows.Forms.Label();
-            this.LblShowTel = new System.Windows.Forms.Label();
-            this.LblShowEmail = new System.Windows.Forms.Label();
-            this.GupBoxInfo = new System.Windows.Forms.GroupBox();
             ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SkinMenu.SuspendLayout();
             this.SettingsMenu.SuspendLayout();
             this.TabShow.SuspendLayout();
             this.IndexTabPage.SuspendLayout();
+            this.GupBoxInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxClock)).BeginInit();
             this.GouBoxWeather.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -197,8 +199,6 @@
             this.UserTabPage.SuspendLayout();
             this.GupBoxUserMag.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewUser)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicBoxClock)).BeginInit();
-            this.GupBoxInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // LabelQueTime
@@ -383,6 +383,7 @@
             // 
             this.HelpWord.Name = "HelpWord";
             resources.ApplyResources(this.HelpWord, "HelpWord");
+            this.HelpWord.Click += new System.EventHandler(this.HelpWord_Click);
             // 
             // Link
             // 
@@ -457,6 +458,59 @@
             this.IndexTabPage.Name = "IndexTabPage";
             this.helpProvider.SetShowHelp(this.IndexTabPage, ((bool)(resources.GetObject("IndexTabPage.ShowHelp"))));
             this.IndexTabPage.TabItemImage = null;
+            // 
+            // GupBoxInfo
+            // 
+            this.GupBoxInfo.Controls.Add(this.LblShowTel);
+            this.GupBoxInfo.Controls.Add(this.LblShowEmail);
+            this.GupBoxInfo.Controls.Add(this.LblUserNameShow);
+            this.GupBoxInfo.Controls.Add(this.LblShowDep);
+            resources.ApplyResources(this.GupBoxInfo, "GupBoxInfo");
+            this.GupBoxInfo.Name = "GupBoxInfo";
+            this.GupBoxInfo.TabStop = false;
+            // 
+            // LblShowTel
+            // 
+            resources.ApplyResources(this.LblShowTel, "LblShowTel");
+            this.LblShowTel.Name = "LblShowTel";
+            this.helpProvider.SetShowHelp(this.LblShowTel, ((bool)(resources.GetObject("LblShowTel.ShowHelp"))));
+            // 
+            // LblShowEmail
+            // 
+            resources.ApplyResources(this.LblShowEmail, "LblShowEmail");
+            this.LblShowEmail.Name = "LblShowEmail";
+            this.helpProvider.SetShowHelp(this.LblShowEmail, ((bool)(resources.GetObject("LblShowEmail.ShowHelp"))));
+            // 
+            // LblUserNameShow
+            // 
+            resources.ApplyResources(this.LblUserNameShow, "LblUserNameShow");
+            this.LblUserNameShow.Name = "LblUserNameShow";
+            // 
+            // LblShowDep
+            // 
+            resources.ApplyResources(this.LblShowDep, "LblShowDep");
+            this.LblShowDep.Name = "LblShowDep";
+            // 
+            // TImeNow2
+            // 
+            resources.ApplyResources(this.TImeNow2, "TImeNow2");
+            this.TImeNow2.BackColor = System.Drawing.Color.Chartreuse;
+            this.TImeNow2.ForeColor = System.Drawing.Color.White;
+            this.TImeNow2.Name = "TImeNow2";
+            this.helpProvider.SetShowHelp(this.TImeNow2, ((bool)(resources.GetObject("TImeNow2.ShowHelp"))));
+            // 
+            // TimeNow
+            // 
+            resources.ApplyResources(this.TimeNow, "TimeNow");
+            this.TimeNow.BackColor = System.Drawing.Color.Chartreuse;
+            this.TimeNow.ForeColor = System.Drawing.Color.White;
+            this.TimeNow.Name = "TimeNow";
+            // 
+            // PicBoxClock
+            // 
+            resources.ApplyResources(this.PicBoxClock, "PicBoxClock");
+            this.PicBoxClock.Name = "PicBoxClock";
+            this.PicBoxClock.TabStop = false;
             // 
             // GouBoxWeather
             // 
@@ -1369,6 +1423,11 @@
             this.helpProvider.SetShowHelp(this.GupBoxUserMag, ((bool)(resources.GetObject("GupBoxUserMag.ShowHelp"))));
             this.GupBoxUserMag.TabStop = false;
             // 
+            // LblUsername
+            // 
+            resources.ApplyResources(this.LblUsername, "LblUsername");
+            this.LblUsername.Name = "LblUsername";
+            // 
             // BtnUserQue
             // 
             this.BtnUserQue.BackColor = System.Drawing.Color.Transparent;
@@ -1482,68 +1541,9 @@
             this.FindPwd.Name = "FindPwd";
             this.helpProvider.SetShowHelp(this.FindPwd, ((bool)(resources.GetObject("FindPwd.ShowHelp"))));
             // 
-            // LblUsername
-            // 
-            resources.ApplyResources(this.LblUsername, "LblUsername");
-            this.LblUsername.Name = "LblUsername";
-            // 
-            // PicBoxClock
-            // 
-            resources.ApplyResources(this.PicBoxClock, "PicBoxClock");
-            this.PicBoxClock.Name = "PicBoxClock";
-            this.PicBoxClock.TabStop = false;
-            // 
             // TimerClock
             // 
             this.TimerClock.Tick += new System.EventHandler(this.TimerClock_Tick);
-            // 
-            // TimeNow
-            // 
-            resources.ApplyResources(this.TimeNow, "TimeNow");
-            this.TimeNow.BackColor = System.Drawing.Color.Chartreuse;
-            this.TimeNow.ForeColor = System.Drawing.Color.White;
-            this.TimeNow.Name = "TimeNow";
-            // 
-            // TImeNow2
-            // 
-            resources.ApplyResources(this.TImeNow2, "TImeNow2");
-            this.TImeNow2.BackColor = System.Drawing.Color.Chartreuse;
-            this.TImeNow2.ForeColor = System.Drawing.Color.White;
-            this.TImeNow2.Name = "TImeNow2";
-            this.helpProvider.SetShowHelp(this.TImeNow2, ((bool)(resources.GetObject("TImeNow2.ShowHelp"))));
-            // 
-            // LblUserNameShow
-            // 
-            resources.ApplyResources(this.LblUserNameShow, "LblUserNameShow");
-            this.LblUserNameShow.Name = "LblUserNameShow";
-            // 
-            // LblShowDep
-            // 
-            resources.ApplyResources(this.LblShowDep, "LblShowDep");
-            this.LblShowDep.Name = "LblShowDep";
-            // 
-            // LblShowTel
-            // 
-            resources.ApplyResources(this.LblShowTel, "LblShowTel");
-            this.LblShowTel.Name = "LblShowTel";
-            this.helpProvider.SetShowHelp(this.LblShowTel, ((bool)(resources.GetObject("LblShowTel.ShowHelp"))));
-            // 
-            // LblShowEmail
-            // 
-            resources.ApplyResources(this.LblShowEmail, "LblShowEmail");
-            this.LblShowEmail.Name = "LblShowEmail";
-            this.helpProvider.SetShowHelp(this.LblShowEmail, ((bool)(resources.GetObject("LblShowEmail.ShowHelp"))));
-            // 
-            // GupBoxInfo
-            // 
-            this.GupBoxInfo.Controls.Add(this.LblShowTel);
-            this.GupBoxInfo.Controls.Add(this.LblShowEmail);
-            this.GupBoxInfo.Controls.Add(this.LblUserNameShow);
-            this.GupBoxInfo.Controls.Add(this.LblShowDep);
-            resources.ApplyResources(this.GupBoxInfo, "GupBoxInfo");
-            this.GupBoxInfo.Name = "GupBoxInfo";
-            this.GupBoxInfo.TabStop = false;
-            this.GupBoxInfo.Enter += new System.EventHandler(this.GupBoxInfo_Enter);
             // 
             // MainForm
             // 
@@ -1599,6 +1599,9 @@
             this.TabShow.ResumeLayout(false);
             this.IndexTabPage.ResumeLayout(false);
             this.IndexTabPage.PerformLayout();
+            this.GupBoxInfo.ResumeLayout(false);
+            this.GupBoxInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxClock)).EndInit();
             this.GouBoxWeather.ResumeLayout(false);
             this.GouBoxWeather.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -1629,9 +1632,6 @@
             this.GupBoxUserMag.ResumeLayout(false);
             this.GupBoxUserMag.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewUser)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicBoxClock)).EndInit();
-            this.GupBoxInfo.ResumeLayout(false);
-            this.GupBoxInfo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

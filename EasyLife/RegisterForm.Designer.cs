@@ -348,6 +348,7 @@
             this.UserLicense.TabIndex = 13;
             this.UserLicense.TabStop = true;
             this.UserLicense.Text = "同意用户协议";
+            this.UserLicense.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.UserLicense_LinkClicked);
             // 
             // Agree
             // 

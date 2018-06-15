@@ -126,5 +126,11 @@ namespace EasyLife
             CmoBoxForAns.DropDownStyle = ComboBoxStyle.DropDownList;
         }
         #endregion
+
+        private void UserLicense_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBoxEx.Show("在注册前，敬请您阅读以下内容，在进行注册程序过程中点击“同意”按钮即表示用户完全接受本协议项下的全部条款。\n"+
+              "本程序仅供学习和研究使用,不得用于任何商业用途.\n"+ "如您在使用中遇到任何问题,可联系作者邮箱: zhaoqi99@outlook.com", "用户协议", MessageBoxButtons.OK, MessageBoxIcon.None);
+        }
     }
 }
