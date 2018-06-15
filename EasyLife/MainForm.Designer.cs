@@ -167,8 +167,11 @@
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.TimerLoad = new System.Windows.Forms.Timer(this.components);
             this.helpProvider = new System.Windows.Forms.HelpProvider();
-            this.FindPwd = new EasyLife.Login.FindPassword();
             this.TimerClock = new System.Windows.Forms.Timer(this.components);
+            this.LoadingEmail = new CCWin.SkinControl.SkinProgressIndicator();
+            this.LoadingNews = new CCWin.SkinControl.SkinProgressIndicator();
+            this.LoadingTicket = new CCWin.SkinControl.SkinProgressIndicator();
+            this.FindPwd = new EasyLife.Login.FindPassword();
             ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SkinMenu.SuspendLayout();
             this.SettingsMenu.SuspendLayout();
@@ -441,7 +444,7 @@
             this.TabShow.PageHover = ((System.Drawing.Image)(resources.GetObject("TabShow.PageHover")));
             this.TabShow.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
             this.TabShow.PageNorml = null;
-            this.TabShow.SelectedIndex = 0;
+            this.TabShow.SelectedIndex = 3;
             this.helpProvider.SetShowHelp(this.TabShow, ((bool)(resources.GetObject("TabShow.ShowHelp"))));
             this.TabShow.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.TabShow.SelectedIndexChanged += new System.EventHandler(this.TabShow_SelectedIndexChanged);
@@ -467,6 +470,7 @@
             this.GupBoxInfo.Controls.Add(this.LblShowDep);
             resources.ApplyResources(this.GupBoxInfo, "GupBoxInfo");
             this.GupBoxInfo.Name = "GupBoxInfo";
+            this.helpProvider.SetShowHelp(this.GupBoxInfo, ((bool)(resources.GetObject("GupBoxInfo.ShowHelp"))));
             this.GupBoxInfo.TabStop = false;
             // 
             // LblShowTel
@@ -485,11 +489,13 @@
             // 
             resources.ApplyResources(this.LblUserNameShow, "LblUserNameShow");
             this.LblUserNameShow.Name = "LblUserNameShow";
+            this.helpProvider.SetShowHelp(this.LblUserNameShow, ((bool)(resources.GetObject("LblUserNameShow.ShowHelp"))));
             // 
             // LblShowDep
             // 
             resources.ApplyResources(this.LblShowDep, "LblShowDep");
             this.LblShowDep.Name = "LblShowDep";
+            this.helpProvider.SetShowHelp(this.LblShowDep, ((bool)(resources.GetObject("LblShowDep.ShowHelp"))));
             // 
             // TImeNow2
             // 
@@ -505,11 +511,13 @@
             this.TimeNow.BackColor = System.Drawing.Color.Chartreuse;
             this.TimeNow.ForeColor = System.Drawing.Color.White;
             this.TimeNow.Name = "TimeNow";
+            this.helpProvider.SetShowHelp(this.TimeNow, ((bool)(resources.GetObject("TimeNow.ShowHelp"))));
             // 
             // PicBoxClock
             // 
             resources.ApplyResources(this.PicBoxClock, "PicBoxClock");
             this.PicBoxClock.Name = "PicBoxClock";
+            this.helpProvider.SetShowHelp(this.PicBoxClock, ((bool)(resources.GetObject("PicBoxClock.ShowHelp"))));
             this.PicBoxClock.TabStop = false;
             // 
             // GouBoxWeather
@@ -669,6 +677,7 @@
             // TrainTabpage
             // 
             this.TrainTabpage.BackColor = System.Drawing.Color.White;
+            this.TrainTabpage.Controls.Add(this.LoadingTicket);
             this.TrainTabpage.Controls.Add(this.DataGridViewTicket);
             this.TrainTabpage.Controls.Add(this.groupBox1);
             this.TrainTabpage.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1077,6 +1086,7 @@
             // 
             this.NewsTabpage.BackColor = System.Drawing.Color.White;
             this.NewsTabpage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.NewsTabpage.Controls.Add(this.LoadingNews);
             this.NewsTabpage.Controls.Add(this.DataGridViewNotice);
             this.NewsTabpage.Controls.Add(this.groupBox2);
             resources.ApplyResources(this.NewsTabpage, "NewsTabpage");
@@ -1351,6 +1361,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.LoadingEmail);
             this.groupBox4.Controls.Add(this.BtnSendMail);
             this.groupBox4.Controls.Add(this.TextBoxMailTo);
             this.groupBox4.Controls.Add(this.LblMailto);
@@ -1427,6 +1438,7 @@
             // 
             resources.ApplyResources(this.LblUsername, "LblUsername");
             this.LblUsername.Name = "LblUsername";
+            this.helpProvider.SetShowHelp(this.LblUsername, ((bool)(resources.GetObject("LblUsername.ShowHelp"))));
             // 
             // BtnUserQue
             // 
@@ -1534,16 +1546,49 @@
             // 
             this.TimerLoad.Tick += new System.EventHandler(this.TimerLoad_Tick);
             // 
+            // TimerClock
+            // 
+            this.TimerClock.Tick += new System.EventHandler(this.TimerClock_Tick);
+            // 
+            // LoadingEmail
+            // 
+            this.LoadingEmail.AutoStart = true;
+            this.LoadingEmail.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.LoadingEmail, "LoadingEmail");
+            this.LoadingEmail.Name = "LoadingEmail";
+            this.LoadingEmail.Percentage = 30F;
+            this.helpProvider.SetShowHelp(this.LoadingEmail, ((bool)(resources.GetObject("LoadingEmail.ShowHelp"))));
+            this.LoadingEmail.ShowText = true;
+            this.LoadingEmail.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
+            // 
+            // LoadingNews
+            // 
+            this.LoadingNews.AutoStart = true;
+            this.LoadingNews.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.LoadingNews, "LoadingNews");
+            this.LoadingNews.Name = "LoadingNews";
+            this.LoadingNews.Percentage = 30F;
+            this.helpProvider.SetShowHelp(this.LoadingNews, ((bool)(resources.GetObject("LoadingNews.ShowHelp"))));
+            this.LoadingNews.ShowText = true;
+            this.LoadingNews.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
+            // 
+            // LoadingTicket
+            // 
+            this.LoadingTicket.AutoStart = true;
+            this.LoadingTicket.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.LoadingTicket, "LoadingTicket");
+            this.LoadingTicket.Name = "LoadingTicket";
+            this.LoadingTicket.Percentage = 30F;
+            this.helpProvider.SetShowHelp(this.LoadingTicket, ((bool)(resources.GetObject("LoadingTicket.ShowHelp"))));
+            this.LoadingTicket.ShowText = true;
+            this.LoadingTicket.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
+            // 
             // FindPwd
             // 
             this.FindPwd.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             resources.ApplyResources(this.FindPwd, "FindPwd");
             this.FindPwd.Name = "FindPwd";
             this.helpProvider.SetShowHelp(this.FindPwd, ((bool)(resources.GetObject("FindPwd.ShowHelp"))));
-            // 
-            // TimerClock
-            // 
-            this.TimerClock.Tick += new System.EventHandler(this.TimerClock_Tick);
             // 
             // MainForm
             // 
@@ -1757,5 +1802,8 @@
         private System.Windows.Forms.Label LblShowDep;
         private System.Windows.Forms.Label LblUserNameShow;
         private System.Windows.Forms.GroupBox GupBoxInfo;
+        private CCWin.SkinControl.SkinProgressIndicator LoadingNews;
+        private CCWin.SkinControl.SkinProgressIndicator LoadingEmail;
+        private CCWin.SkinControl.SkinProgressIndicator LoadingTicket;
     }
 }

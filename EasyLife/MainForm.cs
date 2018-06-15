@@ -59,6 +59,9 @@ namespace EasyLife
             LblShowTel.Text = "电话:" + u.Tel;
             LblUserNameShow.Text = "用户名:" + u.UserName;
             LblShowDep.Text = "所在单位:" + u.School;
+
+            LoadingEmail.Hide();
+            LoadingNews.Hide();
         }
         #endregion
 
@@ -288,11 +291,15 @@ namespace EasyLife
                 MessageBoxEx.Show("出发日期不能小于当前系统日期!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            LoadingTicket.Show();
             string SelectRadText = RadBtnAdult.Checked == true ? RadBtnAdult.Text : RadBtnStuTic.Text;
             ticket.Delete(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText);
             ticket.Update(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText);
             DataGridViewTicket.DataSource = ticket.GetList(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText).Tables["Ticket"].DefaultView;
             LabelQueTime2.Text = ticket.QueryDate(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText);
+            LoadingTicket.Hide();
+            MessageBoxEx.Show("更新完成！", "成功", MessageBoxButtons.OK, MessageBoxIcon.None);
+
         }
         private void BtnTicQuery_Click(object sender, EventArgs e)
         {
@@ -312,6 +319,7 @@ namespace EasyLife
                 MessageBoxEx.Show("出发日期不能小于当前系统日期!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            LoadingTicket.Show();
             string SelectRadText = RadBtnAdult.Checked == true ? RadBtnAdult.Text : RadBtnStuTic.Text;
             if (ticket.Exists(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText) == false)//尚未查询过
             {
@@ -319,6 +327,8 @@ namespace EasyLife
             }
             DataGridViewTicket.DataSource = ticket.GetList(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText).Tables["Ticket"].DefaultView;
             LabelQueTime2.Text = ticket.QueryDate(CmoBoxFromSta.Text, CmoBoxToSta.Text, SelectDate, SelectRadText);
+            LoadingTicket.Hide();
+            MessageBoxEx.Show("查询完成！", "成功", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
         #endregion
 
@@ -334,6 +344,7 @@ namespace EasyLife
             string Type = CmoBoxNotType.Text.ToString();
             string Date = DateTImePicNotice.Text;
             DataGridViewNotice.DataSource = notice.GetList(Department, Type, Date).Tables["Notice"].DefaultView;
+            MessageBoxEx.Show("查询完成！", "成功", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
         private void BtnUpdNotice_Click(object sender, EventArgs e)
         {
@@ -347,11 +358,15 @@ namespace EasyLife
                 MessageBoxEx.Show("类型不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            LoadingNews.Show();
             notice.Update(CmoBoxNotDep.Text.ToString(), CmoBoxNotType.Text.ToString());
             string Department = CmoBoxNotDep.Text.ToString();
             string Type = CmoBoxNotType.Text.ToString();
             string Date = DateTImePicNotice.Text;
             DataGridViewNotice.DataSource = notice.GetList(Department, Type, Date).Tables["Notice"].DefaultView;
+            LoadingNews.Hide();
+            MessageBoxEx.Show("更新完成！", "成功", MessageBoxButtons.OK, MessageBoxIcon.None);
+
         }
         private void DataGridViewNotice_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -452,7 +467,7 @@ namespace EasyLife
         {
             if (Exist[0] == false)
             {
-                //ShowWeather("西安");
+                ShowWeather("西安");
                 TimerLoad.Enabled = false;
                 LoadingIndex.Hide();
                 Exist[0] = true;
@@ -489,10 +504,12 @@ namespace EasyLife
                 MessageBoxEx.Show("收件人不能为空!", "完成", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            LoadingEmail.Show();
             Send.SendMail send = new Send.SendMail(TextBoxMailFrom.Text, TextBoxPwd.Text, TextBoxMailFromName.Text, CmoBoxMailHost.Text, Convert.ToInt32(NumUpDownPort.Value));
             int n = send.send(TextBoxMailTo.Text, EmailSubject.Text, RichTextBoxBodey.Text, CmoBoxPrior.Text);
             if (n != 0)
                 MessageBoxEx.Show("成功发送" + n + "封邮件", "完成", MessageBoxButtons.OK, MessageBoxIcon.None);
+            LoadingEmail.Hide();
         }
 
 

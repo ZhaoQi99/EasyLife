@@ -229,7 +229,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;RichTextBoxBodey.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <metadata name="SkinMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>12, 17</value>
@@ -280,61 +280,61 @@
     <value>258, 13</value>
   </metadata>
   <data name="InformationUpdate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 24</value>
+    <value>168, 24</value>
   </data>
   <data name="InformationUpdate.Text" xml:space="preserve">
     <value>修改个人信息</value>
   </data>
   <data name="简体中文ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>144, 26</value>
   </data>
   <data name="简体中文ToolStripMenuItem.Text" xml:space="preserve">
     <value>简体中文</value>
   </data>
   <data name="英文ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>144, 26</value>
   </data>
   <data name="英文ToolStripMenuItem.Text" xml:space="preserve">
     <value>English</value>
   </data>
   <data name="LanguageSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 24</value>
+    <value>168, 24</value>
   </data>
   <data name="LanguageSettings.Text" xml:space="preserve">
     <value>语言</value>
   </data>
   <data name="TopMost.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 24</value>
+    <value>168, 24</value>
   </data>
   <data name="TopMost.Text" xml:space="preserve">
     <value>窗口置顶</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 6</value>
+    <value>165, 6</value>
   </data>
   <data name="HelpWord.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 24</value>
+    <value>168, 24</value>
   </data>
   <data name="HelpWord.Text" xml:space="preserve">
     <value>帮助</value>
   </data>
   <data name="Link.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 24</value>
+    <value>168, 24</value>
   </data>
   <data name="Link.Text" xml:space="preserve">
     <value>访问EasyLife</value>
   </data>
   <data name="About.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 24</value>
+    <value>168, 24</value>
   </data>
   <data name="About.Text" xml:space="preserve">
     <value>关于</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 6</value>
+    <value>165, 6</value>
   </data>
   <data name="Exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 24</value>
+    <value>168, 24</value>
   </data>
   <data name="Exit.Text" xml:space="preserve">
     <value>退出</value>
@@ -343,7 +343,7 @@
     <value>True</value>
   </data>
   <data name="SettingsMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>176, 212</value>
+    <value>169, 184</value>
   </data>
   <data name="&gt;&gt;SettingsMenu.Name" xml:space="preserve">
     <value>SettingsMenu</value>
@@ -468,8 +468,14 @@
   <data name="LblUserNameShow.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 12pt</value>
   </data>
+  <data name="LblUserNameShow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="LblUserNameShow.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 40</value>
+  </data>
+  <data name="LblUserNameShow.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="LblUserNameShow.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
@@ -498,8 +504,14 @@
   <data name="LblShowDep.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 12pt</value>
   </data>
+  <data name="LblShowDep.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="LblShowDep.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 78</value>
+  </data>
+  <data name="LblShowDep.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="LblShowDep.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
@@ -527,6 +539,9 @@
   </data>
   <data name="GupBoxInfo.Location" type="System.Drawing.Point, System.Drawing">
     <value>596, 341</value>
+  </data>
+  <data name="GupBoxInfo.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="GupBoxInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 198</value>
@@ -591,8 +606,14 @@
   <data name="TimeNow.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 15pt, style=Bold</value>
   </data>
+  <data name="TimeNow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="TimeNow.Location" type="System.Drawing.Point, System.Drawing">
     <value>625, 40</value>
+  </data>
+  <data name="TimeNow.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="TimeNow.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 25</value>
@@ -615,8 +636,14 @@
   <data name="&gt;&gt;TimeNow.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="PicBoxClock.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="PicBoxClock.Location" type="System.Drawing.Point, System.Drawing">
     <value>593, 134</value>
+  </data>
+  <data name="PicBoxClock.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="PicBoxClock.Size" type="System.Drawing.Size, System.Drawing">
     <value>203, 178</value>
@@ -1167,6 +1194,33 @@
   <data name="&gt;&gt;IndexTabPage.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="LoadingTicket.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 159</value>
+  </data>
+  <data name="LoadingTicket.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LoadingTicket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 151</value>
+  </data>
+  <data name="LoadingTicket.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="LoadingTicket.Text" xml:space="preserve">
+    <value>加载中....</value>
+  </data>
+  <data name="&gt;&gt;LoadingTicket.Name" xml:space="preserve">
+    <value>LoadingTicket</value>
+  </data>
+  <data name="&gt;&gt;LoadingTicket.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinProgressIndicator, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LoadingTicket.Parent" xml:space="preserve">
+    <value>TrainTabpage</value>
+  </data>
+  <data name="&gt;&gt;LoadingTicket.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="DataGridViewTicket.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 130</value>
   </data>
@@ -1189,7 +1243,7 @@
     <value>TrainTabpage</value>
   </data>
   <data name="&gt;&gt;DataGridViewTicket.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="LabelQueTime2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1540,7 +1594,7 @@
     <value>TrainTabpage</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="TrainTabpage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2028,6 +2082,33 @@
   <data name="&gt;&gt;TelTabpage.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="LoadingNews.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 150</value>
+  </data>
+  <data name="LoadingNews.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LoadingNews.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 151</value>
+  </data>
+  <data name="LoadingNews.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="LoadingNews.Text" xml:space="preserve">
+    <value>加载中....</value>
+  </data>
+  <data name="&gt;&gt;LoadingNews.Name" xml:space="preserve">
+    <value>LoadingNews</value>
+  </data>
+  <data name="&gt;&gt;LoadingNews.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinProgressIndicator, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LoadingNews.Parent" xml:space="preserve">
+    <value>NewsTabpage</value>
+  </data>
+  <data name="&gt;&gt;LoadingNews.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="DataGridViewNotice.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 150</value>
   </data>
@@ -2050,7 +2131,7 @@
     <value>NewsTabpage</value>
   </data>
   <data name="&gt;&gt;DataGridViewNotice.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="BtnUpdNotice.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2329,7 +2410,7 @@
     <value>NewsTabpage</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="NewsTabpage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2790,6 +2871,33 @@
   <data name="&gt;&gt;GupBoxEmailSetting.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="LoadingEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, -20</value>
+  </data>
+  <data name="LoadingEmail.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LoadingEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 151</value>
+  </data>
+  <data name="LoadingEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="LoadingEmail.Text" xml:space="preserve">
+    <value>加载中....</value>
+  </data>
+  <data name="&gt;&gt;LoadingEmail.Name" xml:space="preserve">
+    <value>LoadingEmail</value>
+  </data>
+  <data name="&gt;&gt;LoadingEmail.Type" xml:space="preserve">
+    <value>CCWin.SkinControl.SkinProgressIndicator, CSkin, Version=16.1.14.2, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LoadingEmail.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;LoadingEmail.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="BtnSendMail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -2818,7 +2926,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;BtnSendMail.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="TextBoxMailTo.HelpKeyword" xml:space="preserve">
     <value>87686786</value>
@@ -2851,7 +2959,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;TextBoxMailTo.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="LblMailto.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2884,7 +2992,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;LblMailto.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="LblSubject.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2917,7 +3025,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;LblSubject.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="EmailSubject.Location" type="System.Drawing.Point, System.Drawing">
     <value>115, 29</value>
@@ -2941,7 +3049,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;EmailSubject.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="groupBox4.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
@@ -3012,8 +3120,14 @@
   <data name="LblUsername.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 10.8pt</value>
   </data>
+  <data name="LblUsername.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="LblUsername.Location" type="System.Drawing.Point, System.Drawing">
     <value>101, 46</value>
+  </data>
+  <data name="LblUsername.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="LblUsername.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 19</value>
@@ -3244,59 +3358,59 @@
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAG
-        DAAAAk1TRnQBSQFMAgEBBwIAAQIBAAECARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
-        AUADAAEgAwABAQEAAQgGAAEIGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEA
-        AfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEA
-        AYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFm
-        AwABmQMAAcwCAAEzAwACMwIAATMBZgIAATMBmQIAATMBzAIAATMB/wIAAWYDAAFmATMCAAJmAgABZgGZ
-        AgABZgHMAgABZgH/AgABmQMAAZkBMwIAAZkBZgIAApkCAAGZAcwCAAGZAf8CAAHMAwABzAEzAgABzAFm
-        AgABzAGZAgACzAIAAcwB/wIAAf8BZgIAAf8BmQIAAf8BzAEAATMB/wIAAf8BAAEzAQABMwEAAWYBAAEz
-        AQABmQEAATMBAAHMAQABMwEAAf8BAAH/ATMCAAMzAQACMwFmAQACMwGZAQACMwHMAQACMwH/AQABMwFm
-        AgABMwFmATMBAAEzAmYBAAEzAWYBmQEAATMBZgHMAQABMwFmAf8BAAEzAZkCAAEzAZkBMwEAATMBmQFm
-        AQABMwKZAQABMwGZAcwBAAEzAZkB/wEAATMBzAIAATMBzAEzAQABMwHMAWYBAAEzAcwBmQEAATMCzAEA
-        ATMBzAH/AQABMwH/ATMBAAEzAf8BZgEAATMB/wGZAQABMwH/AcwBAAEzAv8BAAFmAwABZgEAATMBAAFm
-        AQABZgEAAWYBAAGZAQABZgEAAcwBAAFmAQAB/wEAAWYBMwIAAWYCMwEAAWYBMwFmAQABZgEzAZkBAAFm
-        ATMBzAEAAWYBMwH/AQACZgIAAmYBMwEAA2YBAAJmAZkBAAJmAcwBAAFmAZkCAAFmAZkBMwEAAWYBmQFm
-        AQABZgKZAQABZgGZAcwBAAFmAZkB/wEAAWYBzAIAAWYBzAEzAQABZgHMAZkBAAFmAswBAAFmAcwB/wEA
-        AWYB/wIAAWYB/wEzAQABZgH/AZkBAAFmAf8BzAEAAcwBAAH/AQAB/wEAAcwBAAKZAgABmQEzAZkBAAGZ
-        AQABmQEAAZkBAAHMAQABmQMAAZkCMwEAAZkBAAFmAQABmQEzAcwBAAGZAQAB/wEAAZkBZgIAAZkBZgEz
-        AQABmQEzAWYBAAGZAWYBmQEAAZkBZgHMAQABmQEzAf8BAAKZATMBAAKZAWYBAAOZAQACmQHMAQACmQH/
-        AQABmQHMAgABmQHMATMBAAFmAcwBZgEAAZkBzAGZAQABmQLMAQABmQHMAf8BAAGZAf8CAAGZAf8BMwEA
-        AZkBzAFmAQABmQH/AZkBAAGZAf8BzAEAAZkC/wEAAcwDAAGZAQABMwEAAcwBAAFmAQABzAEAAZkBAAHM
-        AQABzAEAAZkBMwIAAcwCMwEAAcwBMwFmAQABzAEzAZkBAAHMATMBzAEAAcwBMwH/AQABzAFmAgABzAFm
-        ATMBAAGZAmYBAAHMAWYBmQEAAcwBZgHMAQABmQFmAf8BAAHMAZkCAAHMAZkBMwEAAcwBmQFmAQABzAKZ
-        AQABzAGZAcwBAAHMAZkB/wEAAswCAALMATMBAALMAWYBAALMAZkBAAPMAQACzAH/AQABzAH/AgABzAH/
-        ATMBAAGZAf8BZgEAAcwB/wGZAQABzAH/AcwBAAHMAv8BAAHMAQABMwEAAf8BAAFmAQAB/wEAAZkBAAHM
-        ATMCAAH/AjMBAAH/ATMBZgEAAf8BMwGZAQAB/wEzAcwBAAH/ATMB/wEAAf8BZgIAAf8BZgEzAQABzAJm
-        AQAB/wFmAZkBAAH/AWYBzAEAAcwBZgH/AQAB/wGZAgAB/wGZATMBAAH/AZkBZgEAAf8CmQEAAf8BmQHM
-        AQAB/wGZAf8BAAH/AcwCAAH/AcwBMwEAAf8BzAFmAQAB/wHMAZkBAAH/AswBAAH/AcwB/wEAAv8BMwEA
-        AcwB/wFmAQAC/wGZAQAC/wHMAQACZgH/AQABZgH/AWYBAAFmAv8BAAH/AmYBAAH/AWYB/wEAAv8BZgEA
-        ASEBAAGlAQADXwEAA3cBAAOGAQADlgEAA8sBAAOyAQAD1wEAA90BAAPjAQAD6gEAA/EBAAP4AQAB8AH7
-        Af8BAAGkAqABAAOAAwAB/wIAAf8DAAL/AQAB/wMAAf8BAAH/AQAC/wIAA/8EAAH/CfQFAAEZC9MFAAr/
-        FQAB/wv0Af8CAAHcDdMDAA3/EgAB/w30AgAP0wEADv8SAA/0AQkC0wHaAdMB2wX/BdMBAAP/AfQFsgEJ
-        Bf8RAAL0AfMJsgP0A9MJ/wTTAQAD/wGyBRkBsgX/EAAB/wL0ARkBsgf0AbID9ATTAv8B3APTA/8D0wT/
-        AbIF/wEJBf8QAAH/AvQBGQGyB/QBsgP0A9MBGQL/AdwB0wX/A9ME/wGyBv8BGQG7A/8QAAP0ARkBsgf0
-        AbID9APTA/8B3AHTBf8D0wT/AbID/wGzBLIBuwL/EAAD9AEZAbIH9AGyA/QD0wP/AdwB0wX/A9ME/wGy
-        Bv8BGQGyA/8QAAH/AvQBGQGyAfQBCQOyARkB9AGyA/QE0wL/AdwB0wX/A9ME/wGyBv8B8wT/EQAC9AEZ
-        CbID9ATTAv8BGQHbBP8B2wPTAQAD/wGyBf8BsgX/EQAD9AmyA/QB2wTTBv8B3ATTAQAD/weyBf8RAAH/
-        DfQC/wbTARkB/wHcBtMBAA//EgAM9AH/AgAO0wEZAgAN/xQAAf8J9AH/BAAM0wHcBAAL/xgAAf8C9AL/
-        CAAB/wHbB9MBCQkABf8VABDTBAAI/wQAARoPRgUAAf8G9AQAENMDAAF3Cf8BnQIAEEYEAAr0AgAQ0wIA
-        AncF/wJ3Av8BdwGdAQAFRgf0BEYDAAj0AZ4BwgGdAcIBAAjTAdoB2wEZAv8D0wEAAfICdwn/AncBAAhG
-        AfMHRgIAAvQBwgXBAZ0C8wGXAfQBAAPTAdsD/wHbBf8D0wEAA3cD/wF3Bf8DdwVGAf8BbwFGAfQBRgH0
-        AZoERgEAAf8D9ATAAZcD8wGeAvQD0wHbA/8B2wX/A9MBAAN3A/8BdwX/A3cERgH/AfQCRgH0AkYB9AF0
-        A0YBAAT0BcAD8wGXAvQD0wHbA/8B2wX/A9MBCAN3Cf8DdwRGAfQCRgElAf8BJQFGAW8B9ANGAfQC/wL0
-        BcABlwHCAZcBwgL0A9MB2gPcAdoF3APTAZYEdwj/A3cDRgEaAf8BRgT/AkYB/wNGAQAB/wL0AfMIwAP0
-        A9MB2wP/AdsF/wPTAbsPdwNGAfQB/wFGARoD/wJGAf8DRgEAA/QBwgjAA/QD0wHbA/8B2wX/A9MBAA93
-        A0YBdAH/BkYBJQH/A0YBAAT0AXcFwAHkAcID9APTAdsD/wHbBf8D0wEAD3cERgH/ARoFRgL/A0YBAAH/
-        A/QBngbABPQF0wPaARkE/wPTAQABuw13AfQFRgL/AUwBJQGTAv8ERgIADPQC/wzTAdoD0wIADXcBAAZG
-        BP8BkwVGAwAM9AEAENMDAAt3AgAHRgEaAf8HRgQACvQCABDTBAABuwd3AfIDAAFvD0YFAAf0BAAQ0wcA
-        AbsBlgEIBgAB9AFvDUYBGhAAAUIBTQE+BwABPgMAASgDAAFAAwABIAMAAQEBAAEBBgABARYAA/8BAAHg
-        AQcBwAEDAeABBwIAAcABAQGAAQEBwAEBAgABgAEBAYABAAGAAQECAAGAAwABgAMAAYADAAGAKwABgAMA
-        AYADAAGAAwABgAMAAYADAAGAAwABwAEBAYABAAHAAQECAAHgAQMBwAEBAeABAwIAAfwBHwHgAQcB/AEf
-        BAAB8AEPAgAB+AEPAgAB4AEDAgAB8AEDAgABwAEBAgAB4AEBAgABgAEBAgABwAEBAgABgAMAAYADAAGA
-        AwABgA8AAYAHAAGAAwABgAMAAYADAAGAAwABgAMAAYADAAHAAwABwAEBAgAB4AEBAgAB4AEDAgAB8AED
-        AgAB8AEHAgAB+AEPAgAB/gE/AgAC/ws=
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAI
+        DAAAAk1TRnQBSQFMAgEBBwEAARgBAgEYAQIBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wQAAf8J9AUAARkL0wUA
+        Cv8VAAH/C/QB/wIAAdwN0wMADf8SAAH/DfQCAA/TAQAO/xIAD/QBCQLTAdoB0wHbBf8F0wEAA/8B9AWy
+        AQkF/xEAAvQB8wmyA/QD0wn/BNMBAAP/AbIFGQGyBf8QAAH/AvQBGQGyB/QBsgP0BNMC/wHcA9MD/wPT
+        BP8BsgX/AQkF/xAAAf8C9AEZAbIH9AGyA/QD0wEZAv8B3AHTBf8D0wT/AbIG/wEZAbsD/xAAA/QBGQGy
+        B/QBsgP0A9MD/wHcAdMF/wPTBP8BsgP/AbMEsgG7Av8QAAP0ARkBsgf0AbID9APTA/8B3AHTBf8D0wT/
+        AbIG/wEZAbID/xAAAf8C9AEZAbIB9AEJA7IBGQH0AbID9ATTAv8B3AHTBf8D0wT/AbIG/wHzBP8RAAL0
+        ARkJsgP0BNMC/wEZAdsE/wHbA9MBAAP/AbIF/wGyBf8RAAP0CbID9AHbBNMG/wHcBNMBAAP/B7IF/xEA
+        Af8N9AL/BtMBGQH/AdwG0wEAD/8SAAz0Af8CAA7TARkCAA3/FAAB/wn0Af8EAAzTAdwEAAv/GAAB/wL0
+        Av8IAAH/AdsH0wEJCQAF/xUAENMEAAj/BAABGg9GBQAB/wb0BAAQ0wMAAXcJ/wGdAgAQRgQACvQCABDT
+        AgACdwX/AncC/wF3AZ0BAAVGB/QERgMACPQBngHCAZ0BwgEACNMB2gHbARkC/wPTAQAB8gJ3Cf8CdwEA
+        CEYB8wdGAgAC9AHCBcEBnQLzAZcB9AEAA9MB2wP/AdsF/wPTAQADdwP/AXcF/wN3BUYB/wFvAUYB9AFG
+        AfQBmgRGAQAB/wP0BMABlwPzAZ4C9APTAdsD/wHbBf8D0wEAA3cD/wF3Bf8DdwRGAf8B9AJGAfQCRgH0
+        AXQDRgEABPQFwAPzAZcC9APTAdsD/wHbBf8D0wEIA3cJ/wN3BEYB9AJGASUB/wElAUYBbwH0A0YB9AL/
+        AvQFwAGXAcIBlwHCAvQD0wHaA9wB2gXcA9MBlgR3CP8DdwNGARoB/wFGBP8CRgH/A0YBAAH/AvQB8wjA
+        A/QD0wHbA/8B2wX/A9MBuw93A0YB9AH/AUYBGgP/AkYB/wNGAQAD9AHCCMAD9APTAdsD/wHbBf8D0wEA
+        D3cDRgF0Af8GRgElAf8DRgEABPQBdwXAAeQBwgP0A9MB2wP/AdsF/wPTAQAPdwRGAf8BGgVGAv8DRgEA
+        Af8D9AGeBsAE9AXTA9oBGQT/A9MBAAG7DXcB9AVGAv8BTAElAZMC/wRGAgAM9AL/DNMB2gPTAgANdwEA
+        BkYE/wGTBUYDAAz0AQAQ0wMAC3cCAAdGARoB/wdGBAAK9AIAENMEAAG7B3cB8gMAAW8PRgUAB/QEABDT
+        BwABuwGWAQgGAAH0AW8NRgEaEAABQgFNAT4HAAE+AwABKAMAAUADAAEgAwABAQEAAQEGAAEBFgAD/wEA
+        AeABBwHAAQMB4AEHAgABwAEBAYABAQHAAQECAAGAAQEBgAEAAYABAQIAAYADAAGAAwABgAMAAYArAAGA
+        AwABgAMAAYADAAGAAwABgAMAAYADAAHAAQEBgAEAAcABAQIAAeABAwHAAQEB4AEDAgAB/AEfAeABBwH8
+        AR8EAAHwAQ8CAAH4AQ8CAAHgAQMCAAHwAQMCAAHAAQECAAHgAQECAAGAAQECAAHAAQECAAGAAwABgAMA
+        AYADAAGADwABgAcAAYADAAGAAwABgAMAAYADAAGAAwABgAMAAcADAAHAAQECAAHgAQECAAHgAQMCAAHw
+        AQMCAAHwAQcCAAH4AQ8CAAH+AT8CAAL/Cw==
 </value>
   </data>
   <data name="TabShow.ItemSize" type="System.Drawing.Size, System.Drawing">
@@ -3393,6 +3507,9 @@
   </data>
   <metadata name="TimerLoad.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>544, 13</value>
+  </metadata>
+  <metadata name="TimerClock.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>830, 13</value>
   </metadata>
   <data name="FindPwd.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -32769,7 +32886,7 @@
     <value>FindPwd</value>
   </data>
   <data name="&gt;&gt;FindPwd.Type" xml:space="preserve">
-    <value>EasyLife.Login.FindPassword, EasyLife, Version=1.0.6740.39115, Culture=neutral, PublicKeyToken=null</value>
+    <value>EasyLife.Login.FindPassword, EasyLife, Version=1.0.6740.40168, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;FindPwd.Parent" xml:space="preserve">
     <value>$this</value>
@@ -32777,9 +32894,6 @@
   <data name="&gt;&gt;FindPwd.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="TimerClock.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>830, 13</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -32817,6 +32931,9 @@
         RR+1xHEQpF5updiR8XQgLPFyK9WHkfFYLvJ9MEOqsFyl2KdJ9fWq3N65jMVy+5BQ+zvHnIzHQV6KzMuR
         8XQg/B9bqcRXOWqJ48CBdlmeekmSJL+hlBPdesiBUTplmAAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.MiniDownBack" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
