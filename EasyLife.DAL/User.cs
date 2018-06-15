@@ -170,5 +170,17 @@ namespace EasyLife.DAL
             strSql.Append("AND ForgetAns='" + ForPwdAns + "' ");
             return SqlHelper.Exists(strSql.ToString());
         }
+
+        public DataSet GetList(string strWhere)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select * ");
+            strSql.Append(" FROM [User] ");
+            if (strWhere.Trim() != "")
+            {
+                strSql.Append(" where " + strWhere);
+            }
+            return SqlHelper.Query(strSql.ToString(), "User");
+        }
     }
 }

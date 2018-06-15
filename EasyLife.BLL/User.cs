@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -62,6 +63,13 @@ namespace EasyLife.BLL
         public bool CheckForget(string username, string ForPwdQue, string ForPwdAns)
         {
             return dal.CheckForget(username, ForPwdQue, ForPwdAns);
+        }
+
+        public DataSet GetList(string username)
+        {
+            StringBuilder strwhere = new StringBuilder();
+
+            return dal.GetList("");
         }
 
     }

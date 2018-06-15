@@ -25,6 +25,7 @@ namespace EasyLife
         BLL.Ticket ticket = new BLL.Ticket();
         BLL.Notice notice = new BLL.Notice();
         BLL.PhoneBook phonebook = new BLL.PhoneBook();
+        BLL.User user = new BLL.User();
         bool[] Exist = new bool[10];
         #endregion
 
@@ -438,7 +439,7 @@ namespace EasyLife
 
         private void BtnUserQue_Click(object sender, EventArgs e)
         {
-           // DataGridViewUser.DataSource=User.
+            DataGridViewUser.DataSource = user.GetList("");
         }
         #endregion
     }
