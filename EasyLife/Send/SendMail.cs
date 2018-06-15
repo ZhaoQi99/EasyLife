@@ -6,6 +6,8 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EasyLife;
+using EasyLife.BLL;
 
 namespace EasyLife.Send
 {
@@ -60,12 +62,16 @@ namespace EasyLife.Send
                     msg.To.Add(address[i]);
 
                 smtp.Send(msg);
+                BLL.Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + "发送成功\n" + "发件人:" +
+                   mailfrom + "\n收件人:" + mailto + "\n邮件主题:" + subject, "Send");
                 status++;
                 msg.Dispose();
             }
             catch (Exception e)
             {
-                //Todo:handle Exception
+                Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss:") + "发送失败\n" +"发件人:"+
+                    mailfrom +"\n收件人:"+ mailto +"\n邮件主题:"+ subject, "Send");
+                Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss:")+e.Message, "Exception");
                 MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return status;
             }

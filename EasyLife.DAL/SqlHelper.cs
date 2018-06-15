@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CCWin;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -6,6 +7,7 @@ using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace EasyLife.DAL
 {
@@ -71,8 +73,9 @@ namespace EasyLife.DAL
                     catch (OleDbException e)
                     {
                         connection.Close();
-                        throw new Exception(e.Message);
+                        MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                    return null;
                 }
             }
         }
@@ -112,11 +115,12 @@ namespace EasyLife.DAL
                         int n = cmd.ExecuteNonQuery();
                         return n;
                     }
-                    catch (OleDbException E)
+                    catch (OleDbException e)
                     {
                         connection.Close();
-                        throw new Exception(E.Message);
+                        MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                    return 0;
                 }
             }
         }
@@ -133,10 +137,11 @@ namespace EasyLife.DAL
                         cmd.Parameters.Clear();
                         return n;
                     }
-                    catch (OleDbException E)
+                    catch (OleDbException e)
                     {
-                        throw new Exception(E.Message);
+                        MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                    return 0;
                 }
             }
         }
@@ -185,9 +190,9 @@ namespace EasyLife.DAL
                         da.Fill(ds, TabName);
                         cmd.Parameters.Clear();
                     }
-                    catch (Exception ex)
+                    catch (Exception e)
                     {
-                        throw new Exception(ex.Message);
+                        MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     return ds;
                 }
@@ -205,9 +210,9 @@ namespace EasyLife.DAL
                     command.Fill(ds, TabName);
                     connection.Close();
                 }
-                catch (OleDbException ex)
+                catch (OleDbException e)
                 {
-                    throw new Exception(ex.Message);
+                    MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 return ds;
             }
@@ -225,8 +230,9 @@ namespace EasyLife.DAL
             }
             catch (OleDbException e)
             {
-                throw new Exception(e.Message);
+                MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            return null;
         }
 
         public static OleDbDataReader ExecuteReader(string SQLString)
@@ -241,8 +247,9 @@ namespace EasyLife.DAL
             }
             catch (OleDbException e)
             {
-                throw new Exception(e.Message);
+                MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            return null;
         }
         #endregion
 

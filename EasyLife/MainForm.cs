@@ -353,9 +353,10 @@ namespace EasyLife
                 pictureBox6.Left = pictureBox5.Left + pictureBox5.Width + 5;
                 LoadingIndex.Hide();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
+                Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + e.Message, "Exception");
+                MessageBoxEx.Show(e.Message , "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -363,7 +364,7 @@ namespace EasyLife
         {
             if (Exist[0] == false)
             {
-                ShowWeather("西安");
+                //ShowWeather("西安");
                 TimerLoad.Enabled = false;
                 LoadingIndex.Hide();
                 Exist[0] = true;

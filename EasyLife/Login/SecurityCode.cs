@@ -108,7 +108,7 @@ namespace Login
         //返回经MD5加密过的验证码字符串
         public string MD5Encrypt()
         {
-            return EasyLife.Tool.MD5Encrypt(VerificationText);
+            return EasyLife.BLL.Tool.MD5Encrypt(VerificationText);
         }
         //返回校验结果
         public bool Check(string text)

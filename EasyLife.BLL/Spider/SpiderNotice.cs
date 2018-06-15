@@ -7,6 +7,8 @@ using EasyLife.Spider;
 using System.Collections;
 using System.Text.RegularExpressions;
 using EasyLife.Model;
+using CCWin;
+using System.Windows.Forms;
 
 namespace EasyLife.Spider
 {
@@ -17,8 +19,8 @@ namespace EasyLife.Spider
         private string type;//通知类型
         private string pattern;//用于匹配的正则表达式规则
         private ArrayList all_notice = new ArrayList();//所有的通知
-        public string parse  = string.Empty;//日期的解析规则
-        public SpiderNotice(string url, string pattern, string url_main,string department,string type) : base(url,"GET")
+        public string parse = string.Empty;//日期的解析规则
+        public SpiderNotice(string url, string pattern, string url_main, string department, string type) : base(url, "GET")
         {
             this.department = department;
             this.pattern = pattern;
@@ -30,22 +32,31 @@ namespace EasyLife.Spider
         {
             all_notice.Clear();
             Regex r = new Regex(pattern, RegexOptions.ExplicitCapture);
-            string s = getHtml();
-            if (s == null)
-                throw new ArgumentNullException("html");
-            MatchCollection mc = r.Matches(s);
-            foreach (Match m in mc)
+            try
             {
-                GroupCollection group = m.Groups;
-                DateTime date = DateTime.ParseExact(group["date"].Value, parse, System.Globalization.CultureInfo.InstalledUICulture);
-                string link = url_main + group["link"].Value;
-                Notice n = new Notice();
-                n.Title = group["title"].Value;
-                n.Link = link;
-                n.Date = date;
-                n.Department = department;
-                n.Type=type;
-                all_notice.Add(n);
+
+                string s = getHtml();
+                if (s == null)
+                    throw new ArgumentNullException("html");
+                MatchCollection mc = r.Matches(s);
+                foreach (Match m in mc)
+                {
+                    GroupCollection group = m.Groups;
+                    DateTime date = DateTime.ParseExact(group["date"].Value, parse, System.Globalization.CultureInfo.InstalledUICulture);
+                    string link = url_main + group["link"].Value;
+                    Notice n = new Notice();
+                    n.Title = group["title"].Value;
+                    n.Link = link;
+                    n.Date = date;
+                    n.Department = department;
+                    n.Type = type;
+                    all_notice.Add(n);
+                }
+            }
+            catch (Exception e)
+            {
+                BLL.Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + e.Message, "Exception");
+                MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public Notice index(int index)

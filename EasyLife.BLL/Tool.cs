@@ -8,13 +8,25 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Xml;
 
-namespace EasyLife
+namespace EasyLife.BLL
 {
     public static class Tool
     {
         #region 私有方法
+        //记录日志
+        public static void Write(string text,string type="")
+        {
+            if (Directory.Exists(Application.StartupPath + "/Log") == false)
+                Directory.CreateDirectory(Application.StartupPath + "/Log");//创建新路径
+            FileStream fs = new FileStream(Application.StartupPath + "/Log/"+type+"_Log.log", FileMode.Append);
+            StreamWriter sw = new StreamWriter(fs, Encoding.Default);
+            sw.WriteLine(text);
+            sw.Close();
+            fs.Close();
+        }
         //得到图程序集中的图片对象
         private static Stream FindStream(string str)
         {

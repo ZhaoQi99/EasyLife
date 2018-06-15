@@ -1,10 +1,13 @@
-﻿using System;
+﻿using CCWin;
+using EasyLife.BLL;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace EasyLife.Spider
 {
@@ -72,9 +75,10 @@ namespace EasyLife.Spider
                 else
                     throw new Exception();
             }
-            catch
+            catch(Exception e)
             {
-                //Todo:Hanle Exception
+                Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + e.Message, "Exception");
+                MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return reader;
         }

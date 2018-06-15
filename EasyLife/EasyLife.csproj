@@ -95,7 +95,6 @@
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Send\SendMail.cs" />
-    <Compile Include="Tool.cs" />
     <Compile Include="Web References\cn.com.webxml.www\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
