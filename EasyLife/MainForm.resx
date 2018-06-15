@@ -1636,7 +1636,7 @@
     <value>True</value>
   </data>
   <data name="DataGridViewTel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>790, 169</value>
+    <value>790, 313</value>
   </data>
   <data name="DataGridViewTel.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -3359,7 +3359,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAI
-        DAAAAk1TRnQBSQFMAgEBBwEAARgBAgEYAQIBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        DAAAAk1TRnQBSQFMAgEBBwEAASABAgEgAQIBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -32886,7 +32886,7 @@
     <value>FindPwd</value>
   </data>
   <data name="&gt;&gt;FindPwd.Type" xml:space="preserve">
-    <value>EasyLife.Login.FindPassword, EasyLife, Version=1.0.6740.40168, Culture=neutral, PublicKeyToken=null</value>
+    <value>EasyLife.Login.FindPassword, EasyLife, Version=1.0.6740.40255, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;FindPwd.Parent" xml:space="preserve">
     <value>$this</value>
@@ -32931,9 +32931,6 @@
         RR+1xHEQpF5updiR8XQgLPFyK9WHkfFYLvJ9MEOqsFyl2KdJ9fWq3N65jMVy+5BQ+zvHnIzHQV6KzMuR
         8XQg/B9bqcRXOWqJ48CBdlmeekmSJL+hlBPdesiBUTplmAAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.MiniDownBack" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

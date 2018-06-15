@@ -62,6 +62,7 @@ namespace EasyLife
 
             LoadingEmail.Hide();
             LoadingNews.Hide();
+            LoadingTicket.Hide();
         }
         #endregion
 
@@ -458,7 +459,7 @@ namespace EasyLife
             }
             catch (Exception e)
             {
-                Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + e.Message, "Exception");
+                BLL.Log.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + e.Message, "Exception");
                 MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 

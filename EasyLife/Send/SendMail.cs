@@ -62,16 +62,16 @@ namespace EasyLife.Send
                     msg.To.Add(address[i]);
 
                 smtp.Send(msg);
-                BLL.Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + "发送成功\n" + "发件人:" +
+                Log.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + "发送成功\n" + "发件人:" +
                    mailfrom + "\n收件人:" + mailto + "\n邮件主题:" + subject, "Send");
                 status++;
                 msg.Dispose();
             }
             catch (Exception e)
             {
-                Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss:") + "发送失败\n" +"发件人:"+
+                Log.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss:") + "发送失败\n" +"发件人:"+
                     mailfrom +"\n收件人:"+ mailto +"\n邮件主题:"+ subject, "Send");
-                Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss:")+e.Message, "Exception");
+                Log.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss:")+e.Message, "Exception");
                 MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return status;
             }

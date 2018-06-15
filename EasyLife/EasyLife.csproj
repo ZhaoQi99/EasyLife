@@ -117,6 +117,7 @@
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Send\SendMail.cs" />
+    <Compile Include="Tool.cs" />
     <Compile Include="Web References\cn.com.webxml.www\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -267,27 +268,6 @@
     <Content Include="Database.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\BtnForgetPwd.DownBack.png" />
-    <None Include="Resources\BtnForgetPwd.MouseBack.png" />
-    <None Include="Resources\BtnForgetPwd.NormlBack.png" />
-    <None Include="Resources\BtnRegister.DownBack.png" />
-    <None Include="Resources\BtnRegister.MouseBack.png" />
-    <None Include="Resources\BtnRegister.NormlBack.png" />
-    <None Include="Resources\Index.png" />
-    <None Include="Resources\PasswordWrong.png" />
-    <None Include="Resources\Settings.png" />
-    <None Include="Resources\Skin.png" />
-    <None Include="Resources\ToolExit.png" />
-    <None Include="Resources\ToolSearch.png" />
-    <None Include="Resources\ToolSendMail.png" />
-    <None Include="Resources\ToolTel.png" />
-    <None Include="Resources\ToolTrain.png" />
-    <None Include="Resources\this.CloseDownBack.png" />
-    <None Include="Resources\this.CloseMouseBack.png" />
-    <None Include="Resources\this.CloseNormlBack.png" />
-    <None Include="Resources\this.MiniDownBack.png" />
-    <None Include="Resources\this.MiniMouseBack.png" />
-    <None Include="Resources\this.MiniNormlBack.png" />
     <EmbeddedResource Include="Weather\0.jpg" />
     <EmbeddedResource Include="Weather\1.jpg" />
     <EmbeddedResource Include="Weather\10.jpg" />
@@ -395,6 +375,27 @@
     <EmbeddedResource Include="Weather\tem3.jpg" />
     <EmbeddedResource Include="Weather\tem4.jpg" />
     <EmbeddedResource Include="Weather\tem5.jpg" />
+    <None Include="Resources\BtnForgetPwd.DownBack.png" />
+    <None Include="Resources\BtnForgetPwd.MouseBack.png" />
+    <None Include="Resources\BtnForgetPwd.NormlBack.png" />
+    <None Include="Resources\BtnRegister.DownBack.png" />
+    <None Include="Resources\BtnRegister.MouseBack.png" />
+    <None Include="Resources\BtnRegister.NormlBack.png" />
+    <None Include="Resources\Index.png" />
+    <None Include="Resources\PasswordWrong.png" />
+    <None Include="Resources\Settings.png" />
+    <None Include="Resources\Skin.png" />
+    <None Include="Resources\ToolExit.png" />
+    <None Include="Resources\ToolSearch.png" />
+    <None Include="Resources\ToolSendMail.png" />
+    <None Include="Resources\ToolTel.png" />
+    <None Include="Resources\ToolTrain.png" />
+    <None Include="Resources\this.CloseDownBack.png" />
+    <None Include="Resources\this.CloseMouseBack.png" />
+    <None Include="Resources\this.CloseNormlBack.png" />
+    <None Include="Resources\this.MiniDownBack.png" />
+    <None Include="Resources\this.MiniMouseBack.png" />
+    <None Include="Resources\this.MiniNormlBack.png" />
     <None Include="Web References\cn.com.webxml.www\WeatherWebService.disco" />
     <EmbeddedResource Include="Skin\1.jpg" />
     <EmbeddedResource Include="Skin\2.jpg" />
