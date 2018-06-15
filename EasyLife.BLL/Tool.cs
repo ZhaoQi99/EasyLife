@@ -25,7 +25,6 @@ namespace EasyLife.BLL
             StreamWriter sw = new StreamWriter(fs, Encoding.Default);
             sw.WriteLine(text);
             sw.Close();
-            fs.Close();
         }
         //得到图程序集中的图片对象
         private static Stream FindStream(string str)
@@ -62,6 +61,11 @@ namespace EasyLife.BLL
         //获取车站代码与车站名，并写入xml中
         public static void StationNameXml()
         {
+            string nowpath = Environment.CurrentDirectory;
+            if (Directory.Exists(nowpath+"/Data")==false)
+                Directory.CreateDirectory(nowpath + "/Data");//创建新路径
+            if (File.Exists(nowpath + "/Data/StationName.xml") == true)
+                return;
             Spider.Spider s = new Spider.Spider("https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9055","GET");
             string str = s.getHtml();
             string pattern = @"@\S{2,5}?[|](?<Name>\S{1,8}?)[|](?<Code>\S{3,5}?)[|]";
@@ -92,9 +96,6 @@ namespace EasyLife.BLL
 
                 root.AppendChild(node);
             }
-            string nowpath = Environment.CurrentDirectory;
-            if (Directory.Exists(nowpath+"/Data")==false)
-                Directory.CreateDirectory(nowpath + "/Data");//创建新路径
             xmldoc.Save(nowpath+"/Data/"+"StationName.xml");
         }
         #endregion

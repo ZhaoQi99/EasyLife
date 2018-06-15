@@ -7,7 +7,6 @@ using EasyLife.Spider;
 using System.Collections;
 using System.Text.RegularExpressions;
 using EasyLife.Model;
-using CCWin;
 using System.Windows.Forms;
 
 namespace EasyLife.Spider
@@ -56,7 +55,7 @@ namespace EasyLife.Spider
             catch (Exception e)
             {
                 BLL.Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + e.Message, "Exception");
-                MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public Notice index(int index)

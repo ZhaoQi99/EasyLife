@@ -1,5 +1,4 @@
-﻿using CCWin;
-using EasyLife.BLL;
+﻿using EasyLife.BLL;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -78,7 +77,7 @@ namespace EasyLife.Spider
             catch(Exception e)
             {
                 Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + e.Message, "Exception");
-                MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return reader;
         }

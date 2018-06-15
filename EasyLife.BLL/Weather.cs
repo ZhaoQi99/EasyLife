@@ -1,5 +1,4 @@
-﻿using CCWin;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace EasyLife.BLL
@@ -17,7 +16,7 @@ namespace EasyLife.BLL
             catch (Exception e)
             {
                 Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + e.Message, "Exception");
-                MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return r;
         }

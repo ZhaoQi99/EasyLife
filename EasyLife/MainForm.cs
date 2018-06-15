@@ -45,6 +45,7 @@ namespace EasyLife
             CmoBoxPrior.SelectedIndex = 1;
             FindPwd.Left = (this.Width - FindPwd.Width) / 2;//还原位置
             FindPwd.Visible = false;
+            Tool.StationNameXml();
         }
         #endregion
 
@@ -138,7 +139,8 @@ namespace EasyLife
             英文ToolStripMenuItem.Checked = false;
             Language.SetDefaultLanguage("zh-Hans");
             Language.LoadLanguage(this, typeof(MainForm));
-           // Language.LoadLanguage(this.SkinTool3,typeof(ToolStrip))
+            LblVersion.Text="当前版本:v"+ Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            // Language.LoadLanguage(this.SkinTool3,typeof(ToolStrip))
         }
         private void 英文ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -148,6 +150,8 @@ namespace EasyLife
             简体中文ToolStripMenuItem.Checked = false;
             Language.SetDefaultLanguage("en");
             Language.LoadLanguage(this, typeof(MainForm));
+            LblVersion.Text = "Version:v" + Assembly.GetExecutingAssembly().GetName().Version.ToString();
+
         }
         #endregion
 
@@ -423,8 +427,19 @@ namespace EasyLife
                 MessageBoxEx.Show("成功发送"+n+"封邮件", "完成", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
 
+
         #endregion
 
+        #region 用户管理
+        private void BtnUserDel_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void BtnUserQue_Click(object sender, EventArgs e)
+        {
+           // DataGridViewUser.DataSource=User.
+        }
+        #endregion
     }
 }
