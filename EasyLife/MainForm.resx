@@ -378,6 +378,228 @@
   <data name="TabShow.Appearance" type="System.Windows.Forms.TabAppearance, System.Windows.Forms">
     <value>FlatButtons</value>
   </data>
+  <data name="LblShowEmail.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblShowEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="LblShowEmail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblShowEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>596, 479</value>
+  </data>
+  <data name="LblShowEmail.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblShowEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="LblShowEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="LblShowEmail.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;LblShowEmail.Name" xml:space="preserve">
+    <value>LblShowEmail</value>
+  </data>
+  <data name="&gt;&gt;LblShowEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblShowEmail.Parent" xml:space="preserve">
+    <value>IndexTabPage</value>
+  </data>
+  <data name="&gt;&gt;LblShowEmail.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LblShowTel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblShowTel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="LblShowTel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LblShowTel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>596, 435</value>
+  </data>
+  <data name="LblShowTel.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblShowTel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="LblShowTel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="LblShowTel.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;LblShowTel.Name" xml:space="preserve">
+    <value>LblShowTel</value>
+  </data>
+  <data name="&gt;&gt;LblShowTel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblShowTel.Parent" xml:space="preserve">
+    <value>IndexTabPage</value>
+  </data>
+  <data name="&gt;&gt;LblShowTel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LblShowDep.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblShowDep.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="LblShowDep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>596, 391</value>
+  </data>
+  <data name="LblShowDep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="LblShowDep.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="LblShowDep.Text" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;LblShowDep.Name" xml:space="preserve">
+    <value>LblShowDep</value>
+  </data>
+  <data name="&gt;&gt;LblShowDep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblShowDep.Parent" xml:space="preserve">
+    <value>IndexTabPage</value>
+  </data>
+  <data name="&gt;&gt;LblShowDep.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LblUserNameShow.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblUserNameShow.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="LblUserNameShow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>596, 347</value>
+  </data>
+  <data name="LblUserNameShow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="LblUserNameShow.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="LblUserNameShow.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;LblUserNameShow.Name" xml:space="preserve">
+    <value>LblUserNameShow</value>
+  </data>
+  <data name="&gt;&gt;LblUserNameShow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblUserNameShow.Parent" xml:space="preserve">
+    <value>IndexTabPage</value>
+  </data>
+  <data name="&gt;&gt;LblUserNameShow.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TImeNow2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TImeNow2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 15pt, style=Bold</value>
+  </data>
+  <data name="TImeNow2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="TImeNow2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>625, 93</value>
+  </data>
+  <data name="TImeNow2.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TImeNow2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 25</value>
+  </data>
+  <data name="TImeNow2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="TImeNow2.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;TImeNow2.Name" xml:space="preserve">
+    <value>TImeNow2</value>
+  </data>
+  <data name="&gt;&gt;TImeNow2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TImeNow2.Parent" xml:space="preserve">
+    <value>IndexTabPage</value>
+  </data>
+  <data name="&gt;&gt;TImeNow2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TimeNow.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TimeNow.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 15pt, style=Bold</value>
+  </data>
+  <data name="TimeNow.Location" type="System.Drawing.Point, System.Drawing">
+    <value>625, 40</value>
+  </data>
+  <data name="TimeNow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 25</value>
+  </data>
+  <data name="TimeNow.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="TimeNow.Text" xml:space="preserve">
+    <value>当前时间:</value>
+  </data>
+  <data name="&gt;&gt;TimeNow.Name" xml:space="preserve">
+    <value>TimeNow</value>
+  </data>
+  <data name="&gt;&gt;TimeNow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TimeNow.Parent" xml:space="preserve">
+    <value>IndexTabPage</value>
+  </data>
+  <data name="&gt;&gt;TimeNow.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PicBoxClock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>593, 134</value>
+  </data>
+  <data name="PicBoxClock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 178</value>
+  </data>
+  <data name="PicBoxClock.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="PicBoxClock.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PicBoxClock.Name" xml:space="preserve">
+    <value>PicBoxClock</value>
+  </data>
+  <data name="&gt;&gt;PicBoxClock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PicBoxClock.Parent" xml:space="preserve">
+    <value>IndexTabPage</value>
+  </data>
+  <data name="&gt;&gt;PicBoxClock.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="LoadingIndex.Location" type="System.Drawing.Point, System.Drawing">
     <value>344, 185</value>
   </data>
@@ -871,7 +1093,7 @@
     <value>IndexTabPage</value>
   </data>
   <data name="&gt;&gt;GouBoxWeather.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>7</value>
   </data>
   <data name="IndexTabPage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -32516,6 +32738,9 @@
   <data name="&gt;&gt;FindPwd.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="TimerClock.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>830, 13</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -32802,6 +33027,12 @@
   </data>
   <data name="&gt;&gt;helpProvider.Type" xml:space="preserve">
     <value>System.Windows.Forms.HelpProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TimerClock.Name" xml:space="preserve">
+    <value>TimerClock</value>
+  </data>
+  <data name="&gt;&gt;TimerClock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>

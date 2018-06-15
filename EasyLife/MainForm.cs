@@ -27,12 +27,15 @@ namespace EasyLife
         BLL.PhoneBook phonebook = new BLL.PhoneBook();
         BLL.User user = new BLL.User();
         bool[] Exist = new bool[10];
+        Clock clock = new Clock(180);
+        Model.User u;
         #endregion
 
-        public MainForm()
+        public MainForm(Model.User u)
         {
             InitializeComponent();
             SelectItem = SkinTool0;
+            this.u = u;
         }
 
         #region 窗体加载
@@ -42,11 +45,18 @@ namespace EasyLife
             LoadingIndex.Show();
             TimerLoad.Enabled = true;
             TimerLoad.Interval = 4000;
+            TimerClock.Enabled = true;
+            TimerClock.Interval = 1000;
             LblVersion.Text= LblVersion .Text+ Assembly.GetExecutingAssembly().GetName().Version.ToString();
             CmoBoxPrior.SelectedIndex = 1;
             FindPwd.Left = (this.Width - FindPwd.Width) / 2;//还原位置
             FindPwd.Visible = false;
             Tool.StationNameXml();
+
+            LblShowEmail.Text = "邮箱:"+u.Email;
+            LblShowTel.Text = "电话:"+u.Tel;
+            LblUserNameShow.Text = "用户名:"+u.UserName;
+            LblShowDep.Text = "所在单位:"+u.School;
         }
         #endregion
 
@@ -444,5 +454,11 @@ namespace EasyLife
             DataGridViewUser.DataSource = user.GetList(TextBoxUsername.Text).Tables["User"].DefaultView;
         }
         #endregion
+
+        private void TimerClock_Tick(object sender, EventArgs e)
+        {
+            PicBoxClock.Image = clock.get();
+            TImeNow2.Text = DateTime.Now.ToString("hh:mm:ss");
+        }
     }
 }

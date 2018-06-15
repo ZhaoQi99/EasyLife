@@ -160,6 +160,14 @@
             this.helpProvider = new System.Windows.Forms.HelpProvider();
             this.FindPwd = new EasyLife.Login.FindPassword();
             this.LblUsername = new System.Windows.Forms.Label();
+            this.PicBoxClock = new System.Windows.Forms.PictureBox();
+            this.TimerClock = new System.Windows.Forms.Timer(this.components);
+            this.TimeNow = new System.Windows.Forms.Label();
+            this.TImeNow2 = new System.Windows.Forms.Label();
+            this.LblUserNameShow = new System.Windows.Forms.Label();
+            this.LblShowDep = new System.Windows.Forms.Label();
+            this.LblShowTel = new System.Windows.Forms.Label();
+            this.LblShowEmail = new System.Windows.Forms.Label();
             ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SkinMenu.SuspendLayout();
             this.SettingsMenu.SuspendLayout();
@@ -188,6 +196,7 @@
             this.UserTabPage.SuspendLayout();
             this.GupBoxUserMag.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxClock)).BeginInit();
             this.SuspendLayout();
             // 
             // LabelQueTime
@@ -437,6 +446,13 @@
             // IndexTabPage
             // 
             this.IndexTabPage.BackColor = System.Drawing.Color.White;
+            this.IndexTabPage.Controls.Add(this.LblShowEmail);
+            this.IndexTabPage.Controls.Add(this.LblShowTel);
+            this.IndexTabPage.Controls.Add(this.LblShowDep);
+            this.IndexTabPage.Controls.Add(this.LblUserNameShow);
+            this.IndexTabPage.Controls.Add(this.TImeNow2);
+            this.IndexTabPage.Controls.Add(this.TimeNow);
+            this.IndexTabPage.Controls.Add(this.PicBoxClock);
             this.IndexTabPage.Controls.Add(this.GouBoxWeather);
             resources.ApplyResources(this.IndexTabPage, "IndexTabPage");
             this.IndexTabPage.Name = "IndexTabPage";
@@ -1472,6 +1488,53 @@
             resources.ApplyResources(this.LblUsername, "LblUsername");
             this.LblUsername.Name = "LblUsername";
             // 
+            // PicBoxClock
+            // 
+            resources.ApplyResources(this.PicBoxClock, "PicBoxClock");
+            this.PicBoxClock.Name = "PicBoxClock";
+            this.PicBoxClock.TabStop = false;
+            // 
+            // TimerClock
+            // 
+            this.TimerClock.Tick += new System.EventHandler(this.TimerClock_Tick);
+            // 
+            // TimeNow
+            // 
+            resources.ApplyResources(this.TimeNow, "TimeNow");
+            this.TimeNow.BackColor = System.Drawing.Color.Chartreuse;
+            this.TimeNow.ForeColor = System.Drawing.Color.White;
+            this.TimeNow.Name = "TimeNow";
+            // 
+            // TImeNow2
+            // 
+            resources.ApplyResources(this.TImeNow2, "TImeNow2");
+            this.TImeNow2.BackColor = System.Drawing.Color.Chartreuse;
+            this.TImeNow2.ForeColor = System.Drawing.Color.White;
+            this.TImeNow2.Name = "TImeNow2";
+            this.helpProvider.SetShowHelp(this.TImeNow2, ((bool)(resources.GetObject("TImeNow2.ShowHelp"))));
+            // 
+            // LblUserNameShow
+            // 
+            resources.ApplyResources(this.LblUserNameShow, "LblUserNameShow");
+            this.LblUserNameShow.Name = "LblUserNameShow";
+            // 
+            // LblShowDep
+            // 
+            resources.ApplyResources(this.LblShowDep, "LblShowDep");
+            this.LblShowDep.Name = "LblShowDep";
+            // 
+            // LblShowTel
+            // 
+            resources.ApplyResources(this.LblShowTel, "LblShowTel");
+            this.LblShowTel.Name = "LblShowTel";
+            this.helpProvider.SetShowHelp(this.LblShowTel, ((bool)(resources.GetObject("LblShowTel.ShowHelp"))));
+            // 
+            // LblShowEmail
+            // 
+            resources.ApplyResources(this.LblShowEmail, "LblShowEmail");
+            this.LblShowEmail.Name = "LblShowEmail";
+            this.helpProvider.SetShowHelp(this.LblShowEmail, ((bool)(resources.GetObject("LblShowEmail.ShowHelp"))));
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -1525,6 +1588,7 @@
             this.SettingsMenu.ResumeLayout(false);
             this.TabShow.ResumeLayout(false);
             this.IndexTabPage.ResumeLayout(false);
+            this.IndexTabPage.PerformLayout();
             this.GouBoxWeather.ResumeLayout(false);
             this.GouBoxWeather.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -1555,6 +1619,7 @@
             this.GupBoxUserMag.ResumeLayout(false);
             this.GupBoxUserMag.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxClock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1671,5 +1736,13 @@
         private CCWin.SkinControl.SkinButton BtnUserDel;
         private System.Windows.Forms.TextBox TextBoxUsername;
         private System.Windows.Forms.Label LblUsername;
+        private System.Windows.Forms.PictureBox PicBoxClock;
+        private System.Windows.Forms.Timer TimerClock;
+        private System.Windows.Forms.Label TImeNow2;
+        private System.Windows.Forms.Label TimeNow;
+        private System.Windows.Forms.Label LblShowEmail;
+        private System.Windows.Forms.Label LblShowTel;
+        private System.Windows.Forms.Label LblShowDep;
+        private System.Windows.Forms.Label LblUserNameShow;
     }
 }

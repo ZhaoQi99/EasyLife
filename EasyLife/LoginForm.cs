@@ -81,7 +81,8 @@ namespace EasyLife
             }
             if (user.Check(TextId.Text, TextPwd.Text) == true)//密码正确
             {
-                new MainForm().Show();
+                Model.User u = user.GetModel(TextId.Text);
+                new MainForm(u).Show();
                 this.Hide();
                 return;
             }

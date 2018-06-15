@@ -81,6 +81,7 @@
     <Compile Include="AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clock.cs" />
     <Compile Include="Language.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
