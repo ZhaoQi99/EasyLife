@@ -378,42 +378,6 @@
   <data name="TabShow.Appearance" type="System.Windows.Forms.TabAppearance, System.Windows.Forms">
     <value>FlatButtons</value>
   </data>
-  <data name="LblShowEmail.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="LblShowEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>宋体, 12pt</value>
-  </data>
-  <data name="LblShowEmail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="LblShowEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>596, 479</value>
-  </data>
-  <data name="LblShowEmail.ShowHelp" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="LblShowEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 20</value>
-  </data>
-  <data name="LblShowEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="LblShowEmail.Text" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;LblShowEmail.Name" xml:space="preserve">
-    <value>LblShowEmail</value>
-  </data>
-  <data name="&gt;&gt;LblShowEmail.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LblShowEmail.Parent" xml:space="preserve">
-    <value>IndexTabPage</value>
-  </data>
-  <data name="&gt;&gt;LblShowEmail.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="LblShowTel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -424,7 +388,7 @@
     <value>NoControl</value>
   </data>
   <data name="LblShowTel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>596, 435</value>
+    <value>14, 116</value>
   </data>
   <data name="LblShowTel.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -445,40 +409,46 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblShowTel.Parent" xml:space="preserve">
-    <value>IndexTabPage</value>
+    <value>GupBoxInfo</value>
   </data>
   <data name="&gt;&gt;LblShowTel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
-  <data name="LblShowDep.AutoSize" type="System.Boolean, mscorlib">
+  <data name="LblShowEmail.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LblShowDep.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="LblShowEmail.Font" type="System.Drawing.Font, System.Drawing">
     <value>宋体, 12pt</value>
   </data>
-  <data name="LblShowDep.Location" type="System.Drawing.Point, System.Drawing">
-    <value>596, 391</value>
+  <data name="LblShowEmail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="LblShowDep.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="LblShowEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 154</value>
+  </data>
+  <data name="LblShowEmail.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblShowEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
   </data>
-  <data name="LblShowDep.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="LblShowEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="LblShowDep.Text" xml:space="preserve">
-    <value>label2</value>
+  <data name="LblShowEmail.Text" xml:space="preserve">
+    <value>label1</value>
   </data>
-  <data name="&gt;&gt;LblShowDep.Name" xml:space="preserve">
-    <value>LblShowDep</value>
+  <data name="&gt;&gt;LblShowEmail.Name" xml:space="preserve">
+    <value>LblShowEmail</value>
   </data>
-  <data name="&gt;&gt;LblShowDep.Type" xml:space="preserve">
+  <data name="&gt;&gt;LblShowEmail.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LblShowDep.Parent" xml:space="preserve">
-    <value>IndexTabPage</value>
+  <data name="&gt;&gt;LblShowEmail.Parent" xml:space="preserve">
+    <value>GupBoxInfo</value>
   </data>
-  <data name="&gt;&gt;LblShowDep.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;LblShowEmail.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="LblUserNameShow.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -487,7 +457,7 @@
     <value>宋体, 12pt</value>
   </data>
   <data name="LblUserNameShow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>596, 347</value>
+    <value>14, 40</value>
   </data>
   <data name="LblUserNameShow.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
@@ -505,10 +475,67 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblUserNameShow.Parent" xml:space="preserve">
-    <value>IndexTabPage</value>
+    <value>GupBoxInfo</value>
   </data>
   <data name="&gt;&gt;LblUserNameShow.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LblShowDep.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblShowDep.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="LblShowDep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 78</value>
+  </data>
+  <data name="LblShowDep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
+  </data>
+  <data name="LblShowDep.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="LblShowDep.Text" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;LblShowDep.Name" xml:space="preserve">
+    <value>LblShowDep</value>
+  </data>
+  <data name="&gt;&gt;LblShowDep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LblShowDep.Parent" xml:space="preserve">
+    <value>GupBoxInfo</value>
+  </data>
+  <data name="&gt;&gt;LblShowDep.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="GupBoxInfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>宋体, 12pt</value>
+  </data>
+  <data name="GupBoxInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>596, 341</value>
+  </data>
+  <data name="GupBoxInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 198</value>
+  </data>
+  <data name="GupBoxInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="GupBoxInfo.Text" xml:space="preserve">
+    <value>个人信息</value>
+  </data>
+  <data name="&gt;&gt;GupBoxInfo.Name" xml:space="preserve">
+    <value>GupBoxInfo</value>
+  </data>
+  <data name="&gt;&gt;GupBoxInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GupBoxInfo.Parent" xml:space="preserve">
+    <value>IndexTabPage</value>
+  </data>
+  <data name="&gt;&gt;GupBoxInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="TImeNow2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -544,7 +571,7 @@
     <value>IndexTabPage</value>
   </data>
   <data name="&gt;&gt;TImeNow2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="TimeNow.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -574,7 +601,7 @@
     <value>IndexTabPage</value>
   </data>
   <data name="&gt;&gt;TimeNow.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>2</value>
   </data>
   <data name="PicBoxClock.Location" type="System.Drawing.Point, System.Drawing">
     <value>593, 134</value>
@@ -598,7 +625,7 @@
     <value>IndexTabPage</value>
   </data>
   <data name="&gt;&gt;PicBoxClock.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>3</value>
   </data>
   <data name="LoadingIndex.Location" type="System.Drawing.Point, System.Drawing">
     <value>344, 185</value>
@@ -1093,7 +1120,7 @@
     <value>IndexTabPage</value>
   </data>
   <data name="&gt;&gt;GouBoxWeather.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>4</value>
   </data>
   <data name="IndexTabPage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>

@@ -29,6 +29,7 @@ namespace EasyLife
         bool[] Exist = new bool[10];
         Clock clock = new Clock(180);
         Model.User u;
+        int selectindex = 0;
         #endregion
 
         public MainForm(Model.User u)
@@ -47,16 +48,16 @@ namespace EasyLife
             TimerLoad.Interval = 4000;
             TimerClock.Enabled = true;
             TimerClock.Interval = 1000;
-            LblVersion.Text= LblVersion .Text+ Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            LblVersion.Text = LblVersion.Text + Assembly.GetExecutingAssembly().GetName().Version.ToString();
             CmoBoxPrior.SelectedIndex = 1;
             FindPwd.Left = (this.Width - FindPwd.Width) / 2;//还原位置
             FindPwd.Visible = false;
             Tool.StationNameXml();
 
-            LblShowEmail.Text = "邮箱:"+u.Email;
-            LblShowTel.Text = "电话:"+u.Tel;
-            LblUserNameShow.Text = "用户名:"+u.UserName;
-            LblShowDep.Text = "所在单位:"+u.School;
+            LblShowEmail.Text = "邮箱:" + u.Email;
+            LblShowTel.Text = "电话:" + u.Tel;
+            LblUserNameShow.Text = "用户名:" + u.UserName;
+            LblShowDep.Text = "所在单位:" + u.School;
         }
         #endregion
 
@@ -138,7 +139,7 @@ namespace EasyLife
         //关于
         private void About_Click(object sender, EventArgs e)
         {
-            AboutBox about= new AboutBox();
+            AboutBox about = new AboutBox();
             about.Show();
         }
         //选择语言
@@ -146,11 +147,11 @@ namespace EasyLife
         {
             if (简体中文ToolStripMenuItem.Checked == true)
                 return;
-                简体中文ToolStripMenuItem.Checked = true;
+            简体中文ToolStripMenuItem.Checked = true;
             英文ToolStripMenuItem.Checked = false;
             Language.SetDefaultLanguage("zh-Hans");
             Language.LoadLanguage(this, typeof(MainForm));
-            LblVersion.Text="当前版本:v"+ Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            LblVersion.Text = "当前版本:v" + Assembly.GetExecutingAssembly().GetName().Version.ToString();
             // Language.LoadLanguage(this.SkinTool3,typeof(ToolStrip))
         }
         private void 英文ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -209,6 +210,16 @@ namespace EasyLife
                     Exist[2] = true;
                 }
             }
+            if (TabShow.SelectedIndex == 5)
+            {
+                if (u.UserName != "Admin")
+                {
+                    TabShow.SelectedIndex = selectindex;
+                    MessageBoxEx.Show("无权访问!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+            selectindex = TabShow.SelectedIndex;
         }
         #endregion
 
@@ -387,7 +398,7 @@ namespace EasyLife
             catch (Exception e)
             {
                 Tool.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + e.Message, "Exception");
-                MessageBoxEx.Show(e.Message , "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -407,7 +418,7 @@ namespace EasyLife
         #region 邮件
         private void BtnSendMail_Click(object sender, EventArgs e)
         {
-            if(CmoBoxMailHost.Text==string.Empty)
+            if (CmoBoxMailHost.Text == string.Empty)
             {
                 MessageBoxEx.Show("主机地址不能为空!", "完成", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -422,20 +433,20 @@ namespace EasyLife
                 MessageBoxEx.Show("发件人不能为空!", "完成", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if(TextBoxPwd.Text==string.Empty)
+            if (TextBoxPwd.Text == string.Empty)
             {
                 MessageBoxEx.Show("密码不能为空!", "完成", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if(TextBoxMailTo.Text==string.Empty)
+            if (TextBoxMailTo.Text == string.Empty)
             {
                 MessageBoxEx.Show("收件人不能为空!", "完成", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            Send.SendMail send = new Send.SendMail(TextBoxMailFrom.Text, TextBoxPwd.Text, TextBoxMailFromName.Text, CmoBoxMailHost.Text,Convert.ToInt32(NumUpDownPort.Value));
-            int n=send.send(TextBoxMailTo.Text, EmailSubject.Text, RichTextBoxBodey.Text, CmoBoxPrior.Text);
+            Send.SendMail send = new Send.SendMail(TextBoxMailFrom.Text, TextBoxPwd.Text, TextBoxMailFromName.Text, CmoBoxMailHost.Text, Convert.ToInt32(NumUpDownPort.Value));
+            int n = send.send(TextBoxMailTo.Text, EmailSubject.Text, RichTextBoxBodey.Text, CmoBoxPrior.Text);
             if (n != 0)
-                MessageBoxEx.Show("成功发送"+n+"封邮件", "完成", MessageBoxButtons.OK, MessageBoxIcon.None);
+                MessageBoxEx.Show("成功发送" + n + "封邮件", "完成", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
 
 
@@ -459,6 +470,11 @@ namespace EasyLife
         {
             PicBoxClock.Image = clock.get();
             TImeNow2.Text = DateTime.Now.ToString("hh:mm:ss");
+        }
+
+        private void GupBoxInfo_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

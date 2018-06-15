@@ -168,6 +168,7 @@
             this.LblShowDep = new System.Windows.Forms.Label();
             this.LblShowTel = new System.Windows.Forms.Label();
             this.LblShowEmail = new System.Windows.Forms.Label();
+            this.GupBoxInfo = new System.Windows.Forms.GroupBox();
             ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SkinMenu.SuspendLayout();
             this.SettingsMenu.SuspendLayout();
@@ -197,6 +198,7 @@
             this.GupBoxUserMag.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxClock)).BeginInit();
+            this.GupBoxInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // LabelQueTime
@@ -446,10 +448,7 @@
             // IndexTabPage
             // 
             this.IndexTabPage.BackColor = System.Drawing.Color.White;
-            this.IndexTabPage.Controls.Add(this.LblShowEmail);
-            this.IndexTabPage.Controls.Add(this.LblShowTel);
-            this.IndexTabPage.Controls.Add(this.LblShowDep);
-            this.IndexTabPage.Controls.Add(this.LblUserNameShow);
+            this.IndexTabPage.Controls.Add(this.GupBoxInfo);
             this.IndexTabPage.Controls.Add(this.TImeNow2);
             this.IndexTabPage.Controls.Add(this.TimeNow);
             this.IndexTabPage.Controls.Add(this.PicBoxClock);
@@ -1535,6 +1534,17 @@
             this.LblShowEmail.Name = "LblShowEmail";
             this.helpProvider.SetShowHelp(this.LblShowEmail, ((bool)(resources.GetObject("LblShowEmail.ShowHelp"))));
             // 
+            // GupBoxInfo
+            // 
+            this.GupBoxInfo.Controls.Add(this.LblShowTel);
+            this.GupBoxInfo.Controls.Add(this.LblShowEmail);
+            this.GupBoxInfo.Controls.Add(this.LblUserNameShow);
+            this.GupBoxInfo.Controls.Add(this.LblShowDep);
+            resources.ApplyResources(this.GupBoxInfo, "GupBoxInfo");
+            this.GupBoxInfo.Name = "GupBoxInfo";
+            this.GupBoxInfo.TabStop = false;
+            this.GupBoxInfo.Enter += new System.EventHandler(this.GupBoxInfo_Enter);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -1620,6 +1630,8 @@
             this.GupBoxUserMag.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxClock)).EndInit();
+            this.GupBoxInfo.ResumeLayout(false);
+            this.GupBoxInfo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1744,5 +1756,6 @@
         private System.Windows.Forms.Label LblShowTel;
         private System.Windows.Forms.Label LblShowDep;
         private System.Windows.Forms.Label LblUserNameShow;
+        private System.Windows.Forms.GroupBox GupBoxInfo;
     }
 }
