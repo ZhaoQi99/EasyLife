@@ -24,7 +24,7 @@ namespace EasyLife
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm(new Model.User()));
+            Application.Run(new LoginForm());
         }
     }
 }

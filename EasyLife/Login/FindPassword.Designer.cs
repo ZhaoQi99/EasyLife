@@ -56,7 +56,11 @@
             this.CmoBoxForQue.ItemBorderColor = System.Drawing.Color.DodgerBlue;
             this.CmoBoxForQue.Items.AddRange(new object[] {
             resources.GetString("CmoBoxForQue.Items"),
-            resources.GetString("CmoBoxForQue.Items1")});
+            resources.GetString("CmoBoxForQue.Items1"),
+            resources.GetString("CmoBoxForQue.Items2"),
+            resources.GetString("CmoBoxForQue.Items3"),
+            resources.GetString("CmoBoxForQue.Items4"),
+            resources.GetString("CmoBoxForQue.Items5")});
             this.CmoBoxForQue.Name = "CmoBoxForQue";
             this.CmoBoxForQue.WaterText = "密保问题";
             // 

@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace EasyLife.Spider
 {
@@ -26,9 +27,18 @@ namespace EasyLife.Spider
         public void Get()
         {
             map = new Dictionary<string, string>();
-            string str = getHtml();
+            string str=string.Empty;
+            try
+            {
+            str = getHtml();
             if (str == null)
-                throw new Exception("Ticket html is null");
+                throw new Exception();
+            }
+            catch(Exception e)
+            {
+                BLL.Log.Write(e.Message);
+                MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             JObject jo = (JObject)JsonConvert.DeserializeObject(str);
             JToken record = jo["data"]["map"];
             foreach (JProperty item in record)
@@ -60,6 +70,7 @@ namespace EasyLife.Spider
                 t.GrwNum = result[21] != "" ? result[21] : t.GrwNum;
                 AllTicket.Add(t);
             }
+            
         }
 
         public Ticket index(int index)

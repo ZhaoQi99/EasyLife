@@ -99,6 +99,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.TrainTabpage = new CCWin.SkinControl.SkinTabPage();
+            this.LoadingTicket = new CCWin.SkinControl.SkinProgressIndicator();
             this.DataGridViewTicket = new CCWin.SkinControl.SkinDataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LabelQueTime2 = new System.Windows.Forms.Label();
@@ -126,6 +127,7 @@
             this.LblTelDep = new System.Windows.Forms.Label();
             this.LblTelCam = new System.Windows.Forms.Label();
             this.NewsTabpage = new CCWin.SkinControl.SkinTabPage();
+            this.LoadingNews = new CCWin.SkinControl.SkinProgressIndicator();
             this.DataGridViewNotice = new CCWin.SkinControl.SkinDataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.BtnUpdNotice = new CCWin.SkinControl.SkinButton();
@@ -151,6 +153,7 @@
             this.NumUpDownPort = new System.Windows.Forms.NumericUpDown();
             this.LblEmailPort = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.LoadingEmail = new CCWin.SkinControl.SkinProgressIndicator();
             this.BtnSendMail = new CCWin.SkinControl.SkinButton();
             this.TextBoxMailTo = new System.Windows.Forms.TextBox();
             this.LblMailto = new System.Windows.Forms.Label();
@@ -166,11 +169,7 @@
             this.ExitTabPage = new CCWin.SkinControl.SkinTabPage();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.TimerLoad = new System.Windows.Forms.Timer(this.components);
-            this.helpProvider = new System.Windows.Forms.HelpProvider();
             this.TimerClock = new System.Windows.Forms.Timer(this.components);
-            this.LoadingEmail = new CCWin.SkinControl.SkinProgressIndicator();
-            this.LoadingNews = new CCWin.SkinControl.SkinProgressIndicator();
-            this.LoadingTicket = new CCWin.SkinControl.SkinProgressIndicator();
             this.FindPwd = new EasyLife.Login.FindPassword();
             ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SkinMenu.SuspendLayout();
@@ -209,7 +208,6 @@
             resources.ApplyResources(this.LabelQueTime, "LabelQueTime");
             this.LabelQueTime.BackColor = System.Drawing.Color.Transparent;
             this.LabelQueTime.Name = "LabelQueTime";
-            this.helpProvider.SetShowHelp(this.LabelQueTime, ((bool)(resources.GetObject("LabelQueTime.ShowHelp"))));
             ToolTip.SetToolTip(this.LabelQueTime, resources.GetString("LabelQueTime.ToolTip"));
             // 
             // BtnTicUpdate
@@ -222,7 +220,6 @@
             this.BtnTicUpdate.MouseBack = null;
             this.BtnTicUpdate.Name = "BtnTicUpdate";
             this.BtnTicUpdate.NormlBack = null;
-            this.helpProvider.SetShowHelp(this.BtnTicUpdate, ((bool)(resources.GetObject("BtnTicUpdate.ShowHelp"))));
             ToolTip.SetToolTip(this.BtnTicUpdate, resources.GetString("BtnTicUpdate.ToolTip"));
             this.BtnTicUpdate.UseVisualStyleBackColor = false;
             this.BtnTicUpdate.Click += new System.EventHandler(this.BtnTicUpdate_Click);
@@ -231,7 +228,6 @@
             // 
             resources.ApplyResources(this.RichTextBoxBodey, "RichTextBoxBodey");
             this.RichTextBoxBodey.Name = "RichTextBoxBodey";
-            this.helpProvider.SetShowHelp(this.RichTextBoxBodey, ((bool)(resources.GetObject("RichTextBoxBodey.ShowHelp"))));
             ToolTip.SetToolTip(this.RichTextBoxBodey, resources.GetString("RichTextBoxBodey.ToolTip"));
             // 
             // SkinMenu
@@ -260,7 +256,6 @@
             this.SkinMenu.ItemSplitter = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
             this.SkinMenu.Name = "SkinMenu";
             this.SkinMenu.RadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            this.helpProvider.SetShowHelp(this.SkinMenu, ((bool)(resources.GetObject("SkinMenu.ShowHelp"))));
             resources.ApplyResources(this.SkinMenu, "SkinMenu");
             this.SkinMenu.SkinAllColor = true;
             this.SkinMenu.TitleAnamorphosis = true;
@@ -335,7 +330,6 @@
             this.SettingsMenu.ItemSplitter = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(148)))), ((int)(((byte)(212)))));
             this.SettingsMenu.Name = "Menu";
             this.SettingsMenu.RadiusStyle = CCWin.SkinClass.RoundStyle.All;
-            this.helpProvider.SetShowHelp(this.SettingsMenu, ((bool)(resources.GetObject("SettingsMenu.ShowHelp"))));
             resources.ApplyResources(this.SettingsMenu, "SettingsMenu");
             this.SettingsMenu.SkinAllColor = true;
             this.SettingsMenu.TitleAnamorphosis = true;
@@ -417,7 +411,6 @@
             this.LblVersion.BackColor = System.Drawing.Color.Transparent;
             this.LblVersion.ForeColor = System.Drawing.Color.White;
             this.LblVersion.Name = "LblVersion";
-            this.helpProvider.SetShowHelp(this.LblVersion, ((bool)(resources.GetObject("LblVersion.ShowHelp"))));
             // 
             // TabShow
             // 
@@ -445,7 +438,6 @@
             this.TabShow.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
             this.TabShow.PageNorml = null;
             this.TabShow.SelectedIndex = 0;
-            this.helpProvider.SetShowHelp(this.TabShow, ((bool)(resources.GetObject("TabShow.ShowHelp"))));
             this.TabShow.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.TabShow.SelectedIndexChanged += new System.EventHandler(this.TabShow_SelectedIndexChanged);
             // 
@@ -459,7 +451,6 @@
             this.IndexTabPage.Controls.Add(this.GouBoxWeather);
             resources.ApplyResources(this.IndexTabPage, "IndexTabPage");
             this.IndexTabPage.Name = "IndexTabPage";
-            this.helpProvider.SetShowHelp(this.IndexTabPage, ((bool)(resources.GetObject("IndexTabPage.ShowHelp"))));
             this.IndexTabPage.TabItemImage = null;
             // 
             // GupBoxInfo
@@ -470,32 +461,27 @@
             this.GupBoxInfo.Controls.Add(this.LblShowDep);
             resources.ApplyResources(this.GupBoxInfo, "GupBoxInfo");
             this.GupBoxInfo.Name = "GupBoxInfo";
-            this.helpProvider.SetShowHelp(this.GupBoxInfo, ((bool)(resources.GetObject("GupBoxInfo.ShowHelp"))));
             this.GupBoxInfo.TabStop = false;
             // 
             // LblShowTel
             // 
             resources.ApplyResources(this.LblShowTel, "LblShowTel");
             this.LblShowTel.Name = "LblShowTel";
-            this.helpProvider.SetShowHelp(this.LblShowTel, ((bool)(resources.GetObject("LblShowTel.ShowHelp"))));
             // 
             // LblShowEmail
             // 
             resources.ApplyResources(this.LblShowEmail, "LblShowEmail");
             this.LblShowEmail.Name = "LblShowEmail";
-            this.helpProvider.SetShowHelp(this.LblShowEmail, ((bool)(resources.GetObject("LblShowEmail.ShowHelp"))));
             // 
             // LblUserNameShow
             // 
             resources.ApplyResources(this.LblUserNameShow, "LblUserNameShow");
             this.LblUserNameShow.Name = "LblUserNameShow";
-            this.helpProvider.SetShowHelp(this.LblUserNameShow, ((bool)(resources.GetObject("LblUserNameShow.ShowHelp"))));
             // 
             // LblShowDep
             // 
             resources.ApplyResources(this.LblShowDep, "LblShowDep");
             this.LblShowDep.Name = "LblShowDep";
-            this.helpProvider.SetShowHelp(this.LblShowDep, ((bool)(resources.GetObject("LblShowDep.ShowHelp"))));
             // 
             // TImeNow2
             // 
@@ -503,7 +489,6 @@
             this.TImeNow2.BackColor = System.Drawing.Color.Chartreuse;
             this.TImeNow2.ForeColor = System.Drawing.Color.White;
             this.TImeNow2.Name = "TImeNow2";
-            this.helpProvider.SetShowHelp(this.TImeNow2, ((bool)(resources.GetObject("TImeNow2.ShowHelp"))));
             // 
             // TimeNow
             // 
@@ -511,13 +496,11 @@
             this.TimeNow.BackColor = System.Drawing.Color.Chartreuse;
             this.TimeNow.ForeColor = System.Drawing.Color.White;
             this.TimeNow.Name = "TimeNow";
-            this.helpProvider.SetShowHelp(this.TimeNow, ((bool)(resources.GetObject("TimeNow.ShowHelp"))));
             // 
             // PicBoxClock
             // 
             resources.ApplyResources(this.PicBoxClock, "PicBoxClock");
             this.PicBoxClock.Name = "PicBoxClock";
-            this.helpProvider.SetShowHelp(this.PicBoxClock, ((bool)(resources.GetObject("PicBoxClock.ShowHelp"))));
             this.PicBoxClock.TabStop = false;
             // 
             // GouBoxWeather
@@ -544,7 +527,6 @@
             this.GouBoxWeather.Name = "GouBoxWeather";
             this.GouBoxWeather.RectBackColor = System.Drawing.Color.LightPink;
             this.GouBoxWeather.RoundStyle = CCWin.SkinClass.RoundStyle.All;
-            this.helpProvider.SetShowHelp(this.GouBoxWeather, ((bool)(resources.GetObject("GouBoxWeather.ShowHelp"))));
             this.GouBoxWeather.TabStop = false;
             this.GouBoxWeather.TitleBorderColor = System.Drawing.Color.DarkGray;
             this.GouBoxWeather.TitleRadius = 6;
@@ -558,7 +540,6 @@
             resources.ApplyResources(this.LoadingIndex, "LoadingIndex");
             this.LoadingIndex.Name = "LoadingIndex";
             this.LoadingIndex.Percentage = 30F;
-            this.helpProvider.SetShowHelp(this.LoadingIndex, ((bool)(resources.GetObject("LoadingIndex.ShowHelp"))));
             this.LoadingIndex.ShowText = true;
             this.LoadingIndex.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
             // 
@@ -570,34 +551,29 @@
             this.LblLife.BorderColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.LblLife, "LblLife");
             this.LblLife.Name = "LblLife";
-            this.helpProvider.SetShowHelp(this.LblLife, ((bool)(resources.GetObject("LblLife.ShowHelp"))));
             // 
             // pictureBox6
             // 
             resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
-            this.helpProvider.SetShowHelp(this.pictureBox6, ((bool)(resources.GetObject("pictureBox6.ShowHelp"))));
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
             resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Name = "pictureBox5";
-            this.helpProvider.SetShowHelp(this.pictureBox5, ((bool)(resources.GetObject("pictureBox5.ShowHelp"))));
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox1
             // 
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.helpProvider.SetShowHelp(this.pictureBox1, ((bool)(resources.GetObject("pictureBox1.ShowHelp"))));
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
-            this.helpProvider.SetShowHelp(this.pictureBox2, ((bool)(resources.GetObject("pictureBox2.ShowHelp"))));
             this.pictureBox2.TabStop = false;
             // 
             // LblLoc
@@ -606,7 +582,6 @@
             this.LblLoc.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.LblLoc, "LblLoc");
             this.LblLoc.Name = "LblLoc";
-            this.helpProvider.SetShowHelp(this.LblLoc, ((bool)(resources.GetObject("LblLoc.ShowHelp"))));
             // 
             // LblCity
             // 
@@ -616,7 +591,6 @@
             this.LblCity.BorderColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.LblCity, "LblCity");
             this.LblCity.Name = "LblCity";
-            this.helpProvider.SetShowHelp(this.LblCity, ((bool)(resources.GetObject("LblCity.ShowHelp"))));
             // 
             // LblWeaComp
             // 
@@ -626,7 +600,6 @@
             this.LblWeaComp.BorderColor = System.Drawing.Color.White;
             resources.ApplyResources(this.LblWeaComp, "LblWeaComp");
             this.LblWeaComp.Name = "LblWeaComp";
-            this.helpProvider.SetShowHelp(this.LblWeaComp, ((bool)(resources.GetObject("LblWeaComp.ShowHelp"))));
             // 
             // LblThreeDay
             // 
@@ -634,7 +607,6 @@
             resources.ApplyResources(this.LblThreeDay, "LblThreeDay");
             this.LblThreeDay.ForeColor = System.Drawing.Color.Black;
             this.LblThreeDay.Name = "LblThreeDay";
-            this.helpProvider.SetShowHelp(this.LblThreeDay, ((bool)(resources.GetObject("LblThreeDay.ShowHelp"))));
             // 
             // LblNextDay
             // 
@@ -642,7 +614,6 @@
             resources.ApplyResources(this.LblNextDay, "LblNextDay");
             this.LblNextDay.ForeColor = System.Drawing.Color.Black;
             this.LblNextDay.Name = "LblNextDay";
-            this.helpProvider.SetShowHelp(this.LblNextDay, ((bool)(resources.GetObject("LblNextDay.ShowHelp"))));
             // 
             // LblWeaSim
             // 
@@ -650,7 +621,6 @@
             resources.ApplyResources(this.LblWeaSim, "LblWeaSim");
             this.LblWeaSim.ForeColor = System.Drawing.Color.Black;
             this.LblWeaSim.Name = "LblWeaSim";
-            this.helpProvider.SetShowHelp(this.LblWeaSim, ((bool)(resources.GetObject("LblWeaSim.ShowHelp"))));
             // 
             // LblWind
             // 
@@ -658,20 +628,17 @@
             this.LblWind.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.LblWind, "LblWind");
             this.LblWind.Name = "LblWind";
-            this.helpProvider.SetShowHelp(this.LblWind, ((bool)(resources.GetObject("LblWind.ShowHelp"))));
             // 
             // pictureBox3
             // 
             resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
-            this.helpProvider.SetShowHelp(this.pictureBox3, ((bool)(resources.GetObject("pictureBox3.ShowHelp"))));
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
-            this.helpProvider.SetShowHelp(this.pictureBox4, ((bool)(resources.GetObject("pictureBox4.ShowHelp"))));
             this.pictureBox4.TabStop = false;
             // 
             // TrainTabpage
@@ -683,8 +650,17 @@
             this.TrainTabpage.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.TrainTabpage, "TrainTabpage");
             this.TrainTabpage.Name = "TrainTabpage";
-            this.helpProvider.SetShowHelp(this.TrainTabpage, ((bool)(resources.GetObject("TrainTabpage.ShowHelp"))));
             this.TrainTabpage.TabItemImage = null;
+            // 
+            // LoadingTicket
+            // 
+            this.LoadingTicket.AutoStart = true;
+            this.LoadingTicket.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.LoadingTicket, "LoadingTicket");
+            this.LoadingTicket.Name = "LoadingTicket";
+            this.LoadingTicket.Percentage = 30F;
+            this.LoadingTicket.ShowText = true;
+            this.LoadingTicket.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
             // 
             // DataGridViewTicket
             // 
@@ -739,7 +715,6 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             this.DataGridViewTicket.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridViewTicket.RowTemplate.Height = 23;
-            this.helpProvider.SetShowHelp(this.DataGridViewTicket, ((bool)(resources.GetObject("DataGridViewTicket.ShowHelp"))));
             this.DataGridViewTicket.TitleBack = null;
             this.DataGridViewTicket.TitleBackColorBegin = System.Drawing.Color.White;
             this.DataGridViewTicket.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
@@ -761,7 +736,6 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox1.Name = "groupBox1";
-            this.helpProvider.SetShowHelp(this.groupBox1, ((bool)(resources.GetObject("groupBox1.ShowHelp"))));
             this.groupBox1.TabStop = false;
             // 
             // LabelQueTime2
@@ -770,7 +744,6 @@
             this.LabelQueTime2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.LabelQueTime2.ForeColor = System.Drawing.Color.Blue;
             this.LabelQueTime2.Name = "LabelQueTime2";
-            this.helpProvider.SetShowHelp(this.LabelQueTime2, ((bool)(resources.GetObject("LabelQueTime2.ShowHelp"))));
             // 
             // BtnTicQuery
             // 
@@ -782,7 +755,6 @@
             this.BtnTicQuery.MouseBack = null;
             this.BtnTicQuery.Name = "BtnTicQuery";
             this.BtnTicQuery.NormlBack = null;
-            this.helpProvider.SetShowHelp(this.BtnTicQuery, ((bool)(resources.GetObject("BtnTicQuery.ShowHelp"))));
             this.BtnTicQuery.UseVisualStyleBackColor = false;
             this.BtnTicQuery.Click += new System.EventHandler(this.BtnTicQuery_Click);
             // 
@@ -801,14 +773,12 @@
             this.RadBtnStuTic.SelectedDownBack = null;
             this.RadBtnStuTic.SelectedMouseBack = null;
             this.RadBtnStuTic.SelectedNormlBack = null;
-            this.helpProvider.SetShowHelp(this.RadBtnStuTic, ((bool)(resources.GetObject("RadBtnStuTic.ShowHelp"))));
             this.RadBtnStuTic.UseVisualStyleBackColor = true;
             // 
             // LabelData
             // 
             resources.ApplyResources(this.LabelData, "LabelData");
             this.LabelData.Name = "LabelData";
-            this.helpProvider.SetShowHelp(this.LabelData, ((bool)(resources.GetObject("LabelData.ShowHelp"))));
             // 
             // RadBtnAdult
             // 
@@ -826,7 +796,6 @@
             this.RadBtnAdult.SelectedDownBack = null;
             this.RadBtnAdult.SelectedMouseBack = null;
             this.RadBtnAdult.SelectedNormlBack = null;
-            this.helpProvider.SetShowHelp(this.RadBtnAdult, ((bool)(resources.GetObject("RadBtnAdult.ShowHelp"))));
             this.RadBtnAdult.TabStop = true;
             this.RadBtnAdult.UseVisualStyleBackColor = true;
             // 
@@ -834,13 +803,11 @@
             // 
             resources.ApplyResources(this.LabelToSta, "LabelToSta");
             this.LabelToSta.Name = "LabelToSta";
-            this.helpProvider.SetShowHelp(this.LabelToSta, ((bool)(resources.GetObject("LabelToSta.ShowHelp"))));
             // 
             // LabelFromSta
             // 
             resources.ApplyResources(this.LabelFromSta, "LabelFromSta");
             this.LabelFromSta.Name = "LabelFromSta";
-            this.helpProvider.SetShowHelp(this.LabelFromSta, ((bool)(resources.GetObject("LabelFromSta.ShowHelp"))));
             // 
             // DateTimeTic
             // 
@@ -853,7 +820,6 @@
             this.DateTimeTic.Items = null;
             resources.ApplyResources(this.DateTimeTic, "DateTimeTic");
             this.DateTimeTic.Name = "DateTimeTic";
-            this.helpProvider.SetShowHelp(this.DateTimeTic, ((bool)(resources.GetObject("DateTimeTic.ShowHelp"))));
             this.DateTimeTic.text = "2001-01-01";
             // 
             // CmoBoxToSta
@@ -862,7 +828,6 @@
             this.CmoBoxToSta.FormattingEnabled = true;
             resources.ApplyResources(this.CmoBoxToSta, "CmoBoxToSta");
             this.CmoBoxToSta.Name = "CmoBoxToSta";
-            this.helpProvider.SetShowHelp(this.CmoBoxToSta, ((bool)(resources.GetObject("CmoBoxToSta.ShowHelp"))));
             this.CmoBoxToSta.WaterText = "到达站";
             // 
             // CmoBoxFromSta
@@ -871,7 +836,6 @@
             this.CmoBoxFromSta.FormattingEnabled = true;
             resources.ApplyResources(this.CmoBoxFromSta, "CmoBoxFromSta");
             this.CmoBoxFromSta.Name = "CmoBoxFromSta";
-            this.helpProvider.SetShowHelp(this.CmoBoxFromSta, ((bool)(resources.GetObject("CmoBoxFromSta.ShowHelp"))));
             this.CmoBoxFromSta.WaterText = "出发站";
             // 
             // TelTabpage
@@ -881,7 +845,6 @@
             this.TelTabpage.Controls.Add(this.groupBox3);
             resources.ApplyResources(this.TelTabpage, "TelTabpage");
             this.TelTabpage.Name = "TelTabpage";
-            this.helpProvider.SetShowHelp(this.TelTabpage, ((bool)(resources.GetObject("TelTabpage.ShowHelp"))));
             this.TelTabpage.TabItemImage = null;
             this.TelTabpage.UseVisualStyleBackColor = true;
             // 
@@ -929,7 +892,6 @@
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             this.DataGridViewTel.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.DataGridViewTel.RowTemplate.Height = 23;
-            this.helpProvider.SetShowHelp(this.DataGridViewTel, ((bool)(resources.GetObject("DataGridViewTel.ShowHelp"))));
             this.DataGridViewTel.TitleBack = null;
             this.DataGridViewTel.TitleBackColorBegin = System.Drawing.Color.White;
             this.DataGridViewTel.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
@@ -949,7 +911,6 @@
             this.groupBox3.Controls.Add(this.LblTelCam);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
-            this.helpProvider.SetShowHelp(this.groupBox3, ((bool)(resources.GetObject("groupBox3.ShowHelp"))));
             this.groupBox3.TabStop = false;
             // 
             // TextBoxTelNum
@@ -971,7 +932,6 @@
             this.TextBoxTelNum.NormlBack = null;
             this.TextBoxTelNum.ReadOnly = false;
             this.TextBoxTelNum.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.helpProvider.SetShowHelp(this.TextBoxTelNum, ((bool)(resources.GetObject("TextBoxTelNum.ShowHelp"))));
             // 
             // 
             // 
@@ -993,7 +953,6 @@
             // 
             resources.ApplyResources(this.LblTel, "LblTel");
             this.LblTel.Name = "LblTel";
-            this.helpProvider.SetShowHelp(this.LblTel, ((bool)(resources.GetObject("LblTel.ShowHelp"))));
             // 
             // BtnTelDel
             // 
@@ -1005,7 +964,6 @@
             this.BtnTelDel.MouseBack = null;
             this.BtnTelDel.Name = "BtnTelDel";
             this.BtnTelDel.NormlBack = null;
-            this.helpProvider.SetShowHelp(this.BtnTelDel, ((bool)(resources.GetObject("BtnTelDel.ShowHelp"))));
             this.BtnTelDel.UseVisualStyleBackColor = false;
             this.BtnTelDel.Click += new System.EventHandler(this.BtnTelDel_Click);
             // 
@@ -1013,13 +971,11 @@
             // 
             resources.ApplyResources(this.LblTelSecDep, "LblTelSecDep");
             this.LblTelSecDep.Name = "LblTelSecDep";
-            this.helpProvider.SetShowHelp(this.LblTelSecDep, ((bool)(resources.GetObject("LblTelSecDep.ShowHelp"))));
             // 
             // TextBoxTelSecDep
             // 
             resources.ApplyResources(this.TextBoxTelSecDep, "TextBoxTelSecDep");
             this.TextBoxTelSecDep.Name = "TextBoxTelSecDep";
-            this.helpProvider.SetShowHelp(this.TextBoxTelSecDep, ((bool)(resources.GetObject("TextBoxTelSecDep.ShowHelp"))));
             // 
             // BtnTelAdd
             // 
@@ -1031,7 +987,6 @@
             this.BtnTelAdd.MouseBack = null;
             this.BtnTelAdd.Name = "BtnTelAdd";
             this.BtnTelAdd.NormlBack = null;
-            this.helpProvider.SetShowHelp(this.BtnTelAdd, ((bool)(resources.GetObject("BtnTelAdd.ShowHelp"))));
             this.BtnTelAdd.UseVisualStyleBackColor = false;
             this.BtnTelAdd.Click += new System.EventHandler(this.BtnTelAdd_Click);
             // 
@@ -1045,7 +1000,6 @@
             this.BtnTelQue.MouseBack = null;
             this.BtnTelQue.Name = "BtnTelQue";
             this.BtnTelQue.NormlBack = null;
-            this.helpProvider.SetShowHelp(this.BtnTelQue, ((bool)(resources.GetObject("BtnTelQue.ShowHelp"))));
             this.BtnTelQue.UseVisualStyleBackColor = false;
             this.BtnTelQue.Click += new System.EventHandler(this.BtnTelQue_Click);
             // 
@@ -1055,7 +1009,6 @@
             this.CmoBoxTelDep.FormattingEnabled = true;
             resources.ApplyResources(this.CmoBoxTelDep, "CmoBoxTelDep");
             this.CmoBoxTelDep.Name = "CmoBoxTelDep";
-            this.helpProvider.SetShowHelp(this.CmoBoxTelDep, ((bool)(resources.GetObject("CmoBoxTelDep.ShowHelp"))));
             this.CmoBoxTelDep.WaterText = "二级单位";
             // 
             // CmoBoxCam
@@ -1067,20 +1020,17 @@
             resources.GetString("CmoBoxCam.Items1")});
             resources.ApplyResources(this.CmoBoxCam, "CmoBoxCam");
             this.CmoBoxCam.Name = "CmoBoxCam";
-            this.helpProvider.SetShowHelp(this.CmoBoxCam, ((bool)(resources.GetObject("CmoBoxCam.ShowHelp"))));
             this.CmoBoxCam.WaterText = "长安/雁塔";
             // 
             // LblTelDep
             // 
             resources.ApplyResources(this.LblTelDep, "LblTelDep");
             this.LblTelDep.Name = "LblTelDep";
-            this.helpProvider.SetShowHelp(this.LblTelDep, ((bool)(resources.GetObject("LblTelDep.ShowHelp"))));
             // 
             // LblTelCam
             // 
             resources.ApplyResources(this.LblTelCam, "LblTelCam");
             this.LblTelCam.Name = "LblTelCam";
-            this.helpProvider.SetShowHelp(this.LblTelCam, ((bool)(resources.GetObject("LblTelCam.ShowHelp"))));
             // 
             // NewsTabpage
             // 
@@ -1091,8 +1041,17 @@
             this.NewsTabpage.Controls.Add(this.groupBox2);
             resources.ApplyResources(this.NewsTabpage, "NewsTabpage");
             this.NewsTabpage.Name = "NewsTabpage";
-            this.helpProvider.SetShowHelp(this.NewsTabpage, ((bool)(resources.GetObject("NewsTabpage.ShowHelp"))));
             this.NewsTabpage.TabItemImage = null;
+            // 
+            // LoadingNews
+            // 
+            this.LoadingNews.AutoStart = true;
+            this.LoadingNews.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.LoadingNews, "LoadingNews");
+            this.LoadingNews.Name = "LoadingNews";
+            this.LoadingNews.Percentage = 30F;
+            this.LoadingNews.ShowText = true;
+            this.LoadingNews.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
             // 
             // DataGridViewNotice
             // 
@@ -1139,7 +1098,6 @@
             dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             this.DataGridViewNotice.RowsDefaultCellStyle = dataGridViewCellStyle13;
             this.DataGridViewNotice.RowTemplate.Height = 23;
-            this.helpProvider.SetShowHelp(this.DataGridViewNotice, ((bool)(resources.GetObject("DataGridViewNotice.ShowHelp"))));
             this.DataGridViewNotice.TitleBack = null;
             this.DataGridViewNotice.TitleBackColorBegin = System.Drawing.Color.White;
             this.DataGridViewNotice.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
@@ -1157,7 +1115,6 @@
             this.groupBox2.Controls.Add(this.LblNoticeType);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
-            this.helpProvider.SetShowHelp(this.groupBox2, ((bool)(resources.GetObject("groupBox2.ShowHelp"))));
             this.groupBox2.TabStop = false;
             // 
             // BtnUpdNotice
@@ -1169,7 +1126,6 @@
             this.BtnUpdNotice.MouseBack = null;
             this.BtnUpdNotice.Name = "BtnUpdNotice";
             this.BtnUpdNotice.NormlBack = null;
-            this.helpProvider.SetShowHelp(this.BtnUpdNotice, ((bool)(resources.GetObject("BtnUpdNotice.ShowHelp"))));
             this.BtnUpdNotice.UseVisualStyleBackColor = false;
             this.BtnUpdNotice.Click += new System.EventHandler(this.BtnUpdNotice_Click);
             // 
@@ -1182,7 +1138,6 @@
             this.BtnQueNotice.MouseBack = null;
             this.BtnQueNotice.Name = "BtnQueNotice";
             this.BtnQueNotice.NormlBack = null;
-            this.helpProvider.SetShowHelp(this.BtnQueNotice, ((bool)(resources.GetObject("BtnQueNotice.ShowHelp"))));
             this.BtnQueNotice.UseVisualStyleBackColor = false;
             this.BtnQueNotice.Click += new System.EventHandler(this.BtnQueNotice_Click);
             // 
@@ -1195,14 +1150,12 @@
             resources.GetString("CmoBoxNotDep.Items1")});
             resources.ApplyResources(this.CmoBoxNotDep, "CmoBoxNotDep");
             this.CmoBoxNotDep.Name = "CmoBoxNotDep";
-            this.helpProvider.SetShowHelp(this.CmoBoxNotDep, ((bool)(resources.GetObject("CmoBoxNotDep.ShowHelp"))));
             this.CmoBoxNotDep.WaterText = "二级单位";
             // 
             // LblDate
             // 
             resources.ApplyResources(this.LblDate, "LblDate");
             this.LblDate.Name = "LblDate";
-            this.helpProvider.SetShowHelp(this.LblDate, ((bool)(resources.GetObject("LblDate.ShowHelp"))));
             // 
             // CmoBoxNotType
             // 
@@ -1213,14 +1166,12 @@
             resources.GetString("CmoBoxNotType.Items1")});
             resources.ApplyResources(this.CmoBoxNotType, "CmoBoxNotType");
             this.CmoBoxNotType.Name = "CmoBoxNotType";
-            this.helpProvider.SetShowHelp(this.CmoBoxNotType, ((bool)(resources.GetObject("CmoBoxNotType.ShowHelp"))));
             this.CmoBoxNotType.WaterText = "新闻/通知";
             // 
             // LblNoticeDep
             // 
             resources.ApplyResources(this.LblNoticeDep, "LblNoticeDep");
             this.LblNoticeDep.Name = "LblNoticeDep";
-            this.helpProvider.SetShowHelp(this.LblNoticeDep, ((bool)(resources.GetObject("LblNoticeDep.ShowHelp"))));
             // 
             // DateTImePicNotice
             // 
@@ -1233,14 +1184,12 @@
             this.DateTImePicNotice.Items = null;
             resources.ApplyResources(this.DateTImePicNotice, "DateTImePicNotice");
             this.DateTImePicNotice.Name = "DateTImePicNotice";
-            this.helpProvider.SetShowHelp(this.DateTImePicNotice, ((bool)(resources.GetObject("DateTImePicNotice.ShowHelp"))));
             this.DateTImePicNotice.text = "";
             // 
             // LblNoticeType
             // 
             resources.ApplyResources(this.LblNoticeType, "LblNoticeType");
             this.LblNoticeType.Name = "LblNoticeType";
-            this.helpProvider.SetShowHelp(this.LblNoticeType, ((bool)(resources.GetObject("LblNoticeType.ShowHelp"))));
             // 
             // EmailTabpage
             // 
@@ -1249,7 +1198,6 @@
             this.EmailTabpage.Controls.Add(this.groupBox4);
             resources.ApplyResources(this.EmailTabpage, "EmailTabpage");
             this.EmailTabpage.Name = "EmailTabpage";
-            this.helpProvider.SetShowHelp(this.EmailTabpage, ((bool)(resources.GetObject("EmailTabpage.ShowHelp"))));
             this.EmailTabpage.TabItemImage = null;
             // 
             // GupBoxEmailSetting
@@ -1268,14 +1216,12 @@
             this.GupBoxEmailSetting.Controls.Add(this.LblEmailPort);
             resources.ApplyResources(this.GupBoxEmailSetting, "GupBoxEmailSetting");
             this.GupBoxEmailSetting.Name = "GupBoxEmailSetting";
-            this.helpProvider.SetShowHelp(this.GupBoxEmailSetting, ((bool)(resources.GetObject("GupBoxEmailSetting.ShowHelp"))));
             this.GupBoxEmailSetting.TabStop = false;
             // 
             // LblMailHost
             // 
             resources.ApplyResources(this.LblMailHost, "LblMailHost");
             this.LblMailHost.Name = "LblMailHost";
-            this.helpProvider.SetShowHelp(this.LblMailHost, ((bool)(resources.GetObject("LblMailHost.ShowHelp"))));
             // 
             // CmoBoxMailHost
             // 
@@ -1286,37 +1232,31 @@
             resources.GetString("CmoBoxMailHost.Items"),
             resources.GetString("CmoBoxMailHost.Items1")});
             this.CmoBoxMailHost.Name = "CmoBoxMailHost";
-            this.helpProvider.SetShowHelp(this.CmoBoxMailHost, ((bool)(resources.GetObject("CmoBoxMailHost.ShowHelp"))));
             // 
             // TextBoxPwd
             // 
             resources.ApplyResources(this.TextBoxPwd, "TextBoxPwd");
             this.TextBoxPwd.Name = "TextBoxPwd";
-            this.helpProvider.SetShowHelp(this.TextBoxPwd, ((bool)(resources.GetObject("TextBoxPwd.ShowHelp"))));
             // 
             // LblMailFromPwd
             // 
             resources.ApplyResources(this.LblMailFromPwd, "LblMailFromPwd");
             this.LblMailFromPwd.Name = "LblMailFromPwd";
-            this.helpProvider.SetShowHelp(this.LblMailFromPwd, ((bool)(resources.GetObject("LblMailFromPwd.ShowHelp"))));
             // 
             // TextBoxMailFromName
             // 
             resources.ApplyResources(this.TextBoxMailFromName, "TextBoxMailFromName");
             this.TextBoxMailFromName.Name = "TextBoxMailFromName";
-            this.helpProvider.SetShowHelp(this.TextBoxMailFromName, ((bool)(resources.GetObject("TextBoxMailFromName.ShowHelp"))));
             // 
             // TextBoxMailFrom
             // 
             resources.ApplyResources(this.TextBoxMailFrom, "TextBoxMailFrom");
             this.TextBoxMailFrom.Name = "TextBoxMailFrom";
-            this.helpProvider.SetShowHelp(this.TextBoxMailFrom, ((bool)(resources.GetObject("TextBoxMailFrom.ShowHelp"))));
             // 
             // LblFromWho
             // 
             resources.ApplyResources(this.LblFromWho, "LblFromWho");
             this.LblFromWho.Name = "LblFromWho";
-            this.helpProvider.SetShowHelp(this.LblFromWho, ((bool)(resources.GetObject("LblFromWho.ShowHelp"))));
             // 
             // CmoBoxPrior
             // 
@@ -1328,25 +1268,21 @@
             resources.GetString("CmoBoxPrior.Items1"),
             resources.GetString("CmoBoxPrior.Items2")});
             this.CmoBoxPrior.Name = "CmoBoxPrior";
-            this.helpProvider.SetShowHelp(this.CmoBoxPrior, ((bool)(resources.GetObject("CmoBoxPrior.ShowHelp"))));
             // 
             // lblPrior
             // 
             resources.ApplyResources(this.lblPrior, "lblPrior");
             this.lblPrior.Name = "lblPrior";
-            this.helpProvider.SetShowHelp(this.lblPrior, ((bool)(resources.GetObject("lblPrior.ShowHelp"))));
             // 
             // LblMailFrom
             // 
             resources.ApplyResources(this.LblMailFrom, "LblMailFrom");
             this.LblMailFrom.Name = "LblMailFrom";
-            this.helpProvider.SetShowHelp(this.LblMailFrom, ((bool)(resources.GetObject("LblMailFrom.ShowHelp"))));
             // 
             // NumUpDownPort
             // 
             resources.ApplyResources(this.NumUpDownPort, "NumUpDownPort");
             this.NumUpDownPort.Name = "NumUpDownPort";
-            this.helpProvider.SetShowHelp(this.NumUpDownPort, ((bool)(resources.GetObject("NumUpDownPort.ShowHelp"))));
             this.NumUpDownPort.Value = new decimal(new int[] {
             25,
             0,
@@ -1357,7 +1293,6 @@
             // 
             resources.ApplyResources(this.LblEmailPort, "LblEmailPort");
             this.LblEmailPort.Name = "LblEmailPort";
-            this.helpProvider.SetShowHelp(this.LblEmailPort, ((bool)(resources.GetObject("LblEmailPort.ShowHelp"))));
             // 
             // groupBox4
             // 
@@ -1370,8 +1305,17 @@
             this.groupBox4.Controls.Add(this.RichTextBoxBodey);
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
-            this.helpProvider.SetShowHelp(this.groupBox4, ((bool)(resources.GetObject("groupBox4.ShowHelp"))));
             this.groupBox4.TabStop = false;
+            // 
+            // LoadingEmail
+            // 
+            this.LoadingEmail.AutoStart = true;
+            this.LoadingEmail.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.LoadingEmail, "LoadingEmail");
+            this.LoadingEmail.Name = "LoadingEmail";
+            this.LoadingEmail.Percentage = 30F;
+            this.LoadingEmail.ShowText = true;
+            this.LoadingEmail.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
             // 
             // BtnSendMail
             // 
@@ -1382,36 +1326,28 @@
             this.BtnSendMail.MouseBack = null;
             this.BtnSendMail.Name = "BtnSendMail";
             this.BtnSendMail.NormlBack = null;
-            this.helpProvider.SetShowHelp(this.BtnSendMail, ((bool)(resources.GetObject("BtnSendMail.ShowHelp"))));
             this.BtnSendMail.UseVisualStyleBackColor = false;
             this.BtnSendMail.Click += new System.EventHandler(this.BtnSendMail_Click);
             // 
             // TextBoxMailTo
             // 
-            this.helpProvider.SetHelpKeyword(this.TextBoxMailTo, resources.GetString("TextBoxMailTo.HelpKeyword"));
-            this.helpProvider.SetHelpNavigator(this.TextBoxMailTo, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("TextBoxMailTo.HelpNavigator"))));
-            this.helpProvider.SetHelpString(this.TextBoxMailTo, resources.GetString("TextBoxMailTo.HelpString"));
             resources.ApplyResources(this.TextBoxMailTo, "TextBoxMailTo");
             this.TextBoxMailTo.Name = "TextBoxMailTo";
-            this.helpProvider.SetShowHelp(this.TextBoxMailTo, ((bool)(resources.GetObject("TextBoxMailTo.ShowHelp"))));
             // 
             // LblMailto
             // 
             resources.ApplyResources(this.LblMailto, "LblMailto");
             this.LblMailto.Name = "LblMailto";
-            this.helpProvider.SetShowHelp(this.LblMailto, ((bool)(resources.GetObject("LblMailto.ShowHelp"))));
             // 
             // LblSubject
             // 
             resources.ApplyResources(this.LblSubject, "LblSubject");
             this.LblSubject.Name = "LblSubject";
-            this.helpProvider.SetShowHelp(this.LblSubject, ((bool)(resources.GetObject("LblSubject.ShowHelp"))));
             // 
             // EmailSubject
             // 
             resources.ApplyResources(this.EmailSubject, "EmailSubject");
             this.EmailSubject.Name = "EmailSubject";
-            this.helpProvider.SetShowHelp(this.EmailSubject, ((bool)(resources.GetObject("EmailSubject.ShowHelp"))));
             // 
             // UserTabPage
             // 
@@ -1420,7 +1356,6 @@
             this.UserTabPage.Controls.Add(this.DataGridViewUser);
             resources.ApplyResources(this.UserTabPage, "UserTabPage");
             this.UserTabPage.Name = "UserTabPage";
-            this.helpProvider.SetShowHelp(this.UserTabPage, ((bool)(resources.GetObject("UserTabPage.ShowHelp"))));
             this.UserTabPage.TabItemImage = null;
             // 
             // GupBoxUserMag
@@ -1431,14 +1366,12 @@
             this.GupBoxUserMag.Controls.Add(this.TextBoxUsername);
             resources.ApplyResources(this.GupBoxUserMag, "GupBoxUserMag");
             this.GupBoxUserMag.Name = "GupBoxUserMag";
-            this.helpProvider.SetShowHelp(this.GupBoxUserMag, ((bool)(resources.GetObject("GupBoxUserMag.ShowHelp"))));
             this.GupBoxUserMag.TabStop = false;
             // 
             // LblUsername
             // 
             resources.ApplyResources(this.LblUsername, "LblUsername");
             this.LblUsername.Name = "LblUsername";
-            this.helpProvider.SetShowHelp(this.LblUsername, ((bool)(resources.GetObject("LblUsername.ShowHelp"))));
             // 
             // BtnUserQue
             // 
@@ -1449,7 +1382,6 @@
             this.BtnUserQue.MouseBack = null;
             this.BtnUserQue.Name = "BtnUserQue";
             this.BtnUserQue.NormlBack = null;
-            this.helpProvider.SetShowHelp(this.BtnUserQue, ((bool)(resources.GetObject("BtnUserQue.ShowHelp"))));
             this.BtnUserQue.UseVisualStyleBackColor = false;
             this.BtnUserQue.Click += new System.EventHandler(this.BtnUserQue_Click);
             // 
@@ -1462,7 +1394,6 @@
             this.BtnUserDel.MouseBack = null;
             this.BtnUserDel.Name = "BtnUserDel";
             this.BtnUserDel.NormlBack = null;
-            this.helpProvider.SetShowHelp(this.BtnUserDel, ((bool)(resources.GetObject("BtnUserDel.ShowHelp"))));
             this.BtnUserDel.UseVisualStyleBackColor = false;
             this.BtnUserDel.Click += new System.EventHandler(this.BtnUserDel_Click);
             // 
@@ -1470,7 +1401,6 @@
             // 
             resources.ApplyResources(this.TextBoxUsername, "TextBoxUsername");
             this.TextBoxUsername.Name = "TextBoxUsername";
-            this.helpProvider.SetShowHelp(this.TextBoxUsername, ((bool)(resources.GetObject("TextBoxUsername.ShowHelp"))));
             // 
             // DataGridViewUser
             // 
@@ -1517,7 +1447,6 @@
             dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             this.DataGridViewUser.RowsDefaultCellStyle = dataGridViewCellStyle17;
             this.DataGridViewUser.RowTemplate.Height = 23;
-            this.helpProvider.SetShowHelp(this.DataGridViewUser, ((bool)(resources.GetObject("DataGridViewUser.ShowHelp"))));
             this.DataGridViewUser.TitleBack = null;
             this.DataGridViewUser.TitleBackColorBegin = System.Drawing.Color.White;
             this.DataGridViewUser.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
@@ -1527,7 +1456,6 @@
             this.ExitTabPage.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.ExitTabPage, "ExitTabPage");
             this.ExitTabPage.Name = "ExitTabPage";
-            this.helpProvider.SetShowHelp(this.ExitTabPage, ((bool)(resources.GetObject("ExitTabPage.ShowHelp"))));
             this.ExitTabPage.TabItemImage = null;
             // 
             // imageList
@@ -1550,45 +1478,11 @@
             // 
             this.TimerClock.Tick += new System.EventHandler(this.TimerClock_Tick);
             // 
-            // LoadingEmail
-            // 
-            this.LoadingEmail.AutoStart = true;
-            this.LoadingEmail.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.LoadingEmail, "LoadingEmail");
-            this.LoadingEmail.Name = "LoadingEmail";
-            this.LoadingEmail.Percentage = 30F;
-            this.helpProvider.SetShowHelp(this.LoadingEmail, ((bool)(resources.GetObject("LoadingEmail.ShowHelp"))));
-            this.LoadingEmail.ShowText = true;
-            this.LoadingEmail.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
-            // 
-            // LoadingNews
-            // 
-            this.LoadingNews.AutoStart = true;
-            this.LoadingNews.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.LoadingNews, "LoadingNews");
-            this.LoadingNews.Name = "LoadingNews";
-            this.LoadingNews.Percentage = 30F;
-            this.helpProvider.SetShowHelp(this.LoadingNews, ((bool)(resources.GetObject("LoadingNews.ShowHelp"))));
-            this.LoadingNews.ShowText = true;
-            this.LoadingNews.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
-            // 
-            // LoadingTicket
-            // 
-            this.LoadingTicket.AutoStart = true;
-            this.LoadingTicket.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.LoadingTicket, "LoadingTicket");
-            this.LoadingTicket.Name = "LoadingTicket";
-            this.LoadingTicket.Percentage = 30F;
-            this.helpProvider.SetShowHelp(this.LoadingTicket, ((bool)(resources.GetObject("LoadingTicket.ShowHelp"))));
-            this.LoadingTicket.ShowText = true;
-            this.LoadingTicket.TextDisplay = CCWin.SkinControl.TextDisplayModes.Text;
-            // 
             // FindPwd
             // 
             this.FindPwd.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             resources.ApplyResources(this.FindPwd, "FindPwd");
             this.FindPwd.Name = "FindPwd";
-            this.helpProvider.SetShowHelp(this.FindPwd, ((bool)(resources.GetObject("FindPwd.ShowHelp"))));
             // 
             // MainForm
             // 
@@ -1611,7 +1505,6 @@
             this.MiniMouseBack = ((System.Drawing.Image)(resources.GetObject("$this.MiniMouseBack")));
             this.MiniNormlBack = ((System.Drawing.Image)(resources.GetObject("$this.MiniNormlBack")));
             this.Name = "MainForm";
-            this.helpProvider.SetShowHelp(this, ((bool)(resources.GetObject("$this.ShowHelp"))));
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             cmSysButton1.Bounds = new System.Drawing.Rectangle(760, 0, 20, 20);
             cmSysButton1.BoxState = CCWin.ControlBoxState.Normal;
@@ -1780,7 +1673,6 @@
         private System.Windows.Forms.Label LblMailHost;
         private System.Windows.Forms.Label LblMailto;
         private System.Windows.Forms.TextBox TextBoxMailTo;
-        private System.Windows.Forms.HelpProvider helpProvider;
         private CCWin.SkinControl.SkinButton BtnSendMail;
         private Login.FindPassword FindPwd;
         private System.Windows.Forms.ToolStripMenuItem TopMost;

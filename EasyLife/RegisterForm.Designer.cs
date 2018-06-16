@@ -326,8 +326,28 @@
             this.CmoBoxSchool.ItemBorderColor = System.Drawing.Color.DodgerBlue;
             this.CmoBoxSchool.ItemHeight = 25;
             this.CmoBoxSchool.Items.AddRange(new object[] {
-            "男",
-            "女"});
+            "计算机科学学院",
+            "学生处",
+            "教务处",
+            "图书馆",
+            "马克思主义学院",
+            "文学院",
+            "历史文化学院",
+            "教育学院",
+            "心理学院",
+            "外国语学院",
+            "数学与信息科学学院",
+            "物理学与信息技术学院",
+            "化学化工学院",
+            "材料科学与工程学院",
+            "生命科学学院",
+            "地理科学与旅游学院",
+            "\"新闻与传播学院",
+            "体育学院",
+            "音乐学院",
+            "美术学院",
+            "国际商学院",
+            "食品工程与营养科学学院"});
             this.CmoBoxSchool.Location = new System.Drawing.Point(212, 191);
             this.CmoBoxSchool.Name = "CmoBoxSchool";
             this.CmoBoxSchool.Size = new System.Drawing.Size(194, 31);
@@ -383,8 +403,12 @@
             this.CmoBoxForQue.ItemBorderColor = System.Drawing.Color.DodgerBlue;
             this.CmoBoxForQue.ItemHeight = 25;
             this.CmoBoxForQue.Items.AddRange(new object[] {
-            "男",
-            "女"});
+            "我的出生地是？",
+            "我的学号是？",
+            "我母亲的生日是？",
+            "我父亲的生日是？",
+            "我配偶的姓名是？",
+            "我最熟悉的学校宿舍舍友是？"});
             this.CmoBoxForQue.Location = new System.Drawing.Point(212, 277);
             this.CmoBoxForQue.Name = "CmoBoxForQue";
             this.CmoBoxForQue.Size = new System.Drawing.Size(194, 31);
@@ -405,9 +429,6 @@
             this.CmoBoxForAns.IntegralHeight = false;
             this.CmoBoxForAns.ItemBorderColor = System.Drawing.Color.DodgerBlue;
             this.CmoBoxForAns.ItemHeight = 25;
-            this.CmoBoxForAns.Items.AddRange(new object[] {
-            "男",
-            "女"});
             this.CmoBoxForAns.Location = new System.Drawing.Point(212, 320);
             this.CmoBoxForAns.Name = "CmoBoxForAns";
             this.CmoBoxForAns.Size = new System.Drawing.Size(194, 31);

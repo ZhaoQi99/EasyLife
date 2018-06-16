@@ -37,22 +37,22 @@ namespace EasyLife.DAL
         public static bool Exists(string sql)
         {
             object obj = ExecuteScalar(sql);
-            int cmdresult;
+            string cmdresult;
             if ((Object.Equals(obj, null)) || (Object.Equals(obj, System.DBNull.Value)))
-                cmdresult = 0;
+                cmdresult = string.Empty;
             else
-                cmdresult = 1;
-            return cmdresult != 0;
+                cmdresult = Convert.ToString(obj);
+            return cmdresult != "0";
         }
         public static bool Exists(string sql, OleDbParameter[] parameters)
         {
             object obj = ExecuteScalar(sql, parameters);
-            int cmdresult;
+            string cmdresult;
             if ((Object.Equals(obj, null)) || (Object.Equals(obj, System.DBNull.Value)))
-                cmdresult = 0;
+                cmdresult = string.Empty;
             else
-                cmdresult = 1;
-            return cmdresult != 0;
+                cmdresult = Convert.ToString(obj);
+            return cmdresult != "0";
         }
         public static object ExecuteScalar(string SQLString)
         {
@@ -69,7 +69,7 @@ namespace EasyLife.DAL
                         else
                             return obj;
                     }
-                    catch (OleDbException e)
+                    catch (Exception e)
                     {
                         connection.Close();
                         MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -94,7 +94,7 @@ namespace EasyLife.DAL
                         else
                             return obj;
                     }
-                    catch (OleDbException e)
+                    catch (Exception e)
                     {
                         connection.Close();
                         MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -115,7 +115,7 @@ namespace EasyLife.DAL
                         int n = cmd.ExecuteNonQuery();
                         return n;
                     }
-                    catch (OleDbException e)
+                    catch (Exception e)
                     {
                         connection.Close();
                         MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -137,7 +137,7 @@ namespace EasyLife.DAL
                         cmd.Parameters.Clear();
                         return Convert.ToInt32(n);//
                     }
-                    catch (OleDbException e)
+                    catch (Exception e)
                     {
                         MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -168,10 +168,10 @@ namespace EasyLife.DAL
                     }
                     tx.Commit();
                 }
-                catch (System.Data.OleDb.OleDbException E)
+                catch (Exception e)
                 {
                     tx.Rollback();
-                    throw new Exception(E.Message);
+                    MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 return count;
             }
@@ -210,7 +210,7 @@ namespace EasyLife.DAL
                     command.Fill(ds, TabName);
                     connection.Close();
                 }
-                catch (OleDbException e)
+                catch (Exception e)
                 {
                     MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -228,7 +228,7 @@ namespace EasyLife.DAL
                 cmd.Parameters.Clear();
                 return myReader;
             }
-            catch (OleDbException e)
+            catch (Exception e)
             {
                 MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -245,7 +245,7 @@ namespace EasyLife.DAL
                 OleDbDataReader myReader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
                 return myReader;
             }
-            catch (OleDbException e)
+            catch (Exception e)
             {
                 MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

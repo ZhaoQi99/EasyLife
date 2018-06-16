@@ -63,6 +63,7 @@ namespace EasyLife
             LoadingEmail.Hide();
             LoadingNews.Hide();
             LoadingTicket.Hide();
+
         }
         #endregion
 
@@ -96,7 +97,7 @@ namespace EasyLife
         #endregion
 
         #region 自定义系统按钮的点击事件
-        private void MainForm_SysBottomClick(object sender, CCWin.SkinControl.SysButtonEventArgs e)
+        private void MainForm_SysBottomClick(object sender, SysButtonEventArgs e)
         {
             Point loc = PointToScreen(e.SysButton.Location);//获得弹出坐标
             loc.Y += e.SysButton.Size.Height + 1;
@@ -240,9 +241,10 @@ namespace EasyLife
                             CmoBoxToSta.Items.Add(s);
                         }
                     }
-                    catch (Exception)
+                    catch (Exception ee)
                     {
-
+                        Log.Write(ee.Message, "Exception");
+                        MessageBox.Show(ee.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     Exist[1] = true;
                 }
@@ -265,7 +267,7 @@ namespace EasyLife
                 if (u.UserName != "Admin")
                 {
                     TabShow.SelectedIndex = selectindex;
-                    MessageBoxEx.Show("无权访问!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("无权访问!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
             }
@@ -459,7 +461,7 @@ namespace EasyLife
             }
             catch (Exception e)
             {
-                BLL.Log.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + e.Message, "Exception");
+                BLL.Log.Write( e.Message, "Exception");
                 MessageBoxEx.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 

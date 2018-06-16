@@ -32,6 +32,7 @@ namespace EasyLife
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
+            CCWin.CmSysButton cmSysButton1 = new CCWin.CmSysButton();
             this.SecCodePic = new CCWin.SkinControl.SkinPictureBox();
             this.TextId = new CCWin.SkinControl.SkinTextBox();
             this.BtnId = new CCWin.SkinControl.SkinButton();
@@ -41,6 +42,7 @@ namespace EasyLife
             this.BtnRegister = new CCWin.SkinControl.SkinButton();
             this.BtnForgetPwd = new CCWin.SkinControl.SkinButton();
             this.SecCodeText = new CCWin.SkinControl.SkinTextBox();
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.ForgetPassword = new EasyLife.Login.ForgetPassword();
             this.FindPwd = new EasyLife.Login.FindPassword();
             ((System.ComponentModel.ISupportInitialize)(this.SecCodePic)).BeginInit();
@@ -88,6 +90,7 @@ namespace EasyLife
             this.TextId.SkinTxt.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
             this.TextId.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.TextId.SkinTxt.WaterText = "用户名";
+            this.TextId.TabStop = true;
             this.TextId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextId.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.TextId.WaterText = "用户名";
@@ -141,6 +144,7 @@ namespace EasyLife
             this.TextPwd.SkinTxt.TabIndex = ((int)(resources.GetObject("resource.TabIndex1")));
             this.TextPwd.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.TextPwd.SkinTxt.WaterText = "密码";
+            this.TextPwd.TabStop = true;
             this.TextPwd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextPwd.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.TextPwd.WaterText = "密码";
@@ -226,10 +230,15 @@ namespace EasyLife
             this.SecCodeText.SkinTxt.TabIndex = ((int)(resources.GetObject("resource.TabIndex2")));
             this.SecCodeText.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.SecCodeText.SkinTxt.WaterText = " 验证码";
+            this.SecCodeText.TabStop = true;
             this.SecCodeText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.SecCodeText.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.SecCodeText.WaterText = " 验证码";
             this.SecCodeText.WordWrap = true;
+            // 
+            // notifyIcon
+            // 
+            resources.ApplyResources(this.notifyIcon, "notifyIcon");
             // 
             // ForgetPassword
             // 
@@ -258,8 +267,8 @@ namespace EasyLife
             this.CloseDownBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseDownBack")));
             this.CloseMouseBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseMouseBack")));
             this.CloseNormlBack = ((System.Drawing.Image)(resources.GetObject("$this.CloseNormlBack")));
-            this.Controls.Add(this.FindPwd);
             this.Controls.Add(this.ForgetPassword);
+            this.Controls.Add(this.FindPwd);
             this.Controls.Add(this.SecCodeText);
             this.Controls.Add(this.BtnForgetPwd);
             this.Controls.Add(this.BtnRegister);
@@ -276,6 +285,18 @@ namespace EasyLife
             this.MobileApi = false;
             this.Name = "LoginForm";
             this.ShowDrawIcon = false;
+            cmSysButton1.Bounds = new System.Drawing.Rectangle(486, 0, 28, 20);
+            cmSysButton1.BoxState = CCWin.ControlBoxState.Normal;
+            cmSysButton1.Location = new System.Drawing.Point(486, 0);
+            cmSysButton1.Name = "Help";
+            cmSysButton1.OwnerForm = this;
+            cmSysButton1.SysButtonDown = ((System.Drawing.Image)(resources.GetObject("cmSysButton1.SysButtonDown")));
+            cmSysButton1.SysButtonMouse = ((System.Drawing.Image)(resources.GetObject("cmSysButton1.SysButtonMouse")));
+            cmSysButton1.SysButtonNorml = ((System.Drawing.Image)(resources.GetObject("cmSysButton1.SysButtonNorml")));
+            cmSysButton1.ToolTip = "帮助";
+            this.SysButtonItems.AddRange(new CCWin.CmSysButton[] {
+            cmSysButton1});
+            this.SysBottomClick += new CCWin.CCSkinMain.SysBottomEventHandler(this.LoginForm_SysBottomClick);
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SecCodePic)).EndInit();
             this.TextId.ResumeLayout(false);
@@ -296,5 +317,6 @@ namespace EasyLife
         private CCWin.SkinControl.SkinTextBox SecCodeText;
         private Login.ForgetPassword ForgetPassword;
         private Login.FindPassword FindPwd;
+        private System.Windows.Forms.NotifyIcon notifyIcon;
     }
 }

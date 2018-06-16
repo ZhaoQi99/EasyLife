@@ -27,7 +27,7 @@ namespace EasyLife.DAL
         public bool Check(string username, string password)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append("select * from [User]");
+            strSql.Append("select  count(*) from [User]");
             strSql.Append(" where UserName=" + "'" + username + "' ");
             strSql.Append("AND Password='" + password + "' ");
             return SqlHelper.Exists(strSql.ToString());

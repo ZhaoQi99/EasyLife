@@ -12,7 +12,9 @@ namespace EasyLife.Login
 {
     public partial class ForgetPassword : UserControl
     {
-        private DialogResult diglog;
+        private DialogResult diglog=DialogResult.None;
+
+        public FindPassword findpassword;
         public DialogResult Diglog
         {
             get { return diglog; }
@@ -28,6 +30,7 @@ namespace EasyLife.Login
         {
             this.Diglog = DialogResult.OK;
             this.Visible = false;
+            findpassword.Show();
         }
         private void SetStyles()
         {

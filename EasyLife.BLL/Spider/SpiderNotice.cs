@@ -54,7 +54,7 @@ namespace EasyLife.Spider
             }
             catch (Exception e)
             {
-                BLL.Log.Write(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ") + e.Message, "Exception");
+                BLL.Log.Write(e.Message, "Exception");
                 MessageBox.Show(e.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

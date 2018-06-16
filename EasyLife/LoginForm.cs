@@ -18,22 +18,26 @@ namespace EasyLife
     {
         #region 变量
         SecurityCode securitycode;
-        public EasyLife.BLL.User user = new EasyLife.BLL.User();
+        public BLL.User user = new EasyLife.BLL.User();
+
         #endregion
         public LoginForm()
         {
             InitializeComponent();
             securitycode = new SecurityCode(4);
+
         }
         #region 窗口加载
         private void Login_Load(object sender, EventArgs e)
         {
+            notifyIcon.ShowBalloonTip(500, "欢迎使用EasyLife", "如果您在使用过程中遇到任何问题,可以单击右上角的帮助按钮哦!", ToolTipIcon.Info);
             securitycode.UpdateVerifyCode();
             SecCodePic.Image = securitycode.getImage();
             ForgetPassword.Left = (this.Width - ForgetPassword.Width) / 2;//还原位置
             ForgetPassword.Visible = false;
-            FindPwd.Left= (this.Width - ForgetPassword.Width) / 2;//还原位置
+            FindPwd.Left = (this.Width - ForgetPassword.Width) / 2;//还原位置
             FindPwd.Visible = false;
+            ForgetPassword.findpassword = FindPwd;
         }
         #endregion
 
@@ -82,8 +86,9 @@ namespace EasyLife
             if (user.Check(TextId.Text, TextPwd.Text) == true)//密码正确
             {
                 Model.User u = user.GetModel(TextId.Text);
-                new MainForm(u).Show();
                 this.Hide();
+                new MainForm(u).Show();
+                notifyIcon.ShowBalloonTip(500, "登录成功!", "欢迎你!\n来自"+u.School+"的用户！", ToolTipIcon.Info);
                 return;
             }
             else//密码错误
@@ -112,6 +117,20 @@ namespace EasyLife
         private void BtnForgetPwd_Click(object sender, EventArgs e)
         {
             FindPwd.Show();
+        }
+        #endregion
+
+        #region 系统自定义按钮事件
+        private void LoginForm_SysBottomClick(object sender, SysButtonEventArgs e)
+        {
+            if (e.SysButton.Name == "Help")
+            {
+                string now = Environment.CurrentDirectory;
+                if (System.IO.File.Exists(now + "/help.chm") == false)
+                    MessageBoxEx.Show("帮助文档不存在!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                    System.Diagnostics.Process.Start(now + "/Help.chm");
+            }
         }
         #endregion
     }

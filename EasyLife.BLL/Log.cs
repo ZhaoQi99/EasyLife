@@ -17,7 +17,7 @@ namespace EasyLife.BLL
                 Directory.CreateDirectory(Application.StartupPath + "/Log");//创建新路径
             FileStream fs = new FileStream(Application.StartupPath + "/Log/" + type + "_Log.log", FileMode.Append);
             StreamWriter sw = new StreamWriter(fs, Encoding.Default);
-            sw.WriteLine(text);
+            sw.WriteLine(DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss ")+ text);
             sw.Close();
         }
     }
