@@ -26,5 +26,6 @@ namespace EasyLife
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginForm());
         }
+
     }
 }

@@ -90,7 +90,6 @@ namespace EasyLife
             this.TextId.SkinTxt.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
             this.TextId.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.TextId.SkinTxt.WaterText = "用户名";
-            this.TextId.TabStop = true;
             this.TextId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.TextId.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.TextId.WaterText = "用户名";

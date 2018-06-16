@@ -2,20 +2,13 @@
 using CCWin.SkinControl;
 using EasyLife.BLL;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
-using System.Xml.Linq;
 
 namespace EasyLife
 {
@@ -260,6 +253,19 @@ namespace EasyLife
                         CmoBoxTelDep.Items.Add(s);
                     }
                     Exist[2] = true;
+                }
+            }
+            if (TabShow.SelectedIndex == 3)
+            {
+                if (Exist[3] == false)
+                {
+                    string[] AllDep = notice.QueryDep();
+                    for (int i = 0; i < AllDep.Length; i++)
+                    {
+                        string s = AllDep[i];
+                        CmoBoxNotDep.Items.Add(s);
+                    }
+                    Exist[3] = true;
                 }
             }
             if (TabShow.SelectedIndex == 5)

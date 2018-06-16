@@ -150,8 +150,8 @@ namespace EasyLife.DAL
                 model.UserName = reader.GetValue(0).ToString();
                 model.PassWord = reader.GetValue(1).ToString();
                 model.Email = reader.GetValue(2).ToString();
-                model.School = reader.GetValue(3).ToString();
-                model.Tel = reader.GetValue(4).ToString();
+                model.Tel = reader.GetValue(3).ToString();
+                model.School = reader.GetValue(4).ToString();
                 model.Sex = reader.GetValue(5).ToString();
                 model.ForgetQue = reader.GetValue(6).ToString();
                 model.ForgetAns = reader.GetValue(7).ToString();

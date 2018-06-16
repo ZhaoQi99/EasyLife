@@ -80,5 +80,9 @@ namespace EasyLife.BLL
             AllNotice = spider.GetAll();
             return dal.Add(AllNotice);
         }
+        public string[] QueryDep()
+        {
+            return dal.QueryDep();
+        }
     }
 }

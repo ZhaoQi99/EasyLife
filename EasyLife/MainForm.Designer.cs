@@ -1145,9 +1145,6 @@
             // 
             this.CmoBoxNotDep.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.CmoBoxNotDep.FormattingEnabled = true;
-            this.CmoBoxNotDep.Items.AddRange(new object[] {
-            resources.GetString("CmoBoxNotDep.Items"),
-            resources.GetString("CmoBoxNotDep.Items1")});
             resources.ApplyResources(this.CmoBoxNotDep, "CmoBoxNotDep");
             this.CmoBoxNotDep.Name = "CmoBoxNotDep";
             this.CmoBoxNotDep.WaterText = "二级单位";

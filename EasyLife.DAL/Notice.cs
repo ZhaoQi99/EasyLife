@@ -72,5 +72,21 @@ namespace EasyLife.DAL
             strSql.Append("AND Type='" + type + "' ");
             return SqlHelper.ExecuteReader(strSql.ToString());
         }
+                public string[]QueryDep()
+        {
+            StringBuilder strSql = new StringBuilder();
+            int n = Convert.ToInt32( SqlHelper.ExecuteScalar("select count(*) from Regular"));
+            strSql.Append("select distinct Department");
+            strSql.Append(" FROM Regular");
+            OleDbDataReader reader = SqlHelper.ExecuteReader(strSql.ToString());
+            string[] AllDep = new string[n/2];
+            int flag = 0;
+            while(reader.Read())
+            {
+                AllDep[flag++] = reader.GetValue(0).ToString();
+            }
+            reader.Close();
+            return AllDep;
+        }
     }
 }

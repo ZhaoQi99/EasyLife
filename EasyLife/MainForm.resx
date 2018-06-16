@@ -505,10 +505,10 @@
     <value>宋体, 12pt</value>
   </data>
   <data name="GupBoxInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>596, 341</value>
+    <value>584, 342</value>
   </data>
   <data name="GupBoxInfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 198</value>
+    <value>215, 197</value>
   </data>
   <data name="GupBoxInfo.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -598,10 +598,10 @@
     <value>NoControl</value>
   </data>
   <data name="PicBoxClock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>593, 134</value>
+    <value>584, 134</value>
   </data>
   <data name="PicBoxClock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 178</value>
+    <value>202, 202</value>
   </data>
   <data name="PicBoxClock.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -1048,7 +1048,7 @@
     <value>7, 3</value>
   </data>
   <data name="GouBoxWeather.Size" type="System.Drawing.Size, System.Drawing">
-    <value>580, 536</value>
+    <value>558, 536</value>
   </data>
   <data name="GouBoxWeather.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2000,12 +2000,6 @@
   </data>
   <data name="&gt;&gt;BtnQueNotice.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="CmoBoxNotDep.Items" xml:space="preserve">
-    <value>学校主页</value>
-  </data>
-  <data name="CmoBoxNotDep.Items1" xml:space="preserve">
-    <value>计算机科学学院</value>
   </data>
   <data name="CmoBoxNotDep.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 39</value>
@@ -3047,7 +3041,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAI
-        DAAAAk1TRnQBSQFMAgEBBwEAAWgBAgFoAQIBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        DAAAAk1TRnQBSQFMAgEBBwEAAXABAgFwAQIBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -32568,7 +32562,7 @@
     <value>FindPwd</value>
   </data>
   <data name="&gt;&gt;FindPwd.Type" xml:space="preserve">
-    <value>EasyLife.Login.FindPassword, EasyLife, Version=1.0.6741.33352, Culture=neutral, PublicKeyToken=null</value>
+    <value>EasyLife.Login.FindPassword, EasyLife, Version=1.0.6741.37995, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;FindPwd.Parent" xml:space="preserve">
     <value>$this</value>
@@ -32578,6 +32572,9 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>48</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 15</value>
@@ -33745,9 +33742,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.MiniDownBack" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
