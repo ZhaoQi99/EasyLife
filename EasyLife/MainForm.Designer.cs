@@ -168,9 +168,9 @@
             this.DataGridViewUser = new CCWin.SkinControl.SkinDataGridView();
             this.ExitTabPage = new CCWin.SkinControl.SkinTabPage();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.FindPwd = new EasyLife.Login.FindPassword();
             this.TimerLoad = new System.Windows.Forms.Timer(this.components);
             this.TimerClock = new System.Windows.Forms.Timer(this.components);
-            this.FindPwd = new EasyLife.Login.FindPassword();
             ToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.SkinMenu.SuspendLayout();
             this.SettingsMenu.SuspendLayout();
@@ -1467,6 +1467,12 @@
             this.imageList.Images.SetKeyName(5, "ToolAuto.ico");
             this.imageList.Images.SetKeyName(6, "ToolExit.png");
             // 
+            // FindPwd
+            // 
+            this.FindPwd.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            resources.ApplyResources(this.FindPwd, "FindPwd");
+            this.FindPwd.Name = "FindPwd";
+            // 
             // TimerLoad
             // 
             this.TimerLoad.Tick += new System.EventHandler(this.TimerLoad_Tick);
@@ -1474,12 +1480,6 @@
             // TimerClock
             // 
             this.TimerClock.Tick += new System.EventHandler(this.TimerClock_Tick);
-            // 
-            // FindPwd
-            // 
-            this.FindPwd.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            resources.ApplyResources(this.FindPwd, "FindPwd");
-            this.FindPwd.Name = "FindPwd";
             // 
             // MainForm
             // 

@@ -2830,7 +2830,7 @@
     <value>NoControl</value>
   </data>
   <data name="LblUsername.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 46</value>
+    <value>96, 46</value>
   </data>
   <data name="LblUsername.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 19</value>
@@ -3041,7 +3041,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAI
-        DAAAAk1TRnQBSQFMAgEBBwEAAXABAgFwAQIBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        DAAAAk1TRnQBSQFMAgEBBwEAAYQBAgGEAQIBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -3184,12 +3184,6 @@
   <data name="&gt;&gt;TabShow.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="TimerLoad.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>544, 13</value>
-  </metadata>
-  <metadata name="TimerClock.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>674, 13</value>
-  </metadata>
   <data name="FindPwd.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/7gAOQWRvYmUAZAAAAAAB/+EfukV4aWYAAE1NACoAAAAIAA8BAAAD
@@ -32562,7 +32556,7 @@
     <value>FindPwd</value>
   </data>
   <data name="&gt;&gt;FindPwd.Type" xml:space="preserve">
-    <value>EasyLife.Login.FindPassword, EasyLife, Version=1.0.6741.37995, Culture=neutral, PublicKeyToken=null</value>
+    <value>EasyLife.Login.FindPassword, EasyLife, Version=1.0.6742.31087, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;FindPwd.Parent" xml:space="preserve">
     <value>$this</value>
@@ -32570,6 +32564,12 @@
   <data name="&gt;&gt;FindPwd.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="TimerLoad.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>544, 13</value>
+  </metadata>
+  <metadata name="TimerClock.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>674, 13</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
