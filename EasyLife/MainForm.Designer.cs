@@ -1330,6 +1330,7 @@
             // 
             resources.ApplyResources(this.TextBoxMailTo, "TextBoxMailTo");
             this.TextBoxMailTo.Name = "TextBoxMailTo";
+            ToolTip.SetToolTip(this.TextBoxMailTo, resources.GetString("TextBoxMailTo.ToolTip"));
             // 
             // LblMailto
             // 

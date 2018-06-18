@@ -64,6 +64,14 @@ namespace EasyLife.DAL
             strSql.Append(" where Link='" + Link + "' ");
             return SqlHelper.Exists(strSql.ToString());
         }
+        public bool Exist(string Department, string Type)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select count(*) from [Notice]");
+            strSql.Append(" where Department='" + Department + "' ");
+            strSql.Append("AND Type='" + Type + "' ");
+            return SqlHelper.Exists(strSql.ToString());
+        }
         public OleDbDataReader RegEx(string Department, string type)
         {
             StringBuilder strSql = new StringBuilder();

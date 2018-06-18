@@ -318,7 +318,7 @@
             this.CmoBoxSchool.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.CmoBoxSchool.BorderColor = System.Drawing.Color.White;
             this.CmoBoxSchool.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CmoBoxSchool.DropDownHeight = 100;
+            this.CmoBoxSchool.DropDownHeight = 400;
             this.CmoBoxSchool.DropDownWidth = 194;
             this.CmoBoxSchool.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CmoBoxSchool.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -395,7 +395,7 @@
             this.CmoBoxForQue.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.CmoBoxForQue.BorderColor = System.Drawing.Color.White;
             this.CmoBoxForQue.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CmoBoxForQue.DropDownHeight = 100;
+            this.CmoBoxForQue.DropDownHeight = 240;
             this.CmoBoxForQue.DropDownWidth = 194;
             this.CmoBoxForQue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CmoBoxForQue.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));

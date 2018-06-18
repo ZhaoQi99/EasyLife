@@ -29,24 +29,24 @@ namespace EasyLife.BLL
             int n = reader.FieldCount;
             for (int i = 0; i < n; i++)
             {
-                string key=reader.GetName(i);
+                string key = reader.GetName(i);
                 string value = reader.GetValue(i).ToString();
                 dict.Add(key, value);
             }
             reader.Close();
             return dict;
         }
-        public DataSet GetList(string Department,string  Type,string Date)
+        public DataSet GetList(string Department, string Type, string Date)
         {
             StringBuilder Sql = new StringBuilder();
             bool flag = false;
-            if(Department!=string.Empty)
+            if (Department != string.Empty)
             {
                 if (flag == false)
-                    Sql.Append("Department='"+Department+"' ");
+                    Sql.Append("Department='" + Department + "' ");
                 flag = true;
             }
-            if(Type!=string.Empty)
+            if (Type != string.Empty)
             {
                 if (flag == false)
                     Sql.Append("Type='" + Type + "' ");
@@ -54,7 +54,7 @@ namespace EasyLife.BLL
                     Sql.Append("AND Type='" + Type + "' ");
                 flag = true;
             }
-            if(Date!=string.Empty)
+            if (Date != string.Empty)
             {
                 DateTime temp = DateTime.ParseExact(Date, "yyyy-M-d", System.Globalization.CultureInfo.InstalledUICulture);
                 if (flag == false)
@@ -64,15 +64,15 @@ namespace EasyLife.BLL
             }
             return dal.GetList(Sql.ToString());
         }
-        public int Update(string Department,string Type)
+        public int Update(string Department, string Type)
         {
-            Dictionary<string,string> dict = RegEx(Department, Type);
+            Dictionary<string, string> dict = RegEx(Department, Type);
             string MoreLink = dict["MoreLink"].ToString();
             string pattern = dict["RuleStr"].ToString();
             string Encode = dict["Encode"].ToString();
             string UrlMain = dict["PublicLink"].ToString();
             string Parse = dict["Parse"].ToString();
-            SpiderNotice spider = new SpiderNotice(MoreLink,pattern, UrlMain, Department,Type);
+            SpiderNotice spider = new SpiderNotice(MoreLink, pattern, UrlMain, Department, Type);
             spider.encode = Encode;
             spider.parse = Parse;
             spider.Get();
@@ -83,6 +83,10 @@ namespace EasyLife.BLL
         public string[] QueryDep()
         {
             return dal.QueryDep();
+        }
+        public bool Exist(string Department, string Type)
+        {
+            return dal.Exist(Department, Type);
         }
     }
 }

@@ -126,10 +126,10 @@ namespace EasyLife
             if (e.SysButton.Name == "Help")
             {
                 string now = Environment.CurrentDirectory;
-                if (System.IO.File.Exists(now + "/help.chm") == false)
+                if (System.IO.File.Exists(now + "/EasyLife V0.1.0.chm") == false)
                     MessageBoxEx.Show("帮助文档不存在!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
-                    System.Diagnostics.Process.Start(now + "/Help.chm");
+                    System.Diagnostics.Process.Start(now + "/EasyLife V0.1.0.chm");
             }
         }
         #endregion

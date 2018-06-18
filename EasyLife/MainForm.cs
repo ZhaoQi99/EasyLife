@@ -110,6 +110,8 @@ namespace EasyLife
         private void InformationUpdate_Click(object sender, EventArgs e)
         {
             FindPwd.Show();
+            FindPwd.SetText(u.UserName);
+
         }
         //退出
         private void Exit_Click(object sender, EventArgs e)
@@ -134,15 +136,15 @@ namespace EasyLife
         private void HelpWord_Click(object sender, EventArgs e)
         {
             string now= Environment.CurrentDirectory;
-            if (File.Exists(now + "/help.chm") == false)
+            if (File.Exists(now + "/EasyLife V0.1.0.chm") == false)
                 MessageBoxEx.Show("帮助文档不存在!", "错误", MessageBoxButtons.OK,MessageBoxIcon.Error);
             else
-                Process.Start(now+"/Help.chm");
+                Process.Start(now+ "/EasyLife V0.1.0.chm");
         }
         //访问EasyLife
         private void Link_Click(object sender, EventArgs e)
         {
-            Process.Start("http://zhaoqi99.github.io/EasyLife");
+            Process.Start("http://zhaoqi99.github.io/EasyLife/V0.1.0");
         }
         //关于
         private void About_Click(object sender, EventArgs e)
@@ -179,6 +181,7 @@ namespace EasyLife
             Exit.Text = "退出";
             LanguageSettings.Text = "语言";
             HelpWord.Text = "帮助";
+            ShowWeather("西安");
         }
         private void 英文ToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -208,6 +211,7 @@ namespace EasyLife
             Exit.Text = "Exit";
             LanguageSettings.Text = "Language";
             HelpWord.Text = "Help";
+            ShowWeather("西安");
         }
         #endregion
 
@@ -352,6 +356,11 @@ namespace EasyLife
             string Department = CmoBoxNotDep.Text.ToString();
             string Type = CmoBoxNotType.Text.ToString();
             string Date = DateTImePicNotice.Text;
+            if(notice.Exist(Department,Type)==false)
+            {
+                notice.Update(Department, Type);
+                MessageBoxEx.Show("更新完成！", "成功", MessageBoxButtons.OK, MessageBoxIcon.None);
+            }
             DataGridViewNotice.DataSource = notice.GetList(Department, Type, Date).Tables["Notice"].DefaultView;
             MessageBoxEx.Show("查询完成！", "成功", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
@@ -542,7 +551,7 @@ namespace EasyLife
         private void TimerClock_Tick(object sender, EventArgs e)
         {
             PicBoxClock.Image = clock.get();
-            TImeNow2.Text = DateTime.Now.ToString("hh:mm:ss");
+            TImeNow2.Text = DateTime.Now.ToString("HH:mm:ss");
         }
         #endregion
 

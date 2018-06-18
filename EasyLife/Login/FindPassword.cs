@@ -54,5 +54,10 @@ namespace EasyLife.Login
         {
             TextBoxPdw1.Text = TextBoxPdw2.Text = TextBoxForPwdAns.Text = CmoBoxForQue.Text = TextBoxUserNam.Text = string.Empty;
         }
+        public void SetText(string text)
+        {
+            TextBoxUserNam.Text = text;
+            TextBoxUserNam.Enabled = false;
+        }
     }
 }

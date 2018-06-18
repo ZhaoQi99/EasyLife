@@ -185,7 +185,7 @@
             this.TextBoxUserNam.Icon = null;
             this.TextBoxUserNam.IconIsButton = false;
             this.TextBoxUserNam.IconMouseState = CCWin.SkinClass.ControlState.Normal;
-            this.TextBoxUserNam.IsPasswordChat = '*';
+            this.TextBoxUserNam.IsPasswordChat = '\0';
             this.TextBoxUserNam.IsSystemPasswordChar = false;
             this.TextBoxUserNam.Lines = new string[0];
             resources.ApplyResources(this.TextBoxUserNam, "TextBoxUserNam");
@@ -205,7 +205,6 @@
             this.TextBoxUserNam.SkinTxt.Font = ((System.Drawing.Font)(resources.GetObject("resource.Font2")));
             this.TextBoxUserNam.SkinTxt.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location2")));
             this.TextBoxUserNam.SkinTxt.Name = "BaseText";
-            this.TextBoxUserNam.SkinTxt.PasswordChar = ((char)(resources.GetObject("resource.PasswordChar2")));
             this.TextBoxUserNam.SkinTxt.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size2")));
             this.TextBoxUserNam.SkinTxt.TabIndex = ((int)(resources.GetObject("resource.TabIndex2")));
             this.TextBoxUserNam.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
