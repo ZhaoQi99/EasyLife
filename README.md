@@ -5,10 +5,15 @@
 
 ## 软件开发工具
 系统开发平台: Microsoft Visual Studio 2015
+
 系统开发语言:C#
+
 数据库管理软件: Microsoft  Access 2016
+
 版本控制软件:Git
+
 持续集成服务:Travis CI
+
 软件体系架构:三层架构
 
 ## 获取帮助
