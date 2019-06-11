@@ -53,3 +53,9 @@
 支持将软件窗口始终置顶
 14. 系统托盘
 软件启动时，会在系统托盘区出现登录提示以及托盘图标。
+## Demo
+![QQ截图20190611232612](https://user-images.githubusercontent.com/25344334/59285302-58900400-8ca0-11e9-97c1-02ff4f1cf677.jpg)
+![1ULZ%Z@Z QFR~AT8~RB3U~D](https://user-images.githubusercontent.com/25344334/59285419-883f0c00-8ca0-11e9-869f-38ff84b3d336.png)
+## 设计文档
+* [设计说明书](./doc/基于C%23爬虫的校园信息平台设计书.doc)
+* [使用说明书](./doc/基于C%23爬虫的校园信息平台使用说明书.docx)
