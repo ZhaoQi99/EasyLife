@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9570bbdb1304492886884f79d82ecd18)](https://app.codacy.com/app/ZhaoQi99/EasyLife?utm_source=github.com&utm_medium=referral&utm_content=ZhaoQi99/EasyLife&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/ZhaoQi99/EasyLife.svg?branch=Course_Design)](https://travis-ci.org/ZhaoQi99/EasyLife/tree/Course_Design)
 [![Release](https://img.shields.io/github/release/ZhaoQi99/EasyLife.svg)](https://github.com/ZhaoQi99/EasyLife/releases)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](https://github.com/ZhaoQi99/EasyLife/blob/Course_Design/LICENSE)
